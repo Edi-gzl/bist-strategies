@@ -1,0 +1,161 @@
+{
+ "id": "morning_gap_short",
+ "name": "Morning gap-up fade (10:01 Core)",
+ "spec": "Gap = opening auction vs previous close. If fewer than 25% of liquid names gapped up > 1%, short the top-2 gap-ups (gap >= 1%, entry gap < 9%) at the 10:01 open and cover in the closing auction. 10 bp round trip.",
+ "deviations": [
+  "Liquidity filter uses daily volume x typical price (original: sum of 1-minute traded value) for the 20-day median ranking."
+ ],
+ "live_start": "2026-10-02",
+ "last_session": "2026-10-09",
+ "stats": {
+  "days": 6,
+  "active_days": 5,
+  "total_return": -0.022205445838190285,
+  "max_drawdown": -0.043134386437944205,
+  "hit_rate": 0.6,
+  "best_day": 0.013144273515322658,
+  "worst_day": -0.028353044513410697,
+  "first": "2026-10-02",
+  "last": "2026-10-09"
+ },
+ "days": [
+  {
+   "date": "2026-10-02",
+   "ret": 0.013144273515322658,
+   "reconstructed": true,
+   "n_trades": 2
+  },
+  {
+   "date": "2026-10-05",
+   "ret": 0.0076213198311056995,
+   "reconstructed": true,
+   "n_trades": 2
+  },
+  {
+   "date": "2026-10-06",
+   "ret": 0.0,
+   "reconstructed": true,
+   "n_trades": 0
+  },
+  {
+   "date": "2026-10-07",
+   "ret": 0.0009860481326166024,
+   "reconstructed": true,
+   "n_trades": 1
+  },
+  {
+   "date": "2026-10-08",
+   "ret": -0.028353044513410697,
+   "reconstructed": true,
+   "n_trades": 2
+  },
+  {
+   "date": "2026-10-09",
+   "ret": -0.01521266735934057,
+   "reconstructed": true,
+   "n_trades": 2
+  }
+ ],
+ "trades": [
+  {
+   "date": "2026-10-02",
+   "ticker": "AKSEN",
+   "side": "SHORT",
+   "entry_time": "10:01 open",
+   "entry_price": 74.15,
+   "exit_time": "closing auction",
+   "exit_price": 74.2,
+   "ret": -0.00167,
+   "gap": 0.0311
+  },
+  {
+   "date": "2026-10-02",
+   "ticker": "TKFEN",
+   "side": "SHORT",
+   "entry_time": "10:01 open",
+   "entry_price": 255.5,
+   "exit_time": "closing auction",
+   "exit_price": 248.1,
+   "ret": 0.02796,
+   "gap": 0.0159
+  },
+  {
+   "date": "2026-10-05",
+   "ticker": "ASELS",
+   "side": "SHORT",
+   "entry_time": "10:01 open",
+   "entry_price": 382.25,
+   "exit_time": "closing auction",
+   "exit_price": 371.5,
+   "ret": 0.02712,
+   "gap": 0.042
+  },
+  {
+   "date": "2026-10-05",
+   "ticker": "TKFEN",
+   "side": "SHORT",
+   "entry_time": "10:01 open",
+   "entry_price": 252.75,
+   "exit_time": "closing auction",
+   "exit_price": 255.5,
+   "ret": -0.01188,
+   "gap": 0.0147
+  },
+  {
+   "date": "2026-10-07",
+   "ticker": "PETKM",
+   "side": "SHORT",
+   "entry_time": "10:01 open",
+   "entry_price": 20.14,
+   "exit_time": "closing auction",
+   "exit_price": 20.1,
+   "ret": 0.00099,
+   "gap": 0.0121
+  },
+  {
+   "date": "2026-10-08",
+   "ticker": "ASTOR",
+   "side": "SHORT",
+   "entry_time": "10:01 open",
+   "entry_price": 188.3,
+   "exit_time": "closing auction",
+   "exit_price": 197.5,
+   "ret": -0.04986,
+   "gap": 0.0146
+  },
+  {
+   "date": "2026-10-08",
+   "ticker": "PETKM",
+   "side": "SHORT",
+   "entry_time": "10:01 open",
+   "entry_price": 20.52,
+   "exit_time": "closing auction",
+   "exit_price": 20.64,
+   "ret": -0.00685,
+   "gap": 0.0149
+  },
+  {
+   "date": "2026-10-09",
+   "ticker": "GUBRF",
+   "side": "SHORT",
+   "entry_time": "10:01 open",
+   "entry_price": 414.5,
+   "exit_time": "closing auction",
+   "exit_price": 418.0,
+   "ret": -0.00944,
+   "gap": 0.0184
+  },
+  {
+   "date": "2026-10-09",
+   "ticker": "TRALT",
+   "side": "SHORT",
+   "entry_time": "10:01 open",
+   "entry_price": 43.04,
+   "exit_time": "closing auction",
+   "exit_price": 43.9,
+   "ret": -0.02098,
+   "gap": 0.0185
+  }
+ ],
+ "holdings": null
+}

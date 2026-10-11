@@ -1,0 +1,33 @@
+name: daily-run
+
+on:
+  schedule:
+    # 19:00 Istanbul (UTC+3, no DST), Mon-Fri: closing auction ends 18:10 and
+    # Yahoo's BIST feed can lag ~15 min, so wait before reading the day's prices.
+    - cron: "0 16 * * 1-5"
+  workflow_dispatch:          # "Run workflow" button for manual runs / catch-up
+
+permissions:
+  contents: write
+
+concurrency:
+  group: daily-run
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - run: python -W ignore run.py
+      - name: Commit updated log
+        run: |
+          git config user.name "strategy-bot"
+          git config user.email "strategy-bot@users.noreply.github.com"
+          git add docs/data
+          git diff --cached --quiet || git commit -m "log: $(date -u +%F)"
+          git push

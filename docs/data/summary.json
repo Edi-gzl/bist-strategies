@@ -1,0 +1,236 @@
+{
+ "generated_at": "2026-10-11T11:03:10+00:00",
+ "live_start": "2026-10-02",
+ "recorded_from": "2026-10-12",
+ "last_session": "2026-10-09",
+ "data_source": "Yahoo Finance (unofficial; may be delayed or corrected)",
+ "strategies": [
+  {
+   "id": "fund_liquidity_80",
+   "name": "Fund Liquidity 80 \u2014 FL26131 (long-only)",
+   "stats": {
+    "days": 5,
+    "active_days": 5,
+    "total_return": 0.012740159165029796,
+    "max_drawdown": -0.008946514969263353,
+    "hit_rate": 0.8,
+    "best_day": 0.011205999926970689,
+    "worst_day": -0.008946514969263464,
+    "first": "2026-10-05",
+    "last": "2026-10-09"
+   },
+   "today": {
+    "date": "2026-10-09",
+    "ret": 0.011205999926970689,
+    "trades": []
+   }
+  },
+  {
+   "id": "focus_long",
+   "name": "Focus Long \u2014 pullback in uptrend, top 5",
+   "stats": {
+    "days": 5,
+    "active_days": 5,
+    "total_return": -0.005748249286342544,
+    "max_drawdown": -0.02119480422737663,
+    "hit_rate": 0.4,
+    "best_day": 0.011717830625927484,
+    "worst_day": -0.013900343735411847,
+    "first": "2026-10-05",
+    "last": "2026-10-09"
+   },
+   "today": {
+    "date": "2026-10-09",
+    "ret": 0.004016139728298374,
+    "trades": [
+     {
+      "date": "2026-10-09",
+      "ticker": "TUPRS",
+      "side": "BUY",
+      "weight": 0.2,
+      "entry_time": "closing auction",
+      "entry_price": 386.25,
+      "exit_time": null,
+      "exit_price": null,
+      "ret": null
+     },
+     {
+      "date": "2026-10-09",
+      "ticker": "YKBNK",
+      "side": "SELL",
+      "weight": 0.0,
+      "entry_time": "closing auction",
+      "entry_price": 35.44,
+      "exit_time": null,
+      "exit_price": null,
+      "ret": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "daily_beta_pm",
+   "name": "Daily BETA phase-matched momentum (long/short)",
+   "stats": {
+    "days": 5,
+    "active_days": 5,
+    "total_return": -0.024636299222922764,
+    "max_drawdown": -0.01970251587548888,
+    "hit_rate": 0.2,
+    "best_day": 0.014844745956222871,
+    "worst_day": -0.016378077002299485,
+    "first": "2026-10-05",
+    "last": "2026-10-09"
+   },
+   "today": {
+    "date": "2026-10-09",
+    "ret": -0.010733973432334176,
+    "trades": [
+     {
+      "date": "2026-10-09",
+      "ticker": "SOKM",
+      "side": "LONG",
+      "entry_time": "closing auction",
+      "entry_price": 58.2,
+      "exit_time": "next opening auction",
+      "exit_price": null,
+      "ret": null,
+      "residual": 0.03192
+     },
+     {
+      "date": "2026-10-09",
+      "ticker": "TRALT",
+      "side": "LONG",
+      "entry_time": "closing auction",
+      "entry_price": 43.9,
+      "exit_time": "next opening auction",
+      "exit_price": null,
+      "ret": null,
+      "residual": 0.03041
+     },
+     {
+      "date": "2026-10-09",
+      "ticker": "TRMET",
+      "side": "LONG",
+      "entry_time": "closing auction",
+      "entry_price": 137.3,
+      "exit_time": "next opening auction",
+      "exit_price": null,
+      "ret": null,
+      "residual": 0.03308
+     },
+     {
+      "date": "2026-10-09",
+      "ticker": "KONTR",
+      "side": "SHORT",
+      "entry_time": "opening auction",
+      "entry_price": 2.03,
+      "exit_time": "closing auction",
+      "exit_price": 2.09,
+      "ret": -0.02956,
+      "residual": -0.02687
+     },
+     {
+      "date": "2026-10-09",
+      "ticker": "TKFEN",
+      "side": "SHORT",
+      "entry_time": "opening auction",
+      "entry_price": 255.5,
+      "exit_time": "closing auction",
+      "exit_price": 265.0,
+      "ret": -0.03718,
+      "residual": -0.05229
+     },
+     {
+      "date": "2026-10-09",
+      "ticker": "YKBNK",
+      "side": "SHORT",
+      "entry_time": "opening auction",
+      "entry_price": 35.76,
+      "exit_time": "closing auction",
+      "exit_price": 35.44,
+      "ret": 0.00895,
+      "residual": -0.03106
+     }
+    ]
+   }
+  },
+  {
+   "id": "eodr_short",
+   "name": "EODR \u2014 end-of-day loser short",
+   "stats": {
+    "days": 6,
+    "active_days": 3,
+    "total_return": -0.021009297082264067,
+    "max_drawdown": -0.0223676682151005,
+    "hit_rate": 0.3333333333333333,
+    "best_day": 0.001389449886908146,
+    "worst_day": -0.0147061408095156,
+    "first": "2026-10-02",
+    "last": "2026-10-09"
+   },
+   "today": {
+    "date": "2026-10-09",
+    "ret": 0.001389449886908146,
+    "trades": [
+     {
+      "date": "2026-10-09",
+      "ticker": "SAHOL",
+      "side": "SHORT",
+      "entry_time": "first 1-min open after 16:00",
+      "entry_price": 83.7,
+      "exit_time": "closing auction",
+      "exit_price": 83.5,
+      "ret": 0.00139,
+      "z": -3.49,
+      "fallback_rank": 1
+     }
+    ]
+   }
+  },
+  {
+   "id": "morning_gap_short",
+   "name": "Morning gap-up fade (10:01 Core)",
+   "stats": {
+    "days": 6,
+    "active_days": 5,
+    "total_return": -0.022205445838190285,
+    "max_drawdown": -0.043134386437944205,
+    "hit_rate": 0.6,
+    "best_day": 0.013144273515322658,
+    "worst_day": -0.028353044513410697,
+    "first": "2026-10-02",
+    "last": "2026-10-09"
+   },
+   "today": {
+    "date": "2026-10-09",
+    "ret": -0.01521266735934057,
+    "trades": [
+     {
+      "date": "2026-10-09",
+      "ticker": "GUBRF",
+      "side": "SHORT",
+      "entry_time": "10:01 open",
+      "entry_price": 414.5,
+      "exit_time": "closing auction",
+      "exit_price": 418.0,
+      "ret": -0.00944,
+      "gap": 0.0184
+     },
+     {
+      "date": "2026-10-09",
+      "ticker": "TRALT",
+      "side": "SHORT",
+      "entry_time": "10:01 open",
+      "entry_price": 43.04,
+      "exit_time": "closing auction",
+      "exit_price": 43.9,
+      "ret": -0.02098,
+      "gap": 0.0185
+     }
+    ]
+   }
+  }
+ ],
+ "failures": {}
+}

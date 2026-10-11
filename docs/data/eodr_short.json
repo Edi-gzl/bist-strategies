@@ -1,0 +1,96 @@
+{
+ "id": "eodr_short",
+ "name": "EODR \u2014 end-of-day loser short",
+ "spec": "At 16:00 rank stocks by open -> 16:00 return. If the worst (or 2nd worst) is z <= -2 vs the others, down < 9%, and not near the -10% floor, short it at the first minute after 16:00 and cover in the closing auction. 10 bp round trip.",
+ "deviations": [],
+ "live_start": "2026-10-02",
+ "last_session": "2026-10-09",
+ "stats": {
+  "days": 6,
+  "active_days": 3,
+  "total_return": -0.021009297082264067,
+  "max_drawdown": -0.0223676682151005,
+  "hit_rate": 0.3333333333333333,
+  "best_day": 0.001389449886908146,
+  "worst_day": -0.0147061408095156,
+  "first": "2026-10-02",
+  "last": "2026-10-09"
+ },
+ "days": [
+  {
+   "date": "2026-10-02",
+   "ret": 0.0,
+   "reconstructed": true,
+   "n_trades": 0
+  },
+  {
+   "date": "2026-10-05",
+   "ret": 0.0,
+   "reconstructed": true,
+   "n_trades": 0
+  },
+  {
+   "date": "2026-10-06",
+   "ret": 0.0,
+   "reconstructed": true,
+   "n_trades": 0
+  },
+  {
+   "date": "2026-10-07",
+   "ret": -0.0147061408095156,
+   "reconstructed": true,
+   "n_trades": 1
+  },
+  {
+   "date": "2026-10-08",
+   "ret": -0.007775880600615514,
+   "reconstructed": true,
+   "n_trades": 1
+  },
+  {
+   "date": "2026-10-09",
+   "ret": 0.001389449886908146,
+   "reconstructed": true,
+   "n_trades": 1
+  }
+ ],
+ "trades": [
+  {
+   "date": "2026-10-07",
+   "ticker": "ASTOR",
+   "side": "SHORT",
+   "entry_time": "first 1-min open after 16:00",
+   "entry_price": 182.4,
+   "exit_time": "closing auction",
+   "exit_price": 184.9,
+   "ret": -0.01471,
+   "z": -3.48,
+   "fallback_rank": 1
+  },
+  {
+   "date": "2026-10-08",
+   "ticker": "YKBNK",
+   "side": "SHORT",
+   "entry_time": "first 1-min open after 16:00",
+   "entry_price": 35.42,
+   "exit_time": "closing auction",
+   "exit_price": 35.66,
+   "ret": -0.00778,
+   "z": -2.24,
+   "fallback_rank": 1
+  },
+  {
+   "date": "2026-10-09",
+   "ticker": "SAHOL",
+   "side": "SHORT",
+   "entry_time": "first 1-min open after 16:00",
+   "entry_price": 83.7,
+   "exit_time": "closing auction",
+   "exit_price": 83.5,
+   "ret": 0.00139,
+   "z": -3.49,
+   "fallback_rank": 1
+  }
+ ],
+ "holdings": null
+}

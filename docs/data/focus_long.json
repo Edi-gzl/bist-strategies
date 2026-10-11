@@ -1,0 +1,144 @@
+{
+ "id": "focus_long",
+ "name": "Focus Long \u2014 pullback in uptrend, top 5",
+ "spec": "48-name universe; 60-day log-price trend (signal uses closes to t-1); buy top 5 by slope x R2 among names with -1.5 < residual < 0; equal weight, rebalance daily at the closing auction; 5 bp x turnover.",
+ "deviations": [
+  "Prices: Yahoo split/dividend-adjusted closes instead of the original adjusted official closes."
+ ],
+ "live_start": "2026-10-02",
+ "last_session": "2026-10-09",
+ "stats": {
+  "days": 5,
+  "active_days": 5,
+  "total_return": -0.005748249286342544,
+  "max_drawdown": -0.02119480422737663,
+  "hit_rate": 0.4,
+  "best_day": 0.011717830625927484,
+  "worst_day": -0.013900343735411847,
+  "first": "2026-10-05",
+  "last": "2026-10-09"
+ },
+ "days": [
+  {
+   "date": "2026-10-05",
+   "ret": 0.011717830625927484,
+   "reconstructed": true,
+   "n_trades": 2
+  },
+  {
+   "date": "2026-10-06",
+   "ret": -0.000207587966353362,
+   "reconstructed": true,
+   "n_trades": 2
+  },
+  {
+   "date": "2026-10-07",
+   "ret": -0.0071911901385316,
+   "reconstructed": true,
+   "n_trades": 2
+  },
+  {
+   "date": "2026-10-08",
+   "ret": -0.013900343735411847,
+   "reconstructed": true,
+   "n_trades": 0
+  },
+  {
+   "date": "2026-10-09",
+   "ret": 0.004016139728298374,
+   "reconstructed": true,
+   "n_trades": 2
+  }
+ ],
+ "trades": [
+  {
+   "date": "2026-10-05",
+   "ticker": "SOKM",
+   "side": "BUY",
+   "weight": 0.2,
+   "entry_time": "closing auction",
+   "entry_price": 56.5,
+   "exit_time": null,
+   "exit_price": null,
+   "ret": null
+  },
+  {
+   "date": "2026-10-05",
+   "ticker": "ENJSA",
+   "side": "SELL",
+   "weight": 0.0,
+   "entry_time": "closing auction",
+   "entry_price": 112.5,
+   "exit_time": null,
+   "exit_price": null,
+   "ret": null
+  },
+  {
+   "date": "2026-10-06",
+   "ticker": "KCHOL",
+   "side": "BUY",
+   "weight": 0.2,
+   "entry_time": "closing auction",
+   "entry_price": 213.6,
+   "exit_time": null,
+   "exit_price": null,
+   "ret": null
+  },
+  {
+   "date": "2026-10-06",
+   "ticker": "SOKM",
+   "side": "SELL",
+   "weight": 0.0,
+   "entry_time": "closing auction",
+   "entry_price": 56.35,
+   "exit_time": null,
+   "exit_price": null,
+   "ret": null
+  },
+  {
+   "date": "2026-10-07",
+   "ticker": "YKBNK",
+   "side": "BUY",
+   "weight": 0.2,
+   "entry_time": "closing auction",
+   "entry_price": 36.6,
+   "exit_time": null,
+   "exit_price": null,
+   "ret": null
+  },
+  {
+   "date": "2026-10-07",
+   "ticker": "KCHOL",
+   "side": "SELL",
+   "weight": 0.0,
+   "entry_time": "closing auction",
+   "entry_price": 209.6,
+   "exit_time": null,
+   "exit_price": null,
+   "ret": null
+  },
+  {
+   "date": "2026-10-09",
+   "ticker": "TUPRS",
+   "side": "BUY",
+   "weight": 0.2,
+   "entry_time": "closing auction",
+   "entry_price": 386.25,
+   "exit_time": null,
+   "exit_price": null,
+   "ret": null
+  },
+  {
+   "date": "2026-10-09",
+   "ticker": "YKBNK",
+   "side": "SELL",
+   "weight": 0.0,
+   "entry_time": "closing auction",
+   "entry_price": 35.44,
+   "exit_time": null,
+   "exit_price": null,
+   "ret": null
+  }
+ ],
+ "holdings": null
+}
