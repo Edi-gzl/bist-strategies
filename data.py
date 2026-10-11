@@ -12,6 +12,7 @@ dict-of-DataFrames shape returned here (date x ticker).
 
 from __future__ import annotations
 
+import time
 from pathlib import Path
 
 import pandas as pd
@@ -37,12 +38,23 @@ FIELDS = ["Open", "High", "Low", "Close", "Adj Close", "Volume"]
 TZ = "Europe/Istanbul"
 
 
-def _download(tickers, period: str, interval: str) -> dict[str, pd.DataFrame]:
-    raw = yf.download(
-        [t + ".IS" for t in tickers], period=period, interval=interval,
-        auto_adjust=False, group_by="column", progress=False, threads=True,
-    )
-    if raw.empty:
+def _download(tickers, period: str, interval: str, attempts: int = 3) -> dict[str, pd.DataFrame]:
+    """Download with retries: Yahoo sometimes rate-limits cloud runners."""
+    raw = None
+    for attempt in range(1, attempts + 1):
+        try:
+            raw = yf.download(
+                [t + ".IS" for t in tickers], period=period, interval=interval,
+                auto_adjust=False, group_by="column", progress=False, threads=True,
+            )
+        except Exception as exc:  # network / rate-limit errors
+            print(f"  Yahoo {interval} attempt {attempt} failed: {exc}")
+            raw = None
+        if raw is not None and not raw.empty and raw["Close"].notna().any().mean() > 0.9:
+            break
+        if attempt < attempts:
+            time.sleep(30 * attempt)
+    if raw is None or raw.empty:
         raise RuntimeError(f"Yahoo returned no data ({interval}, {period})")
     out = {}
     for f in FIELDS:

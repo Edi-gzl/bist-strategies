@@ -66,6 +66,20 @@ def main() -> int:
     D = data.daily(period="3y")
     M = data.minute(period="7d")
     W = [d for d in data.minute_dates(M) if d in D["Close"].index]
+    # Guard: don't record a session whose data Yahoo hasn't fully published yet.
+    # It stays un-recorded and the next run back-fills it.
+    incomplete = []
+    for d in list(W[-2:]):
+        closes = D["Close"].loc[d].notna().mean()
+        bars = M["Close"].loc[M["Close"].index.normalize() == d]
+        last_bar = bars.dropna(how="all").index.max()
+        full_day = last_bar is not pd.NaT and last_bar.hour >= 17
+        half_day = last_bar is not pd.NaT and last_bar.hour < 14   # e.g. holiday eves
+        if closes < 0.9 or not (full_day or half_day):
+            incomplete.append(str(d.date()))
+            W.remove(d)
+    if incomplete:
+        print("INCOMPLETE Yahoo data, not recorded this run:", incomplete)
     if len(W) < 2:
         print("not enough 1-minute sessions from Yahoo; nothing to do")
         return 1
@@ -76,7 +90,8 @@ def main() -> int:
                "live_start": str(live_start.date()), "recorded_from": RECORDED_FROM,
                "last_session": str(last_session.date()),
                "data_source": "Yahoo Finance (unofficial; may be delayed or corrected)",
-               "strategies": [], "failures": {}}
+               "strategies": [], "failures": {},
+               "incomplete_sessions": incomplete}
 
     D_all = data.daily(data.UNIVERSE_ALL, period="2y")
 
@@ -140,7 +155,10 @@ def main() -> int:
     (out / "summary.json").write_text(json.dumps(summary, indent=1), encoding="utf-8")
     if summary["failures"]:
         print("FAILURES:", summary["failures"])
-    return 0 if summary["strategies"] else 1
+    if not summary["strategies"]:
+        return 1
+    # exit 2 = data written, but something needs attention (workflow turns this red)
+    return 2 if (summary["failures"] or incomplete) else 0
 
 
 if __name__ == "__main__":
