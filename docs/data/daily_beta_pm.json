@@ -48,7 +48,7 @@
    "date": "2026-10-09",
    "ret": -0.010733973432334176,
    "reconstructed": true,
-   "n_trades": 6
+   "n_trades": 3
   }
  ],
  "trades": [
@@ -315,39 +315,6 @@
    "exit_price": 42.24,
    "ret": -0.01931,
    "residual": -0.02894
-  },
-  {
-   "date": "2026-10-09",
-   "ticker": "SOKM",
-   "side": "LONG",
-   "entry_time": "closing auction",
-   "entry_price": 58.2,
-   "exit_time": "next opening auction",
-   "exit_price": null,
-   "ret": null,
-   "residual": 0.03192
-  },
-  {
-   "date": "2026-10-09",
-   "ticker": "TRALT",
-   "side": "LONG",
-   "entry_time": "closing auction",
-   "entry_price": 43.9,
-   "exit_time": "next opening auction",
-   "exit_price": null,
-   "ret": null,
-   "residual": 0.03041
-  },
-  {
-   "date": "2026-10-09",
-   "ticker": "TRMET",
-   "side": "LONG",
-   "entry_time": "closing auction",
-   "entry_price": 137.3,
-   "exit_time": "next opening auction",
-   "exit_price": null,
-   "ret": null,
-   "residual": 0.03308
   },
   {
    "date": "2026-10-09",

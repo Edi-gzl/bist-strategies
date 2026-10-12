@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-11T11:41:00+00:00",
+ "generated_at": "2026-10-12T22:42:39+00:00",
  "live_start": "2026-10-02",
  "recorded_from": "2026-10-12",
  "last_session": "2026-10-09",
@@ -86,39 +86,6 @@
     "date": "2026-10-09",
     "ret": -0.010733973432334176,
     "trades": [
-     {
-      "date": "2026-10-09",
-      "ticker": "SOKM",
-      "side": "LONG",
-      "entry_time": "closing auction",
-      "entry_price": 58.2,
-      "exit_time": "next opening auction",
-      "exit_price": null,
-      "ret": null,
-      "residual": 0.03192
-     },
-     {
-      "date": "2026-10-09",
-      "ticker": "TRALT",
-      "side": "LONG",
-      "entry_time": "closing auction",
-      "entry_price": 43.9,
-      "exit_time": "next opening auction",
-      "exit_price": null,
-      "ret": null,
-      "residual": 0.03041
-     },
-     {
-      "date": "2026-10-09",
-      "ticker": "TRMET",
-      "side": "LONG",
-      "entry_time": "closing auction",
-      "entry_price": 137.3,
-      "exit_time": "next opening auction",
-      "exit_price": null,
-      "ret": null,
-      "residual": 0.03308
-     },
      {
       "date": "2026-10-09",
       "ticker": "KONTR",
@@ -232,5 +199,8 @@
    }
   }
  ],
- "failures": {}
+ "failures": {},
+ "incomplete_sessions": [
+  "2026-10-12"
+ ]
 }
