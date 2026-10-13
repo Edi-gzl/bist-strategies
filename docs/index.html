@@ -6,33 +6,40 @@
 <title>BIST Strategy Live Log</title>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
 <style>
-:root{--bg:#f7f7f5;--card:#fff;--ink:#1c1917;--mute:#78716c;--line:#e7e5e4;--up:#15803d;--down:#b91c1c;--accent:#1d4ed8;--warn:#b45309}
-@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#0c0a09;--card:#1c1917;--ink:#f5f5f4;--mute:#a8a29e;--line:#2e2a27;--up:#4ade80;--down:#f87171;--accent:#60a5fa;--warn:#fbbf24}}
+:root{--bg:#f7f7f5;--card:#fff;--ink:#1c1917;--mute:#78716c;--line:#e7e5e4;--up:#15803d;--down:#b91c1c;--accent:#1d4ed8;--warn:#b45309;--bt:#f5f5f4}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#0c0a09;--card:#1c1917;--ink:#f5f5f4;--mute:#a8a29e;--line:#2e2a27;--up:#4ade80;--down:#f87171;--accent:#60a5fa;--warn:#fbbf24;--bt:#262220}}
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif}
 main{max-width:1100px;margin:auto;padding:24px 16px 72px}
 h1{margin:0;font-size:26px}
 h2{font-size:18px;margin:28px 0 10px}
+h3{font-size:15px;margin:16px 0 6px}
 .sub{color:var(--mute);margin:2px 0 18px}
 .note{color:var(--mute);font-size:13px}
 .banner{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--warn);border-radius:8px;padding:10px 14px;font-size:14px;margin-bottom:18px}
 .card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px;margin-bottom:16px}
 .row{display:flex;flex-wrap:wrap;gap:8px;align-items:center;justify-content:space-between}
+.btns{display:flex;flex-wrap:wrap;gap:4px}
 .btns button{font:inherit;font-size:13px;border:1px solid var(--line);background:transparent;color:var(--ink);padding:3px 10px;border-radius:6px;cursor:pointer}
 .btns button.on{background:var(--accent);border-color:var(--accent);color:#fff}
-.chart{position:relative;height:280px;margin-top:10px}
-.chart.small{height:220px}
+.chart{position:relative;height:300px;margin-top:10px}
+.chart.small{height:240px}
+@media (max-width:640px){.chart{height:380px}.chart.small{height:260px}.big{font-size:20px}main{padding:16px 12px 56px}}
 table{width:100%;border-collapse:collapse;font-size:13px;font-variant-numeric:tabular-nums}
 th,td{padding:6px;border-bottom:1px solid var(--line);text-align:right;white-space:nowrap}
 th:first-child,td:first-child{text-align:left}
 th{color:var(--mute);font-weight:500}
+th.grp{text-align:center;border-bottom:none;color:var(--ink)}
 .scroll{overflow-x:auto}
 .up{color:var(--up)}.down{color:var(--down)}
-.big{font-size:26px;font-weight:650;font-variant-numeric:tabular-nums}
-.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:10px;margin:10px 0}
+.big{font-size:24px;font-weight:650;font-variant-numeric:tabular-nums}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:10px;margin:6px 0 10px}
 .kpi .l{color:var(--mute);font-size:12px}.kpi .v{font-weight:600;font-variant-numeric:tabular-nums}
+.box{border:1px solid var(--line);border-radius:10px;padding:10px 12px;margin-top:10px}
+.box.bt{background:var(--bt)}
+.tag{display:inline-block;font-size:11px;padding:1px 6px;border-radius:999px;border:1px solid var(--line);color:var(--mute);margin-left:6px;vertical-align:middle}
 details{margin-top:10px}summary{cursor:pointer;color:var(--accent);font-size:14px}
-.log{max-height:360px;overflow:auto}
+.log{max-height:380px;overflow:auto}
 .log tr.day{cursor:pointer}
 .log tr.tr td{background:var(--bg);font-size:12px}
 .empty{padding:28px;text-align:center;color:var(--mute)}
@@ -43,11 +50,12 @@ footer{color:var(--mute);font-size:12px;margin-top:32px}
 <main>
 <h1>BIST Strategy Live Log</h1>
 <p class="sub" id="sub">Loading…</p>
-<div class="banner"><b>Hypothetical paper trading, not investment advice.</b> No orders are placed. Every trading day after the close, each strategy is run on that day's Yahoo Finance prices using the exact rules and clock times of the original research, and the result is appended to this log. Past days are never rewritten.</div>
+<div class="banner" id="banner"><b>Hypothetical paper trading, not investment advice.</b> No orders are placed. Every trading day after the close, each strategy is run on that day's Yahoo Finance / İş Yatırım prices with the exact rules and clock times of the original research, and the result is appended to this log. Past days are never rewritten.</div>
 
 <div class="card">
-  <div class="row"><b>All strategies — cumulative return since live start</b><div class="btns" data-target="all"></div></div>
+  <div class="row"><b>All strategies — cumulative return</b><div class="btns" data-target="all"></div></div>
   <div class="chart"><canvas id="c-all"></canvas></div>
+  <p class="note" style="margin:6px 0 0">Dashed = backtest (computed after the fact), solid = recorded live on the evening it happened. Each line starts at 0 at the left edge of the selected range.</p>
 </div>
 
 <div class="card scroll"><table id="overview"></table></div>
@@ -57,89 +65,104 @@ footer{color:var(--mute);font-size:12px;margin-top:32px}
 <footer id="foot"></footer>
 </main>
 <script>
-const RANGES=[["1M",21],["3M",63],["6M",126],["1Y",252],["All",0]];
+const RANGES=[["1M",21],["3M",63],["6M",126],["1Y",252],["5Y",1260],["All",0]];
 const pct=(v,d=2)=>v==null||!isFinite(v)?'–':(v>0?'+':'')+(v*100).toFixed(d)+'%';
+const num=(v,d=2)=>v==null||!isFinite(v)?'–':v.toFixed(d);
 const cls=v=>v==null?'':v>0?'up':v<0?'down':'';
 const esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const css=n=>getComputedStyle(document.documentElement).getPropertyValue(n).trim();
-const PAL=['#2563eb','#16a34a','#d97706','#9333ea','#dc2626','#0891b2'];
+const PAL=['#2563eb','#16a34a','#d97706','#9333ea','#dc2626','#0891b2','#be185d'];
 const charts={};
-let RF='';   // recorded_from: dates before this are reconstructed
+let RF='';
 const dash=labels=>({borderDash:ctx=>labels[ctx.p1DataIndex]<RF?[5,4]:undefined});
-
-function cum(days){let e=1;return days.map(d=>(e*=1+d.ret)-1)}
-function slice(days,n){return n?days.slice(-n):days}
-function rebase(days){let e=1;return days.map(d=>(e*=1+d.ret)-1)}
+const slice=(days,n)=>n?days.slice(-n):days;
+const SHORT={fund_liquidity_80:'Fund Liq. 80',focus_long:'Focus Long',daily_beta_pm:'Daily Beta',eodr_short:'EODR short',morning_gap_short:'Morning gap',ens5_basic:'ENS5 basic',ens5_s10c:'ENS5 S10c'};
+const narrow=()=>innerWidth<640;
 
 function drawAll(docs,n){
-  const dates=[...new Set(docs.flatMap(d=>slice(d.days,n).map(x=>x.date)))].sort();
+  // calendar = union of dates in the last n sessions (by the longest-running log)
+  let dates=[...new Set(docs.flatMap(d=>d.days.map(x=>x.date)))].sort();
+  if(n)dates=dates.slice(-n);
+  const first=dates[0];
   const ds=docs.map((d,i)=>{
-    const m=Object.fromEntries(slice(d.days,n).map(x=>[x.date,x.ret]));let e=1;
-    return{label:d.name,data:dates.map(t=>{if(t in m)e*=1+m[t];return +((e-1)*100).toFixed(3)}),borderColor:PAL[i%6],backgroundColor:PAL[i%6],borderWidth:2,pointRadius:dates.length<40?2:0,tension:.15,segment:dash(dates)}
+    const m=Object.fromEntries(d.days.filter(x=>x.date>=first).map(x=>[x.date,x.ret]));let e=1,started=false;
+    return{label:SHORT[d.id]||d.name,data:dates.map(t=>{if(t in m){started=true;e*=1+m[t]}return started?+((e-1)*100).toFixed(3):null}),
+      borderColor:PAL[i%7],backgroundColor:PAL[i%7],borderWidth:2,pointRadius:dates.length<40?2:0,tension:.1,spanGaps:true,segment:dash(dates)}
   });
-  render('all',{type:'line',data:{labels:dates,datasets:ds},options:opts('%',true)});
+  const o=opts('%',true);o.plugins.legend.position='bottom';
+  o.plugins.legend.labels={...o.plugins.legend.labels,boxWidth:10,font:{size:narrow()?10:12}};
+  render('all',{type:'line',data:{labels:dates,datasets:ds},options:o});
 }
 function drawOne(doc,i,n){
-  const d=slice(doc.days,n),c=rebase(d);
-  render(doc.id,{data:{labels:d.map(x=>x.date),datasets:[
-    {type:'line',label:'Cumulative %',data:c.map(v=>+(v*100).toFixed(3)),borderColor:PAL[i%6],borderWidth:2,pointRadius:d.length<40?2:0,yAxisID:'y',tension:.15,segment:dash(d.map(x=>x.date))},
-    {type:'bar',label:'Daily %',data:d.map(x=>+(x.ret*100).toFixed(3)),backgroundColor:d.map(x=>x.ret>=0?css('--up')+'99':css('--down')+'99'),yAxisID:'y1'}
-  ]},options:{...opts('%',true),scales:{x:axis(),y:{...axis('%'),position:'left',title:{display:true,text:'cumulative',color:css('--mute')}},y1:{...axis('%'),position:'right',grid:{drawOnChartArea:false},title:{display:true,text:'daily',color:css('--mute')}}}}});
+  const d=slice(doc.days,n);let e=1;const c=d.map(x=>(e*=1+x.ret)-1);const labels=d.map(x=>x.date);
+  const many=d.length>400;
+  const sets=[{type:'line',label:'Cumulative %',data:c.map(v=>+(v*100).toFixed(3)),borderColor:PAL[i%7],borderWidth:2,pointRadius:d.length<40?2:0,yAxisID:'y',tension:.1,segment:dash(labels)}];
+  if(!many)sets.push({type:'bar',label:'Daily %',data:d.map(x=>+(x.ret*100).toFixed(3)),backgroundColor:d.map(x=>x.ret>=0?css('--up')+'99':css('--down')+'99'),yAxisID:'y1'});
+  const scales={x:axis(),y:{...axis('%'),position:'left',title:{display:true,text:'cumulative',color:css('--mute')}}};
+  if(!many)scales.y1={...axis('%'),position:'right',grid:{drawOnChartArea:false},title:{display:true,text:'daily',color:css('--mute')}};
+  render(doc.id,{data:{labels,datasets:sets},options:{...opts('%',!many),scales}});
 }
-function axis(u){const t={color:css('--mute'),maxTicksLimit:8};if(u)t.callback=v=>v+u;return{ticks:t,grid:{color:css('--line')}}}
-function opts(u,legend){return{responsive:true,maintainAspectRatio:false,interaction:{mode:'index',intersect:false},
-  plugins:{legend:{display:legend,labels:{color:css('--ink'),boxWidth:12}},tooltip:{callbacks:{label:c=>`${c.dataset.label}: ${c.parsed.y>0?'+':''}${c.parsed.y.toFixed(2)}${u}`}}},
+function axis(u){const t={color:css('--mute'),maxTicksLimit:8,autoSkip:true,maxRotation:0};if(u)t.callback=v=>v+u;return{ticks:t,grid:{color:css('--line')}}}
+function opts(u,legend){return{responsive:true,maintainAspectRatio:false,animation:false,interaction:{mode:'index',intersect:false},
+  plugins:{legend:{display:legend,labels:{color:css('--ink'),boxWidth:12}},tooltip:{callbacks:{label:c=>c.parsed.y==null?'':`${c.dataset.label}: ${c.parsed.y>0?'+':''}${c.parsed.y.toFixed(2)}${u}`}}},
   scales:{x:axis(),y:axis(u)}}}
 function render(id,cfg){charts[id]?.destroy();charts[id]=new Chart(document.getElementById('c-'+id),cfg)}
-function buttons(el,fn){el.innerHTML=RANGES.map(([l,n])=>`<button data-n="${n}" class="${l==='All'?'on':''}">${l}</button>`).join('');
+function buttons(el,fn,def){el.innerHTML=RANGES.map(([l,n])=>`<button data-n="${n}" class="${l===def?'on':''}">${l}</button>`).join('');
   el.onclick=e=>{const b=e.target.closest('button');if(!b)return;el.querySelectorAll('button').forEach(x=>x.classList.toggle('on',x===b));fn(+b.dataset.n)}}
-
-function tradeRows(ts){return ts.map(t=>`<tr class="tr"><td>${esc(t.ticker)}</td><td>${esc(t.side)}</td><td>${esc(t.entry_time)} ${t.entry_price??''}</td><td>${t.exit_price==null?(t.exit_time?'pending':'held'):esc(t.exit_time)+' '+t.exit_price}</td><td class="${cls(t.ret)}">${pct(t.ret)}</td></tr>`).join('')}
+function tradeRows(ts){return ts.map(t=>`<tr class="tr"><td>${esc(t.ticker)}</td><td>${esc(t.side)}</td><td>${esc(t.entry_time??'')} ${t.entry_price??''}</td><td>${t.exit_price==null?(t.exit_time?'pending':'held'):esc(t.exit_time)+' '+t.exit_price}</td><td class="${cls(t.ret)}">${pct(t.ret)}</td><td class="note" style="text-align:left">${esc(t.note??'')}</td></tr>`).join('')}
+function statBox(title,s,isBt){
+  if(!s||!s.days)return `<div class="box${isBt?' bt':''}"><b>${title}</b><div class="note">No sessions yet.</div></div>`;
+  return `<div class="box${isBt?' bt':''}"><b>${title}</b> <span class="note">${s.first} → ${s.last} · ${s.days} sessions</span>
+   <div class="kpis"><div class="kpi"><div class="l">Total return</div><div class="v ${cls(s.total_return)}">${pct(s.total_return,1)}</div></div>
+   <div class="kpi"><div class="l">Per year (CAGR)</div><div class="v ${cls(s.cagr)}">${pct(s.cagr,1)}</div></div>
+   <div class="kpi"><div class="l">Sharpe</div><div class="v">${num(s.sharpe)}</div></div>
+   <div class="kpi"><div class="l">Max drawdown</div><div class="v">${pct(s.max_drawdown,1)}</div></div>
+   <div class="kpi"><div class="l">Win rate (active days)</div><div class="v">${s.hit_rate==null?'–':(s.hit_rate*100).toFixed(0)+'%'}</div></div></div></div>`}
 
 (async()=>{
   const S=await (await fetch('data/summary.json?'+Date.now())).json();
   RF=S.recorded_from||'';
-  document.getElementById('sub').textContent=`Record from ${S.live_start} · recorded live daily since ${RF} · last session ${S.last_session} · updated ${S.generated_at.replace('T',' ').slice(0,16)} UTC`;
-  if(RF>S.live_start)document.querySelector('.banner').insertAdjacentHTML('beforeend',` <br><b>Sessions ${S.live_start} to the day before ${RF} are reconstructed</b>: computed after the fact with the same code and data, shown dashed in charts and tagged in the logs. Every session from ${RF} on was recorded on the evening it happened.`);
-  const docs=[];
-  for(const s of S.strategies)docs.push(await (await fetch(`data/${s.id}.json?`+Date.now())).json());
+  document.getElementById('sub').textContent=`Recorded live since ${RF} · last session ${S.last_session} · updated ${S.generated_at.replace('T',' ').slice(0,16)} UTC`;
+  document.getElementById('banner').insertAdjacentHTML('beforeend',` <br><b>Backtest vs live:</b> sessions before ${RF} are a backtest (computed after the fact with the same code, as far back as exact data allows) and are shown dashed and tagged. Every session from ${RF} on was recorded on the evening it happened.`);
+  const docs=await Promise.all(S.strategies.map(async s=>(await fetch(`data/${s.id}.json?`+Date.now())).json()));
 
-  let ov='<tr><th>Strategy</th><th>Last session</th><th>Since start</th><th>Max drawdown</th><th>Win rate (active days)</th><th>Active / live days</th></tr>';
-  docs.forEach(d=>{const s=d.stats,last=d.days.at(-1);
-    ov+=`<tr><td><a href="#${d.id}" style="color:inherit">${esc(d.name)}</a></td><td class="${cls(last?.ret)}">${last?pct(last.ret):'–'}</td><td class="${cls(s.total_return)}">${pct(s.total_return)}</td><td>${pct(s.max_drawdown,1)}</td><td>${s.hit_rate==null?'–':(s.hit_rate*100).toFixed(0)+'%'}</td><td>${s.active_days??0} / ${s.days}</td></tr>`});
+  let ov='<tr><th></th><th></th><th class="grp" colspan="2">Live (since '+RF+')</th><th class="grp" colspan="5">Backtest</th></tr><tr><th>Strategy</th><th>Last session</th><th>Return</th><th>Days</th><th>Period</th><th>Total</th><th>Per year</th><th>Sharpe</th><th>Max DD</th></tr>';
+  docs.forEach(d=>{const L=d.stats_live||{},B=d.stats_backtest||{},last=d.days.at(-1);
+    ov+=`<tr><td><a href="#${d.id}" style="color:inherit">${esc(narrow()?(SHORT[d.id]||d.name):d.name)}</a></td><td class="${cls(last?.ret)}">${last?pct(last.ret)+' <span class="note">'+last.date.slice(5)+'</span>':'–'}</td>
+      <td class="${cls(L.total_return)}">${L.days?pct(L.total_return):'–'}</td><td>${L.days||0}</td>
+      <td>${B.days?B.first+' → '+B.last:'–'}</td><td class="${cls(B.total_return)}">${B.days?pct(B.total_return,1):'–'}</td>
+      <td class="${cls(B.cagr)}">${pct(B.cagr,1)}</td><td>${num(B.sharpe)}</td><td>${B.days?pct(B.max_drawdown,1):'–'}</td></tr>`});
   document.getElementById('overview').innerHTML=ov;
 
   const box=document.getElementById('strats');
   docs.forEach((d,i)=>{
-    const s=d.stats,last=d.days.at(-1);
+    const last=d.days.at(-1);
     const today=d.trades.filter(t=>t.date===S.last_session);
-    const log=[...d.days].reverse().map(x=>`<tr class="day" data-d="${x.date}"><td>${x.date}${x.reconstructed?' <span class="note">(reconstructed)</span>':''}</td><td class="${cls(x.ret)}">${pct(x.ret)}</td><td>${x.n_trades}</td></tr>`).join('');
     const hold=d.holdings&&Object.keys(d.holdings).length?`<details><summary>Current holdings (${Object.keys(d.holdings).length})</summary><p class="note">${Object.entries(d.holdings).sort((a,b)=>b[1]-a[1]).map(([k,v])=>esc(k)+' '+(v*100).toFixed(2)+'%').join(' · ')}</p></details>`:'';
     box.insertAdjacentHTML('beforeend',`<h2 id="${d.id}">${esc(d.name)}</h2><div class="card">
-      ${d.days.length?`<div class="kpis">
-        <div class="kpi"><div class="l">Last session</div><div class="v big ${cls(last.ret)}">${pct(last.ret)}</div></div>
-        <div class="kpi"><div class="l">Since ${d.live_start}</div><div class="v ${cls(s.total_return)}">${pct(s.total_return)}</div></div>
-        <div class="kpi"><div class="l">Max drawdown</div><div class="v">${pct(s.max_drawdown,1)}</div></div>
-        <div class="kpi"><div class="l">Best / worst day</div><div class="v"><span class="up">${pct(s.best_day)}</span> / <span class="down">${pct(s.worst_day)}</span></div></div>
-        <div class="kpi"><div class="l">Live days</div><div class="v">${s.days}</div></div></div>
-      <div class="row"><span class="note">Cumulative (line) and daily (bars) return</span><div class="btns" data-target="${d.id}"></div></div>
-      <div class="chart small"><canvas id="c-${d.id}"></canvas></div>`
-      :`<div class="empty">No live sessions yet — the first result appears after the evening run on ${d.live_start}.</div>`}
-      <h3 style="font-size:15px;margin:16px 0 6px">Trades on ${S.last_session}</h3>
-      <div class="scroll"><table><tr><th>Ticker</th><th>Side</th><th>Entry</th><th>Exit</th><th>Return</th></tr>${today.length?tradeRows(today):'<tr><td colspan="5" class="note" style="text-align:left">No trades this session</td></tr>'}</table></div>
+      ${d.days.length?`<div class="row"><div><span class="note">Last session ${last.date}</span><div class="big ${cls(last.ret)}">${pct(last.ret)}</div></div><div class="btns" data-target="${d.id}"></div></div>
+      <div class="chart small"><canvas id="c-${d.id}"></canvas></div>
+      ${statBox('Live',d.stats_live,false)}${statBox('Backtest',d.stats_backtest,true)}
+      ${d.backtest_note?`<p class="note">${esc(d.backtest_note)}</p>`:''}`
+      :`<div class="empty">No sessions yet — the first result appears after the evening run.</div>`}
+      <h3>Trades on ${S.last_session}</h3>
+      <div class="scroll"><table><tr><th>Ticker</th><th>Side</th><th>Entry</th><th>Exit</th><th>Return</th><th style="text-align:left">Note</th></tr>${today.length?tradeRows(today):'<tr><td colspan="6" class="note" style="text-align:left">No trades this session</td></tr>'}</table></div>
       ${hold}
-      <details><summary>Daily log (${d.days.length} sessions) — click a day for its trades</summary>
-        <div class="log scroll"><table data-id="${d.id}"><tr><th>Date</th><th>Return</th><th>Trades</th></tr>${log}</table></div></details>
-      <details><summary>Rules</summary><p class="note">${esc(d.spec)}</p>${d.deviations.length?`<p class="note"><b>Data differences vs original research:</b> ${d.deviations.map(esc).join(' ')}</p>`:''}</details>
+      <details data-log="${d.id}"><summary>Daily log (${d.days.length} sessions) — click a day for its trades</summary><div class="log scroll"></div></details>
+      <details><summary>Rules</summary><p class="note">${esc(d.spec)}</p>${(d.deviations||[]).length?`<p class="note"><b>Data differences vs original research:</b> ${d.deviations.map(esc).join(' ')}</p>`:''}</details>
     </div>`);
-    if(d.days.length){drawOne(d,i,0);buttons(box.querySelector(`.btns[data-target="${d.id}"]`),n=>drawOne(d,i,n))}
-    box.querySelector(`table[data-id="${d.id}"]`).onclick=e=>{const r=e.target.closest('tr.day');if(!r)return;
-      const nx=r.nextElementSibling;if(nx&&nx.classList.contains('tr')){while(r.nextElementSibling?.classList.contains('tr'))r.nextElementSibling.remove();return}
-      r.insertAdjacentHTML('afterend',tradeRows(d.trades.filter(t=>t.date===r.dataset.d))||'<tr class="tr"><td colspan="3">no trades</td></tr>')};
+    if(d.days.length){drawOne(d,i,0);buttons(box.querySelector(`.btns[data-target="${d.id}"]`),n=>drawOne(d,i,n),'All')}
+    const det=box.querySelector(`details[data-log="${d.id}"]`);
+    det.addEventListener('toggle',()=>{const wrap=det.querySelector('.log');if(!det.open||wrap.firstChild)return;
+      const rows=[...d.days].reverse().map(x=>`<tr class="day" data-d="${x.date}"><td>${x.date}${x.reconstructed?'<span class="tag">backtest</span>':''}</td><td class="${cls(x.ret)}">${pct(x.ret)}</td><td>${x.n_trades??0}</td></tr>`).join('');
+      wrap.innerHTML=`<table><tr><th>Date</th><th>Return</th><th>Trades</th></tr>${rows}</table>`;
+      wrap.onclick=e=>{const r=e.target.closest('tr.day');if(!r)return;
+        const nx=r.nextElementSibling;if(nx&&nx.classList.contains('tr')){while(r.nextElementSibling?.classList.contains('tr'))r.nextElementSibling.remove();return}
+        const ts=d.trades.filter(t=>t.date===r.dataset.d);
+        r.insertAdjacentHTML('afterend',ts.length?tradeRows(ts):`<tr class="tr"><td colspan="3">${r.querySelector('.tag')&&(+r.children[2].textContent)>0?'trade details kept for recent sessions only':'no trades'}</td></tr>`)}});
   });
-  if(docs.some(d=>d.days.length)){drawAll(docs,0);buttons(document.querySelector('.btns[data-target="all"]'),n=>drawAll(docs,n))}
-  else document.getElementById('c-all').parentElement.innerHTML=`<div class="empty">The live record starts on ${S.live_start}. Charts fill in automatically every trading day.</div>`;
-  document.getElementById('foot').innerHTML=`Data: ${esc(S.data_source)}. ENS5v2 is not published: its signal needs the original research's five residual models, which can't be rebuilt from public data.${Object.keys(S.failures||{}).length?' Last run failures: '+esc(JSON.stringify(S.failures)):''}`;
+  if(docs.some(d=>d.days.length)){drawAll(docs,63);buttons(document.querySelector('.btns[data-target="all"]'),n=>drawAll(docs,n),'3M')}
+  document.getElementById('foot').innerHTML=`Data: ${esc(S.data_source)}.${(S.repaired_sessions||[]).length?' Sessions missing from Yahoo\'s daily feed were rebuilt from İş Yatırım: '+esc(S.repaired_sessions.join(', '))+'.':''}${Object.keys(S.failures||{}).length?' Last run failures: '+esc(JSON.stringify(S.failures)):''}`;
 })().catch(e=>{document.getElementById('sub').textContent='Could not load data: '+e});
 </script>
 </body>

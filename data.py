@@ -15,6 +15,7 @@ from __future__ import annotations
 import time
 from pathlib import Path
 
+import numpy as np
 import pandas as pd
 import yfinance as yf
 
@@ -78,9 +79,82 @@ def daily(tickers=UNIVERSE, period: str = "3y") -> dict[str, pd.DataFrame]:
     return d
 
 
+ISY_URL = "https://www.isyatirim.com.tr/_layouts/15/Isyatirim.Website/Common/Data.aspx/HisseTekil"
+
+
+def _isy_days(ticker: str, start: pd.Timestamp, end: pd.Timestamp) -> pd.DataFrame:
+    import requests
+    for attempt in range(3):
+        try:
+            r = requests.get(ISY_URL, params={"hisse": ticker, "startdate": f"{start:%d-%m-%Y}",
+                                              "enddate": f"{end:%d-%m-%Y}"},
+                             timeout=90, headers={"User-Agent": "Mozilla/5.0"})
+            v = pd.DataFrame(r.json().get("value", []))
+            if v.empty:
+                return v
+            v["date"] = pd.to_datetime(v["HGDG_TARIH"], format="%d-%m-%Y")
+            return v.set_index("date")
+        except Exception:
+            time.sleep(5 * (attempt + 1))
+    return pd.DataFrame()
+
+
+def fill_missing_sessions(D: dict, sessions, M: dict | None = None, workers: int = 16) -> list:
+    """Yahoo's daily feed occasionally drops a whole BIST session (e.g. 2026-10-12)
+    even though its minute feed has it. Rebuild those rows from Is Yatirim:
+    Close = official close (HG_KAPANIS, == Yahoo close on normal days), High/Low,
+    Volume = TRY value / close; Adj Close = Close x previous day's adjustment factor;
+    Open = 09:55 opening-auction minute bar when minute data is supplied."""
+    from concurrent.futures import ThreadPoolExecutor
+    idx = D["Close"].index
+    missing = [pd.Timestamp(s) for s in sessions if pd.Timestamp(s) not in idx and pd.Timestamp(s) > idx[0]]
+    if not missing:
+        return []
+    tickers = list(D["Close"].columns)
+    lo, hi = min(missing), max(missing)
+    with ThreadPoolExecutor(workers) as ex:
+        got = dict(zip(tickers, ex.map(lambda t: _isy_days(t, lo, hi), tickers)))
+    new_idx = idx.union(pd.DatetimeIndex(missing))
+    for f in D:
+        D[f] = D[f].reindex(new_idx)
+    filled = []
+    for d in missing:
+        prev = new_idx[new_idx.get_loc(d) - 1]
+        n = 0
+        for t in tickers:
+            v = got.get(t)
+            if v is None or v.empty or d not in v.index:
+                continue
+            c = float(v.at[d, "HG_KAPANIS"])
+            if not c > 0:
+                continue
+            fac = D["Adj Close"].at[prev, t] / D["Close"].at[prev, t]
+            D["Close"].at[d, t] = c
+            D["Adj Close"].at[d, t] = c * (fac if np.isfinite(fac) and fac > 0 else 1.0)
+            D["High"].at[d, t] = float(v.at[d, "HG_MAX"])
+            D["Low"].at[d, t] = float(v.at[d, "HG_MIN"])
+            D["Volume"].at[d, t] = float(v.at[d, "HGDG_HACIM"]) / c
+            if M is not None and t in M["Open"].columns:
+                o = M["Open"][t].get(pd.Timestamp(f"{d.date()} 09:55"), np.nan)
+                D["Open"].at[d, t] = o
+            n += 1
+        if n >= 0.9 * len(tickers):
+            filled.append(str(d.date()))
+        else:                                   # not enough coverage: leave the session out
+            for f in D:
+                D[f] = D[f].drop(index=d)
+    return filled
+
+
 def minute(tickers=UNIVERSE, period: str = "7d") -> dict[str, pd.DataFrame]:
     """1-minute bars indexed by bar START time (Istanbul local)."""
     return _download(tickers, period, "1m")
+
+
+def intraday_5m(tickers=UNIVERSE) -> dict[str, pd.DataFrame]:
+    """5-minute bars (last ~60 days), labelled by bar START like the 1-minute data.
+    The 17:55 bar's close is the last trade before 18:00; the 09:55 bar is the opening auction."""
+    return _download(tickers, "60d", "5m")
 
 
 def minute_dates(M) -> list[pd.Timestamp]:

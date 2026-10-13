@@ -1,0 +1,48 @@
+id,name,k,category,description,source,n_missing,json_file,first_5_factors
+M01,Brogaard_FF5_mom,6,baseline,"Classical Fama-French 5-factor + momentum (Brogaard 2024 baseline). Size, Value, Momentum, Investment, Profitability, Ma","Brogaard 2024 / Fama-French 1993, 2015",0,M01_Brogaard_FF5_mom.json,R1_size|F01_BM|F03_MOM_12_1|R6_ag|R7_gp
+M02,Attention_paper_33chars,31,paper_replication,All Epstein-Wang-Choi-Pelger (2025) Table 1 firm characteristics we can build on BIST data. 33 of 39; 6 are unavailable ,"Epstein, Wang, Choi, Pelger (ICAIF 2025) Table 1",1,M02_Attention_paper_33chars.json,R61_r2_1|R4_mom_12_1|R62_r12_7|R58_r36_13|R5_rev_1m
+M03,R16_TestD_POST_D_k20,20,R16_stepwise,"R16 Test D v3 forward stepwise winner at POST/Daily. 20 factors, raw R2 62.08%, adj R2 26.41%.",R16 multifreq_D_v3_final_R2_ALL.csv POST/D,0,M03_R16_TestD_POST_D_k20.json,R46_mom_x_vol|R3c_beta_6m|R52_rel2high_52w|R56_ret_w1|R48_acc_x_size
+M04,R16_TestD_POST_M_k7,7,R16_stepwise,R16 Test D v3 forward stepwise winner at POST/Monthly. 7 factors. Lower R2 but more parsimonious.,R16 multifreq_D_v3_final_R2_ALL.csv POST/M,0,M04_R16_TestD_POST_M_k7.json,R3c_beta_6m|R43_F_score|R12_acc|R5_rev_1m|R60_log_vol
+M05,R16_TestE_POST_D_top10,10,R16_lasso,R16 Test E (chars-only Lasso) top 10 by selection freq at POST/Daily.,R16 test_E_lasso_POST_D.csv,0,M05_R16_TestE_POST_D_top10.json,R5c_rev_5d|R46_mom_x_vol|R4b_mom_6_1|R21_turnover_60d|R41_earnings_stability
+M06,R16_TestE_POST_M_top10,10,R16_lasso,R16 Test E (chars-only Lasso) top 10 by selection freq at POST/Monthly.,R16 test_E_lasso_POST_M.csv,0,M06_R16_TestE_POST_M_top10.json,R16_amh_60d|R22b_iskew_60d|R46_mom_x_vol|R5c_rev_5d|R23b_try_beta_252d
+M07,R16_TestF_POST_M_top10_HEADLINE,10,R16_hybrid,"R16 Test F (hybrid chars+PCs Lasso) top 10 at POST/Monthly. THE paper headline model - adj R2 28.36%, includes PC4 and P",R16 test_F_hybrid_POST_M.csv,0,M07_R16_TestF_POST_M_top10_HEADLINE.json,R46_mom_x_vol|R52_rel2high_52w|R55_ret_d1|R6b_inv_to_ta|R9_nsi
+M08,R16_TestF_POST_W_top10,10,R16_hybrid,R16 Test F hybrid top 10 at POST/Weekly. adj R2 22.20%.,R16 test_F_hybrid_POST_W.csv,0,M08_R16_TestF_POST_W_top10.json,R61_r2_1|PC1_loading_252d|PC7_loading_252d|R55_ret_d1|R23b_try_beta_252d
+M09,R16_TestF_POST_D_top10,10,R16_hybrid,R16 Test F hybrid top 10 at POST/Daily. adj R2 22.83%.,R16 test_F_hybrid_POST_D.csv,0,M09_R16_TestF_POST_D_top10.json,R55_ret_d1|PC1_loading_252d|R46_mom_x_vol|R35_try_dn_beta_60d|R41_earnings_stability
+M10,CrossCell_Stable_8factor,8,consensus,Factors selected by Test F in >=5 of 8 cells across POST and FULL. The most robust cross-frequency factor set.,R16 cross-cell consensus,0,M10_CrossCell_Stable_8factor.json,R52_rel2high_52w|R55_ret_d1|R46_mom_x_vol|R61_r2_1|R62_r12_7
+M11,R16_CORE8_robust,8,robust,WLS-FM robust set: factors with |t_WLS|>2 at both POST/M AND FULL/M. The most statistically robust priced factors.,R16 wls_fm_per_factor.csv,0,M11_R16_CORE8_robust.json,R43_F_score|R36_fcf_yield|R25_dwc_ta|MKT_beta_6m_sn|R29_op_margin
+M12,Minimal_5factor,5,parsimony,Most parsimonious robust set: top 5 by WLS |t| from CORE8.,R16 distilled CORE5,0,M12_Minimal_5factor.json,R43_F_score|R36_fcf_yield|R46_mom_x_vol|R12_acc|MKT_beta_6m_sn
+M13,Parsimonious_8_chars_plus_PCs,8,parsimony,5 most-selected chars + 3 most-selected PC loadings. Hybrid lite.,R16 Test F top selections,0,M13_Parsimonious_8_chars_plus_PCs.json,R46_mom_x_vol|R52_rel2high_52w|R55_ret_d1|R43_F_score|R23b_try_beta_252d
+M14,KitchenSink_top25_byT,22,breadth,"Top 25 factors by max(|t_A|) across POST × {D, W, M} from R17 pre-filter.",R17 prefilter_keepers.csv top 25,3,M14_KitchenSink_top25_byT.json,R29_op_margin|R29c_em|R43_F_score|R25_dwc_ta|MKT_beta_6m_sn
+M15,PCs_only_10,10,statistical,"10 PC loadings only. Pure statistical / ""no economic story"" baseline.",pc_loadings_panel.parquet,0,M15_PCs_only_10.json,PC1_loading_252d|PC2_loading_252d|PC3_loading_252d|PC4_loading_252d|PC5_loading_252d
+M16,Momentum_only_7,7,category_isolation,Momentum/reversal category only — tests whether price-based signals alone suffice.,category isolation,0,M16_Momentum_only_7.json,R4_mom_12_1|R4b_mom_6_1|R5_rev_1m|R46_mom_x_vol|R52_rel2high_52w
+M17,Value_only_6,6,category_isolation,Value category only — tests value-investing alpha on BIST.,category isolation,0,M17_Value_only_6.json,R2_bm|F01_BM|F02_EP|R13_cf_yield|R36_fcf_yield
+M18,Quality_only_6,6,category_isolation,Profitability/quality category only.,category isolation,0,M18_Quality_only_6.json,R7_gp|R29_op_margin|R29b_oat|R29c_em|R43_F_score
+M19,LowVol_only_5,5,category_isolation,Low-volatility / risk category only.,category isolation,0,M19_LowVol_only_5.json,R15_ivol_60d|R15b_rvol_60d|R22_skew_60d|R22b_iskew_60d|LowVol_z
+M20,BIST_FF3_classical_3factor,3,baseline,"Classical Fama-French 3-factor on BIST: Size, Value, Market.",Fama-French 1993,0,M20_BIST_FF3_classical_3factor.json,R1_size|F01_BM|MKT_beta
+M21,BIST_FF3_plus_momentum,4,baseline,BIST FF3 + Carhart momentum.,Carhart 1997,0,M21_BIST_FF3_plus_momentum.json,R1_size|F01_BM|MKT_beta|F03_MOM_12_1
+M22,R17_TestD_FULL_D_k25,18,R17_stepwise,R17 Test D v4 forward stepwise winner at FULL/Daily with rank-quantile.,R17 test_D_v4_final_R2_ALL.csv FULL/D,7,M22_R17_TestD_FULL_D_k25.json,R3c_beta_6m|R52_rel2high_52w|R18_ceq_12m|R25_dwc_ta|R62_r12_7
+M23,R17_TestD_POST_D_k25,18,R17_stepwise,R17 Test D v4 winner at POST/Daily with rank-quantile.,R17 test_D_v4_final_R2_ALL.csv POST/D,7,M23_R17_TestD_POST_D_k25.json,MKT_beta_6m|R52_rel2high_52w|R5c_rev_5d|R25_dwc_ta|R43_F_score
+M24,R16_TestD_FULL_M_k7,7,R16_stepwise,R16 Test D winner at FULL/Monthly (different period winner).,R16 multifreq_D_v3_final_R2_ALL.csv FULL/M,0,M24_R16_TestD_FULL_M_k7.json,R52_rel2high_52w|R59_tobins_q|R12_acc_sn|R18_ceq_12m|R60_log_vol
+M25,Tree_Consensus_3PC_plus_7chars,10,tree_consensus,R17 tree-based consensus: 3 most-selected PCs + 7 chars from RF/XGB top-rank cells.,R17 tree_summary_ALL.csv,0,M25_Tree_Consensus_3PC_plus_7chars.json,PC6_loading_252d|PC8_loading_252d|PC2_loading_252d|MKT_beta_36m|R1_size
+N01_rev5_only,N01_rev5_only,1,experimental_batch,more-models batch,extended,0,N01_rev5_only.json,R5c_rev_5d
+N02_mom61_only,N02_mom61_only,1,experimental_batch,more-models batch,extended,0,N02_mom61_only.json,R4b_mom_6_1
+N03_micro,N03_micro,5,experimental_batch,more-models batch,extended,0,N03_micro.json,R55_ret_d1|R56_ret_w1|R5c_rev_5d|R21_turnover_60d|R60_log_vol
+N04_risk_tail,N04_risk_tail,5,experimental_batch,more-models batch,extended,0,N04_risk_tail.json,R15_ivol_60d|R16_amh_60d|R17_max_21d|R22c_coskew_60d|R57_std_w1
+N05_val_qual,N05_val_qual,5,experimental_batch,more-models batch,extended,0,N05_val_qual.json,Value_z|Quality_z|R36_fcf_yield|R8_roa|R43_F_score
+N06_beta_suite,N06_beta_suite,6,experimental_batch,more-models batch,extended,0,N06_beta_suite.json,R3_beta_36m|R3b_beta_1y|R3c_beta_6m|MKT_beta|R23b_try_beta_252d
+N07_mom_rev_mix,N07_mom_rev_mix,6,experimental_batch,more-models batch,extended,0,N07_mom_rev_mix.json,R4b_mom_6_1|R5c_rev_5d|R5_rev_1m|R52_rel2high_52w|R61_r2_1
+N08_liquidity,N08_liquidity,6,experimental_batch,more-models batch,extended,0,N08_liquidity.json,R16_amh_60d|R21_turnover_60d|R54_ltm_turnover|R53_suv_60d|R60_log_vol
+N09_sector_neut,N09_sector_neut,5,experimental_batch,more-models batch,extended,0,N09_sector_neut.json,R12_acc_sn|MKT_beta_6m_sn|R1_size_sn|R4_mom_12_1_sn|R8_roa_sn
+N10_skew_tail,N10_skew_tail,5,experimental_batch,more-models batch,extended,0,N10_skew_tail.json,R22_skew_60d|R22b_iskew_60d|R22c_coskew_60d|R17_max_21d|R17b_max5_21d
+N11_quality_fund,N11_quality_fund,8,experimental_batch,more-models batch,extended,0,N11_quality_fund.json,R8_roa|R7_gp|R29_op_margin|R24_int_cov|R41_earnings_stability
+N12_kitchen30,N12_kitchen30,30,experimental_batch,more-models batch,extended,0,N12_kitchen30.json,R5c_rev_5d|R4b_mom_6_1|R5_rev_1m|R52_rel2high_52w|R15_ivol_60d
+ALL91_lasso,ALL91_lasso,91,lasso_diag,all factors Lasso,diag,0,ALL91_lasso.json,R1_size|R3_beta_36m|R3b_beta_1y|R3c_beta_6m|R4_mom_12_1
+PCA_1_252,PCA_1_252,1,pca_variant,Single PC 252d,PCA_variant,0,PCA_1_252.json,PC1_loading_252d
+PCA_3_252,PCA_3_252,3,pca_variant,3 PCs 252d,PCA_variant,0,PCA_3_252.json,"PC1_loading_252d,PC2_loading_252d,PC3_loading_252d"
+PCA_5_252,PCA_5_252,5,pca_variant,5 PCs 252d,PCA_variant,0,PCA_5_252.json,"PC1_loading_252d,PC2_loading_252d,PC3_loading_252d,PC4_loading_252d,PC5_loading_252d"
+PCA_1_126,PCA_1_126,1,pca_variant,Single PC 126d,PCA_variant,0,PCA_1_126.json,PC1_loading_126d
+PCA_3_126,PCA_3_126,3,pca_variant,3 PCs 126d,PCA_variant,0,PCA_3_126.json,"PC1_loading_126d,PC2_loading_126d,PC3_loading_126d"
+PCA_5_126,PCA_5_126,5,pca_variant,5 PCs 126d,PCA_variant,0,PCA_5_126.json,"PC1_loading_126d,PC2_loading_126d,PC3_loading_126d,PC4_loading_126d,PC5_loading_126d"
+PCA_5_252,PCA_5_252,5,pca_variant,5 PCs 252d,PCA_variant,0,PCA_5_252.json,"PC1_loading_252d,PC2_loading_252d,PC3_loading_252d,PC4_loading_252d,PC5_loading_252d"
+BETA_126,BETA_126,1,beta_only,Market beta 6m,beta_only,0,BETA_126.json,MKT_beta_6m
+BETA_252,BETA_252,1,beta_only,Market beta 1yr,beta_only,0,BETA_252.json,MKT_beta

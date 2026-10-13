@@ -2,3 +2,25 @@ __pycache__/
 *.pyc
 .venv/
 .claude/
+
+# ENS5 working files (rebuilt every run; only ens5/state and ens5/out are kept)
+ens5/data/
+ens5/claude_data
+ens5/Fable-5
+ens5/INTRADAY_DAILY
+ens5/Daily_live
+ens5/Research_done/claude_data/raw/
+ens5/Research_done/claude_data/results/cross_factor/
+ens5/Research_done/claude_data/results/F_intraday/01_panels/
+ens5/Research_done/claude_data/results/F_intraday/03_residuals/
+ens5/Research_done/claude_data/results/F_intraday/0[4-9]*/
+ens5/Research_done/claude_data/results/F_intraday/summary/
+ens5/Research_done/claude_data/results/[A-E]_*/
+ens5/Research_done/claude_data/logs/
+ens5/Research_done/claude_data/figures/
+ens5/Research_done/Fable-5/
+ens5/Research_done/INTRADAY_DAILY/data/
+ens5/Research_done/INTRADAY_DAILY/results/
+ens5/Research_done/INTRADAY_DAILY/*.csv
+ens5/Research_done/INTRADAY_DAILY/*.html
+ens5/Research_done/INTRADAY_DAILY/*.png

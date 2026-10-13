@@ -1,0 +1,11 @@
+{
+  "model_id": "BETA_126",
+  "name": "BETA_126",
+  "k": 1,
+  "factors": [
+    "MKT_beta_6m"
+  ],
+  "description": "Market beta only (6-month rolling = ~126d)",
+  "source": "beta_only",
+  "category": "beta_only"
+}

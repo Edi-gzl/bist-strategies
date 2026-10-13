@@ -1,0 +1,19 @@
+{
+  "id": "M10",
+  "name": "CrossCell_Stable_8factor",
+  "description": "Factors selected by Test F in >=5 of 8 cells across POST and FULL. The most robust cross-frequency factor set.",
+  "source": "R16 cross-cell consensus",
+  "category": "consensus",
+  "factors": [
+    "R52_rel2high_52w",
+    "R55_ret_d1",
+    "R46_mom_x_vol",
+    "R61_r2_1",
+    "R62_r12_7",
+    "R16_amh_60d",
+    "R9_nsi",
+    "R23b_try_beta_252d"
+  ],
+  "k": 8,
+  "missing_from_panel": []
+}

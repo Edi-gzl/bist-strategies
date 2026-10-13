@@ -1,58 +1,44 @@
 # BIST Strategy Live Log
 
-Five BIST strategies from the original research, reimplemented rule-for-rule and
-run live every weekday on Yahoo Finance data. Each session's trades and returns
-are appended to a public log with charts. No backtest, no local data files.
+Seven BIST strategies from the original research, run every weekday on Yahoo Finance
+and İş Yatırım data. Each session's trades and returns are appended to a public log
+with charts; sessions before 2026-10-12 are a clearly labelled backtest.
+
+Site: https://edi-gzl.github.io/bist-strategies/
 
 | File | Role |
 |---|---|
-| `data.py` | Only file that talks to the data source (Yahoo: daily bars + 1-minute bars). |
-| `strategies.py` | The five strategies, with line references to the original research code. |
+| `data.py` | Yahoo daily + 1-minute bars; rebuilds sessions missing from Yahoo's daily feed from İş Yatırım. |
+| `strategies.py` | The strategies, with line references to the original research code. |
+| `ens5/` | ENS5v2: the original research pipeline, bundled and run daily (see `ens5/README.md`). |
 | `universe_all.txt` | The 582-name universe used by Fund Liquidity 80. |
 | `run.py` | Daily run: computes the latest sessions and appends them to `docs/data/*.json`. |
-| `docs/index.html` | Website: combined chart, per-strategy charts (1M/3M/6M/1Y/All), daily log, trades. |
-| `.github/workflows/daily.yml` | Runs `run.py` Mon-Fri 19:00 Istanbul and commits the log. |
+| `backfill.py` | One-off: adds the longest exact backtest each strategy's data allows. |
+| `docs/index.html` | Website: combined chart, per-strategy charts, live vs backtest stats, daily log, trades. |
+| `.github/workflows/daily.yml` | Runs ENS5 + `run.py` after the close (several times, GitHub starts late) and commits. |
 
-## Strategies and fidelity
+## Strategies, history depth and fidelity
 
-| Strategy | Clock times used | Checked against original results |
+| Strategy | Backtest from | Checked against original results |
 |---|---|---|
-| Fund Liquidity 80 (FL26131) | closing auction, biweekly | 0.994 daily correlation, Dec 2025-Jun 2026 |
-| Focus Long | closing auction, daily | 221 of 234 days identical (<1 bp) |
-| Daily BETA PM | 17:59 price, closing + next opening auction | rules line-matched; no minute history to compare |
-| EODR short | 16:00 signal, 16:01 entry, closing auction | rules line-matched; no minute history to compare |
-| Morning gap short (10:01 Core) | opening auction, 10:01 entry, closing auction | rules line-matched; no minute history to compare |
-
-ENS5v2 is not included: its signal is an ensemble of five residual models from
-the original research pipeline that cannot be rebuilt from public data.
+| Fund Liquidity 80 (FL26131) | 2020-01-02 (original start; cash-rate table begins 2020) | 0.975 daily corr. 2020-2026, every year within a few points |
+| Focus Long | 2008-05-16 (first date with 80% of the 48 names) | 0.94 corr. 2020-2026; 0.998 on 2025-26 |
+| Daily BETA PM | ~60 sessions (Yahoo 5-min gives the exact 18:00 price) | rules line-matched |
+| EODR short | 7 sessions (needs exact 16:01 one-minute prices) | rules line-matched |
+| Morning gap short (10:01 Core) | 7 sessions (needs exact 10:01 one-minute prices) | rules line-matched |
+| ENS5v2 basic / S10c | ~60 sessions (Yahoo 5-min history) | bundle reproduces the original pipeline exactly on the same inputs |
 
 ## Log rules
 
-- `LIVE_START` in `run.py` (2026-10-12) is the first live session.
-- Each session is written once, re-checked on the next run (late Yahoo
-  corrections, overnight exits), then frozen forever.
-- A missed run is back-filled automatically while the session is still in
-  Yahoo's ~7-day 1-minute window.
+- `RECORDED_FROM` in `run.py` (2026-10-12): first session recorded live. Earlier = backtest.
+- A session is recorded only after it has closed (after 18:30 Istanbul) with complete data;
+  it is re-checked on the next run, then frozen forever.
+- Missed runs are back-filled automatically while the session is inside Yahoo's
+  ~7-day 1-minute window.
 
 ## Run locally
 
     pip install -r requirements.txt
+    python ens5/run_ens5.py
     python run.py
     python -m http.server 8765 --directory docs     # open http://localhost:8765
-
-## Put it online (one time)
-
-1. Create a new **public** GitHub repo, e.g. `bist-strategies`.
-2. From this folder:
-
-        git init
-        git add .
-        git commit -m "initial"
-        git branch -M main
-        git remote add origin https://github.com/YOURNAME/bist-strategies.git
-        git push -u origin main
-
-3. Repo **Settings -> Pages -> Deploy from a branch -> main / docs -> Save**.
-4. Repo **Actions** tab -> enable workflows. It then runs by itself every weekday.
-
-Site: `https://YOURNAME.github.io/bist-strategies/`

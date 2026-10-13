@@ -31,7 +31,7 @@ LIVE_START = "2026-10-02"
 RECORDED_FROM = "2026-10-12"
 ROOT = Path(__file__).resolve().parent
 # strategies whose return on day d comes from a position opened on the previous session
-OVERNIGHT = {"focus_long", "daily_beta_pm", "fund_liquidity_80"}
+OVERNIGHT = {"focus_long", "daily_beta_pm", "fund_liquidity_80", "ens5_basic", "ens5_s10c"}
 
 
 def load(path: Path, default):
@@ -44,10 +44,14 @@ def stats(days: list[dict]) -> dict:
     r = pd.Series([d["ret"] for d in days], dtype=float)
     eq = (1 + r).cumprod()
     active = r[r != 0]
+    years = r.size / 252
+    sd = r.std(ddof=1) if r.size > 1 else 0.0
     return {
         "days": int(r.size),
         "active_days": int(active.size),
         "total_return": float(eq.iloc[-1] - 1),
+        "cagr": float(eq.iloc[-1] ** (1 / years) - 1) if years >= 0.5 and eq.iloc[-1] > 0 else None,
+        "sharpe": float(r.mean() / sd * np.sqrt(252)) if sd > 0 and r.size >= 20 else None,
         "max_drawdown": float(min(0.0, (eq / eq.cummax() - 1).min())),
         "hit_rate": float((active > 0).mean()) if active.size else None,
         "best_day": float(r.max()), "worst_day": float(r.min()),
@@ -65,16 +69,35 @@ def main() -> int:
 
     D = data.daily(period="3y")
     M = data.minute(period="7d")
-    W = [d for d in data.minute_dates(M) if d in D["Close"].index]
+    sessions = data.minute_dates(M)
+
+    def repair(Dx, name):
+        # rows Yahoo publishes with (almost) no closes count as missing; then refill from Is Yatirim
+        thin = Dx["Close"].index[Dx["Close"].notna().mean(axis=1) < 0.5]
+        for f in Dx:
+            Dx[f] = Dx[f].drop(index=thin)
+        filled = data.fill_missing_sessions(Dx, sessions[-6:], M if name == "focus" else None)
+        if filled:
+            print(f"Yahoo daily gap repaired from Is Yatirim ({name}): {filled}")
+        return filled
+
+    repaired = repair(D, "focus")
+    W = [d for d in sessions if d in D["Close"].index]
     # Guard: don't record a session whose data Yahoo hasn't fully published yet.
     # It stays un-recorded and the next run back-fills it.
     incomplete = []
+    now_ist = pd.Timestamp.now(tz="Europe/Istanbul").tz_localize(None)
     for d in list(W[-2:]):
         closes = D["Close"].loc[d].notna().mean()
         bars = M["Close"].loc[M["Close"].index.normalize() == d]
         last_bar = bars.dropna(how="all").index.max()
+        # a session is over once its date has passed, or after 18:30 on the day itself
+        session_over = d < now_ist.normalize() or now_ist >= d + pd.Timedelta(hours=18, minutes=30)
         full_day = last_bar is not pd.NaT and last_bar.hour >= 17
-        half_day = last_bar is not pd.NaT and last_bar.hour < 14   # e.g. holiday eves
+        half_day = last_bar is not pd.NaT and last_bar.hour < 14 and session_over   # holiday eves
+        if not session_over:                 # still trading today: simply not ready, not an error
+            W.remove(d)
+            continue
         if closes < 0.9 or not (full_day or half_day):
             incomplete.append(str(d.date()))
             W.remove(d)
@@ -94,6 +117,8 @@ def main() -> int:
                "incomplete_sessions": incomplete}
 
     D_all = data.daily(data.UNIVERSE_ALL, period="2y")
+    repaired += repair(D_all, "all 582")
+    summary["repaired_sessions"] = sorted(set(repaired))
 
     for fn in strategies.ALL:
         try:
@@ -132,19 +157,28 @@ def main() -> int:
                    if t["date"] >= str(live_start.date()) and
                    (t["date"] in recomputed or t["date"] == str(last_session.date()))]
         trades.sort(key=lambda t: (t["date"], t["side"], t["ticker"]))
+        from collections import Counter
+        per_day = Counter(t["date"] for t in trades)
         for d in days:
-            d["n_trades"] = sum(1 for t in trades if t["date"] == d["date"])
+            # backtest days may carry a trade count without the (bulky) trade list
+            d["n_trades"] = per_day.get(d["date"], d.get("n_trades", 0))
+            d["reconstructed"] = d["date"] < RECORDED_FROM          # backtest / computed after the fact
 
         today = str(last_session.date())
+        live_days = [d for d in days if d["date"] >= RECORDED_FROM]
+        bt_days = [d for d in days if d["date"] < RECORDED_FROM]
         doc = {"id": res.id, "name": res.name, "spec": res.spec, "deviations": res.deviations,
-               "live_start": str(live_start.date()), "last_session": today,
-               "stats": stats(days), "days": days, "trades": trades,
+               "live_start": str(live_start.date()), "recorded_from": RECORDED_FROM, "last_session": today,
+               "stats": stats(days), "stats_live": stats(live_days), "stats_backtest": stats(bt_days),
+               "backtest_note": prev.get("backtest_note", ""),
+               "days": days, "trades": trades,
                "holdings": getattr(res, "holdings", None)}
         path.write_text(json.dumps(doc, indent=1), encoding="utf-8")
 
         today_row = next((d for d in days if d["date"] == today), None)
         summary["strategies"].append({
             "id": res.id, "name": res.name, "stats": doc["stats"],
+            "stats_live": doc["stats_live"], "stats_backtest": doc["stats_backtest"],
             "today": {"date": today, "ret": today_row["ret"] if today_row else None,
                       "trades": [t for t in trades if t["date"] == today]},
         })

@@ -1,0 +1,21 @@
+{
+  "id": "M05",
+  "name": "R16_TestE_POST_D_top10",
+  "description": "R16 Test E (chars-only Lasso) top 10 by selection freq at POST/Daily.",
+  "source": "R16 test_E_lasso_POST_D.csv",
+  "category": "R16_lasso",
+  "factors": [
+    "R5c_rev_5d",
+    "R46_mom_x_vol",
+    "R4b_mom_6_1",
+    "R21_turnover_60d",
+    "R41_earnings_stability",
+    "R23b_try_beta_252d",
+    "R50_sector_xs_beta",
+    "R35_try_dn_beta_60d",
+    "R5_rev_1m",
+    "R22c_coskew_60d"
+  ],
+  "k": 10,
+  "missing_from_panel": []
+}

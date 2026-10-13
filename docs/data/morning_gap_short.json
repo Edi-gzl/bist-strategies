@@ -6,11 +6,40 @@
   "Liquidity filter uses daily volume x typical price (original: sum of 1-minute traded value) for the 20-day median ranking."
  ],
  "live_start": "2026-10-02",
- "last_session": "2026-10-09",
+ "recorded_from": "2026-10-12",
+ "last_session": "2026-10-12",
  "stats": {
+  "days": 7,
+  "active_days": 6,
+  "total_return": -0.0028145963634209625,
+  "cagr": null,
+  "sharpe": null,
+  "max_drawdown": -0.043134386437944205,
+  "hit_rate": 0.6666666666666666,
+  "best_day": 0.019831210341922645,
+  "worst_day": -0.028353044513410697,
+  "first": "2026-10-02",
+  "last": "2026-10-12"
+ },
+ "stats_live": {
+  "days": 1,
+  "active_days": 1,
+  "total_return": 0.0198312103419227,
+  "cagr": null,
+  "sharpe": null,
+  "max_drawdown": 0.0,
+  "hit_rate": 1.0,
+  "best_day": 0.019831210341922645,
+  "worst_day": 0.019831210341922645,
+  "first": "2026-10-12",
+  "last": "2026-10-12"
+ },
+ "stats_backtest": {
   "days": 6,
   "active_days": 5,
   "total_return": -0.022205445838190285,
+  "cagr": null,
+  "sharpe": null,
   "max_drawdown": -0.043134386437944205,
   "hit_rate": 0.6,
   "best_day": 0.013144273515322658,
@@ -18,6 +47,7 @@
   "first": "2026-10-02",
   "last": "2026-10-09"
  },
+ "backtest_note": "",
  "days": [
   {
    "date": "2026-10-02",
@@ -53,6 +83,12 @@
    "date": "2026-10-09",
    "ret": -0.01521266735934057,
    "reconstructed": true,
+   "n_trades": 2
+  },
+  {
+   "date": "2026-10-12",
+   "ret": 0.019831210341922645,
+   "reconstructed": false,
    "n_trades": 2
   }
  ],
@@ -155,6 +191,28 @@
    "exit_price": 43.9,
    "ret": -0.02098,
    "gap": 0.0185
+  },
+  {
+   "date": "2026-10-12",
+   "ticker": "ASTOR",
+   "side": "SHORT",
+   "entry_time": "10:01 open",
+   "entry_price": 205.6,
+   "exit_time": "closing auction",
+   "exit_price": 197.5,
+   "ret": 0.0384,
+   "gap": 0.0127
+  },
+  {
+   "date": "2026-10-12",
+   "ticker": "HALKB",
+   "side": "SHORT",
+   "entry_time": "10:01 open",
+   "entry_price": 44.14,
+   "exit_time": "closing auction",
+   "exit_price": 44.04,
+   "ret": 0.00127,
+   "gap": 0.0119
   }
  ],
  "holdings": null

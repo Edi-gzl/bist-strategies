@@ -4,11 +4,40 @@
  "spec": "At 16:00 rank stocks by open -> 16:00 return. If the worst (or 2nd worst) is z <= -2 vs the others, down < 9%, and not near the -10% floor, short it at the first minute after 16:00 and cover in the closing auction. 10 bp round trip.",
  "deviations": [],
  "live_start": "2026-10-02",
- "last_session": "2026-10-09",
+ "recorded_from": "2026-10-12",
+ "last_session": "2026-10-12",
  "stats": {
+  "days": 7,
+  "active_days": 4,
+  "total_return": -0.017056344697435,
+  "cagr": null,
+  "sharpe": null,
+  "max_drawdown": -0.0223676682151005,
+  "hit_rate": 0.5,
+  "best_day": 0.004037783375314908,
+  "worst_day": -0.0147061408095156,
+  "first": "2026-10-02",
+  "last": "2026-10-12"
+ },
+ "stats_live": {
+  "days": 1,
+  "active_days": 1,
+  "total_return": 0.004037783375314907,
+  "cagr": null,
+  "sharpe": null,
+  "max_drawdown": 0.0,
+  "hit_rate": 1.0,
+  "best_day": 0.004037783375314908,
+  "worst_day": 0.004037783375314908,
+  "first": "2026-10-12",
+  "last": "2026-10-12"
+ },
+ "stats_backtest": {
   "days": 6,
   "active_days": 3,
   "total_return": -0.021009297082264067,
+  "cagr": null,
+  "sharpe": null,
   "max_drawdown": -0.0223676682151005,
   "hit_rate": 0.3333333333333333,
   "best_day": 0.001389449886908146,
@@ -16,6 +45,7 @@
   "first": "2026-10-02",
   "last": "2026-10-09"
  },
+ "backtest_note": "",
  "days": [
   {
    "date": "2026-10-02",
@@ -51,6 +81,12 @@
    "date": "2026-10-09",
    "ret": 0.001389449886908146,
    "reconstructed": true,
+   "n_trades": 1
+  },
+  {
+   "date": "2026-10-12",
+   "ret": 0.004037783375314908,
+   "reconstructed": false,
    "n_trades": 1
   }
  ],
@@ -89,6 +125,18 @@
    "exit_price": 83.5,
    "ret": 0.00139,
    "z": -3.49,
+   "fallback_rank": 1
+  },
+  {
+   "date": "2026-10-12",
+   "ticker": "ASTOR",
+   "side": "SHORT",
+   "entry_time": "first 1-min open after 16:00",
+   "entry_price": 198.5,
+   "exit_time": "closing auction",
+   "exit_price": 197.5,
+   "ret": 0.00404,
+   "z": -2.35,
    "fallback_rank": 1
   }
  ],

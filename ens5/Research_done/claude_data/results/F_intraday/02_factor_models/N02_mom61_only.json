@@ -1,0 +1,12 @@
+{
+  "id": "N02_mom61_only",
+  "name": "N02_mom61_only",
+  "factors": [
+    "R4b_mom_6_1"
+  ],
+  "k": 1,
+  "category": "experimental_batch",
+  "description": "more-models batch",
+  "source": "extended",
+  "missing_from_panel": []
+}

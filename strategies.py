@@ -14,6 +14,7 @@ Source of each rule is cited as <original file>: <lines>.
 from __future__ import annotations
 
 from dataclasses import dataclass, field
+from pathlib import Path
 
 import numpy as np
 import pandas as pd
@@ -336,17 +337,18 @@ def _robust126(lr: pd.DataFrame) -> pd.DataFrame:
     out = np.full(v.shape, np.nan)
     if len(v) < 126:
         return pd.DataFrame(out, index=lr.index, columns=lr.columns)
-    win = sliding_window_view(v, 126, axis=0)              # (n-125, m, 126)
-    cnt = np.isfinite(win).sum(axis=2)
-    with np.errstate(all="ignore"):
-        med = np.nanmedian(win, axis=2)
-        mad = np.nanmedian(np.abs(win - med[..., None]), axis=2)
-        scale = 1.4826 * mad
-        sd = np.nanstd(win, axis=2, ddof=1)
-        scale = np.where(np.isfinite(scale) & (scale > 1e-8), scale, sd)
-        val = np.sqrt(126) * med / scale
-    val[(cnt < 100) | ~np.isfinite(val)] = np.nan
-    out[125:] = val
+    for c0 in range(0, v.shape[1], 40):                    # column batches keep memory small
+        win = sliding_window_view(v[:, c0:c0 + 40], 126, axis=0)   # (n-125, m, 126)
+        cnt = np.isfinite(win).sum(axis=2)
+        with np.errstate(all="ignore"):
+            med = np.nanmedian(win, axis=2)
+            mad = np.nanmedian(np.abs(win - med[..., None]), axis=2)
+            scale = 1.4826 * mad
+            sd = np.nanstd(win, axis=2, ddof=1)
+            scale = np.where(np.isfinite(scale) & (scale > 1e-8), scale, sd)
+            val = np.sqrt(126) * med / scale
+        val[(cnt < 100) | ~np.isfinite(val)] = np.nan
+        out[125:, c0:c0 + 40] = val
     return pd.DataFrame(out, index=lr.index, columns=lr.columns)
 
 
@@ -441,4 +443,81 @@ def fund_liquidity_80(D, M, W, live_start=None, top_n=75):
     return res
 
 
-ALL = [fund_liquidity_80, focus_long, daily_beta_pm, eodr_short, morning_gap_short]
+# =====================================================================
+# ENS5v2 (basic and S10c) — computed by ens5/run_ens5.py with the friend's
+# own pipeline; here we only turn its outputs into daily returns + trades.
+# =====================================================================
+ENS5_OUT = Path(__file__).resolve().parent / "ens5" / "out"
+ENS5_DEVIATIONS = [
+    "Inputs from Yahoo + Is Yatirim only: USD/TRY from Yahoo (original: central-bank EVDS), "
+    "risk-free rate 0 (original: EVDS policy rate).",
+    "Sessions before 2026-10-13 were built from Yahoo 5-minute bars; later sessions from 1-minute bars.",
+]
+
+
+def _ens5(D, variant: str):
+    daily = pd.read_csv(ENS5_OUT / "ens5_daily.csv", index_col=0, parse_dates=True)
+    picks = pd.read_csv(ENS5_OUT / "ens5_picks.csv", parse_dates=["date"])
+    pend_fp = ENS5_OUT / "ens5_pending.csv"
+    pend = pd.read_csv(pend_fp, parse_dates=["date"]) if pend_fp.exists() else pd.DataFrame()
+    C, O = D["Close"], D["Open"]
+    idx = C.index
+    col = "TOP3" if variant == "basic" else "S10c"
+    px = lambda F, d, t: _f(F.at[d, t], 2) if (t in F.columns and d in F.index) else None
+    rets, trades = {}, []
+    for T, row in daily.iterrows():
+        T1 = _next(idx, T)
+        if T1 is None or not np.isfinite(row[col]):
+            continue
+        rets[T1] = float(row[col])
+        g = picks[picks.date == T]
+        longs = g[g.leg == "LONG"].sort_values("signal", ascending=False)    # build_pick_panel order
+        shorts = g[g.leg == "SHORT"].sort_values("signal", ascending=False)
+        a3 = variant == "s10c" and bool(row["a3_long_top1_only"])
+        b4 = variant == "s10c" and bool(row["b4_extend_long"])
+        if a3:
+            longs = longs.head(1)
+        for r in longs.itertuples():
+            ret = (1 + r.r_on) * (1 + r.r_id) - 1 if b4 else r.r_on
+            note = "A3: whole long leg in top pick" if a3 else ""
+            note += ("; " if note and b4 else "") + ("B4: held through next day" if b4 else "")
+            trades.append({"date": str(T.date()), "ticker": r.ticker, "side": "LONG",
+                           "entry_time": "closing auction", "entry_price": px(C, T, r.ticker),
+                           "exit_time": f"{'closing' if b4 else 'opening'} auction {T1.date()}",
+                           "exit_price": px(C if b4 else O, T1, r.ticker), "ret": _f(ret, 5), "note": note})
+        if not bool(row["gap_skip_short"]):
+            half = variant == "s10c" and bool(row["short_halved"])
+            for r in shorts.itertuples():
+                trades.append({"date": str(T1.date()), "ticker": r.ticker, "side": "SHORT",
+                               "entry_time": "opening auction", "entry_price": px(O, T1, r.ticker),
+                               "exit_time": "closing auction", "exit_price": px(C, T1, r.ticker),
+                               "ret": _f(-r.r_id, 5), "note": "short leg halved (momentum streak)" if half else ""})
+    if len(pend):
+        T = pend.date.max()
+        for r in pend[(pend.date == T) & (pend.leg == "LONG")].itertuples():
+            trades.append({"date": str(T.date()), "ticker": r.ticker, "side": "LONG",
+                           "entry_time": "closing auction", "entry_price": _f(r.p_auct, 2),
+                           "exit_time": "next opening auction", "exit_price": None, "ret": None,
+                           "note": "pending" + (" (S10c sizing set at execution)" if variant == "s10c" else "")})
+    name = "ENS5v2 — 17:45-18:00 reversal, " + ("basic (top3 + gap skip)" if variant == "basic" else "S10c rules")
+    spec = ("Each day at 18:00, five factor models explain every stock's 17:45-18:00 return; the "
+            "unexplained part (residual) is ranked and averaged. Long the 3 biggest unusual drops in the "
+            "closing auction (sell at the next opening auction); short the 3 biggest unusual rises at the next "
+            "opening auction (cover at its closing auction). Short skipped when the market's overnight gap "
+            "is unusually large. 5 bp per side.")
+    if variant == "s10c":
+        spec += (" S10c adds: A3 - whole long leg in the top pick when the 3 long signals are unusually close; "
+                 "B4 - hold longs through the next day when their signals are unusually strong; "
+                 "halve the short after a 5-day long momentum streak.")
+    return Result(f"ens5_{variant}", name, pd.Series(rets, dtype=float), trades, spec, ENS5_DEVIATIONS)
+
+
+def ens5_basic(D, M, W):
+    return _ens5(D, "basic")
+
+
+def ens5_s10c(D, M, W):
+    return _ens5(D, "s10c")
+
+
+ALL = [fund_liquidity_80, focus_long, daily_beta_pm, eodr_short, morning_gap_short, ens5_basic, ens5_s10c]

@@ -2,11 +2,12 @@ name: daily-run
 
 on:
   schedule:
-    # 19:00 Istanbul (UTC+3, no DST), Mon-Fri: closing auction ends 18:10 and
-    # Yahoo's BIST feed can lag ~15 min, so wait before reading the day's prices.
-    - cron: "0 16 * * 1-5"
-    # 21:00 Istanbul retry: catches a session Yahoo hadn't finished publishing at 19:00.
-    - cron: "0 18 * * 1-5"
+    # Istanbul = UTC+3 (no DST). GitHub often starts scheduled runs late, so there
+    # are several runs; each one is safe to repeat (sessions are frozen once final).
+    - cron: "0 16 * * 1-5"    # 19:00 Istanbul, after the closing auction + Yahoo delay
+    - cron: "0 18 * * 1-5"    # 21:00 retry
+    - cron: "30 21 * * 1-5"   # 00:30 retry
+    - cron: "0 4 * * 2-6"     # 07:00 next morning, last catch-up before the open
   workflow_dispatch:          # "Run workflow" button for manual runs / catch-up
 
 permissions:
@@ -19,7 +20,7 @@ concurrency:
 jobs:
   run:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 75
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -27,6 +28,10 @@ jobs:
           python-version: "3.12"
           cache: pip
       - run: pip install -r requirements.txt
+      - name: ENS5v2 pipeline (friend's code, Yahoo + Is Yatirim)
+        id: ens5
+        continue-on-error: true
+        run: python -W ignore ens5/run_ens5.py
       - name: Run strategies
         id: run
         run: |
@@ -40,12 +45,12 @@ jobs:
         run: |
           git config user.name "strategy-bot"
           git config user.email "strategy-bot@users.noreply.github.com"
-          git add docs/data
+          git add docs/data ens5/state ens5/out
           git diff --cached --quiet || git commit -m "log: $(date -u +%F)"
           git pull --rebase
           git push
       - name: Flag partial problems (sends GitHub's failure email)
-        if: steps.run.outputs.code == '2'
+        if: steps.run.outputs.code == '2' || steps.ens5.outcome == 'failure'
         run: |
-          echo "::error::A strategy failed or Yahoo data was incomplete - see the 'Run strategies' log."
+          echo "::error::ENS5 step failed, a strategy failed, or Yahoo data was incomplete - see the logs above."
           exit 1
