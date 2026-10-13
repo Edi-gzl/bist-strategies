@@ -8,32 +8,32 @@
  ],
  "live_start": "2026-10-02",
  "recorded_from": "2026-10-12",
- "last_session": "2026-10-12",
+ "last_session": "2026-10-13",
  "stats": {
-  "days": 58,
-  "active_days": 58,
-  "total_return": -0.015892760898766345,
+  "days": 59,
+  "active_days": 59,
+  "total_return": -0.014485598919961262,
   "cagr": null,
-  "sharpe": -0.19153114786855885,
+  "sharpe": -0.16298165966010977,
   "max_drawdown": -0.0706021711104845,
-  "hit_rate": 0.4482758620689655,
+  "hit_rate": 0.4576271186440678,
   "best_day": 0.04430282798936428,
   "worst_day": -0.046071339409629854,
   "first": "2026-07-23",
-  "last": "2026-10-12"
+  "last": "2026-10-13"
  },
  "stats_live": {
-  "days": 1,
-  "active_days": 1,
-  "total_return": -0.0009243229098687689,
+  "days": 2,
+  "active_days": 2,
+  "total_return": 0.0005042422412564473,
   "cagr": null,
   "sharpe": null,
   "max_drawdown": 0.0,
-  "hit_rate": 0.0,
-  "best_day": -0.000924322909868731,
-  "worst_day": -0.000924322909868731,
+  "hit_rate": 0.5,
+  "best_day": 0.0014298788745675814,
+  "worst_day": -0.0009243149748552884,
   "first": "2026-10-12",
-  "last": "2026-10-12"
+  "last": "2026-10-13"
  },
  "stats_backtest": {
   "days": 57,
@@ -394,7 +394,13 @@
   },
   {
    "date": "2026-10-12",
-   "ret": -0.000924322909868731,
+   "ret": -0.0009243149748552884,
+   "reconstructed": false,
+   "n_trades": 6
+  },
+  {
+   "date": "2026-10-13",
+   "ret": 0.0014298788745675814,
    "reconstructed": false,
    "n_trades": 6
   }
@@ -4260,6 +4266,72 @@
    "exit_price": 84.35,
    "ret": -0.00897,
    "residual": -0.06761
+  },
+  {
+   "date": "2026-10-13",
+   "ticker": "BIMAS",
+   "side": "LONG",
+   "entry_time": "closing auction",
+   "entry_price": 411.25,
+   "exit_time": "next opening auction",
+   "exit_price": null,
+   "ret": null,
+   "residual": 0.0358
+  },
+  {
+   "date": "2026-10-13",
+   "ticker": "KCHOL",
+   "side": "LONG",
+   "entry_time": "closing auction",
+   "entry_price": 212.5,
+   "exit_time": "next opening auction",
+   "exit_price": null,
+   "ret": null,
+   "residual": 0.02557
+  },
+  {
+   "date": "2026-10-13",
+   "ticker": "PETKM",
+   "side": "LONG",
+   "entry_time": "closing auction",
+   "entry_price": 20.88,
+   "exit_time": "next opening auction",
+   "exit_price": null,
+   "ret": null,
+   "residual": 0.02745
+  },
+  {
+   "date": "2026-10-13",
+   "ticker": "ASTOR",
+   "side": "SHORT",
+   "entry_time": "opening auction",
+   "entry_price": 196.4,
+   "exit_time": "closing auction",
+   "exit_price": 196.0,
+   "ret": 0.00204,
+   "residual": -0.02628
+  },
+  {
+   "date": "2026-10-13",
+   "ticker": "GUBRF",
+   "side": "SHORT",
+   "entry_time": "opening auction",
+   "entry_price": 407.75,
+   "exit_time": "closing auction",
+   "exit_price": 406.0,
+   "ret": 0.00429,
+   "residual": -0.02119
+  },
+  {
+   "date": "2026-10-13",
+   "ticker": "SASA",
+   "side": "SHORT",
+   "entry_time": "opening auction",
+   "entry_price": 1.87,
+   "exit_time": "closing auction",
+   "exit_price": 1.86,
+   "ret": 0.00535,
+   "residual": -0.02792
   }
  ],
  "holdings": null

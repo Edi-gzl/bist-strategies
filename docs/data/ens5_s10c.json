@@ -8,32 +8,32 @@
  ],
  "live_start": "2026-10-02",
  "recorded_from": "2026-10-12",
- "last_session": "2026-10-12",
+ "last_session": "2026-10-13",
  "stats": {
-  "days": 58,
-  "active_days": 58,
-  "total_return": 0.06259977397770866,
+  "days": 59,
+  "active_days": 59,
+  "total_return": 0.06707873206917792,
   "cagr": null,
-  "sharpe": 1.4807724320166626,
+  "sharpe": 1.5628895867558927,
   "max_drawdown": -0.060629549728883236,
-  "hit_rate": 0.6206896551724138,
+  "hit_rate": 0.6271186440677966,
   "best_day": 0.0241494701050248,
   "worst_day": -0.0358389639118445,
   "first": "2026-07-22",
-  "last": "2026-10-12"
+  "last": "2026-10-13"
  },
  "stats_live": {
-  "days": 1,
-  "active_days": 1,
-  "total_return": 0.001975271614108154,
+  "days": 2,
+  "active_days": 2,
+  "total_return": 0.006198691720295857,
   "cagr": null,
   "sharpe": null,
   "max_drawdown": 0.0,
   "hit_rate": 1.0,
-  "best_day": 0.0019752716141082,
+  "best_day": 0.0042150941503617,
   "worst_day": 0.0019752716141082,
   "first": "2026-10-12",
-  "last": "2026-10-12"
+  "last": "2026-10-13"
  },
  "stats_backtest": {
   "days": 57,
@@ -395,6 +395,12 @@
   {
    "date": "2026-10-12",
    "ret": 0.0019752716141082,
+   "reconstructed": false,
+   "n_trades": 6
+  },
+  {
+   "date": "2026-10-13",
+   "ret": 0.0042150941503617,
    "reconstructed": false,
    "n_trades": 6
   }
@@ -3827,10 +3833,10 @@
    "side": "LONG",
    "entry_time": "closing auction",
    "entry_price": 197.5,
-   "exit_time": "next opening auction",
-   "exit_price": null,
-   "ret": null,
-   "note": "pending (S10c sizing set at execution)"
+   "exit_time": "opening auction 2026-10-13",
+   "exit_price": 196.4,
+   "ret": -0.00557,
+   "note": ""
   },
   {
    "date": "2026-10-12",
@@ -3838,10 +3844,10 @@
    "side": "LONG",
    "entry_time": "closing auction",
    "entry_price": 80.95,
-   "exit_time": "next opening auction",
-   "exit_price": null,
-   "ret": null,
-   "note": "pending (S10c sizing set at execution)"
+   "exit_time": "opening auction 2026-10-13",
+   "exit_price": 81.5,
+   "ret": 0.00679,
+   "note": ""
   },
   {
    "date": "2026-10-12",
@@ -3849,10 +3855,10 @@
    "side": "LONG",
    "entry_time": "closing auction",
    "entry_price": 20.28,
-   "exit_time": "next opening auction",
-   "exit_price": null,
-   "ret": null,
-   "note": "pending (S10c sizing set at execution)"
+   "exit_time": "opening auction 2026-10-13",
+   "exit_price": 20.24,
+   "ret": -0.00197,
+   "note": ""
   },
   {
    "date": "2026-10-12",
@@ -3885,6 +3891,72 @@
    "exit_time": "closing auction",
    "exit_price": 34.44,
    "ret": -0.01713,
+   "note": "short leg halved (momentum streak)"
+  },
+  {
+   "date": "2026-10-13",
+   "ticker": "ALARK",
+   "side": "LONG",
+   "entry_time": "closing auction",
+   "entry_price": 108.4,
+   "exit_time": "next opening auction",
+   "exit_price": null,
+   "ret": null,
+   "note": "pending (S10c sizing set at execution)"
+  },
+  {
+   "date": "2026-10-13",
+   "ticker": "HALKB",
+   "side": "LONG",
+   "entry_time": "closing auction",
+   "entry_price": 43.9,
+   "exit_time": "next opening auction",
+   "exit_price": null,
+   "ret": null,
+   "note": "pending (S10c sizing set at execution)"
+  },
+  {
+   "date": "2026-10-13",
+   "ticker": "TUPRS",
+   "side": "LONG",
+   "entry_time": "closing auction",
+   "entry_price": 385.75,
+   "exit_time": "next opening auction",
+   "exit_price": null,
+   "ret": null,
+   "note": "pending (S10c sizing set at execution)"
+  },
+  {
+   "date": "2026-10-13",
+   "ticker": "ALARK",
+   "side": "SHORT",
+   "entry_time": "opening auction",
+   "entry_price": 110.0,
+   "exit_time": "closing auction",
+   "exit_price": 108.4,
+   "ret": 0.01455,
+   "note": "short leg halved (momentum streak)"
+  },
+  {
+   "date": "2026-10-13",
+   "ticker": "FROTO",
+   "side": "SHORT",
+   "entry_time": "opening auction",
+   "entry_price": 73.8,
+   "exit_time": "closing auction",
+   "exit_price": 72.65,
+   "ret": 0.01558,
+   "note": "short leg halved (momentum streak)"
+  },
+  {
+   "date": "2026-10-13",
+   "ticker": "ULKER",
+   "side": "SHORT",
+   "entry_time": "opening auction",
+   "entry_price": 87.4,
+   "exit_time": "closing auction",
+   "exit_price": 84.9,
+   "ret": 0.0286,
    "note": "short leg halved (momentum streak)"
   }
  ],
