@@ -1,4 +1,4 @@
-name: daily-run
+﻿name: daily-run
 
 on:
   schedule:
@@ -19,7 +19,7 @@ concurrency:
 
 jobs:
   run:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04   # pinned: ubuntu-latest moves to 26.04 on 2026-10-19
     timeout-minutes: 75
     steps:
       - uses: actions/checkout@v4
