@@ -48,361 +48,446 @@
   "first": "2026-07-22",
   "last": "2026-10-09"
  },
+ "bm_live": {
+  "days": 2,
+  "active_days": 2,
+  "total_return": -0.0012473314005009284,
+  "cagr": null,
+  "sharpe": null,
+  "max_drawdown": -0.009399950000000046,
+  "hit_rate": 0.5,
+  "best_day": 0.00822998,
+  "worst_day": -0.00939995,
+  "first": "2026-10-12",
+  "last": "2026-10-13"
+ },
+ "bm_backtest": {
+  "days": 57,
+  "active_days": 57,
+  "total_return": -0.11911769581064302,
+  "cagr": null,
+  "sharpe": -2.150469196934521,
+  "max_drawdown": -0.18402356912554396,
+  "hit_rate": 0.47368421052631576,
+  "best_day": 0.02959609,
+  "worst_day": -0.05540481,
+  "first": "2026-07-22",
+  "last": "2026-10-09"
+ },
  "backtest_note": "Backtest over Yahoo's 60-day 5-minute window, computed with the original pipeline.",
  "days": [
   {
    "date": "2026-07-22",
    "ret": -0.0162486726481525,
    "reconstructed": true,
-   "n_trades": 6
+   "n_trades": 6,
+   "bm": 0.0117933
   },
   {
    "date": "2026-07-23",
    "ret": -0.0002064778130675,
    "reconstructed": true,
-   "n_trades": 6
+   "n_trades": 6,
+   "bm": -0.0043285
   },
   {
    "date": "2026-07-24",
    "ret": 0.0003566637750356,
    "reconstructed": true,
-   "n_trades": 6
+   "n_trades": 6,
+   "bm": -0.00950438
   },
   {
    "date": "2026-07-27",
    "ret": 0.0109814035530167,
    "reconstructed": true,
-   "n_trades": 6
+   "n_trades": 6,
+   "bm": -0.01212721
   },
   {
    "date": "2026-07-28",
    "ret": 0.0114915472626451,
    "reconstructed": true,
-   "n_trades": 6
+   "n_trades": 6,
+   "bm": -0.00630858
   },
   {
    "date": "2026-07-29",
    "ret": 0.0176969926774222,
    "reconstructed": true,
-   "n_trades": 6
+   "n_trades": 6,
+   "bm": -0.01361062
   },
   {
    "date": "2026-07-30",
    "ret": 0.0104557445245137,
    "reconstructed": true,
-   "n_trades": 6
+   "n_trades": 6,
+   "bm": -0.01545737
   },
   {
    "date": "2026-07-31",
    "ret": 0.0062880765675524,
    "reconstructed": true,
-   "n_trades": 3
+   "n_trades": 3,
+   "bm": 0.01242763
   },
   {
    "date": "2026-08-04",
    "ret": -0.0091196908407922,
    "reconstructed": true,
-   "n_trades": 6
+   "n_trades": 6,
+   "bm": 0.02068531
   },
   {
    "date": "2026-08-05",
    "ret": -0.0258772641532308,
    "reconstructed": true,
-   "n_trades": 6
+   "n_trades": 6,
+   "bm": 0.00111041
   },
   {
    "date": "2026-08-06",
    "ret": 0.0021128149272613,
    "reconstructed": true,
-   "n_trades": 6
+   "n_trades": 6,
+   "bm": 0.00698384
   },
   {
    "date": "2026-08-07",
    "ret": 0.0073602553058034,
    "reconstructed": true,
-   "n_trades": 6
+   "n_trades": 6,
+   "bm": -0.00140588
   },
   {
    "date": "2026-08-10",
    "ret": 0.0010110078703001,
    "reconstructed": true,
-   "n_trades": 6
+   "n_trades": 6,
+   "bm": 0.00233676
   },
   {
    "date": "2026-08-11",
    "ret": 0.0045895212411156,
    "reconstructed": true,
-   "n_trades": 6
+   "n_trades": 6,
+   "bm": -0.00775432
   },
   {
    "date": "2026-08-12",
    "ret": -0.0083038604953038,
    "reconstructed": true,
-   "n_trades": 6
+   "n_trades": 6,
+   "bm": 0.02959609
   },
   {
    "date": "2026-08-13",
    "ret": 0.000571155320097,
    "reconstructed": true,
-   "n_trades": 6
+   "n_trades": 6,
+   "bm": 0.0015663
   },
   {
    "date": "2026-08-14",
    "ret": 0.0034702063697962,
    "reconstructed": true,
-   "n_trades": 6
+   "n_trades": 6,
+   "bm": 0.00283746
   },
   {
    "date": "2026-08-17",
    "ret": 0.0007464962279327,
    "reconstructed": true,
-   "n_trades": 6
+   "n_trades": 6,
+   "bm": -0.00283653
   },
   {
    "date": "2026-08-18",
    "ret": 0.0066743060356866,
    "reconstructed": true,
-   "n_trades": 6
+   "n_trades": 6,
+   "bm": -0.00029009
   },
   {
    "date": "2026-08-19",
    "ret": -0.007129937219233,
    "reconstructed": true,
-   "n_trades": 6
+   "n_trades": 6,
+   "bm": 0.02342865
   },
   {
    "date": "2026-08-20",
    "ret": 0.0132067434743109,
    "reconstructed": true,
-   "n_trades": 6
+   "n_trades": 6,
+   "bm": -0.00432257
   },
   {
    "date": "2026-08-21",
    "ret": 0.0161243629712333,
    "reconstructed": true,
-   "n_trades": 6
+   "n_trades": 6,
+   "bm": 0.00821726
   },
   {
    "date": "2026-08-24",
    "ret": 0.0133239777412868,
    "reconstructed": true,
-   "n_trades": 6
+   "n_trades": 6,
+   "bm": -0.00091629
   },
   {
    "date": "2026-08-25",
    "ret": -0.001173687060423,
    "reconstructed": true,
-   "n_trades": 6
+   "n_trades": 6,
+   "bm": -0.0019377
   },
   {
    "date": "2026-08-26",
    "ret": 0.0012882950659829,
    "reconstructed": true,
-   "n_trades": 6
+   "n_trades": 6,
+   "bm": 0.00950019
   },
   {
    "date": "2026-08-27",
    "ret": -0.0010749736064736,
    "reconstructed": true,
-   "n_trades": 6
+   "n_trades": 6,
+   "bm": -0.00242288
   },
   {
    "date": "2026-08-28",
    "ret": -0.0019834298694012,
    "reconstructed": true,
-   "n_trades": 6
+   "n_trades": 6,
+   "bm": 0.00453498
   },
   {
    "date": "2026-08-31",
    "ret": 0.0197448333928659,
    "reconstructed": true,
-   "n_trades": 6
+   "n_trades": 6,
+   "bm": -0.0210018
   },
   {
    "date": "2026-09-01",
    "ret": 0.0036014173769628,
    "reconstructed": true,
-   "n_trades": 6
+   "n_trades": 6,
+   "bm": -0.00733214
   },
   {
    "date": "2026-09-02",
    "ret": -0.0015800642089728,
    "reconstructed": true,
-   "n_trades": 6
+   "n_trades": 6,
+   "bm": -0.0125378
   },
   {
    "date": "2026-09-03",
    "ret": 0.0007895493985328,
    "reconstructed": true,
-   "n_trades": 3
+   "n_trades": 3,
+   "bm": -0.00840531
   },
   {
    "date": "2026-09-04",
    "ret": 0.000577584463184,
    "reconstructed": true,
-   "n_trades": 1
+   "n_trades": 1,
+   "bm": 0.00573482
   },
   {
    "date": "2026-09-07",
    "ret": -0.0086729031506386,
    "reconstructed": true,
-   "n_trades": 6
+   "n_trades": 6,
+   "bm": 0.009934
   },
   {
    "date": "2026-09-08",
    "ret": -0.0151030542163825,
    "reconstructed": true,
-   "n_trades": 6
+   "n_trades": 6,
+   "bm": 0.01792732
   },
   {
    "date": "2026-09-09",
    "ret": -0.0008284969883712,
    "reconstructed": true,
-   "n_trades": 4
+   "n_trades": 4,
+   "bm": 0.00695579
   },
   {
    "date": "2026-09-10",
    "ret": 0.0069055677098813,
    "reconstructed": true,
-   "n_trades": 6
+   "n_trades": 6,
+   "bm": -0.00769361
   },
   {
    "date": "2026-09-11",
    "ret": -0.0010219404028504,
    "reconstructed": true,
-   "n_trades": 6
+   "n_trades": 6,
+   "bm": 0.00509934
   },
   {
    "date": "2026-09-14",
    "ret": -0.0064326311292657,
    "reconstructed": true,
-   "n_trades": 4
+   "n_trades": 4,
+   "bm": -0.0160016
   },
   {
    "date": "2026-09-15",
    "ret": 0.0158952966230925,
    "reconstructed": true,
-   "n_trades": 6
+   "n_trades": 6,
+   "bm": -0.02412931
   },
   {
    "date": "2026-09-16",
    "ret": 0.0241494701050248,
    "reconstructed": true,
-   "n_trades": 6
+   "n_trades": 6,
+   "bm": -0.05540481
   },
   {
    "date": "2026-09-17",
    "ret": -0.035592108016108,
    "reconstructed": true,
-   "n_trades": 4
+   "n_trades": 4,
+   "bm": 0.02950636
   },
   {
    "date": "2026-09-18",
    "ret": -0.0028836286139133,
    "reconstructed": true,
-   "n_trades": 6
+   "n_trades": 6,
+   "bm": -0.01668414
   },
   {
    "date": "2026-09-21",
    "ret": 0.0069024350778336,
    "reconstructed": true,
-   "n_trades": 6
+   "n_trades": 6,
+   "bm": 0.00401221
   },
   {
    "date": "2026-09-22",
    "ret": 0.0008869574733523,
    "reconstructed": true,
-   "n_trades": 6
+   "n_trades": 6,
+   "bm": -0.01041412
   },
   {
    "date": "2026-09-23",
    "ret": -0.0043507588168099,
    "reconstructed": true,
-   "n_trades": 4
+   "n_trades": 4,
+   "bm": 0.00402314
   },
   {
    "date": "2026-09-24",
    "ret": 0.00997319080293,
    "reconstructed": true,
-   "n_trades": 6
+   "n_trades": 6,
+   "bm": -0.02743762
   },
   {
    "date": "2026-09-25",
    "ret": -0.0002484613716696,
    "reconstructed": true,
-   "n_trades": 3
+   "n_trades": 3,
+   "bm": 0.00086129
   },
   {
    "date": "2026-09-28",
    "ret": -0.0358389639118445,
    "reconstructed": true,
-   "n_trades": 6
+   "n_trades": 6,
+   "bm": -0.02376859
   },
   {
    "date": "2026-09-29",
    "ret": 0.0166715649045114,
    "reconstructed": true,
-   "n_trades": 6
+   "n_trades": 6,
+   "bm": -0.02399786
   },
   {
    "date": "2026-09-30",
    "ret": 0.0064952527004357,
    "reconstructed": true,
-   "n_trades": 4
+   "n_trades": 4,
+   "bm": -0.02794
   },
   {
    "date": "2026-10-01",
    "ret": 0.0037229377086959,
    "reconstructed": true,
-   "n_trades": 3
+   "n_trades": 3,
+   "bm": 0.02526113
   },
   {
    "date": "2026-10-02",
    "ret": 0.0146143848500802,
    "reconstructed": true,
-   "n_trades": 6
+   "n_trades": 6,
+   "bm": 0.00173077
   },
   {
    "date": "2026-10-05",
    "ret": -0.0209021886728641,
    "reconstructed": true,
-   "n_trades": 1
+   "n_trades": 1,
+   "bm": 0.01415626
   },
   {
    "date": "2026-10-06",
    "ret": 0.0013173954546643,
    "reconstructed": true,
-   "n_trades": 6
+   "n_trades": 6,
+   "bm": -0.00559315
   },
   {
    "date": "2026-10-07",
    "ret": -0.0107204635410603,
    "reconstructed": true,
-   "n_trades": 6
+   "n_trades": 6,
+   "bm": -0.02031625
   },
   {
    "date": "2026-10-08",
    "ret": 0.0127258971707924,
    "reconstructed": true,
-   "n_trades": 6
+   "n_trades": 6,
+   "bm": 0.00748164
   },
   {
    "date": "2026-10-09",
    "ret": 0.0054735691954649,
    "reconstructed": true,
-   "n_trades": 1
+   "n_trades": 1,
+   "bm": 0.00429033
   },
   {
    "date": "2026-10-12",
    "ret": 0.0019752716141082,
    "reconstructed": false,
-   "n_trades": 6
+   "n_trades": 6,
+   "bm": -0.00939995
   },
   {
    "date": "2026-10-13",
    "ret": 0.0042150941503617,
    "reconstructed": false,
-   "n_trades": 6
+   "n_trades": 6,
+   "bm": 0.00822998
   }
  ],
  "trades": [

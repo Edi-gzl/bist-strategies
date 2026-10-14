@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-14T06:50:34+00:00",
+ "generated_at": "2026-10-14T07:05:30+00:00",
  "live_start": "2026-10-02",
  "recorded_from": "2026-10-12",
  "last_session": "2026-10-13",
@@ -27,7 +27,7 @@
     "total_return": -0.008948580118339766,
     "cagr": null,
     "sharpe": null,
-    "max_drawdown": -0.001236517466356779,
+    "max_drawdown": -0.008948580118339766,
     "hit_rate": 0.0,
     "best_day": -0.001236517466356779,
     "worst_day": -0.0077216105583067796,
@@ -44,6 +44,32 @@
     "hit_rate": 0.6371681415929203,
     "best_day": 0.13045770691641703,
     "worst_day": -0.08067763248019943,
+    "first": "2020-01-03",
+    "last": "2026-10-09"
+   },
+   "bm_live": {
+    "days": 2,
+    "active_days": 2,
+    "total_return": -0.0012473314005009284,
+    "cagr": null,
+    "sharpe": null,
+    "max_drawdown": -0.009399950000000046,
+    "hit_rate": 0.5,
+    "best_day": 0.00822998,
+    "worst_day": -0.00939995,
+    "first": "2026-10-12",
+    "last": "2026-10-13"
+   },
+   "bm_backtest": {
+    "days": 1695,
+    "active_days": 1688,
+    "total_return": 9.58033131882966,
+    "cagr": 0.4200869464372625,
+    "sharpe": 1.4040469103020956,
+    "max_drawdown": -0.3181543054285587,
+    "hit_rate": 0.5616113744075829,
+    "best_day": 0.098817,
+    "worst_day": -0.0979071,
     "first": "2020-01-03",
     "last": "2026-10-09"
    },
@@ -75,7 +101,7 @@
     "total_return": -0.02269761763646483,
     "cagr": null,
     "sharpe": null,
-    "max_drawdown": -0.0198810133556514,
+    "max_drawdown": -0.02269761763646483,
     "hit_rate": 0.0,
     "best_day": -0.002873737086204886,
     "worst_day": -0.01988101335565136,
@@ -92,6 +118,32 @@
     "hit_rate": 0.5197179995593744,
     "best_day": 0.09937886037252985,
     "worst_day": -0.16513754172159267,
+    "first": "2008-05-16",
+    "last": "2026-10-09"
+   },
+   "bm_live": {
+    "days": 2,
+    "active_days": 2,
+    "total_return": -0.0012473314005009284,
+    "cagr": null,
+    "sharpe": null,
+    "max_drawdown": -0.009399950000000046,
+    "hit_rate": 0.5,
+    "best_day": 0.00822998,
+    "worst_day": -0.00939995,
+    "first": "2026-10-12",
+    "last": "2026-10-13"
+   },
+   "bm_backtest": {
+    "days": 4710,
+    "active_days": 4606,
+    "total_return": 27.60848194426716,
+    "cagr": 0.1965396955542753,
+    "sharpe": 0.8279455779892954,
+    "max_drawdown": -0.5092788957336709,
+    "hit_rate": 0.5403821102909249,
+    "best_day": 0.12893431,
+    "worst_day": -0.10473665,
     "first": "2008-05-16",
     "last": "2026-10-09"
    },
@@ -123,7 +175,7 @@
     "total_return": 0.0005042422412564473,
     "cagr": null,
     "sharpe": null,
-    "max_drawdown": 0.0,
+    "max_drawdown": -0.0009243149748552337,
     "hit_rate": 0.5,
     "best_day": 0.0014298788745675814,
     "worst_day": -0.0009243149748552884,
@@ -140,6 +192,32 @@
     "hit_rate": 0.45614035087719296,
     "best_day": 0.04430282798936428,
     "worst_day": -0.046071339409629854,
+    "first": "2026-07-23",
+    "last": "2026-10-09"
+   },
+   "bm_live": {
+    "days": 2,
+    "active_days": 2,
+    "total_return": -0.0012473314005009284,
+    "cagr": null,
+    "sharpe": null,
+    "max_drawdown": -0.009399950000000046,
+    "hit_rate": 0.5,
+    "best_day": 0.00822998,
+    "worst_day": -0.00939995,
+    "first": "2026-10-12",
+    "last": "2026-10-13"
+   },
+   "bm_backtest": {
+    "days": 57,
+    "active_days": 57,
+    "total_return": -0.13246436995170918,
+    "cagr": null,
+    "sharpe": -2.443176658379451,
+    "max_drawdown": -0.18402356912554396,
+    "hit_rate": 0.45614035087719296,
+    "best_day": 0.02959609,
+    "worst_day": -0.05540481,
     "first": "2026-07-23",
     "last": "2026-10-09"
    },
@@ -258,6 +336,32 @@
     "first": "2026-10-02",
     "last": "2026-10-09"
    },
+   "bm_live": {
+    "days": 2,
+    "active_days": 2,
+    "total_return": -0.0012473314005009284,
+    "cagr": null,
+    "sharpe": null,
+    "max_drawdown": -0.009399950000000046,
+    "hit_rate": 0.5,
+    "best_day": 0.00822998,
+    "worst_day": -0.00939995,
+    "first": "2026-10-12",
+    "last": "2026-10-13"
+   },
+   "bm_backtest": {
+    "days": 6,
+    "active_days": 6,
+    "total_return": 0.0013878624036629539,
+    "cagr": null,
+    "sharpe": null,
+    "max_drawdown": -0.02579576816631257,
+    "hit_rate": 0.6666666666666666,
+    "best_day": 0.01415626,
+    "worst_day": -0.02031625,
+    "first": "2026-10-02",
+    "last": "2026-10-09"
+   },
    "today": {
     "date": "2026-10-13",
     "ret": 0.0,
@@ -306,6 +410,32 @@
     "first": "2026-10-02",
     "last": "2026-10-09"
    },
+   "bm_live": {
+    "days": 2,
+    "active_days": 2,
+    "total_return": -0.0012473314005009284,
+    "cagr": null,
+    "sharpe": null,
+    "max_drawdown": -0.009399950000000046,
+    "hit_rate": 0.5,
+    "best_day": 0.00822998,
+    "worst_day": -0.00939995,
+    "first": "2026-10-12",
+    "last": "2026-10-13"
+   },
+   "bm_backtest": {
+    "days": 6,
+    "active_days": 6,
+    "total_return": 0.0013878624036629539,
+    "cagr": null,
+    "sharpe": null,
+    "max_drawdown": -0.02579576816631257,
+    "hit_rate": 0.6666666666666666,
+    "best_day": 0.01415626,
+    "worst_day": -0.02031625,
+    "first": "2026-10-02",
+    "last": "2026-10-09"
+   },
    "today": {
     "date": "2026-10-13",
     "ret": 0.0,
@@ -351,6 +481,32 @@
     "hit_rate": 0.631578947368421,
     "best_day": 0.0241494701050248,
     "worst_day": -0.035592108016108,
+    "first": "2026-07-22",
+    "last": "2026-10-09"
+   },
+   "bm_live": {
+    "days": 2,
+    "active_days": 2,
+    "total_return": -0.0012473314005009284,
+    "cagr": null,
+    "sharpe": null,
+    "max_drawdown": -0.009399950000000046,
+    "hit_rate": 0.5,
+    "best_day": 0.00822998,
+    "worst_day": -0.00939995,
+    "first": "2026-10-12",
+    "last": "2026-10-13"
+   },
+   "bm_backtest": {
+    "days": 57,
+    "active_days": 57,
+    "total_return": -0.11911769581064302,
+    "cagr": null,
+    "sharpe": -2.150469196934521,
+    "max_drawdown": -0.18402356912554396,
+    "hit_rate": 0.47368421052631576,
+    "best_day": 0.02959609,
+    "worst_day": -0.05540481,
     "first": "2026-07-22",
     "last": "2026-10-09"
    },
@@ -469,6 +625,32 @@
     "first": "2026-07-22",
     "last": "2026-10-09"
    },
+   "bm_live": {
+    "days": 2,
+    "active_days": 2,
+    "total_return": -0.0012473314005009284,
+    "cagr": null,
+    "sharpe": null,
+    "max_drawdown": -0.009399950000000046,
+    "hit_rate": 0.5,
+    "best_day": 0.00822998,
+    "worst_day": -0.00939995,
+    "first": "2026-10-12",
+    "last": "2026-10-13"
+   },
+   "bm_backtest": {
+    "days": 57,
+    "active_days": 57,
+    "total_return": -0.11911769581064302,
+    "cagr": null,
+    "sharpe": -2.150469196934521,
+    "max_drawdown": -0.18402356912554396,
+    "hit_rate": 0.47368421052631576,
+    "best_day": 0.02959609,
+    "worst_day": -0.05540481,
+    "first": "2026-07-22",
+    "last": "2026-10-09"
+   },
    "today": {
     "date": "2026-10-13",
     "ret": 0.0042150941503617,
@@ -547,5 +729,10 @@
  "incomplete_sessions": [],
  "repaired_sessions": [
   "2026-10-13"
- ]
+ ],
+ "benchmark": {
+  "id": "xu100",
+  "name": "BIST 100 (XU100)",
+  "last": "2026-10-13"
+ }
 }

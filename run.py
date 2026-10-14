@@ -52,11 +52,17 @@ def stats(days: list[dict]) -> dict:
         "total_return": float(eq.iloc[-1] - 1),
         "cagr": float(eq.iloc[-1] ** (1 / years) - 1) if years >= 0.5 and eq.iloc[-1] > 0 else None,
         "sharpe": float(r.mean() / sd * np.sqrt(252)) if sd > 0 and r.size >= 20 else None,
-        "max_drawdown": float(min(0.0, (eq / eq.cummax() - 1).min())),
+        # drawdown measured from the starting value (1.0), so a first-day loss counts
+        "max_drawdown": float(min(0.0, (eq / np.maximum(eq.cummax(), 1.0) - 1).min())),
         "hit_rate": float((active > 0).mean()) if active.size else None,
         "best_day": float(r.max()), "worst_day": float(r.min()),
         "first": days[0]["date"], "last": days[-1]["date"],
     }
+
+
+def bm_days(days: list[dict]) -> list[dict]:
+    """The benchmark's returns on exactly the strategy's sessions (missing -> 0)."""
+    return [{"date": d["date"], "ret": d.get("bm") or 0.0} for d in days]
 
 
 def main() -> int:
@@ -120,6 +126,16 @@ def main() -> int:
     repaired += repair(D_all, "all 582")
     summary["repaired_sessions"] = sorted(set(repaired))
 
+    # BIST 100 benchmark: close-to-close return of XU100 on each session
+    xu = data.xu100(sessions=W)
+    bm = xu.pct_change().dropna()
+    bm = bm[bm.index >= pd.Timestamp("2008-01-01")]
+    (out / "xu100.json").write_text(json.dumps({
+        "name": "BIST 100 (XU100, price index - excludes dividends)",
+        "days": [{"date": str(d.date()), "ret": round(float(v), 8)} for d, v in bm.items()]}), encoding="utf-8")
+    bm_map = {str(d.date()): float(v) for d, v in bm.items()}
+    summary["benchmark"] = {"id": "xu100", "name": "BIST 100 (XU100)", "last": str(bm.index[-1].date()) if len(bm) else None}
+
     for fn in strategies.ALL:
         try:
             if fn is strategies.fund_liquidity_80:
@@ -163,6 +179,7 @@ def main() -> int:
             # backtest days may carry a trade count without the (bulky) trade list
             d["n_trades"] = per_day.get(d["date"], d.get("n_trades", 0))
             d["reconstructed"] = d["date"] < RECORDED_FROM          # backtest / computed after the fact
+            d["bm"] = round(bm_map[d["date"]], 8) if d["date"] in bm_map else None   # XU100 same session
 
         today = str(last_session.date())
         live_days = [d for d in days if d["date"] >= RECORDED_FROM]
@@ -170,6 +187,7 @@ def main() -> int:
         doc = {"id": res.id, "name": res.name, "spec": res.spec, "deviations": res.deviations,
                "live_start": str(live_start.date()), "recorded_from": RECORDED_FROM, "last_session": today,
                "stats": stats(days), "stats_live": stats(live_days), "stats_backtest": stats(bt_days),
+               "bm_live": stats(bm_days(live_days)), "bm_backtest": stats(bm_days(bt_days)),
                "backtest_note": prev.get("backtest_note", ""),
                "days": days, "trades": trades,
                "holdings": getattr(res, "holdings", None)}
@@ -179,6 +197,7 @@ def main() -> int:
         summary["strategies"].append({
             "id": res.id, "name": res.name, "stats": doc["stats"],
             "stats_live": doc["stats_live"], "stats_backtest": doc["stats_backtest"],
+            "bm_live": doc["bm_live"], "bm_backtest": doc["bm_backtest"],
             "today": {"date": today, "ret": today_row["ret"] if today_row else None,
                       "trades": [t for t in trades if t["date"] == today]},
         })

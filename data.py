@@ -151,6 +151,43 @@ def minute(tickers=UNIVERSE, period: str = "7d") -> dict[str, pd.DataFrame]:
     return _download(tickers, period, "1m")
 
 
+def xu100(sessions=()) -> pd.Series:
+    """BIST 100 (XU100) daily close from Yahoo (history from 1997, already rescaled
+    for the July-2020 /100 change). Sessions Yahoo is missing are filled from
+    Is Yatirim's index feed. Price index: dividends are not included."""
+    raw = None
+    for attempt in range(3):
+        try:
+            raw = yf.download("XU100.IS", period="max", interval="1d", auto_adjust=False, progress=False)
+            if raw is not None and not raw.empty:
+                break
+        except Exception as exc:
+            print(f"  Yahoo XU100 attempt {attempt + 1} failed: {exc}")
+        time.sleep(20 * (attempt + 1))
+    s = raw["Close"].squeeze().dropna() if raw is not None and not raw.empty else pd.Series(dtype=float)
+    idx = pd.DatetimeIndex(s.index)
+    s.index = (idx.tz_convert(TZ).tz_localize(None) if idx.tz is not None else idx).normalize()
+    s = s[~s.index.duplicated(keep="last")].sort_index().astype(float)
+    missing = [pd.Timestamp(d) for d in sessions if pd.Timestamp(d) not in s.index]
+    if missing:
+        try:
+            import requests
+            import isyatirimhisse as ih
+            orig = requests.Session.request
+            requests.Session.request = lambda self, *a, **k: orig(self, *a, **{**k, "timeout": 120})
+            try:
+                v = ih.fetch_index_data(indices="XU100", start_date=f"{min(missing):%d-%m-%Y}",
+                                        end_date=f"{max(missing):%d-%m-%Y}")
+            finally:
+                requests.Session.request = orig
+            v = pd.Series(v["VALUE"].astype(float).values, index=pd.to_datetime(v["DATE"]))
+            s = pd.concat([s, v[v.index.isin(missing)]]).sort_index()
+            print("XU100 sessions filled from Is Yatirim:", [str(d.date()) for d in missing if d in v.index])
+        except Exception as exc:
+            print("XU100 Is Yatirim fallback failed:", exc)
+    return s
+
+
 def intraday_5m(tickers=UNIVERSE) -> dict[str, pd.DataFrame]:
     """5-minute bars (last ~60 days), labelled by bar START like the 1-minute data.
     The 17:55 bar's close is the last trade before 18:00; the 09:55 bar is the opening auction."""

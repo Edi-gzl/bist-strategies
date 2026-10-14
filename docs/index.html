@@ -34,6 +34,7 @@ th.grp{text-align:center;border-bottom:none;color:var(--ink)}
 .up{color:var(--up)}.down{color:var(--down)}
 .big{font-size:24px;font-weight:650;font-variant-numeric:tabular-nums}
 .kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:10px;margin:6px 0 10px}
+.kpis.bm{border-top:1px dashed var(--line);padding-top:8px;margin-top:0}.kpis.bm .v{font-weight:500}
 .kpi .l{color:var(--mute);font-size:12px}.kpi .v{font-weight:600;font-variant-numeric:tabular-nums}
 .box{border:1px solid var(--line);border-radius:10px;padding:10px 12px;margin-top:10px}
 .box.bt{background:var(--bt)}
@@ -55,7 +56,7 @@ footer{color:var(--mute);font-size:12px;margin-top:32px}
 <div class="card">
   <div class="row"><b>All strategies — cumulative return</b><div class="btns" data-target="all"></div></div>
   <div class="chart"><canvas id="c-all"></canvas></div>
-  <p class="note" style="margin:6px 0 0">Dashed = backtest (computed after the fact), solid = recorded live on the evening it happened. Each line starts at 0 at the left edge of the selected range.</p>
+  <p class="note" style="margin:6px 0 0">Dashed = backtest (computed after the fact), solid = recorded live on the evening it happened. Each line starts at 0 at the left edge of the selected range. Grey dotted = BIST 100 (XU100 price index, dividends not included).</p>
 </div>
 
 <div class="card scroll"><table id="overview"></table></div>
@@ -79,6 +80,7 @@ const slice=(days,n)=>n?days.slice(-n):days;
 const SHORT={fund_liquidity_80:'Fund Liq. 80',focus_long:'Focus Long',daily_beta_pm:'Daily Beta',eodr_short:'EODR short',morning_gap_short:'Morning gap',ens5_basic:'ENS5 basic',ens5_s10c:'ENS5 S10c'};
 const narrow=()=>innerWidth<640;
 
+let XU=null;   // {days:[{date,ret}]} BIST 100
 function drawAll(docs,n){
   // calendar = union of dates in the last n sessions (by the longest-running log)
   let dates=[...new Set(docs.flatMap(d=>d.days.map(x=>x.date)))].sort();
@@ -89,6 +91,9 @@ function drawAll(docs,n){
     return{label:SHORT[d.id]||d.name,data:dates.map(t=>{if(t in m){started=true;e*=1+m[t]}return started?+((e-1)*100).toFixed(3):null}),
       borderColor:PAL[i%7],backgroundColor:PAL[i%7],borderWidth:2,pointRadius:dates.length<40?2:0,tension:.1,spanGaps:true,segment:dash(dates)}
   });
+  if(XU){const m=Object.fromEntries(XU.days.filter(x=>x.date>=first).map(x=>[x.date,x.ret]));let e=1,st=false;
+    ds.push({label:'BIST 100',data:dates.map(t=>{if(t in m){st=true;e*=1+m[t]}return st?+((e-1)*100).toFixed(3):null}),
+      borderColor:'#9ca3af',backgroundColor:'#9ca3af',borderWidth:2.5,pointRadius:0,tension:.1,spanGaps:true,borderDash:[2,2]})}
   const o=opts('%',true);o.plugins.legend.position='bottom';
   o.plugins.legend.labels={...o.plugins.legend.labels,boxWidth:10,font:{size:narrow()?10:12}};
   render('all',{type:'line',data:{labels:dates,datasets:ds},options:o});
@@ -96,11 +101,13 @@ function drawAll(docs,n){
 function drawOne(doc,i,n){
   const d=slice(doc.days,n);let e=1;const c=d.map(x=>(e*=1+x.ret)-1);const labels=d.map(x=>x.date);
   const many=d.length>400;
-  const sets=[{type:'line',label:'Cumulative %',data:c.map(v=>+(v*100).toFixed(3)),borderColor:PAL[i%7],borderWidth:2,pointRadius:d.length<40?2:0,yAxisID:'y',tension:.1,segment:dash(labels)}];
+  let eb=1;const bmc=d.map(x=>(eb*=1+(x.bm??0))-1);
+  const sets=[{type:'line',label:'Cumulative %',data:c.map(v=>+(v*100).toFixed(3)),borderColor:PAL[i%7],borderWidth:2,pointRadius:d.length<40?2:0,yAxisID:'y',tension:.1,segment:dash(labels)},
+    {type:'line',label:'BIST 100 %',data:bmc.map(v=>+(v*100).toFixed(3)),borderColor:'#9ca3af',borderWidth:1.5,pointRadius:0,yAxisID:'y',tension:.1,borderDash:[2,2]}];
   if(!many)sets.push({type:'bar',label:'Daily %',data:d.map(x=>+(x.ret*100).toFixed(3)),backgroundColor:d.map(x=>x.ret>=0?css('--up')+'99':css('--down')+'99'),yAxisID:'y1'});
   const scales={x:axis(),y:{...axis('%'),position:'left',title:{display:true,text:'cumulative',color:css('--mute')}}};
   if(!many)scales.y1={...axis('%'),position:'right',grid:{drawOnChartArea:false},title:{display:true,text:'daily',color:css('--mute')}};
-  render(doc.id,{data:{labels,datasets:sets},options:{...opts('%',!many),scales}});
+  render(doc.id,{data:{labels,datasets:sets},options:{...opts('%',true),scales}});
 }
 function axis(u){const t={color:css('--mute'),maxTicksLimit:8,autoSkip:true,maxRotation:0};if(u)t.callback=v=>v+u;return{ticks:t,grid:{color:css('--line')}}}
 function opts(u,legend){return{responsive:true,maintainAspectRatio:false,animation:false,interaction:{mode:'index',intersect:false},
@@ -110,27 +117,33 @@ function render(id,cfg){charts[id]?.destroy();charts[id]=new Chart(document.getE
 function buttons(el,fn,def){el.innerHTML=RANGES.map(([l,n])=>`<button data-n="${n}" class="${l===def?'on':''}">${l}</button>`).join('');
   el.onclick=e=>{const b=e.target.closest('button');if(!b)return;el.querySelectorAll('button').forEach(x=>x.classList.toggle('on',x===b));fn(+b.dataset.n)}}
 function tradeRows(ts){return ts.map(t=>`<tr class="tr"><td>${esc(t.ticker)}</td><td>${esc(t.side)}</td><td>${esc(t.entry_time??'')} ${t.entry_price??''}</td><td>${t.exit_price==null?(t.exit_time?'pending':'held'):esc(t.exit_time)+' '+t.exit_price}</td><td class="${cls(t.ret)}">${pct(t.ret)}</td><td class="note" style="text-align:left">${esc(t.note??'')}</td></tr>`).join('')}
-function statBox(title,s,isBt){
+function statBox(title,s,isBt,b){
   if(!s||!s.days)return `<div class="box${isBt?' bt':''}"><b>${title}</b><div class="note">No sessions yet.</div></div>`;
   return `<div class="box${isBt?' bt':''}"><b>${title}</b> <span class="note">${s.first} → ${s.last} · ${s.days} sessions</span>
    <div class="kpis"><div class="kpi"><div class="l">Total return</div><div class="v ${cls(s.total_return)}">${pct(s.total_return,1)}</div></div>
    <div class="kpi"><div class="l">Per year (CAGR)</div><div class="v ${cls(s.cagr)}">${pct(s.cagr,1)}</div></div>
    <div class="kpi"><div class="l">Sharpe</div><div class="v">${num(s.sharpe)}</div></div>
    <div class="kpi"><div class="l">Max drawdown</div><div class="v">${pct(s.max_drawdown,1)}</div></div>
-   <div class="kpi"><div class="l">Win rate (active days)</div><div class="v">${s.hit_rate==null?'–':(s.hit_rate*100).toFixed(0)+'%'}</div></div></div></div>`}
+   <div class="kpi"><div class="l">Win rate (active days)</div><div class="v">${s.hit_rate==null?'–':(s.hit_rate*100).toFixed(0)+'%'}</div></div></div>
+   ${b&&b.days?`<div class="kpis bm"><div class="kpi"><div class="l">BIST 100, same sessions</div><div class="v ${cls(b.total_return)}">${pct(b.total_return,1)}</div></div>
+   <div class="kpi"><div class="l">BIST 100 per year</div><div class="v ${cls(b.cagr)}">${pct(b.cagr,1)}</div></div>
+   <div class="kpi"><div class="l">BIST 100 Sharpe</div><div class="v">${num(b.sharpe)}</div></div>
+   <div class="kpi"><div class="l">BIST 100 max drawdown</div><div class="v">${pct(b.max_drawdown,1)}</div></div>
+   <div class="kpi"><div class="l">Strategy minus BIST 100</div><div class="v ${cls(s.total_return-b.total_return)}">${pct(s.total_return-b.total_return,1)}</div></div></div>`:''}</div>`}
 
 (async()=>{
   const S=await (await fetch('data/summary.json?'+Date.now())).json();
   RF=S.recorded_from||'';
   document.getElementById('sub').textContent=`Recorded live since ${RF} · last session ${S.last_session} · updated ${S.generated_at.replace('T',' ').slice(0,16)} UTC`;
   document.getElementById('banner').insertAdjacentHTML('beforeend',` <br><b>Backtest vs live:</b> sessions before ${RF} are a backtest (computed after the fact with the same code, as far back as exact data allows) and are shown dashed and tagged. Every session from ${RF} on was recorded on the evening it happened.`);
+  try{XU=await (await fetch('data/xu100.json?'+Date.now())).json()}catch(e){XU=null}
   const docs=await Promise.all(S.strategies.map(async s=>(await fetch(`data/${s.id}.json?`+Date.now())).json()));
 
-  let ov='<tr><th></th><th></th><th class="grp" colspan="2">Live (since '+RF+')</th><th class="grp" colspan="5">Backtest</th></tr><tr><th>Strategy</th><th>Last session</th><th>Return</th><th>Days</th><th>Period</th><th>Total</th><th>Per year</th><th>Sharpe</th><th>Max DD</th></tr>';
-  docs.forEach(d=>{const L=d.stats_live||{},B=d.stats_backtest||{},last=d.days.at(-1);
+  let ov='<tr><th></th><th></th><th class="grp" colspan="3">Live (since '+RF+')</th><th class="grp" colspan="6">Backtest</th></tr><tr><th>Strategy</th><th>Last session</th><th>Return</th><th>BIST 100</th><th>Days</th><th>Period</th><th>Total</th><th>BIST 100</th><th>Per year</th><th>Sharpe</th><th>Max DD</th></tr>';
+  docs.forEach(d=>{const L=d.stats_live||{},B=d.stats_backtest||{},BL=d.bm_live||{},BB=d.bm_backtest||{},last=d.days.at(-1);
     ov+=`<tr><td><a href="#${d.id}" style="color:inherit">${esc(narrow()?(SHORT[d.id]||d.name):d.name)}</a></td><td class="${cls(last?.ret)}">${last?pct(last.ret)+' <span class="note">'+last.date.slice(5)+'</span>':'–'}</td>
-      <td class="${cls(L.total_return)}">${L.days?pct(L.total_return):'–'}</td><td>${L.days||0}</td>
-      <td>${B.days?B.first+' → '+B.last:'–'}</td><td class="${cls(B.total_return)}">${B.days?pct(B.total_return,1):'–'}</td>
+      <td class="${cls(L.total_return)}">${L.days?pct(L.total_return):'–'}</td><td class="${cls(BL.total_return)}">${BL.days?pct(BL.total_return):'–'}</td><td>${L.days||0}</td>
+      <td>${B.days?B.first+' → '+B.last:'–'}</td><td class="${cls(B.total_return)}">${B.days?pct(B.total_return,1):'–'}</td><td class="${cls(BB.total_return)}">${BB.days?pct(BB.total_return,1):'–'}</td>
       <td class="${cls(B.cagr)}">${pct(B.cagr,1)}</td><td>${num(B.sharpe)}</td><td>${B.days?pct(B.max_drawdown,1):'–'}</td></tr>`});
   document.getElementById('overview').innerHTML=ov;
 
@@ -142,7 +155,7 @@ function statBox(title,s,isBt){
     box.insertAdjacentHTML('beforeend',`<h2 id="${d.id}">${esc(d.name)}</h2><div class="card">
       ${d.days.length?`<div class="row"><div><span class="note">Last session ${last.date}</span><div class="big ${cls(last.ret)}">${pct(last.ret)}</div></div><div class="btns" data-target="${d.id}"></div></div>
       <div class="chart small"><canvas id="c-${d.id}"></canvas></div>
-      ${statBox('Live',d.stats_live,false)}${statBox('Backtest',d.stats_backtest,true)}
+      ${statBox('Live',d.stats_live,false,d.bm_live)}${statBox('Backtest',d.stats_backtest,true,d.bm_backtest)}
       ${d.backtest_note?`<p class="note">${esc(d.backtest_note)}</p>`:''}`
       :`<div class="empty">No sessions yet — the first result appears after the evening run.</div>`}
       <h3>Trades on ${S.last_session}</h3>
