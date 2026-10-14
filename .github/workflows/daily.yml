@@ -1,4 +1,4 @@
-﻿name: daily-run
+name: daily-run
 
 on:
   schedule:
@@ -28,6 +28,13 @@ jobs:
           python-version: "3.12"
           cache: pip
       - run: pip install -r requirements.txt
+      - name: Restore ENS5 state (kept on branch ens5-state, overwritten each run)
+        run: |
+          mkdir -p ens5/state
+          if git fetch -q origin ens5-state; then
+            git archive FETCH_HEAD | tar -x -C ens5/state
+          fi
+          ls -la ens5/state
       - name: ENS5v2 pipeline (friend's code, Yahoo + Is Yatirim)
         id: ens5
         continue-on-error: true
@@ -45,10 +52,20 @@ jobs:
         run: |
           git config user.name "strategy-bot"
           git config user.email "strategy-bot@users.noreply.github.com"
-          git add docs/data ens5/state ens5/out
+          git add docs/data ens5/out
           git diff --cached --quiet || git commit -m "log: $(date -u +%F)"
           git pull --rebase
           git push
+      - name: Save ENS5 state (single commit, force-pushed so the repo does not grow)
+        if: steps.ens5.outcome == 'success'
+        run: |
+          R="$GITHUB_WORKSPACE"
+          cd ens5/state
+          export GIT_INDEX_FILE="$(mktemp -u)"
+          git --git-dir="$R/.git" --work-tree=. add -A
+          tree=$(git --git-dir="$R/.git" write-tree)
+          commit=$(git --git-dir="$R/.git" commit-tree "$tree" -m "ens5 state $(date -u +%FT%H:%MZ)")
+          git --git-dir="$R/.git" push -f origin "$commit:refs/heads/ens5-state"
       - name: Flag partial problems (sends GitHub's failure email)
         if: steps.run.outputs.code == '2' || steps.ens5.outcome == 'failure'
         run: |

@@ -24,3 +24,6 @@ ens5/Research_done/INTRADAY_DAILY/results/
 ens5/Research_done/INTRADAY_DAILY/*.csv
 ens5/Research_done/INTRADAY_DAILY/*.html
 ens5/Research_done/INTRADAY_DAILY/*.png
+
+# ENS5 saved state lives on branch ens5-state (overwritten each run)
+ens5/state/
