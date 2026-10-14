@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-14T07:05:30+00:00",
+ "generated_at": "2026-10-14T07:23:16+00:00",
  "live_start": "2026-10-02",
  "recorded_from": "2026-10-12",
  "last_session": "2026-10-13",
@@ -231,9 +231,9 @@
       "side": "LONG",
       "entry_time": "closing auction",
       "entry_price": 411.25,
-      "exit_time": "next opening auction",
-      "exit_price": null,
-      "ret": null,
+      "exit_time": "opening auction 2026-10-14",
+      "exit_price": 411.5,
+      "ret": 0.00061,
       "residual": 0.0358
      },
      {
@@ -242,9 +242,9 @@
       "side": "LONG",
       "entry_time": "closing auction",
       "entry_price": 212.5,
-      "exit_time": "next opening auction",
-      "exit_price": null,
-      "ret": null,
+      "exit_time": "opening auction 2026-10-14",
+      "exit_price": 212.3,
+      "ret": -0.00094,
       "residual": 0.02557
      },
      {
@@ -253,9 +253,9 @@
       "side": "LONG",
       "entry_time": "closing auction",
       "entry_price": 20.88,
-      "exit_time": "next opening auction",
-      "exit_price": null,
-      "ret": null,
+      "exit_time": "opening auction 2026-10-14",
+      "exit_price": 21.0,
+      "ret": 0.00575,
       "residual": 0.02745
      },
      {
@@ -733,6 +733,6 @@
  "benchmark": {
   "id": "xu100",
   "name": "BIST 100 (XU100)",
-  "last": "2026-10-13"
+  "last": "2026-10-14"
  }
 }
