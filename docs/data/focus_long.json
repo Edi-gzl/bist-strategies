@@ -7,32 +7,32 @@
  ],
  "live_start": "2026-10-02",
  "recorded_from": "2026-10-12",
- "last_session": "2026-10-13",
+ "last_session": "2026-10-14",
  "stats": {
-  "days": 4712,
-  "active_days": 4541,
-  "total_return": 28.531069646985685,
-  "cagr": 0.1984812097207429,
-  "sharpe": 0.7657557024078009,
+  "days": 4713,
+  "active_days": 4542,
+  "total_return": 28.029457139743563,
+  "cagr": 0.1973378762722915,
+  "sharpe": 0.7624966232530587,
   "max_drawdown": -0.505397996492563,
-  "hit_rate": 0.519489099317331,
+  "hit_rate": 0.519374724790841,
   "best_day": 0.09937886037252985,
   "worst_day": -0.16513754172159267,
   "first": "2008-05-16",
-  "last": "2026-10-13"
+  "last": "2026-10-14"
  },
  "stats_live": {
-  "days": 2,
-  "active_days": 2,
-  "total_return": -0.02269759689313633,
+  "days": 3,
+  "active_days": 3,
+  "total_return": -0.039297981322700126,
   "cagr": null,
   "sharpe": null,
-  "max_drawdown": -0.02269759689313633,
+  "max_drawdown": -0.039297981322700126,
   "hit_rate": 0.0,
   "best_day": -0.002873737086204886,
   "worst_day": -0.019880992552540232,
   "first": "2026-10-12",
-  "last": "2026-10-13"
+  "last": "2026-10-14"
  },
  "stats_backtest": {
   "days": 4710,
@@ -48,17 +48,17 @@
   "last": "2026-10-09"
  },
  "bm_live": {
-  "days": 2,
-  "active_days": 2,
-  "total_return": -0.0012473314005009284,
+  "days": 3,
+  "active_days": 3,
+  "total_return": -0.012042219781211672,
   "cagr": null,
   "sharpe": null,
-  "max_drawdown": -0.009399950000000046,
-  "hit_rate": 0.5,
+  "max_drawdown": -0.012042219781211672,
+  "hit_rate": 0.3333333333333333,
   "best_day": 0.00822998,
-  "worst_day": -0.00939995,
+  "worst_day": -0.01080837,
   "first": "2026-10-12",
-  "last": "2026-10-13"
+  "last": "2026-10-14"
  },
  "bm_backtest": {
   "days": 4710,
@@ -33058,6 +33058,13 @@
    "reconstructed": false,
    "n_trades": 0,
    "bm": 0.00822998
+  },
+  {
+   "date": "2026-10-14",
+   "ret": -0.016985924087356018,
+   "reconstructed": false,
+   "n_trades": 2,
+   "bm": -0.01080837
   }
  ],
  "trades": [
@@ -36764,6 +36771,28 @@
    "weight": 0.0,
    "entry_time": "closing auction",
    "entry_price": 384.75,
+   "exit_time": null,
+   "exit_price": null,
+   "ret": null
+  },
+  {
+   "date": "2026-10-14",
+   "ticker": "BIMAS",
+   "side": "BUY",
+   "weight": 0.2,
+   "entry_time": "closing auction",
+   "entry_price": 408.0,
+   "exit_time": null,
+   "exit_price": null,
+   "ret": null
+  },
+  {
+   "date": "2026-10-14",
+   "ticker": "TKFEN",
+   "side": "SELL",
+   "weight": 0.0,
+   "entry_time": "closing auction",
+   "entry_price": 214.5,
    "exit_time": null,
    "exit_price": null,
    "ret": null
