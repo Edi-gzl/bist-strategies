@@ -105,8 +105,12 @@ def main() -> int:
             W.remove(d)
             continue
         if closes < 0.9 or not (full_day or half_day):
-            incomplete.append(str(d.date()))
             W.remove(d)
+            # data can lag the close by a few hours: only a real problem after that
+            if now_ist >= d + pd.Timedelta(hours=23):
+                incomplete.append(str(d.date()))
+            else:
+                print(f"{d.date()}: closing data not published yet - will be picked up by a later run")
     if incomplete:
         print("INCOMPLETE Yahoo data, not recorded this run:", incomplete)
     if len(W) < 2:
