@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-15T19:57:34+00:00",
+ "generated_at": "2026-10-15T20:55:15+00:00",
  "live_start": "2026-10-02",
  "recorded_from": "2026-10-12",
  "last_session": "2026-10-15",
@@ -410,7 +410,7 @@
    "stats": {
     "days": 10,
     "active_days": 7,
-    "total_return": -0.010171392621180386,
+    "total_return": -0.008892991354658042,
     "cagr": null,
     "sharpe": null,
     "max_drawdown": -0.043134386437944205,
@@ -423,13 +423,13 @@
    "stats_live": {
     "days": 4,
     "active_days": 2,
-    "total_return": 0.012307343261208636,
+    "total_return": 0.0136147766694652,
     "cagr": null,
     "sharpe": null,
-    "max_drawdown": -0.007377551020408379,
+    "max_drawdown": -0.006095541401273774,
     "hit_rate": 0.5,
     "best_day": 0.01983119997120042,
-    "worst_day": -0.0073775510204082675,
+    "worst_day": -0.006095541401273884,
     "first": "2026-10-12",
     "last": "2026-10-15"
    },
@@ -474,17 +474,17 @@
    },
    "today": {
     "date": "2026-10-15",
-    "ret": -0.0073775510204082675,
+    "ret": -0.006095541401273884,
     "trades": [
      {
       "date": "2026-10-15",
       "ticker": "GUBRF",
       "side": "SHORT",
       "entry_time": "10:01 open",
-      "entry_price": 392.0,
+      "entry_price": 392.5,
       "exit_time": "closing auction",
       "exit_price": 394.5,
-      "ret": -0.00738,
+      "ret": -0.0061,
       "gap": 0.0102
      }
     ]
