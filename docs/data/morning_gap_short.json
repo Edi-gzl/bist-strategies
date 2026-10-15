@@ -7,32 +7,32 @@
  ],
  "live_start": "2026-10-02",
  "recorded_from": "2026-10-12",
- "last_session": "2026-10-14",
+ "last_session": "2026-10-15",
  "stats": {
-  "days": 9,
-  "active_days": 6,
-  "total_return": -0.002814606503856676,
+  "days": 10,
+  "active_days": 7,
+  "total_return": -0.010171392621180386,
   "cagr": null,
   "sharpe": null,
   "max_drawdown": -0.043134386437944205,
-  "hit_rate": 0.6666666666666666,
+  "hit_rate": 0.5714285714285714,
   "best_day": 0.01983119997120042,
   "worst_day": -0.028353044513410697,
   "first": "2026-10-02",
-  "last": "2026-10-14"
+  "last": "2026-10-15"
  },
  "stats_live": {
-  "days": 3,
-  "active_days": 1,
-  "total_return": 0.01983119997120042,
+  "days": 4,
+  "active_days": 2,
+  "total_return": 0.012307343261208636,
   "cagr": null,
   "sharpe": null,
-  "max_drawdown": 0.0,
-  "hit_rate": 1.0,
+  "max_drawdown": -0.007377551020408379,
+  "hit_rate": 0.5,
   "best_day": 0.01983119997120042,
-  "worst_day": 0.0,
+  "worst_day": -0.0073775510204082675,
   "first": "2026-10-12",
-  "last": "2026-10-14"
+  "last": "2026-10-15"
  },
  "stats_backtest": {
   "days": 6,
@@ -48,17 +48,17 @@
   "last": "2026-10-09"
  },
  "bm_live": {
-  "days": 3,
-  "active_days": 3,
-  "total_return": -0.012041430766603578,
+  "days": 4,
+  "active_days": 4,
+  "total_return": -0.015965276177270726,
   "cagr": null,
   "sharpe": null,
-  "max_drawdown": -0.012041430766603578,
-  "hit_rate": 0.3333333333333333,
+  "max_drawdown": -0.015965276177270726,
+  "hit_rate": 0.25,
   "best_day": 0.00822998,
   "worst_day": -0.01080758,
   "first": "2026-10-12",
-  "last": "2026-10-14"
+  "last": "2026-10-15"
  },
  "bm_backtest": {
   "days": 6,
@@ -137,6 +137,13 @@
    "reconstructed": false,
    "n_trades": 0,
    "bm": -0.01080758
+  },
+  {
+   "date": "2026-10-15",
+   "ret": -0.0073775510204082675,
+   "reconstructed": false,
+   "n_trades": 1,
+   "bm": -0.00397167
   }
  ],
  "trades": [
@@ -260,6 +267,17 @@
    "exit_price": 44.04,
    "ret": 0.00127,
    "gap": 0.0119
+  },
+  {
+   "date": "2026-10-15",
+   "ticker": "GUBRF",
+   "side": "SHORT",
+   "entry_time": "10:01 open",
+   "entry_price": 392.0,
+   "exit_time": "closing auction",
+   "exit_price": 394.5,
+   "ret": -0.00738,
+   "gap": 0.0102
   }
  ],
  "holdings": null

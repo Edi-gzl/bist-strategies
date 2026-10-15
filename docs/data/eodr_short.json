@@ -5,32 +5,32 @@
  "deviations": [],
  "live_start": "2026-10-02",
  "recorded_from": "2026-10-12",
- "last_session": "2026-10-14",
+ "last_session": "2026-10-15",
  "stats": {
-  "days": 9,
-  "active_days": 5,
-  "total_return": -0.01620973286704286,
+  "days": 10,
+  "active_days": 6,
+  "total_return": -0.052056008339807835,
   "cagr": null,
   "sharpe": null,
-  "max_drawdown": -0.0223676682151005,
-  "hit_rate": 0.6,
+  "max_drawdown": -0.052056008339807835,
+  "hit_rate": 0.5,
   "best_day": 0.004037783375314908,
-  "worst_day": -0.0147061408095156,
+  "worst_day": -0.03643690801824173,
   "first": "2026-10-02",
-  "last": "2026-10-14"
+  "last": "2026-10-15"
  },
  "stats_live": {
-  "days": 3,
-  "active_days": 2,
-  "total_return": 0.004902563631009826,
+  "days": 4,
+  "active_days": 3,
+  "total_return": -0.0317129786473086,
   "cagr": null,
   "sharpe": null,
-  "max_drawdown": 0.0,
-  "hit_rate": 1.0,
+  "max_drawdown": -0.03643690801824173,
+  "hit_rate": 0.6666666666666666,
   "best_day": 0.004037783375314908,
-  "worst_day": 0.0,
+  "worst_day": -0.03643690801824173,
   "first": "2026-10-12",
-  "last": "2026-10-14"
+  "last": "2026-10-15"
  },
  "stats_backtest": {
   "days": 6,
@@ -46,17 +46,17 @@
   "last": "2026-10-09"
  },
  "bm_live": {
-  "days": 3,
-  "active_days": 3,
-  "total_return": -0.012041430766603578,
+  "days": 4,
+  "active_days": 4,
+  "total_return": -0.015965276177270726,
   "cagr": null,
   "sharpe": null,
-  "max_drawdown": -0.012041430766603578,
-  "hit_rate": 0.3333333333333333,
+  "max_drawdown": -0.015965276177270726,
+  "hit_rate": 0.25,
   "best_day": 0.00822998,
   "worst_day": -0.01080758,
   "first": "2026-10-12",
-  "last": "2026-10-14"
+  "last": "2026-10-15"
  },
  "bm_backtest": {
   "days": 6,
@@ -135,6 +135,13 @@
    "reconstructed": false,
    "n_trades": 1,
    "bm": -0.01080758
+  },
+  {
+   "date": "2026-10-15",
+   "ret": -0.03643690801824173,
+   "reconstructed": false,
+   "n_trades": 1,
+   "bm": -0.00397167
   }
  ],
  "trades": [
@@ -196,6 +203,18 @@
    "exit_price": 214.5,
    "ret": 0.00086,
    "z": -4.08,
+   "fallback_rank": 1
+  },
+  {
+   "date": "2026-10-15",
+   "ticker": "TKFEN",
+   "side": "SHORT",
+   "entry_time": "first 1-min open after 16:00",
+   "entry_price": 206.0,
+   "exit_time": "closing auction",
+   "exit_price": 213.3,
+   "ret": -0.03644,
+   "z": -2.73,
    "fallback_rank": 1
   }
  ],

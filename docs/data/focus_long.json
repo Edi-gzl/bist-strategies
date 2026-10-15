@@ -7,32 +7,32 @@
  ],
  "live_start": "2026-10-02",
  "recorded_from": "2026-10-12",
- "last_session": "2026-10-14",
+ "last_session": "2026-10-15",
  "stats": {
-  "days": 4713,
-  "active_days": 4542,
-  "total_return": 28.029457139743563,
-  "cagr": 0.1973378762722915,
-  "sharpe": 0.7624966232530587,
+  "days": 4714,
+  "active_days": 4543,
+  "total_return": 27.881645527471665,
+  "cagr": 0.1969654470464206,
+  "sharpe": 0.761477634830471,
   "max_drawdown": -0.505397996492563,
-  "hit_rate": 0.519374724790841,
+  "hit_rate": 0.5192604006163328,
   "best_day": 0.09937886037252985,
   "worst_day": -0.16513754172159267,
   "first": "2008-05-16",
-  "last": "2026-10-14"
+  "last": "2026-10-15"
  },
  "stats_live": {
-  "days": 3,
-  "active_days": 3,
-  "total_return": -0.039297981322700126,
+  "days": 4,
+  "active_days": 4,
+  "total_return": -0.04418966474654018,
   "cagr": null,
   "sharpe": null,
-  "max_drawdown": -0.039297981322700126,
+  "max_drawdown": -0.04418966474654018,
   "hit_rate": 0.0,
   "best_day": -0.002873737086204886,
   "worst_day": -0.019880992552540232,
   "first": "2026-10-12",
-  "last": "2026-10-14"
+  "last": "2026-10-15"
  },
  "stats_backtest": {
   "days": 4710,
@@ -48,17 +48,17 @@
   "last": "2026-10-09"
  },
  "bm_live": {
-  "days": 3,
-  "active_days": 3,
-  "total_return": -0.012041430766603578,
+  "days": 4,
+  "active_days": 4,
+  "total_return": -0.015965276177270726,
   "cagr": null,
   "sharpe": null,
-  "max_drawdown": -0.012041430766603578,
-  "hit_rate": 0.3333333333333333,
+  "max_drawdown": -0.015965276177270726,
+  "hit_rate": 0.25,
   "best_day": 0.00822998,
   "worst_day": -0.01080758,
   "first": "2026-10-12",
-  "last": "2026-10-14"
+  "last": "2026-10-15"
  },
  "bm_backtest": {
   "days": 4710,
@@ -33065,6 +33065,13 @@
    "reconstructed": false,
    "n_trades": 2,
    "bm": -0.01080758
+  },
+  {
+   "date": "2026-10-15",
+   "ret": -0.00509178010323632,
+   "reconstructed": false,
+   "n_trades": 2,
+   "bm": -0.00397167
   }
  ],
  "trades": [
@@ -36793,6 +36800,28 @@
    "weight": 0.0,
    "entry_time": "closing auction",
    "entry_price": 214.5,
+   "exit_time": null,
+   "exit_price": null,
+   "ret": null
+  },
+  {
+   "date": "2026-10-15",
+   "ticker": "TUPRS",
+   "side": "BUY",
+   "weight": 0.2,
+   "entry_time": "closing auction",
+   "entry_price": 384.5,
+   "exit_time": null,
+   "exit_price": null,
+   "ret": null
+  },
+  {
+   "date": "2026-10-15",
+   "ticker": "HALKB",
+   "side": "SELL",
+   "weight": 0.0,
+   "entry_time": "closing auction",
+   "entry_price": 43.4,
    "exit_time": null,
    "exit_price": null,
    "ret": null
