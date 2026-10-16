@@ -5,32 +5,32 @@
  "deviations": [],
  "live_start": "2026-10-02",
  "recorded_from": "2026-10-12",
- "last_session": "2026-10-15",
+ "last_session": "2026-10-16",
  "stats": {
-  "days": 10,
-  "active_days": 6,
-  "total_return": -0.052056008339807835,
+  "days": 11,
+  "active_days": 7,
+  "total_return": -0.03332961989859673,
   "cagr": null,
   "sharpe": null,
   "max_drawdown": -0.052056008339807835,
-  "hit_rate": 0.5,
-  "best_day": 0.004037783375314908,
+  "hit_rate": 0.5714285714285714,
+  "best_day": 0.01975474142561351,
   "worst_day": -0.03643690801824173,
   "first": "2026-10-02",
-  "last": "2026-10-15"
+  "last": "2026-10-16"
  },
  "stats_live": {
-  "days": 4,
-  "active_days": 3,
-  "total_return": -0.0317129786473086,
+  "days": 5,
+  "active_days": 4,
+  "total_return": -0.012584718914708581,
   "cagr": null,
   "sharpe": null,
   "max_drawdown": -0.03643690801824173,
-  "hit_rate": 0.6666666666666666,
-  "best_day": 0.004037783375314908,
+  "hit_rate": 0.75,
+  "best_day": 0.01975474142561351,
   "worst_day": -0.03643690801824173,
   "first": "2026-10-12",
-  "last": "2026-10-15"
+  "last": "2026-10-16"
  },
  "stats_backtest": {
   "days": 6,
@@ -46,17 +46,17 @@
   "last": "2026-10-09"
  },
  "bm_live": {
-  "days": 4,
-  "active_days": 4,
-  "total_return": -0.015962806280847675,
+  "days": 5,
+  "active_days": 5,
+  "total_return": -0.04437308186592048,
   "cagr": null,
   "sharpe": null,
-  "max_drawdown": -0.015962806280847675,
-  "hit_rate": 0.25,
+  "max_drawdown": -0.04437308186592048,
+  "hit_rate": 0.2,
   "best_day": 0.00822998,
-  "worst_day": -0.01080758,
+  "worst_day": -0.02887114,
   "first": "2026-10-12",
-  "last": "2026-10-15"
+  "last": "2026-10-16"
  },
  "bm_backtest": {
   "days": 6,
@@ -142,6 +142,13 @@
    "reconstructed": false,
    "n_trades": 1,
    "bm": -0.00396917
+  },
+  {
+   "date": "2026-10-16",
+   "ret": 0.01975474142561351,
+   "reconstructed": false,
+   "n_trades": 1,
+   "bm": -0.02887114
   }
  ],
  "trades": [
@@ -215,6 +222,18 @@
    "exit_price": 213.3,
    "ret": -0.03644,
    "z": -2.73,
+   "fallback_rank": 1
+  },
+  {
+   "date": "2026-10-16",
+   "ticker": "ODAS",
+   "side": "SHORT",
+   "entry_time": "first 1-min open after 16:00",
+   "entry_price": 5.3,
+   "exit_time": "closing auction",
+   "exit_price": 5.19,
+   "ret": 0.01975,
+   "z": -2.87,
    "fallback_rank": 1
   }
  ],

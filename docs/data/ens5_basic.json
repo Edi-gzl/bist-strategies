@@ -8,32 +8,32 @@
  ],
  "live_start": "2026-10-02",
  "recorded_from": "2026-10-12",
- "last_session": "2026-10-15",
+ "last_session": "2026-10-16",
  "stats": {
-  "days": 61,
-  "active_days": 61,
-  "total_return": 0.12391848887273804,
+  "days": 62,
+  "active_days": 62,
+  "total_return": 0.10509919682139501,
   "cagr": null,
-  "sharpe": 2.729664603646302,
+  "sharpe": 2.2841421136223885,
   "max_drawdown": -0.06219827627501995,
-  "hit_rate": 0.639344262295082,
+  "hit_rate": 0.6290322580645161,
   "best_day": 0.0241494701050248,
   "worst_day": -0.035592108016108,
   "first": "2026-07-22",
-  "last": "2026-10-15"
+  "last": "2026-10-16"
  },
  "stats_live": {
-  "days": 4,
-  "active_days": 4,
-  "total_return": 0.02116224639862363,
+  "days": 5,
+  "active_days": 5,
+  "total_return": 0.0040635415218528426,
   "cagr": null,
   "sharpe": null,
-  "max_drawdown": -0.005128817353196591,
-  "hit_rate": 0.75,
+  "max_drawdown": -0.021787295281140984,
+  "hit_rate": 0.6,
   "best_day": 0.0135823957782068,
-  "worst_day": -0.0051288173531965,
+  "worst_day": -0.0167443566750275,
   "first": "2026-10-12",
-  "last": "2026-10-15"
+  "last": "2026-10-16"
  },
  "stats_backtest": {
   "days": 57,
@@ -49,17 +49,17 @@
   "last": "2026-10-09"
  },
  "bm_live": {
-  "days": 4,
-  "active_days": 4,
-  "total_return": -0.015962806280847675,
+  "days": 5,
+  "active_days": 5,
+  "total_return": -0.04437308186592048,
   "cagr": null,
   "sharpe": null,
-  "max_drawdown": -0.015962806280847675,
-  "hit_rate": 0.25,
+  "max_drawdown": -0.04437308186592048,
+  "hit_rate": 0.2,
   "best_day": 0.00822998,
-  "worst_day": -0.01080758,
+  "worst_day": -0.02887114,
   "first": "2026-10-12",
-  "last": "2026-10-15"
+  "last": "2026-10-16"
  },
  "bm_backtest": {
   "days": 57,
@@ -502,6 +502,13 @@
    "reconstructed": false,
    "n_trades": 6,
    "bm": -0.00396917
+  },
+  {
+   "date": "2026-10-16",
+   "ret": -0.0167443566750275,
+   "reconstructed": false,
+   "n_trades": 6,
+   "bm": -0.02887114
   }
  ],
  "trades": [
@@ -4306,10 +4313,10 @@
    "side": "LONG",
    "entry_time": "closing auction",
    "entry_price": 183.2,
-   "exit_time": "next opening auction",
-   "exit_price": null,
-   "ret": null,
-   "note": "pending"
+   "exit_time": "opening auction 2026-10-16",
+   "exit_price": 172.2,
+   "ret": -0.06004,
+   "note": ""
   },
   {
    "date": "2026-10-15",
@@ -4317,10 +4324,10 @@
    "side": "LONG",
    "entry_time": "closing auction",
    "entry_price": 1.79,
-   "exit_time": "next opening auction",
-   "exit_price": null,
-   "ret": null,
-   "note": "pending"
+   "exit_time": "opening auction 2026-10-16",
+   "exit_price": 1.74,
+   "ret": -0.02793,
+   "note": ""
   },
   {
    "date": "2026-10-15",
@@ -4328,10 +4335,10 @@
    "side": "LONG",
    "entry_time": "closing auction",
    "entry_price": 58.0,
-   "exit_time": "next opening auction",
-   "exit_price": null,
-   "ret": null,
-   "note": "pending"
+   "exit_time": "opening auction 2026-10-16",
+   "exit_price": 57.5,
+   "ret": -0.00862,
+   "note": ""
   },
   {
    "date": "2026-10-15",
@@ -4364,6 +4371,72 @@
    "exit_time": "closing auction",
    "exit_price": 34.08,
    "ret": -0.00176,
+   "note": ""
+  },
+  {
+   "date": "2026-10-16",
+   "ticker": "TAVHL",
+   "side": "LONG",
+   "entry_time": "closing auction",
+   "entry_price": 270.5,
+   "exit_time": "next opening auction",
+   "exit_price": null,
+   "ret": null,
+   "note": "pending"
+  },
+  {
+   "date": "2026-10-16",
+   "ticker": "ULKER",
+   "side": "LONG",
+   "entry_time": "closing auction",
+   "entry_price": 78.55,
+   "exit_time": "next opening auction",
+   "exit_price": null,
+   "ret": null,
+   "note": "pending"
+  },
+  {
+   "date": "2026-10-16",
+   "ticker": "VESTL",
+   "side": "LONG",
+   "entry_time": "closing auction",
+   "entry_price": 16.1,
+   "exit_time": "next opening auction",
+   "exit_price": null,
+   "ret": null,
+   "note": "pending"
+  },
+  {
+   "date": "2026-10-16",
+   "ticker": "HALKB",
+   "side": "SHORT",
+   "entry_time": "opening auction",
+   "entry_price": 42.7,
+   "exit_time": "closing auction",
+   "exit_price": 42.26,
+   "ret": 0.0103,
+   "note": ""
+  },
+  {
+   "date": "2026-10-16",
+   "ticker": "PETKM",
+   "side": "SHORT",
+   "entry_time": "opening auction",
+   "entry_price": 19.92,
+   "exit_time": "closing auction",
+   "exit_price": 19.71,
+   "ret": 0.01054,
+   "note": ""
+  },
+  {
+   "date": "2026-10-16",
+   "ticker": "SAHOL",
+   "side": "SHORT",
+   "entry_time": "opening auction",
+   "entry_price": 84.05,
+   "exit_time": "closing auction",
+   "exit_price": 85.3,
+   "ret": -0.01487,
    "note": ""
   }
  ],
