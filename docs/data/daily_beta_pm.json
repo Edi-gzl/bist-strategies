@@ -12,9 +12,9 @@
  "stats": {
   "days": 61,
   "active_days": 61,
-  "total_return": 0.00019300289165635753,
+  "total_return": 0.00019300650281617315,
   "cagr": null,
-  "sharpe": 0.11581234501427809,
+  "sharpe": 0.11581241025562182,
   "max_drawdown": -0.0706021711104845,
   "hit_rate": 0.45901639344262296,
   "best_day": 0.04430282798936428,
@@ -25,13 +25,13 @@
  "stats_live": {
   "days": 4,
   "active_days": 4,
-  "total_return": 0.0154061080755854,
+  "total_return": 0.015406111741671502,
   "cagr": null,
   "sharpe": null,
-  "max_drawdown": -0.006796948831085725,
+  "max_drawdown": -0.006796945245162944,
   "hit_rate": 0.5,
   "best_day": 0.021839749252490714,
-  "worst_day": -0.006796948831085761,
+  "worst_day": -0.006796945245162795,
   "first": "2026-10-12",
   "last": "2026-10-15"
  },
@@ -51,10 +51,10 @@
  "bm_live": {
   "days": 4,
   "active_days": 4,
-  "total_return": -0.0131949810716262,
+  "total_return": -0.015962806280847675,
   "cagr": null,
   "sharpe": null,
-  "max_drawdown": -0.0131949810716262,
+  "max_drawdown": -0.015962806280847675,
   "hit_rate": 0.25,
   "best_day": 0.00822998,
   "worst_day": -0.01080758,
@@ -498,10 +498,10 @@
   },
   {
    "date": "2026-10-15",
-   "ret": -0.006796948831085761,
+   "ret": -0.006796945245162795,
    "reconstructed": false,
    "n_trades": 6,
-   "bm": -0.00116761
+   "bm": -0.00396917
   }
  ],
  "trades": [
@@ -4504,10 +4504,10 @@
    "side": "LONG",
    "entry_time": "closing auction",
    "entry_price": 114.7,
-   "exit_time": "next opening auction",
-   "exit_price": null,
-   "ret": null,
-   "residual": 0.02199
+   "exit_time": "opening auction 2026-10-16",
+   "exit_price": 113.1,
+   "ret": -0.01395,
+   "residual": 0.02227
   },
   {
    "date": "2026-10-15",
@@ -4515,10 +4515,10 @@
    "side": "LONG",
    "entry_time": "closing auction",
    "entry_price": 133.9,
-   "exit_time": "next opening auction",
-   "exit_price": null,
-   "ret": null,
-   "residual": 0.02475
+   "exit_time": "opening auction 2026-10-16",
+   "exit_price": 131.9,
+   "ret": -0.01494,
+   "residual": 0.02428
   },
   {
    "date": "2026-10-15",
@@ -4526,10 +4526,10 @@
    "side": "LONG",
    "entry_time": "closing auction",
    "entry_price": 17.21,
-   "exit_time": "next opening auction",
-   "exit_price": null,
-   "ret": null,
-   "residual": 0.03685
+   "exit_time": "opening auction 2026-10-16",
+   "exit_price": 17.0,
+   "ret": -0.0122,
+   "residual": 0.03678
   },
   {
    "date": "2026-10-15",
