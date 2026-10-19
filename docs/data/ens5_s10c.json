@@ -8,32 +8,32 @@
  ],
  "live_start": "2026-10-02",
  "recorded_from": "2026-10-12",
- "last_session": "2026-10-16",
+ "last_session": "2026-10-19",
  "stats": {
-  "days": 62,
-  "active_days": 62,
-  "total_return": 0.04974176637540939,
+  "days": 63,
+  "active_days": 63,
+  "total_return": 0.0663048394608059,
   "cagr": null,
-  "sharpe": 1.141328907564573,
+  "sharpe": 1.4517990710569848,
   "max_drawdown": -0.060629549728883236,
-  "hit_rate": 0.6129032258064516,
+  "hit_rate": 0.6190476190476191,
   "best_day": 0.0241494701050248,
   "worst_day": -0.0358389639118445,
   "first": "2026-07-22",
-  "last": "2026-10-16"
+  "last": "2026-10-19"
  },
  "stats_live": {
-  "days": 5,
-  "active_days": 5,
-  "total_return": -0.010149148111206374,
+  "days": 6,
+  "active_days": 6,
+  "total_return": 0.005468952005058592,
   "cagr": null,
   "sharpe": null,
   "max_drawdown": -0.02181337978209641,
-  "hit_rate": 0.6,
-  "best_day": 0.0054641785932409,
+  "hit_rate": 0.6666666666666666,
+  "best_day": 0.0157782357680081,
   "worst_day": -0.0169922380670846,
   "first": "2026-10-12",
-  "last": "2026-10-16"
+  "last": "2026-10-19"
  },
  "stats_backtest": {
   "days": 57,
@@ -49,17 +49,17 @@
   "last": "2026-10-09"
  },
  "bm_live": {
-  "days": 5,
-  "active_days": 5,
-  "total_return": -0.044374676006174285,
+  "days": 6,
+  "active_days": 6,
+  "total_return": -0.06814448939630735,
   "cagr": null,
   "sharpe": null,
-  "max_drawdown": -0.044374676006174285,
-  "hit_rate": 0.2,
+  "max_drawdown": -0.06814448939630735,
+  "hit_rate": 0.16666666666666666,
   "best_day": 0.00822998,
   "worst_day": -0.02887276,
   "first": "2026-10-12",
-  "last": "2026-10-16"
+  "last": "2026-10-19"
  },
  "bm_backtest": {
   "days": 57,
@@ -507,8 +507,15 @@
    "date": "2026-10-16",
    "ret": -0.0169922380670846,
    "reconstructed": false,
-   "n_trades": 6,
+   "n_trades": 4,
    "bm": -0.02887276
+  },
+  {
+   "date": "2026-10-19",
+   "ret": 0.0157782357680081,
+   "reconstructed": false,
+   "n_trades": 6,
+   "bm": -0.02487357
   }
  ],
  "trades": [
@@ -4199,36 +4206,14 @@
   },
   {
    "date": "2026-10-16",
-   "ticker": "TAVHL",
-   "side": "LONG",
-   "entry_time": "closing auction",
-   "entry_price": 270.5,
-   "exit_time": "next opening auction",
-   "exit_price": null,
-   "ret": null,
-   "note": "pending (S10c sizing set at execution)"
-  },
-  {
-   "date": "2026-10-16",
    "ticker": "ULKER",
    "side": "LONG",
    "entry_time": "closing auction",
    "entry_price": 78.55,
-   "exit_time": "next opening auction",
-   "exit_price": null,
-   "ret": null,
-   "note": "pending (S10c sizing set at execution)"
-  },
-  {
-   "date": "2026-10-16",
-   "ticker": "VESTL",
-   "side": "LONG",
-   "entry_time": "closing auction",
-   "entry_price": 16.1,
-   "exit_time": "next opening auction",
-   "exit_price": null,
-   "ret": null,
-   "note": "pending (S10c sizing set at execution)"
+   "exit_time": "opening auction 2026-10-19",
+   "exit_price": 79.2,
+   "ret": 0.00827,
+   "note": "A3: whole long leg in top pick"
   },
   {
    "date": "2026-10-16",
@@ -4262,6 +4247,72 @@
    "exit_price": 85.3,
    "ret": -0.01487,
    "note": "short leg halved (momentum streak)"
+  },
+  {
+   "date": "2026-10-19",
+   "ticker": "BRSAN",
+   "side": "LONG",
+   "entry_time": "closing auction",
+   "entry_price": 642.0,
+   "exit_time": "next opening auction",
+   "exit_price": null,
+   "ret": null,
+   "note": "pending (S10c sizing set at execution)"
+  },
+  {
+   "date": "2026-10-19",
+   "ticker": "KONTR",
+   "side": "LONG",
+   "entry_time": "closing auction",
+   "entry_price": 1.62,
+   "exit_time": "next opening auction",
+   "exit_price": null,
+   "ret": null,
+   "note": "pending (S10c sizing set at execution)"
+  },
+  {
+   "date": "2026-10-19",
+   "ticker": "VESTL",
+   "side": "LONG",
+   "entry_time": "closing auction",
+   "entry_price": 15.34,
+   "exit_time": "next opening auction",
+   "exit_price": null,
+   "ret": null,
+   "note": "pending (S10c sizing set at execution)"
+  },
+  {
+   "date": "2026-10-19",
+   "ticker": "KCHOL",
+   "side": "SHORT",
+   "entry_time": "opening auction",
+   "entry_price": 204.4,
+   "exit_time": "closing auction",
+   "exit_price": 202.9,
+   "ret": 0.00734,
+   "note": ""
+  },
+  {
+   "date": "2026-10-19",
+   "ticker": "ODAS",
+   "side": "SHORT",
+   "entry_time": "opening auction",
+   "entry_price": 5.21,
+   "exit_time": "closing auction",
+   "exit_price": 4.97,
+   "ret": 0.04607,
+   "note": ""
+  },
+  {
+   "date": "2026-10-19",
+   "ticker": "THYAO",
+   "side": "SHORT",
+   "entry_time": "opening auction",
+   "entry_price": 274.5,
+   "exit_time": "closing auction",
+   "exit_price": 266.0,
+   "ret": 0.03097,
+   "note": ""
   }
  ],
  "holdings": null
