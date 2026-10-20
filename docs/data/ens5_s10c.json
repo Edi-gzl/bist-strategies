@@ -8,32 +8,32 @@
  ],
  "live_start": "2026-10-02",
  "recorded_from": "2026-10-12",
- "last_session": "2026-10-19",
+ "last_session": "2026-10-20",
  "stats": {
-  "days": 63,
-  "active_days": 63,
-  "total_return": 0.0663048394608059,
+  "days": 64,
+  "active_days": 64,
+  "total_return": 0.05320747690818073,
   "cagr": null,
-  "sharpe": 1.4517990710569848,
+  "sharpe": 1.171248565080319,
   "max_drawdown": -0.060629549728883236,
-  "hit_rate": 0.6190476190476191,
+  "hit_rate": 0.609375,
   "best_day": 0.0241494701050248,
   "worst_day": -0.0358389639118445,
   "first": "2026-07-22",
-  "last": "2026-10-19"
+  "last": "2026-10-20"
  },
  "stats_live": {
-  "days": 6,
-  "active_days": 6,
-  "total_return": 0.005468952005058592,
+  "days": 7,
+  "active_days": 7,
+  "total_return": -0.006881166753173296,
   "cagr": null,
   "sharpe": null,
   "max_drawdown": -0.02181337978209641,
-  "hit_rate": 0.6666666666666666,
+  "hit_rate": 0.5714285714285714,
   "best_day": 0.0157782357680081,
   "worst_day": -0.0169922380670846,
   "first": "2026-10-12",
-  "last": "2026-10-19"
+  "last": "2026-10-20"
  },
  "stats_backtest": {
   "days": 57,
@@ -49,17 +49,17 @@
   "last": "2026-10-09"
  },
  "bm_live": {
-  "days": 6,
-  "active_days": 6,
-  "total_return": -0.06814775763491543,
+  "days": 7,
+  "active_days": 7,
+  "total_return": -0.03817869063127244,
   "cagr": null,
   "sharpe": null,
   "max_drawdown": -0.06814775763491543,
-  "hit_rate": 0.16666666666666666,
-  "best_day": 0.00822998,
+  "hit_rate": 0.2857142857142857,
+  "best_day": 0.03216075,
   "worst_day": -0.02887276,
   "first": "2026-10-12",
-  "last": "2026-10-19"
+  "last": "2026-10-20"
  },
  "bm_backtest": {
   "days": 57,
@@ -514,8 +514,15 @@
    "date": "2026-10-19",
    "ret": 0.0157782357680081,
    "reconstructed": false,
-   "n_trades": 6,
+   "n_trades": 4,
    "bm": -0.02487699
+  },
+  {
+   "date": "2026-10-20",
+   "ret": -0.012282943927412,
+   "reconstructed": false,
+   "n_trades": 6,
+   "bm": 0.03216075
   }
  ],
  "trades": [
@@ -4250,36 +4257,14 @@
   },
   {
    "date": "2026-10-19",
-   "ticker": "BRSAN",
-   "side": "LONG",
-   "entry_time": "closing auction",
-   "entry_price": 642.0,
-   "exit_time": "next opening auction",
-   "exit_price": null,
-   "ret": null,
-   "note": "pending (S10c sizing set at execution)"
-  },
-  {
-   "date": "2026-10-19",
-   "ticker": "KONTR",
-   "side": "LONG",
-   "entry_time": "closing auction",
-   "entry_price": 1.62,
-   "exit_time": "next opening auction",
-   "exit_price": null,
-   "ret": null,
-   "note": "pending (S10c sizing set at execution)"
-  },
-  {
-   "date": "2026-10-19",
    "ticker": "VESTL",
    "side": "LONG",
    "entry_time": "closing auction",
    "entry_price": 15.34,
-   "exit_time": "next opening auction",
-   "exit_price": null,
-   "ret": null,
-   "note": "pending (S10c sizing set at execution)"
+   "exit_time": "opening auction 2026-10-20",
+   "exit_price": 15.4,
+   "ret": 0.00391,
+   "note": "A3: whole long leg in top pick"
   },
   {
    "date": "2026-10-19",
@@ -4312,6 +4297,72 @@
    "exit_time": "closing auction",
    "exit_price": 266.0,
    "ret": 0.03097,
+   "note": ""
+  },
+  {
+   "date": "2026-10-20",
+   "ticker": "ASTOR",
+   "side": "LONG",
+   "entry_time": "closing auction",
+   "entry_price": 165.9,
+   "exit_time": "next opening auction",
+   "exit_price": null,
+   "ret": null,
+   "note": "pending (S10c sizing set at execution)"
+  },
+  {
+   "date": "2026-10-20",
+   "ticker": "HEKTS",
+   "side": "LONG",
+   "entry_time": "closing auction",
+   "entry_price": 1.97,
+   "exit_time": "next opening auction",
+   "exit_price": null,
+   "ret": null,
+   "note": "pending (S10c sizing set at execution)"
+  },
+  {
+   "date": "2026-10-20",
+   "ticker": "TAVHL",
+   "side": "LONG",
+   "entry_time": "closing auction",
+   "entry_price": 286.25,
+   "exit_time": "next opening auction",
+   "exit_price": null,
+   "ret": null,
+   "note": "pending (S10c sizing set at execution)"
+  },
+  {
+   "date": "2026-10-20",
+   "ticker": "ARCLK",
+   "side": "SHORT",
+   "entry_time": "opening auction",
+   "entry_price": 72.5,
+   "exit_time": "closing auction",
+   "exit_price": 76.5,
+   "ret": -0.05517,
+   "note": ""
+  },
+  {
+   "date": "2026-10-20",
+   "ticker": "SOKM",
+   "side": "SHORT",
+   "entry_time": "opening auction",
+   "entry_price": 57.6,
+   "exit_time": "closing auction",
+   "exit_price": 58.05,
+   "ret": -0.00781,
+   "note": ""
+  },
+  {
+   "date": "2026-10-20",
+   "ticker": "YKBNK",
+   "side": "SHORT",
+   "entry_time": "opening auction",
+   "entry_price": 36.26,
+   "exit_time": "closing auction",
+   "exit_price": 36.66,
+   "ret": -0.01103,
    "note": ""
   }
  ],
