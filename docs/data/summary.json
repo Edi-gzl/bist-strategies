@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-21T22:52:01+00:00",
+ "generated_at": "2026-10-22T00:22:49+00:00",
  "live_start": "2026-10-02",
  "recorded_from": "2026-10-12",
  "last_session": "2026-10-21",
@@ -50,7 +50,7 @@
    "bm_live": {
     "days": 8,
     "active_days": 8,
-    "total_return": -0.04704466327890244,
+    "total_return": -0.04398257048554377,
     "cagr": null,
     "sharpe": null,
     "max_drawdown": -0.06814775763491543,
@@ -124,7 +124,7 @@
    "bm_live": {
     "days": 8,
     "active_days": 8,
-    "total_return": -0.04704466327890244,
+    "total_return": -0.04398257048554377,
     "cagr": null,
     "sharpe": null,
     "max_drawdown": -0.06814775763491543,
@@ -243,7 +243,7 @@
    "bm_live": {
     "days": 8,
     "active_days": 8,
-    "total_return": -0.04704466327890244,
+    "total_return": -0.04398257048554377,
     "cagr": null,
     "sharpe": null,
     "max_drawdown": -0.06814775763491543,
@@ -384,7 +384,7 @@
    "bm_live": {
     "days": 8,
     "active_days": 8,
-    "total_return": -0.04704466327890244,
+    "total_return": -0.04398257048554377,
     "cagr": null,
     "sharpe": null,
     "max_drawdown": -0.06814775763491543,
@@ -458,7 +458,7 @@
    "bm_live": {
     "days": 8,
     "active_days": 8,
-    "total_return": -0.04704466327890244,
+    "total_return": -0.04398257048554377,
     "cagr": null,
     "sharpe": null,
     "max_drawdown": -0.06814775763491543,
@@ -532,7 +532,7 @@
    "bm_live": {
     "days": 8,
     "active_days": 8,
-    "total_return": -0.04704466327890244,
+    "total_return": -0.04398257048554377,
     "cagr": null,
     "sharpe": null,
     "max_drawdown": -0.06814775763491543,
@@ -673,7 +673,7 @@
    "bm_live": {
     "days": 8,
     "active_days": 8,
-    "total_return": -0.04704466327890244,
+    "total_return": -0.04398257048554377,
     "cagr": null,
     "sharpe": null,
     "max_drawdown": -0.06814775763491543,
