@@ -7,32 +7,32 @@
  ],
  "live_start": "2026-10-02",
  "recorded_from": "2026-10-12",
- "last_session": "2026-10-21",
+ "last_session": "2026-10-22",
  "stats": {
-  "days": 4718,
-  "active_days": 4547,
-  "total_return": 26.865647686652597,
-  "cagr": 0.19449600597306138,
-  "sharpe": 0.7543040704816557,
+  "days": 4719,
+  "active_days": 4548,
+  "total_return": 26.02019159736983,
+  "cagr": 0.19248740338773485,
+  "sharpe": 0.7484643409925275,
   "max_drawdown": -0.505397996492563,
-  "hit_rate": 0.5190235319991203,
+  "hit_rate": 0.5189094107299912,
   "best_day": 0.09937886037252985,
   "worst_day": -0.16513754172159267,
   "first": "2008-05-16",
-  "last": "2026-10-21"
+  "last": "2026-10-22"
  },
  "stats_live": {
-  "days": 8,
-  "active_days": 8,
-  "total_return": -0.07781313803258871,
+  "days": 9,
+  "active_days": 9,
+  "total_return": -0.1057926957544919,
   "cagr": null,
   "sharpe": null,
-  "max_drawdown": -0.08341076446795292,
-  "hit_rate": 0.125,
+  "max_drawdown": -0.1057926957544919,
+  "hit_rate": 0.1111111111111111,
   "best_day": 0.027803913376389235,
-  "worst_day": -0.02302645550533966,
+  "worst_day": -0.03034044278424342,
   "first": "2026-10-12",
-  "last": "2026-10-21"
+  "last": "2026-10-22"
  },
  "stats_backtest": {
   "days": 4710,
@@ -48,17 +48,17 @@
   "last": "2026-10-09"
  },
  "bm_live": {
-  "days": 8,
-  "active_days": 8,
-  "total_return": -0.05616341218484755,
+  "days": 9,
+  "active_days": 9,
+  "total_return": -0.08524619818473333,
   "cagr": null,
   "sharpe": null,
-  "max_drawdown": -0.06814775763491543,
-  "hit_rate": 0.25,
+  "max_drawdown": -0.08524619818473333,
+  "hit_rate": 0.2222222222222222,
   "best_day": 0.03216075,
-  "worst_day": -0.02887276,
+  "worst_day": -0.03081337,
   "first": "2026-10-12",
-  "last": "2026-10-21"
+  "last": "2026-10-22"
  },
  "bm_backtest": {
   "days": 4710,
@@ -33100,6 +33100,13 @@
    "reconstructed": false,
    "n_trades": 4,
    "bm": -0.01869861
+  },
+  {
+   "date": "2026-10-22",
+   "ret": -0.03034044278424342,
+   "reconstructed": false,
+   "n_trades": 2,
+   "bm": -0.03081337
   }
  ],
  "trades": [
@@ -37004,6 +37011,28 @@
    "weight": 0.0,
    "entry_time": "closing auction",
    "entry_price": 36.42,
+   "exit_time": null,
+   "exit_price": null,
+   "ret": null
+  },
+  {
+   "date": "2026-10-22",
+   "ticker": "YKBNK",
+   "side": "BUY",
+   "weight": 0.2,
+   "entry_time": "closing auction",
+   "entry_price": 35.32,
+   "exit_time": null,
+   "exit_price": null,
+   "ret": null
+  },
+  {
+   "date": "2026-10-22",
+   "ticker": "KCHOL",
+   "side": "SELL",
+   "weight": 0.0,
+   "entry_time": "closing auction",
+   "entry_price": 196.1,
    "exit_time": null,
    "exit_price": null,
    "ret": null
