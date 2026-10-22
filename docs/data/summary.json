@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-22T20:17:20+00:00",
+ "generated_at": "2026-10-22T20:40:53+00:00",
  "live_start": "2026-10-02",
  "recorded_from": "2026-10-12",
  "last_session": "2026-10-22",
@@ -257,7 +257,7 @@
       "exit_time": "next opening auction",
       "exit_price": null,
       "ret": null,
-      "residual": 0.02949
+      "residual": 0.02946
      },
      {
       "date": "2026-10-22",
@@ -268,7 +268,7 @@
       "exit_time": "next opening auction",
       "exit_price": null,
       "ret": null,
-      "residual": 0.03768
+      "residual": 0.03765
      },
      {
       "date": "2026-10-22",
@@ -279,7 +279,7 @@
       "exit_time": "next opening auction",
       "exit_price": null,
       "ret": null,
-      "residual": 0.03432
+      "residual": 0.03431
      },
      {
       "date": "2026-10-22",
@@ -398,7 +398,7 @@
       "exit_time": "closing auction",
       "exit_price": 36.48,
       "ret": 0.0236,
-      "z": -3.08,
+      "z": -3.07,
       "fallback_rank": 1
      }
     ]
