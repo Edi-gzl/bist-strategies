@@ -7,7 +7,7 @@
  ],
  "live_start": "2026-10-02",
  "recorded_from": "2026-10-12",
- "last_session": "2026-10-23",
+ "last_session": "2026-10-22",
  "stats": {
   "days": 4720,
   "active_days": 4549,
@@ -49,12 +49,12 @@
  },
  "bm_live": {
   "days": 10,
-  "active_days": 10,
-  "total_return": -0.09367436634821635,
+  "active_days": 9,
+  "total_return": -0.08524373477123914,
   "cagr": null,
   "sharpe": null,
-  "max_drawdown": -0.09367436634821635,
-  "hit_rate": 0.2,
+  "max_drawdown": -0.08524373477123914,
+  "hit_rate": 0.2222222222222222,
   "best_day": 0.03216075,
   "worst_day": -0.03081076,
   "first": "2026-10-12",
@@ -33105,7 +33105,7 @@
    "date": "2026-10-22",
    "ret": -0.03034044278424342,
    "reconstructed": false,
-   "n_trades": 2,
+   "n_trades": 4,
    "bm": -0.03081076
   },
   {
@@ -33113,7 +33113,7 @@
    "ret": -0.0021945326115871077,
    "reconstructed": false,
    "n_trades": 4,
-   "bm": -0.00921626
+   "bm": null
   }
  ],
  "trades": [
@@ -37035,6 +37035,17 @@
   },
   {
    "date": "2026-10-22",
+   "ticker": "YKBNK",
+   "side": "BUY",
+   "weight": 0.2,
+   "entry_time": "closing auction",
+   "entry_price": 35.32,
+   "exit_time": null,
+   "exit_price": null,
+   "ret": null
+  },
+  {
+   "date": "2026-10-22",
    "ticker": "KCHOL",
    "side": "SELL",
    "weight": 0.0,
@@ -37045,45 +37056,12 @@
    "ret": null
   },
   {
-   "date": "2026-10-23",
-   "ticker": "ALARK",
-   "side": "BUY",
-   "weight": 0.2,
-   "entry_time": "closing auction",
-   "entry_price": 101.3,
-   "exit_time": null,
-   "exit_price": null,
-   "ret": null
-  },
-  {
-   "date": "2026-10-23",
-   "ticker": "GARAN",
-   "side": "BUY",
-   "weight": 0.2,
-   "entry_time": "closing auction",
-   "entry_price": 126.5,
-   "exit_time": null,
-   "exit_price": null,
-   "ret": null
-  },
-  {
-   "date": "2026-10-23",
-   "ticker": "HALKB",
+   "date": "2026-10-22",
+   "ticker": "KCHOL",
    "side": "SELL",
    "weight": 0.0,
    "entry_time": "closing auction",
-   "entry_price": 43.1,
-   "exit_time": null,
-   "exit_price": null,
-   "ret": null
-  },
-  {
-   "date": "2026-10-23",
-   "ticker": "ISCTR",
-   "side": "SELL",
-   "weight": 0.0,
-   "entry_time": "closing auction",
-   "entry_price": 12.17,
+   "entry_price": 196.1,
    "exit_time": null,
    "exit_price": null,
    "ret": null

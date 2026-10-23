@@ -8,7 +8,7 @@
  ],
  "live_start": "2026-10-02",
  "recorded_from": "2026-10-12",
- "last_session": "2026-10-23",
+ "last_session": "2026-10-22",
  "stats": {
   "days": 67,
   "active_days": 67,
@@ -50,12 +50,12 @@
  },
  "bm_live": {
   "days": 10,
-  "active_days": 10,
-  "total_return": -0.09367436634821635,
+  "active_days": 9,
+  "total_return": -0.08524373477123914,
   "cagr": null,
   "sharpe": null,
-  "max_drawdown": -0.09367436634821635,
-  "hit_rate": 0.2,
+  "max_drawdown": -0.08524373477123914,
+  "hit_rate": 0.2222222222222222,
   "best_day": 0.03216075,
   "worst_day": -0.03081076,
   "first": "2026-10-12",
@@ -535,15 +535,15 @@
    "date": "2026-10-22",
    "ret": 0.0142428504300465,
    "reconstructed": false,
-   "n_trades": 4,
+   "n_trades": 7,
    "bm": -0.03081076
   },
   {
    "date": "2026-10-23",
    "ret": 0.0029310367459222,
    "reconstructed": false,
-   "n_trades": 6,
-   "bm": -0.00921626
+   "n_trades": 3,
+   "bm": null
   }
  ],
  "trades": [
@@ -4476,6 +4476,17 @@
   },
   {
    "date": "2026-10-22",
+   "ticker": "ALARK",
+   "side": "SHORT",
+   "entry_time": "opening auction",
+   "entry_price": 103.1,
+   "exit_time": "closing auction",
+   "exit_price": 102.8,
+   "ret": 0.00291,
+   "note": ""
+  },
+  {
+   "date": "2026-10-22",
    "ticker": "HALKB",
    "side": "SHORT",
    "entry_time": "opening auction",
@@ -4483,6 +4494,28 @@
    "exit_time": "closing auction",
    "exit_price": 41.66,
    "ret": 0.05533,
+   "note": ""
+  },
+  {
+   "date": "2026-10-22",
+   "ticker": "HALKB",
+   "side": "SHORT",
+   "entry_time": "opening auction",
+   "entry_price": 44.1,
+   "exit_time": "closing auction",
+   "exit_price": 41.66,
+   "ret": 0.05533,
+   "note": ""
+  },
+  {
+   "date": "2026-10-22",
+   "ticker": "ODAS",
+   "side": "SHORT",
+   "entry_time": "opening auction",
+   "entry_price": 4.84,
+   "exit_time": "closing auction",
+   "exit_price": 4.69,
+   "ret": 0.03099,
    "note": ""
   },
   {
@@ -4528,39 +4561,6 @@
    "exit_price": null,
    "ret": null,
    "note": "pending (S10c sizing set at execution)"
-  },
-  {
-   "date": "2026-10-23",
-   "ticker": "ASELS",
-   "side": "SHORT",
-   "entry_time": "opening auction",
-   "entry_price": 339.25,
-   "exit_time": "closing auction",
-   "exit_price": 338.0,
-   "ret": 0.00368,
-   "note": ""
-  },
-  {
-   "date": "2026-10-23",
-   "ticker": "SASA",
-   "side": "SHORT",
-   "entry_time": "opening auction",
-   "entry_price": 1.63,
-   "exit_time": "closing auction",
-   "exit_price": 1.6,
-   "ret": 0.0184,
-   "note": ""
-  },
-  {
-   "date": "2026-10-23",
-   "ticker": "SOKM",
-   "side": "SHORT",
-   "entry_time": "opening auction",
-   "entry_price": 57.05,
-   "exit_time": "closing auction",
-   "exit_price": 57.4,
-   "ret": -0.00613,
-   "note": ""
   }
  ],
  "holdings": null

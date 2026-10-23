@@ -7,7 +7,7 @@
  ],
  "live_start": "2026-10-02",
  "recorded_from": "2026-10-12",
- "last_session": "2026-10-23",
+ "last_session": "2026-10-22",
  "stats": {
   "days": 16,
   "active_days": 10,
@@ -49,12 +49,12 @@
  },
  "bm_live": {
   "days": 10,
-  "active_days": 10,
-  "total_return": -0.09367436634821635,
+  "active_days": 9,
+  "total_return": -0.08524373477123914,
   "cagr": null,
   "sharpe": null,
-  "max_drawdown": -0.09367436634821635,
-  "hit_rate": 0.2,
+  "max_drawdown": -0.08524373477123914,
+  "hit_rate": 0.2222222222222222,
   "best_day": 0.03216075,
   "worst_day": -0.03081076,
   "first": "2026-10-12",
@@ -185,7 +185,7 @@
    "ret": 0.02681296705170788,
    "reconstructed": false,
    "n_trades": 2,
-   "bm": -0.00921626
+   "bm": null
   }
  ],
  "trades": [
@@ -364,28 +364,6 @@
    "exit_price": 89.2,
    "ret": -0.02511,
    "gap": 0.0152
-  },
-  {
-   "date": "2026-10-23",
-   "ticker": "BRSAN",
-   "side": "SHORT",
-   "entry_time": "10:01 open",
-   "entry_price": 651.0,
-   "exit_time": "closing auction",
-   "exit_price": 632.0,
-   "ret": 0.02819,
-   "gap": 0.0126
-  },
-  {
-   "date": "2026-10-23",
-   "ticker": "TRMET",
-   "side": "SHORT",
-   "entry_time": "10:01 open",
-   "entry_price": 105.9,
-   "exit_time": "closing auction",
-   "exit_price": 103.1,
-   "ret": 0.02544,
-   "gap": 0.0151
   }
  ],
  "holdings": null
