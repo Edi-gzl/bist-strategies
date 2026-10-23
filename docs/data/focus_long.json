@@ -7,32 +7,32 @@
  ],
  "live_start": "2026-10-02",
  "recorded_from": "2026-10-12",
- "last_session": "2026-10-22",
+ "last_session": "2026-10-23",
  "stats": {
-  "days": 4719,
-  "active_days": 4548,
-  "total_return": 26.02019159736983,
-  "cagr": 0.19248740338773485,
-  "sharpe": 0.7484643409925275,
+  "days": 4720,
+  "active_days": 4549,
+  "total_return": 25.960894905738073,
+  "cagr": 0.1923030693663048,
+  "sharpe": 0.7479828592288615,
   "max_drawdown": -0.505397996492563,
-  "hit_rate": 0.5189094107299912,
+  "hit_rate": 0.5187953396350846,
   "best_day": 0.09937886037252985,
   "worst_day": -0.16513754172159267,
   "first": "2008-05-16",
-  "last": "2026-10-22"
+  "last": "2026-10-23"
  },
  "stats_live": {
-  "days": 9,
-  "active_days": 9,
-  "total_return": -0.1057926957544919,
+  "days": 10,
+  "active_days": 10,
+  "total_return": -0.107755062845178,
   "cagr": null,
   "sharpe": null,
-  "max_drawdown": -0.1057926957544919,
-  "hit_rate": 0.1111111111111111,
+  "max_drawdown": -0.107755062845178,
+  "hit_rate": 0.1,
   "best_day": 0.027803913376389235,
   "worst_day": -0.03034044278424342,
   "first": "2026-10-12",
-  "last": "2026-10-22"
+  "last": "2026-10-23"
  },
  "stats_backtest": {
   "days": 4710,
@@ -48,17 +48,17 @@
   "last": "2026-10-09"
  },
  "bm_live": {
-  "days": 9,
-  "active_days": 9,
-  "total_return": -0.08524373477123914,
+  "days": 10,
+  "active_days": 10,
+  "total_return": -0.09367436634821635,
   "cagr": null,
   "sharpe": null,
-  "max_drawdown": -0.08524373477123914,
-  "hit_rate": 0.2222222222222222,
+  "max_drawdown": -0.09367436634821635,
+  "hit_rate": 0.2,
   "best_day": 0.03216075,
   "worst_day": -0.03081076,
   "first": "2026-10-12",
-  "last": "2026-10-22"
+  "last": "2026-10-23"
  },
  "bm_backtest": {
   "days": 4710,
@@ -33107,6 +33107,13 @@
    "reconstructed": false,
    "n_trades": 2,
    "bm": -0.03081076
+  },
+  {
+   "date": "2026-10-23",
+   "ret": -0.0021945326115871077,
+   "reconstructed": false,
+   "n_trades": 4,
+   "bm": -0.00921626
   }
  ],
  "trades": [
@@ -37033,6 +37040,50 @@
    "weight": 0.0,
    "entry_time": "closing auction",
    "entry_price": 196.1,
+   "exit_time": null,
+   "exit_price": null,
+   "ret": null
+  },
+  {
+   "date": "2026-10-23",
+   "ticker": "ALARK",
+   "side": "BUY",
+   "weight": 0.2,
+   "entry_time": "closing auction",
+   "entry_price": 101.3,
+   "exit_time": null,
+   "exit_price": null,
+   "ret": null
+  },
+  {
+   "date": "2026-10-23",
+   "ticker": "GARAN",
+   "side": "BUY",
+   "weight": 0.2,
+   "entry_time": "closing auction",
+   "entry_price": 126.5,
+   "exit_time": null,
+   "exit_price": null,
+   "ret": null
+  },
+  {
+   "date": "2026-10-23",
+   "ticker": "HALKB",
+   "side": "SELL",
+   "weight": 0.0,
+   "entry_time": "closing auction",
+   "entry_price": 43.1,
+   "exit_time": null,
+   "exit_price": null,
+   "ret": null
+  },
+  {
+   "date": "2026-10-23",
+   "ticker": "ISCTR",
+   "side": "SELL",
+   "weight": 0.0,
+   "entry_time": "closing auction",
+   "entry_price": 12.17,
    "exit_time": null,
    "exit_price": null,
    "ret": null

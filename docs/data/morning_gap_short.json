@@ -7,32 +7,32 @@
  ],
  "live_start": "2026-10-02",
  "recorded_from": "2026-10-12",
- "last_session": "2026-10-22",
+ "last_session": "2026-10-23",
  "stats": {
-  "days": 15,
-  "active_days": 9,
-  "total_return": 0.017724302519179114,
+  "days": 16,
+  "active_days": 10,
+  "total_return": 0.045012510710348286,
   "cagr": null,
   "sharpe": null,
   "max_drawdown": -0.043134386437944205,
-  "hit_rate": 0.5555555555555556,
+  "hit_rate": 0.6,
   "best_day": 0.0578934565450715,
   "worst_day": -0.028353044513410697,
   "first": "2026-10-02",
-  "last": "2026-10-22"
+  "last": "2026-10-23"
  },
  "stats_live": {
-  "days": 9,
-  "active_days": 4,
-  "total_return": 0.040836541978491736,
+  "days": 10,
+  "active_days": 5,
+  "total_return": 0.06874445788477468,
   "cagr": null,
   "sharpe": null,
   "max_drawdown": -0.02808516064211386,
-  "hit_rate": 0.5,
+  "hit_rate": 0.6,
   "best_day": 0.0578934565450715,
   "worst_day": -0.02808516064211386,
   "first": "2026-10-12",
-  "last": "2026-10-22"
+  "last": "2026-10-23"
  },
  "stats_backtest": {
   "days": 6,
@@ -48,17 +48,17 @@
   "last": "2026-10-09"
  },
  "bm_live": {
-  "days": 9,
-  "active_days": 9,
-  "total_return": -0.08524373477123914,
+  "days": 10,
+  "active_days": 10,
+  "total_return": -0.09367436634821635,
   "cagr": null,
   "sharpe": null,
-  "max_drawdown": -0.08524373477123914,
-  "hit_rate": 0.2222222222222222,
+  "max_drawdown": -0.09367436634821635,
+  "hit_rate": 0.2,
   "best_day": 0.03216075,
   "worst_day": -0.03081076,
   "first": "2026-10-12",
-  "last": "2026-10-22"
+  "last": "2026-10-23"
  },
  "bm_backtest": {
   "days": 6,
@@ -179,6 +179,13 @@
    "reconstructed": false,
    "n_trades": 0,
    "bm": -0.03081076
+  },
+  {
+   "date": "2026-10-23",
+   "ret": 0.02681296705170788,
+   "reconstructed": false,
+   "n_trades": 2,
+   "bm": -0.00921626
   }
  ],
  "trades": [
@@ -357,6 +364,28 @@
    "exit_price": 89.2,
    "ret": -0.02511,
    "gap": 0.0152
+  },
+  {
+   "date": "2026-10-23",
+   "ticker": "BRSAN",
+   "side": "SHORT",
+   "entry_time": "10:01 open",
+   "entry_price": 651.0,
+   "exit_time": "closing auction",
+   "exit_price": 632.0,
+   "ret": 0.02819,
+   "gap": 0.0126
+  },
+  {
+   "date": "2026-10-23",
+   "ticker": "TRMET",
+   "side": "SHORT",
+   "entry_time": "10:01 open",
+   "entry_price": 105.9,
+   "exit_time": "closing auction",
+   "exit_price": 103.1,
+   "ret": 0.02544,
+   "gap": 0.0151
   }
  ],
  "holdings": null
