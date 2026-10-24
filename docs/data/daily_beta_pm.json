@@ -8,13 +8,13 @@
  ],
  "live_start": "2026-10-02",
  "recorded_from": "2026-10-12",
- "last_session": "2026-10-22",
+ "last_session": "2026-10-23",
  "stats": {
   "days": 67,
   "active_days": 67,
-  "total_return": 0.02138896246717148,
+  "total_return": 0.021388953834817315,
   "cagr": null,
-  "sharpe": 0.45638581047565013,
+  "sharpe": 0.4563856761019937,
   "max_drawdown": -0.0706021711104845,
   "hit_rate": 0.4925373134328358,
   "best_day": 0.04430282798936428,
@@ -25,7 +25,7 @@
  "stats_live": {
   "days": 10,
   "active_days": 10,
-  "total_return": 0.036924461790596386,
+  "total_return": 0.03692445302694258,
   "cagr": null,
   "sharpe": null,
   "max_drawdown": -0.03319357570346615,
@@ -50,12 +50,12 @@
  },
  "bm_live": {
   "days": 10,
-  "active_days": 9,
-  "total_return": -0.08524373477123914,
+  "active_days": 10,
+  "total_return": -0.09367436634821635,
   "cagr": null,
   "sharpe": null,
-  "max_drawdown": -0.08524373477123914,
-  "hit_rate": 0.2222222222222222,
+  "max_drawdown": -0.09367436634821635,
+  "hit_rate": 0.2,
   "best_day": 0.03216075,
   "worst_day": -0.03081076,
   "first": "2026-10-12",
@@ -535,15 +535,15 @@
    "date": "2026-10-22",
    "ret": 0.008992207659687557,
    "reconstructed": false,
-   "n_trades": 12,
+   "n_trades": 6,
    "bm": -0.03081076
   },
   {
    "date": "2026-10-23",
-   "ret": 0.01384680801612289,
+   "ret": 0.013846799447512013,
    "reconstructed": false,
    "n_trades": 6,
-   "bm": null
+   "bm": -0.00921626
   }
  ],
  "trades": [
@@ -4883,17 +4883,6 @@
   },
   {
    "date": "2026-10-22",
-   "ticker": "BRSAN",
-   "side": "LONG",
-   "entry_time": "closing auction",
-   "entry_price": 636.0,
-   "exit_time": "next opening auction",
-   "exit_price": null,
-   "ret": null,
-   "residual": 0.02949
-  },
-  {
-   "date": "2026-10-22",
    "ticker": "SASA",
    "side": "LONG",
    "entry_time": "closing auction",
@@ -4901,17 +4890,6 @@
    "exit_time": "opening auction 2026-10-23",
    "exit_price": 1.63,
    "ret": -0.0061,
-   "residual": 0.03768
-  },
-  {
-   "date": "2026-10-22",
-   "ticker": "SASA",
-   "side": "LONG",
-   "entry_time": "closing auction",
-   "entry_price": 1.64,
-   "exit_time": "next opening auction",
-   "exit_price": null,
-   "ret": null,
    "residual": 0.03768
   },
   {
@@ -4927,80 +4905,102 @@
   },
   {
    "date": "2026-10-22",
-   "ticker": "ULKER",
+   "ticker": "ASTOR",
+   "side": "SHORT",
+   "entry_time": "opening auction",
+   "entry_price": 155.6,
+   "exit_time": "closing auction",
+   "exit_price": 150.0,
+   "ret": 0.03599,
+   "residual": -0.02114
+  },
+  {
+   "date": "2026-10-22",
+   "ticker": "BRSAN",
+   "side": "SHORT",
+   "entry_time": "opening auction",
+   "entry_price": 645.5,
+   "exit_time": "closing auction",
+   "exit_price": 636.0,
+   "ret": 0.01472,
+   "residual": -0.02667
+  },
+  {
+   "date": "2026-10-22",
+   "ticker": "TKFEN",
+   "side": "SHORT",
+   "entry_time": "opening auction",
+   "entry_price": 173.0,
+   "exit_time": "closing auction",
+   "exit_price": 170.3,
+   "ret": 0.01561,
+   "residual": -0.07143
+  },
+  {
+   "date": "2026-10-23",
+   "ticker": "HALKB",
    "side": "LONG",
    "entry_time": "closing auction",
-   "entry_price": 77.9,
+   "entry_price": 43.1,
    "exit_time": "next opening auction",
    "exit_price": null,
    "ret": null,
-   "residual": 0.03432
+   "residual": 0.05835
   },
   {
-   "date": "2026-10-22",
-   "ticker": "ASTOR",
-   "side": "SHORT",
-   "entry_time": "opening auction",
-   "entry_price": 155.6,
-   "exit_time": "closing auction",
-   "exit_price": 150.0,
-   "ret": 0.03599,
-   "residual": -0.02114
-  },
-  {
-   "date": "2026-10-22",
-   "ticker": "ASTOR",
-   "side": "SHORT",
-   "entry_time": "opening auction",
-   "entry_price": 155.6,
-   "exit_time": "closing auction",
-   "exit_price": 150.0,
-   "ret": 0.03599,
-   "residual": -0.02114
-  },
-  {
-   "date": "2026-10-22",
-   "ticker": "BRSAN",
-   "side": "SHORT",
-   "entry_time": "opening auction",
-   "entry_price": 645.5,
-   "exit_time": "closing auction",
-   "exit_price": 636.0,
-   "ret": 0.01472,
-   "residual": -0.02667
-  },
-  {
-   "date": "2026-10-22",
-   "ticker": "BRSAN",
-   "side": "SHORT",
-   "entry_time": "opening auction",
-   "entry_price": 645.5,
-   "exit_time": "closing auction",
-   "exit_price": 636.0,
-   "ret": 0.01472,
-   "residual": -0.02667
-  },
-  {
-   "date": "2026-10-22",
+   "date": "2026-10-23",
    "ticker": "TKFEN",
-   "side": "SHORT",
-   "entry_time": "opening auction",
-   "entry_price": 173.0,
-   "exit_time": "closing auction",
-   "exit_price": 170.3,
-   "ret": 0.01561,
-   "residual": -0.07143
+   "side": "LONG",
+   "entry_time": "closing auction",
+   "entry_price": 174.8,
+   "exit_time": "next opening auction",
+   "exit_price": null,
+   "ret": null,
+   "residual": 0.04752
   },
   {
-   "date": "2026-10-22",
-   "ticker": "TKFEN",
+   "date": "2026-10-23",
+   "ticker": "TUPRS",
+   "side": "LONG",
+   "entry_time": "closing auction",
+   "entry_price": 360.75,
+   "exit_time": "next opening auction",
+   "exit_price": null,
+   "ret": null,
+   "residual": 0.03143
+  },
+  {
+   "date": "2026-10-23",
+   "ticker": "TAVHL",
    "side": "SHORT",
    "entry_time": "opening auction",
-   "entry_price": 173.0,
+   "entry_price": 268.25,
    "exit_time": "closing auction",
-   "exit_price": 170.3,
-   "ret": 0.01561,
-   "residual": -0.07143
+   "exit_price": 265.0,
+   "ret": 0.01212,
+   "residual": -0.03643
+  },
+  {
+   "date": "2026-10-23",
+   "ticker": "TRALT",
+   "side": "SHORT",
+   "entry_time": "opening auction",
+   "entry_price": 36.86,
+   "exit_time": "closing auction",
+   "exit_price": 35.94,
+   "ret": 0.02496,
+   "residual": -0.05074
+  },
+  {
+   "date": "2026-10-23",
+   "ticker": "TRMET",
+   "side": "SHORT",
+   "entry_time": "opening auction",
+   "entry_price": 107.8,
+   "exit_time": "closing auction",
+   "exit_price": 103.1,
+   "ret": 0.0436,
+   "residual": -0.05464
   }
  ],
  "holdings": null

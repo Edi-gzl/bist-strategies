@@ -5,7 +5,7 @@
  "deviations": [],
  "live_start": "2026-10-02",
  "recorded_from": "2026-10-12",
- "last_session": "2026-10-22",
+ "last_session": "2026-10-23",
  "stats": {
   "days": 16,
   "active_days": 8,
@@ -47,12 +47,12 @@
  },
  "bm_live": {
   "days": 10,
-  "active_days": 9,
-  "total_return": -0.08524373477123914,
+  "active_days": 10,
+  "total_return": -0.09367436634821635,
   "cagr": null,
   "sharpe": null,
-  "max_drawdown": -0.08524373477123914,
-  "hit_rate": 0.2222222222222222,
+  "max_drawdown": -0.09367436634821635,
+  "hit_rate": 0.2,
   "best_day": 0.03216075,
   "worst_day": -0.03081076,
   "first": "2026-10-12",
@@ -175,7 +175,7 @@
    "date": "2026-10-22",
    "ret": 0.023598982516243594,
    "reconstructed": false,
-   "n_trades": 2,
+   "n_trades": 1,
    "bm": -0.03081076
   },
   {
@@ -183,7 +183,7 @@
    "ret": 0.0,
    "reconstructed": false,
    "n_trades": 0,
-   "bm": null
+   "bm": -0.00921626
   }
  ],
  "trades": [
@@ -269,18 +269,6 @@
    "exit_price": 5.19,
    "ret": 0.01975,
    "z": -2.87,
-   "fallback_rank": 1
-  },
-  {
-   "date": "2026-10-22",
-   "ticker": "TRALT",
-   "side": "SHORT",
-   "entry_time": "first 1-min open after 16:00",
-   "entry_price": 37.4,
-   "exit_time": "closing auction",
-   "exit_price": 36.48,
-   "ret": 0.0236,
-   "z": -3.08,
    "fallback_rank": 1
   },
   {
