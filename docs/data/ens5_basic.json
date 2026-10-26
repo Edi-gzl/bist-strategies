@@ -8,32 +8,32 @@
  ],
  "live_start": "2026-10-02",
  "recorded_from": "2026-10-12",
- "last_session": "2026-10-23",
+ "last_session": "2026-10-26",
  "stats": {
-  "days": 67,
-  "active_days": 67,
-  "total_return": 0.1248206845934432,
+  "days": 68,
+  "active_days": 68,
+  "total_return": 0.1351377606180728,
   "cagr": null,
-  "sharpe": 2.486230098685608,
+  "sharpe": 2.6455251959691553,
   "max_drawdown": -0.06219827627501995,
-  "hit_rate": 0.6417910447761194,
+  "hit_rate": 0.6470588235294118,
   "best_day": 0.0241494701050248,
   "worst_day": -0.035592108016108,
   "first": "2026-07-22",
-  "last": "2026-10-23"
+  "last": "2026-10-26"
  },
  "stats_live": {
-  "days": 10,
-  "active_days": 10,
-  "total_return": 0.021981957274427977,
+  "days": 11,
+  "active_days": 11,
+  "total_return": 0.03135577631369202,
   "cagr": null,
   "sharpe": null,
   "max_drawdown": -0.023349920252116796,
-  "hit_rate": 0.7,
+  "hit_rate": 0.7272727272727273,
   "best_day": 0.0145358680125685,
   "worst_day": -0.0167443566750275,
   "first": "2026-10-12",
-  "last": "2026-10-23"
+  "last": "2026-10-26"
  },
  "stats_backtest": {
   "days": 57,
@@ -49,17 +49,17 @@
   "last": "2026-10-09"
  },
  "bm_live": {
-  "days": 10,
-  "active_days": 10,
-  "total_return": -0.0936735705102657,
+  "days": 11,
+  "active_days": 11,
+  "total_return": -0.09182211781683969,
   "cagr": null,
   "sharpe": null,
   "max_drawdown": -0.0936735705102657,
-  "hit_rate": 0.2,
+  "hit_rate": 0.2727272727272727,
   "best_day": 0.03216075,
   "worst_day": -0.03081076,
   "first": "2026-10-12",
-  "last": "2026-10-23"
+  "last": "2026-10-26"
  },
  "bm_backtest": {
   "days": 57,
@@ -544,6 +544,13 @@
    "reconstructed": false,
    "n_trades": 6,
    "bm": -0.00921539
+  },
+  {
+   "date": "2026-10-26",
+   "ret": 0.0091721962139757,
+   "reconstructed": false,
+   "n_trades": 3,
+   "bm": 0.00204281
   }
  ],
  "trades": [
@@ -4744,10 +4751,10 @@
    "side": "LONG",
    "entry_time": "closing auction",
    "entry_price": 142.6,
-   "exit_time": "next opening auction",
-   "exit_price": null,
-   "ret": null,
-   "note": "pending"
+   "exit_time": "opening auction 2026-10-26",
+   "exit_price": 156.8,
+   "ret": 0.09958,
+   "note": ""
   },
   {
    "date": "2026-10-23",
@@ -4755,10 +4762,10 @@
    "side": "LONG",
    "entry_time": "closing auction",
    "entry_price": 30.06,
-   "exit_time": "next opening auction",
-   "exit_price": null,
-   "ret": null,
-   "note": "pending"
+   "exit_time": "opening auction 2026-10-26",
+   "exit_price": 30.12,
+   "ret": 0.002,
+   "note": ""
   },
   {
    "date": "2026-10-23",
@@ -4766,10 +4773,10 @@
    "side": "LONG",
    "entry_time": "closing auction",
    "entry_price": 12.96,
-   "exit_time": "next opening auction",
-   "exit_price": null,
-   "ret": null,
-   "note": "pending"
+   "exit_time": "opening auction 2026-10-26",
+   "exit_price": 12.96,
+   "ret": 0.0,
+   "note": ""
   },
   {
    "date": "2026-10-23",
@@ -4803,6 +4810,39 @@
    "exit_price": 57.4,
    "ret": -0.00613,
    "note": ""
+  },
+  {
+   "date": "2026-10-26",
+   "ticker": "DOHOL",
+   "side": "LONG",
+   "entry_time": "closing auction",
+   "entry_price": 16.39,
+   "exit_time": "next opening auction",
+   "exit_price": null,
+   "ret": null,
+   "note": "pending"
+  },
+  {
+   "date": "2026-10-26",
+   "ticker": "GUBRF",
+   "side": "LONG",
+   "entry_time": "closing auction",
+   "entry_price": 274.25,
+   "exit_time": "next opening auction",
+   "exit_price": null,
+   "ret": null,
+   "note": "pending"
+  },
+  {
+   "date": "2026-10-26",
+   "ticker": "TKFEN",
+   "side": "LONG",
+   "entry_time": "closing auction",
+   "entry_price": 178.7,
+   "exit_time": "next opening auction",
+   "exit_price": null,
+   "ret": null,
+   "note": "pending"
   }
  ],
  "holdings": null

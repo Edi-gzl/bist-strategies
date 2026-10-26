@@ -8,32 +8,32 @@
  ],
  "live_start": "2026-10-02",
  "recorded_from": "2026-10-12",
- "last_session": "2026-10-23",
+ "last_session": "2026-10-26",
  "stats": {
-  "days": 67,
-  "active_days": 67,
-  "total_return": 0.02138896246717148,
+  "days": 68,
+  "active_days": 68,
+  "total_return": 0.008267387476966093,
   "cagr": null,
-  "sharpe": 0.45638581047565013,
+  "sharpe": 0.24610296725806247,
   "max_drawdown": -0.0706021711104845,
-  "hit_rate": 0.4925373134328358,
+  "hit_rate": 0.4852941176470588,
   "best_day": 0.04430282798936428,
   "worst_day": -0.046071339409629854,
   "first": "2026-07-23",
-  "last": "2026-10-23"
+  "last": "2026-10-26"
  },
  "stats_live": {
-  "days": 10,
-  "active_days": 10,
-  "total_return": 0.036924461790596386,
+  "days": 11,
+  "active_days": 11,
+  "total_return": 0.023603305419669818,
   "cagr": null,
   "sharpe": null,
   "max_drawdown": -0.03319357570346615,
-  "hit_rate": 0.7,
+  "hit_rate": 0.6363636363636364,
   "best_day": 0.02223863744304827,
   "worst_day": -0.03319357570346615,
   "first": "2026-10-12",
-  "last": "2026-10-23"
+  "last": "2026-10-26"
  },
  "stats_backtest": {
   "days": 57,
@@ -49,17 +49,17 @@
   "last": "2026-10-09"
  },
  "bm_live": {
-  "days": 10,
-  "active_days": 10,
-  "total_return": -0.0936735705102657,
+  "days": 11,
+  "active_days": 11,
+  "total_return": -0.09182211781683969,
   "cagr": null,
   "sharpe": null,
   "max_drawdown": -0.0936735705102657,
-  "hit_rate": 0.2,
+  "hit_rate": 0.2727272727272727,
   "best_day": 0.03216075,
   "worst_day": -0.03081076,
   "first": "2026-10-12",
-  "last": "2026-10-23"
+  "last": "2026-10-26"
  },
  "bm_backtest": {
   "days": 57,
@@ -544,6 +544,13 @@
    "reconstructed": false,
    "n_trades": 6,
    "bm": -0.00921539
+  },
+  {
+   "date": "2026-10-26",
+   "ret": -0.01284679536629224,
+   "reconstructed": false,
+   "n_trades": 6,
+   "bm": 0.00204281
   }
  ],
  "trades": [
@@ -4942,9 +4949,9 @@
    "side": "LONG",
    "entry_time": "closing auction",
    "entry_price": 43.1,
-   "exit_time": "next opening auction",
-   "exit_price": null,
-   "ret": null,
+   "exit_time": "opening auction 2026-10-26",
+   "exit_price": 43.1,
+   "ret": 0.0,
    "residual": 0.05835
   },
   {
@@ -4953,9 +4960,9 @@
    "side": "LONG",
    "entry_time": "closing auction",
    "entry_price": 174.8,
-   "exit_time": "next opening auction",
-   "exit_price": null,
-   "ret": null,
+   "exit_time": "opening auction 2026-10-26",
+   "exit_price": 178.0,
+   "ret": 0.01831,
    "residual": 0.04752
   },
   {
@@ -4964,9 +4971,9 @@
    "side": "LONG",
    "entry_time": "closing auction",
    "entry_price": 360.75,
-   "exit_time": "next opening auction",
-   "exit_price": null,
-   "ret": null,
+   "exit_time": "opening auction 2026-10-26",
+   "exit_price": 362.5,
+   "ret": 0.00485,
    "residual": 0.03143
   },
   {
@@ -4978,7 +4985,7 @@
    "exit_time": "closing auction",
    "exit_price": 265.0,
    "ret": 0.01212,
-   "residual": -0.03643
+   "residual": -0.03644
   },
   {
    "date": "2026-10-23",
@@ -4989,7 +4996,7 @@
    "exit_time": "closing auction",
    "exit_price": 35.94,
    "ret": 0.02496,
-   "residual": -0.05074
+   "residual": -0.05078
   },
   {
    "date": "2026-10-23",
@@ -5000,7 +5007,73 @@
    "exit_time": "closing auction",
    "exit_price": 103.1,
    "ret": 0.0436,
-   "residual": -0.05464
+   "residual": -0.05467
+  },
+  {
+   "date": "2026-10-26",
+   "ticker": "AKSEN",
+   "side": "LONG",
+   "entry_time": "closing auction",
+   "entry_price": 64.3,
+   "exit_time": "next opening auction",
+   "exit_price": null,
+   "ret": null,
+   "residual": 0.06552
+  },
+  {
+   "date": "2026-10-26",
+   "ticker": "FROTO",
+   "side": "LONG",
+   "entry_time": "closing auction",
+   "entry_price": 67.95,
+   "exit_time": "next opening auction",
+   "exit_price": null,
+   "ret": null,
+   "residual": 0.04085
+  },
+  {
+   "date": "2026-10-26",
+   "ticker": "YKBNK",
+   "side": "LONG",
+   "entry_time": "closing auction",
+   "entry_price": 35.84,
+   "exit_time": "next opening auction",
+   "exit_price": null,
+   "ret": null,
+   "residual": 0.03132
+  },
+  {
+   "date": "2026-10-26",
+   "ticker": "AKSEN",
+   "side": "SHORT",
+   "entry_time": "opening auction",
+   "entry_price": 61.6,
+   "exit_time": "closing auction",
+   "exit_price": 64.3,
+   "ret": -0.04383,
+   "residual": -0.07225
+  },
+  {
+   "date": "2026-10-26",
+   "ticker": "EREGL",
+   "side": "SHORT",
+   "entry_time": "opening auction",
+   "entry_price": 31.72,
+   "exit_time": "closing auction",
+   "exit_price": 30.86,
+   "ret": 0.02711,
+   "residual": -0.08046
+  },
+  {
+   "date": "2026-10-26",
+   "ticker": "KONTR",
+   "side": "SHORT",
+   "entry_time": "opening auction",
+   "entry_price": 1.29,
+   "exit_time": "closing auction",
+   "exit_price": 1.39,
+   "ret": -0.07752,
+   "residual": -0.0695
   }
  ],
  "holdings": null

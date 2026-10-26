@@ -7,32 +7,32 @@
  ],
  "live_start": "2026-10-02",
  "recorded_from": "2026-10-12",
- "last_session": "2026-10-23",
+ "last_session": "2026-10-26",
  "stats": {
-  "days": 16,
-  "active_days": 10,
-  "total_return": 0.045012510710348286,
+  "days": 17,
+  "active_days": 11,
+  "total_return": 0.055533750925664815,
   "cagr": null,
   "sharpe": null,
   "max_drawdown": -0.043134386437944205,
-  "hit_rate": 0.6,
+  "hit_rate": 0.6363636363636364,
   "best_day": 0.0578934565450715,
   "worst_day": -0.028353044513410697,
   "first": "2026-10-02",
-  "last": "2026-10-23"
+  "last": "2026-10-26"
  },
  "stats_live": {
-  "days": 10,
-  "active_days": 5,
-  "total_return": 0.06874445788477468,
+  "days": 11,
+  "active_days": 6,
+  "total_return": 0.07950463257641593,
   "cagr": null,
   "sharpe": null,
   "max_drawdown": -0.02808516064211386,
-  "hit_rate": 0.6,
+  "hit_rate": 0.6666666666666666,
   "best_day": 0.0578934565450715,
   "worst_day": -0.02808516064211386,
   "first": "2026-10-12",
-  "last": "2026-10-23"
+  "last": "2026-10-26"
  },
  "stats_backtest": {
   "days": 6,
@@ -48,17 +48,17 @@
   "last": "2026-10-09"
  },
  "bm_live": {
-  "days": 10,
-  "active_days": 10,
-  "total_return": -0.0936735705102657,
+  "days": 11,
+  "active_days": 11,
+  "total_return": -0.09182211781683969,
   "cagr": null,
   "sharpe": null,
   "max_drawdown": -0.0936735705102657,
-  "hit_rate": 0.2,
+  "hit_rate": 0.2727272727272727,
   "best_day": 0.03216075,
   "worst_day": -0.03081076,
   "first": "2026-10-12",
-  "last": "2026-10-23"
+  "last": "2026-10-26"
  },
  "bm_backtest": {
   "days": 6,
@@ -186,6 +186,13 @@
    "reconstructed": false,
    "n_trades": 2,
    "bm": -0.00921539
+  },
+  {
+   "date": "2026-10-26",
+   "ret": 0.010068051920416266,
+   "reconstructed": false,
+   "n_trades": 1,
+   "bm": 0.00204281
   }
  ],
  "trades": [
@@ -386,6 +393,17 @@
    "exit_price": 103.1,
    "ret": 0.02544,
    "gap": 0.0151
+  },
+  {
+   "date": "2026-10-26",
+   "ticker": "TKFEN",
+   "side": "SHORT",
+   "entry_time": "10:01 open",
+   "entry_price": 180.7,
+   "exit_time": "closing auction",
+   "exit_price": 178.7,
+   "ret": 0.01007,
+   "gap": 0.0183
   }
  ],
  "holdings": null
