@@ -12,9 +12,9 @@
  "stats": {
   "days": 68,
   "active_days": 68,
-  "total_return": 0.008267387476966093,
+  "total_return": 0.008267377655606367,
   "cagr": null,
-  "sharpe": 0.24610296725806247,
+  "sharpe": 0.24610281224761366,
   "max_drawdown": -0.0706021711104845,
   "hit_rate": 0.4852941176470588,
   "best_day": 0.04430282798936428,
@@ -25,7 +25,7 @@
  "stats_live": {
   "days": 11,
   "active_days": 11,
-  "total_return": 0.023603305419669818,
+  "total_return": 0.023603295448925588,
   "cagr": null,
   "sharpe": null,
   "max_drawdown": -0.03319357570346615,
@@ -51,7 +51,7 @@
  "bm_live": {
   "days": 11,
   "active_days": 11,
-  "total_return": -0.08927927400667757,
+  "total_return": -0.09082015582251035,
   "cagr": null,
   "sharpe": null,
   "max_drawdown": -0.0936735705102657,
@@ -547,10 +547,10 @@
   },
   {
    "date": "2026-10-26",
-   "ret": -0.01284679536629224,
+   "ret": -0.012846804981982374,
    "reconstructed": false,
    "n_trades": 6,
-   "bm": 0.00484847
+   "bm": 0.00314833
   }
  ],
  "trades": [
@@ -5015,10 +5015,10 @@
    "side": "LONG",
    "entry_time": "closing auction",
    "entry_price": 64.3,
-   "exit_time": "next opening auction",
-   "exit_price": null,
-   "ret": null,
-   "residual": 0.06551
+   "exit_time": "opening auction 2026-10-27",
+   "exit_price": 64.1,
+   "ret": -0.00311,
+   "residual": 0.06552
   },
   {
    "date": "2026-10-26",
@@ -5026,10 +5026,10 @@
    "side": "LONG",
    "entry_time": "closing auction",
    "entry_price": 67.95,
-   "exit_time": "next opening auction",
-   "exit_price": null,
-   "ret": null,
-   "residual": 0.04084
+   "exit_time": "opening auction 2026-10-27",
+   "exit_price": 66.75,
+   "ret": -0.01766,
+   "residual": 0.04085
   },
   {
    "date": "2026-10-26",
@@ -5037,10 +5037,10 @@
    "side": "LONG",
    "entry_time": "closing auction",
    "entry_price": 35.84,
-   "exit_time": "next opening auction",
-   "exit_price": null,
-   "ret": null,
-   "residual": 0.03129
+   "exit_time": "opening auction 2026-10-27",
+   "exit_price": 35.74,
+   "ret": -0.00279,
+   "residual": 0.03132
   },
   {
    "date": "2026-10-26",
