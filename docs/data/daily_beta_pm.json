@@ -5124,7 +5124,7 @@
    "exit_time": "closing auction",
    "exit_price": 278.75,
    "ret": -0.01088,
-   "residual": -0.08538
+   "residual": -0.08541
   },
   {
    "date": "2026-10-27",
@@ -5135,7 +5135,7 @@
    "exit_time": "closing auction",
    "exit_price": 37.6,
    "ret": -0.04386,
-   "residual": -0.06355
+   "residual": -0.06357
   },
   {
    "date": "2026-10-27",
@@ -5146,7 +5146,7 @@
    "exit_time": "closing auction",
    "exit_price": 11.97,
    "ret": 0.02126,
-   "residual": -0.05571
+   "residual": -0.05573
   }
  ],
  "holdings": null
