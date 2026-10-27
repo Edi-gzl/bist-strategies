@@ -5,32 +5,32 @@
  "deviations": [],
  "live_start": "2026-10-02",
  "recorded_from": "2026-10-12",
- "last_session": "2026-10-26",
+ "last_session": "2026-10-27",
  "stats": {
-  "days": 17,
-  "active_days": 9,
-  "total_return": -0.004964688252984462,
+  "days": 18,
+  "active_days": 10,
+  "total_return": 0.018309407447139492,
   "cagr": null,
   "sharpe": null,
   "max_drawdown": -0.052056008339807835,
-  "hit_rate": 0.6666666666666666,
+  "hit_rate": 0.7,
   "best_day": 0.023598982516243594,
   "worst_day": -0.03643690801824173,
   "first": "2026-10-02",
-  "last": "2026-10-26"
+  "last": "2026-10-27"
  },
  "stats_live": {
-  "days": 11,
-  "active_days": 6,
-  "total_return": 0.01638892870122377,
+  "days": 12,
+  "active_days": 7,
+  "total_return": 0.04016249021795626,
   "cagr": null,
   "sharpe": null,
   "max_drawdown": -0.03643690801824173,
-  "hit_rate": 0.8333333333333334,
+  "hit_rate": 0.8571428571428571,
   "best_day": 0.023598982516243594,
   "worst_day": -0.03643690801824173,
   "first": "2026-10-12",
-  "last": "2026-10-26"
+  "last": "2026-10-27"
  },
  "stats_backtest": {
   "days": 6,
@@ -46,17 +46,17 @@
   "last": "2026-10-09"
  },
  "bm_live": {
-  "days": 11,
-  "active_days": 11,
-  "total_return": -0.09082015582251035,
+  "days": 12,
+  "active_days": 12,
+  "total_return": -0.09089921810176005,
   "cagr": null,
   "sharpe": null,
   "max_drawdown": -0.0936735705102657,
-  "hit_rate": 0.2727272727272727,
+  "hit_rate": 0.25,
   "best_day": 0.03216075,
   "worst_day": -0.03081076,
   "first": "2026-10-12",
-  "last": "2026-10-26"
+  "last": "2026-10-27"
  },
  "bm_backtest": {
   "days": 6,
@@ -191,6 +191,13 @@
    "reconstructed": false,
    "n_trades": 1,
    "bm": 0.00314833
+  },
+  {
+   "date": "2026-10-27",
+   "ret": 0.023390220854836774,
+   "reconstructed": false,
+   "n_trades": 1,
+   "bm": -8.696e-05
   }
  ],
  "trades": [
@@ -300,6 +307,18 @@
    "exit_price": 36.06,
    "ret": 0.00561,
    "z": -2.92,
+   "fallback_rank": 1
+  },
+  {
+   "date": "2026-10-27",
+   "ticker": "HEKTS",
+   "side": "SHORT",
+   "entry_time": "first 1-min open after 16:00",
+   "entry_price": 1.64,
+   "exit_time": "closing auction",
+   "exit_price": 1.6,
+   "ret": 0.02339,
+   "z": -2.17,
    "fallback_rank": 1
   }
  ],

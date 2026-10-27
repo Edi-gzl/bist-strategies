@@ -7,32 +7,32 @@
  ],
  "live_start": "2026-10-02",
  "recorded_from": "2026-10-12",
- "last_session": "2026-10-26",
+ "last_session": "2026-10-27",
  "stats": {
-  "days": 17,
-  "active_days": 11,
-  "total_return": 0.05553376857439263,
+  "days": 18,
+  "active_days": 12,
+  "total_return": -0.01365865092521723,
   "cagr": null,
   "sharpe": null,
-  "max_drawdown": -0.043134386437944205,
-  "hit_rate": 0.6363636363636364,
+  "max_drawdown": -0.0655520662243344,
+  "hit_rate": 0.5833333333333334,
   "best_day": 0.0578934565450715,
-  "worst_day": -0.028353044513410697,
+  "worst_day": -0.0655520662243344,
   "first": "2026-10-02",
-  "last": "2026-10-26"
+  "last": "2026-10-27"
  },
  "stats_live": {
-  "days": 11,
-  "active_days": 6,
-  "total_return": 0.07950465062594136,
+  "days": 12,
+  "active_days": 7,
+  "total_return": 0.008740890278632785,
   "cagr": null,
   "sharpe": null,
-  "max_drawdown": -0.02808516064211386,
-  "hit_rate": 0.6666666666666666,
+  "max_drawdown": -0.0655520662243343,
+  "hit_rate": 0.5714285714285714,
   "best_day": 0.0578934565450715,
-  "worst_day": -0.02808516064211386,
+  "worst_day": -0.0655520662243344,
   "first": "2026-10-12",
-  "last": "2026-10-26"
+  "last": "2026-10-27"
  },
  "stats_backtest": {
   "days": 6,
@@ -48,17 +48,17 @@
   "last": "2026-10-09"
  },
  "bm_live": {
-  "days": 11,
-  "active_days": 11,
-  "total_return": -0.09082015582251035,
+  "days": 12,
+  "active_days": 12,
+  "total_return": -0.09089921810176005,
   "cagr": null,
   "sharpe": null,
   "max_drawdown": -0.0936735705102657,
-  "hit_rate": 0.2727272727272727,
+  "hit_rate": 0.25,
   "best_day": 0.03216075,
   "worst_day": -0.03081076,
   "first": "2026-10-12",
-  "last": "2026-10-26"
+  "last": "2026-10-27"
  },
  "bm_backtest": {
   "days": 6,
@@ -193,6 +193,13 @@
    "reconstructed": false,
    "n_trades": 1,
    "bm": 0.00314833
+  },
+  {
+   "date": "2026-10-27",
+   "ret": -0.0655520662243344,
+   "reconstructed": false,
+   "n_trades": 1,
+   "bm": -8.696e-05
   }
  ],
  "trades": [
@@ -404,6 +411,17 @@
    "exit_price": 178.7,
    "ret": 0.01007,
    "gap": 0.0183
+  },
+  {
+   "date": "2026-10-27",
+   "ticker": "TKFEN",
+   "side": "SHORT",
+   "entry_time": "10:01 open",
+   "entry_price": 179.7,
+   "exit_time": "closing auction",
+   "exit_price": 191.3,
+   "ret": -0.06555,
+   "gap": 0.0101
   }
  ],
  "holdings": null
