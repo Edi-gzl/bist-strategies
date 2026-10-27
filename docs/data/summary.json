@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-26T23:25:09+00:00",
+ "generated_at": "2026-10-27T01:29:51+00:00",
  "live_start": "2026-10-02",
  "recorded_from": "2026-10-12",
  "last_session": "2026-10-26",
@@ -50,7 +50,7 @@
    "bm_live": {
     "days": 11,
     "active_days": 11,
-    "total_return": -0.09082341859765641,
+    "total_return": -0.08927927400667757,
     "cagr": null,
     "sharpe": null,
     "max_drawdown": -0.0936735705102657,
@@ -124,7 +124,7 @@
    "bm_live": {
     "days": 11,
     "active_days": 11,
-    "total_return": -0.09082341859765641,
+    "total_return": -0.08927927400667757,
     "cagr": null,
     "sharpe": null,
     "max_drawdown": -0.0936735705102657,
@@ -265,7 +265,7 @@
    "bm_live": {
     "days": 11,
     "active_days": 11,
-    "total_return": -0.09082341859765641,
+    "total_return": -0.08927927400667757,
     "cagr": null,
     "sharpe": null,
     "max_drawdown": -0.0936735705102657,
@@ -301,7 +301,7 @@
       "exit_time": "next opening auction",
       "exit_price": null,
       "ret": null,
-      "residual": 0.06552
+      "residual": 0.06551
      },
      {
       "date": "2026-10-26",
@@ -312,7 +312,7 @@
       "exit_time": "next opening auction",
       "exit_price": null,
       "ret": null,
-      "residual": 0.04085
+      "residual": 0.04084
      },
      {
       "date": "2026-10-26",
@@ -323,7 +323,7 @@
       "exit_time": "next opening auction",
       "exit_price": null,
       "ret": null,
-      "residual": 0.03132
+      "residual": 0.03129
      },
      {
       "date": "2026-10-26",
@@ -406,7 +406,7 @@
    "bm_live": {
     "days": 11,
     "active_days": 11,
-    "total_return": -0.09082341859765641,
+    "total_return": -0.08927927400667757,
     "cagr": null,
     "sharpe": null,
     "max_drawdown": -0.0936735705102657,
@@ -493,7 +493,7 @@
    "bm_live": {
     "days": 11,
     "active_days": 11,
-    "total_return": -0.09082341859765641,
+    "total_return": -0.08927927400667757,
     "cagr": null,
     "sharpe": null,
     "max_drawdown": -0.0936735705102657,
@@ -579,7 +579,7 @@
    "bm_live": {
     "days": 11,
     "active_days": 11,
-    "total_return": -0.09082341859765641,
+    "total_return": -0.08927927400667757,
     "cagr": null,
     "sharpe": null,
     "max_drawdown": -0.0936735705102657,
@@ -687,7 +687,7 @@
    "bm_live": {
     "days": 11,
     "active_days": 11,
-    "total_return": -0.09082341859765641,
+    "total_return": -0.08927927400667757,
     "cagr": null,
     "sharpe": null,
     "max_drawdown": -0.0936735705102657,
