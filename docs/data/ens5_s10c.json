@@ -8,22 +8,22 @@
  ],
  "live_start": "2026-10-02",
  "recorded_from": "2026-10-12",
- "last_session": "2026-10-27",
+ "last_session": "2026-10-28",
  "stats": {
-  "days": 69,
+  "days": 70,
   "active_days": 69,
   "total_return": 0.059994304241611784,
   "cagr": null,
-  "sharpe": 1.240621145204235,
+  "sharpe": 1.231802537128375,
   "max_drawdown": -0.060629549728883236,
   "hit_rate": 0.5942028985507246,
   "best_day": 0.0241494701050248,
   "worst_day": -0.0358389639118445,
   "first": "2026-07-22",
-  "last": "2026-10-27"
+  "last": "2026-10-28"
  },
  "stats_live": {
-  "days": 12,
+  "days": 13,
   "active_days": 12,
   "total_return": -0.00048154826336621603,
   "cagr": null,
@@ -33,7 +33,7 @@
   "best_day": 0.0157782357680081,
   "worst_day": -0.0169922380670846,
   "first": "2026-10-12",
-  "last": "2026-10-27"
+  "last": "2026-10-28"
  },
  "stats_backtest": {
   "days": 57,
@@ -49,17 +49,17 @@
   "last": "2026-10-09"
  },
  "bm_live": {
-  "days": 12,
-  "active_days": 12,
-  "total_return": -0.09090168197913784,
+  "days": 13,
+  "active_days": 13,
+  "total_return": -0.08972440874828391,
   "cagr": null,
   "sharpe": null,
   "max_drawdown": -0.0936735705102657,
-  "hit_rate": 0.25,
+  "hit_rate": 0.3076923076923077,
   "best_day": 0.03216075,
   "worst_day": -0.03081076,
   "first": "2026-10-12",
-  "last": "2026-10-27"
+  "last": "2026-10-28"
  },
  "bm_backtest": {
   "days": 57,
@@ -558,6 +558,13 @@
    "reconstructed": false,
    "n_trades": 6,
    "bm": -8.967e-05
+  },
+  {
+   "date": "2026-10-28",
+   "ret": 0.0,
+   "reconstructed": false,
+   "n_trades": 0,
+   "bm": 0.00129499
   }
  ],
  "trades": [

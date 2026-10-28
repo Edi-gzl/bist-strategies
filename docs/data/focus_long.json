@@ -7,32 +7,32 @@
  ],
  "live_start": "2026-10-02",
  "recorded_from": "2026-10-12",
- "last_session": "2026-10-27",
+ "last_session": "2026-10-28",
  "stats": {
-  "days": 4722,
-  "active_days": 4551,
-  "total_return": 25.746167172105505,
-  "cagr": 0.19170559271721999,
-  "sharpe": 0.7463499963074202,
+  "days": 4723,
+  "active_days": 4552,
+  "total_return": 25.43858219497294,
+  "cagr": 0.19092612545693588,
+  "sharpe": 0.7441400668680566,
   "max_drawdown": -0.505397996492563,
-  "hit_rate": 0.5187870797626896,
+  "hit_rate": 0.5186731107205624,
   "best_day": 0.09937886037252985,
   "worst_day": -0.16513754172159267,
   "first": "2008-05-16",
-  "last": "2026-10-27"
+  "last": "2026-10-28"
  },
  "stats_live": {
-  "days": 12,
-  "active_days": 12,
-  "total_return": -0.11486127107269539,
+  "days": 13,
+  "active_days": 13,
+  "total_return": -0.12504050064022,
   "cagr": null,
   "sharpe": null,
-  "max_drawdown": -0.11486127107269539,
-  "hit_rate": 0.16666666666666666,
+  "max_drawdown": -0.12504050064022,
+  "hit_rate": 0.15384615384615385,
   "best_day": 0.027803913376389235,
   "worst_day": -0.03034044278424342,
   "first": "2026-10-12",
-  "last": "2026-10-27"
+  "last": "2026-10-28"
  },
  "stats_backtest": {
   "days": 4710,
@@ -48,17 +48,17 @@
   "last": "2026-10-09"
  },
  "bm_live": {
-  "days": 12,
-  "active_days": 12,
-  "total_return": -0.09090168197913784,
+  "days": 13,
+  "active_days": 13,
+  "total_return": -0.08972440874828391,
   "cagr": null,
   "sharpe": null,
   "max_drawdown": -0.0936735705102657,
-  "hit_rate": 0.25,
+  "hit_rate": 0.3076923076923077,
   "best_day": 0.03216075,
   "worst_day": -0.03081076,
   "first": "2026-10-12",
-  "last": "2026-10-27"
+  "last": "2026-10-28"
  },
  "bm_backtest": {
   "days": 4710,
@@ -33128,6 +33128,13 @@
    "reconstructed": false,
    "n_trades": 5,
    "bm": -8.967e-05
+  },
+  {
+   "date": "2026-10-28",
+   "ret": -0.011500151597547581,
+   "reconstructed": false,
+   "n_trades": 4,
+   "bm": 0.00129499
   }
  ],
  "trades": [
@@ -37219,6 +37226,50 @@
    "weight": 0.25,
    "entry_time": "closing auction",
    "entry_price": 55.75,
+   "exit_time": null,
+   "exit_price": null,
+   "ret": null
+  },
+  {
+   "date": "2026-10-28",
+   "ticker": "ENJSA",
+   "side": "BUY",
+   "weight": 0.3333,
+   "entry_time": "closing auction",
+   "entry_price": 113.2,
+   "exit_time": null,
+   "exit_price": null,
+   "ret": null
+  },
+  {
+   "date": "2026-10-28",
+   "ticker": "HALKB",
+   "side": "BUY",
+   "weight": 0.3333,
+   "entry_time": "closing auction",
+   "entry_price": 43.14,
+   "exit_time": null,
+   "exit_price": null,
+   "ret": null
+  },
+  {
+   "date": "2026-10-28",
+   "ticker": "YKBNK",
+   "side": "BUY",
+   "weight": 0.3333,
+   "entry_time": "closing auction",
+   "entry_price": 34.48,
+   "exit_time": null,
+   "exit_price": null,
+   "ret": null
+  },
+  {
+   "date": "2026-10-28",
+   "ticker": "SOKM",
+   "side": "SELL",
+   "weight": 0.0,
+   "entry_time": "closing auction",
+   "entry_price": 54.5,
    "exit_time": null,
    "exit_price": null,
    "ret": null

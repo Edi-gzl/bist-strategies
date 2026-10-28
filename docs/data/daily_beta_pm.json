@@ -8,32 +8,32 @@
  ],
  "live_start": "2026-10-02",
  "recorded_from": "2026-10-12",
- "last_session": "2026-10-27",
+ "last_session": "2026-10-28",
  "stats": {
-  "days": 69,
-  "active_days": 69,
-  "total_return": -0.0023270540908617576,
+  "days": 70,
+  "active_days": 70,
+  "total_return": 0.015384414931942203,
   "cagr": null,
-  "sharpe": 0.07818195260932544,
+  "sharpe": 0.3510763574334475,
   "max_drawdown": -0.0706021711104845,
-  "hit_rate": 0.4782608695652174,
+  "hit_rate": 0.4857142857142857,
   "best_day": 0.04430282798936428,
   "worst_day": -0.046071339409629854,
   "first": "2026-07-23",
-  "last": "2026-10-27"
+  "last": "2026-10-28"
  },
  "stats_live": {
-  "days": 12,
-  "active_days": 12,
-  "total_return": 0.012847720599019397,
+  "days": 13,
+  "active_days": 13,
+  "total_return": 0.03082858406912181,
   "cagr": null,
   "sharpe": null,
   "max_drawdown": -0.03319357570346615,
-  "hit_rate": 0.5833333333333334,
+  "hit_rate": 0.6153846153846154,
   "best_day": 0.02223863744304827,
   "worst_day": -0.03319357570346615,
   "first": "2026-10-12",
-  "last": "2026-10-27"
+  "last": "2026-10-28"
  },
  "stats_backtest": {
   "days": 57,
@@ -49,17 +49,17 @@
   "last": "2026-10-09"
  },
  "bm_live": {
-  "days": 12,
-  "active_days": 12,
-  "total_return": -0.09090168197913784,
+  "days": 13,
+  "active_days": 13,
+  "total_return": -0.08972440874828391,
   "cagr": null,
   "sharpe": null,
   "max_drawdown": -0.0936735705102657,
-  "hit_rate": 0.25,
+  "hit_rate": 0.3076923076923077,
   "best_day": 0.03216075,
   "worst_day": -0.03081076,
   "first": "2026-10-12",
-  "last": "2026-10-27"
+  "last": "2026-10-28"
  },
  "bm_backtest": {
   "days": 57,
@@ -558,6 +558,13 @@
    "reconstructed": false,
    "n_trades": 6,
    "bm": -8.967e-05
+  },
+  {
+   "date": "2026-10-28",
+   "ret": 0.0177527807037647,
+   "reconstructed": false,
+   "n_trades": 3,
+   "bm": 0.00129499
   }
  ],
  "trades": [
@@ -5124,7 +5131,7 @@
    "exit_time": "closing auction",
    "exit_price": 278.75,
    "ret": -0.01088,
-   "residual": -0.08541
+   "residual": -0.08538
   },
   {
    "date": "2026-10-27",
@@ -5135,7 +5142,7 @@
    "exit_time": "closing auction",
    "exit_price": 37.6,
    "ret": -0.04386,
-   "residual": -0.06357
+   "residual": -0.06355
   },
   {
    "date": "2026-10-27",
@@ -5146,7 +5153,40 @@
    "exit_time": "closing auction",
    "exit_price": 11.97,
    "ret": 0.02126,
-   "residual": -0.05573
+   "residual": -0.05571
+  },
+  {
+   "date": "2026-10-28",
+   "ticker": "BIMAS",
+   "side": "SHORT",
+   "entry_time": "opening auction",
+   "entry_price": 362.5,
+   "exit_time": "closing auction",
+   "exit_price": 364.75,
+   "ret": -0.00621,
+   "residual": -0.03304
+  },
+  {
+   "date": "2026-10-28",
+   "ticker": "HEKTS",
+   "side": "SHORT",
+   "entry_time": "opening auction",
+   "entry_price": 1.59,
+   "exit_time": "closing auction",
+   "exit_price": 1.58,
+   "ret": 0.00629,
+   "residual": -0.05631
+  },
+  {
+   "date": "2026-10-28",
+   "ticker": "SASA",
+   "side": "SHORT",
+   "entry_time": "opening auction",
+   "entry_price": 1.51,
+   "exit_time": "closing auction",
+   "exit_price": 1.49,
+   "ret": 0.01325,
+   "residual": -0.03513
   }
  ],
  "holdings": null
