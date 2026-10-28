@@ -51,7 +51,7 @@
  "bm_live": {
   "days": 12,
   "active_days": 12,
-  "total_return": -0.0928501907621867,
+  "total_return": -0.09089921810176005,
   "cagr": null,
   "sharpe": null,
   "max_drawdown": -0.0936735705102657,
@@ -557,7 +557,7 @@
    "ret": -0.010507565186461659,
    "reconstructed": false,
    "n_trades": 6,
-   "bm": -0.00223282
+   "bm": -8.696e-05
   }
  ],
  "trades": [
@@ -5124,7 +5124,7 @@
    "exit_time": "closing auction",
    "exit_price": 278.75,
    "ret": -0.01088,
-   "residual": -0.08538
+   "residual": -0.08541
   },
   {
    "date": "2026-10-27",
@@ -5135,7 +5135,7 @@
    "exit_time": "closing auction",
    "exit_price": 37.6,
    "ret": -0.04386,
-   "residual": -0.06355
+   "residual": -0.06357
   },
   {
    "date": "2026-10-27",
@@ -5146,7 +5146,7 @@
    "exit_time": "closing auction",
    "exit_price": 11.97,
    "ret": 0.02126,
-   "residual": -0.05571
+   "residual": -0.05573
   }
  ],
  "holdings": null
