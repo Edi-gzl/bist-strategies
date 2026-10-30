@@ -8,22 +8,22 @@
  ],
  "live_start": "2026-10-02",
  "recorded_from": "2026-10-12",
- "last_session": "2026-10-28",
+ "last_session": "2026-10-30",
  "stats": {
-  "days": 70,
+  "days": 71,
   "active_days": 70,
   "total_return": 0.015384414931942203,
   "cagr": null,
-  "sharpe": 0.3510763574334475,
+  "sharpe": 0.3486295795075969,
   "max_drawdown": -0.0706021711104845,
   "hit_rate": 0.4857142857142857,
   "best_day": 0.04430282798936428,
   "worst_day": -0.046071339409629854,
   "first": "2026-07-23",
-  "last": "2026-10-28"
+  "last": "2026-10-30"
  },
  "stats_live": {
-  "days": 13,
+  "days": 14,
   "active_days": 13,
   "total_return": 0.03082858406912181,
   "cagr": null,
@@ -33,7 +33,7 @@
   "best_day": 0.02223863744304827,
   "worst_day": -0.03319357570346615,
   "first": "2026-10-12",
-  "last": "2026-10-28"
+  "last": "2026-10-30"
  },
  "stats_backtest": {
   "days": 57,
@@ -49,17 +49,17 @@
   "last": "2026-10-09"
  },
  "bm_live": {
-  "days": 13,
-  "active_days": 13,
-  "total_return": -0.0897276724112458,
+  "days": 14,
+  "active_days": 14,
+  "total_return": -0.12281432379622803,
   "cagr": null,
   "sharpe": null,
-  "max_drawdown": -0.0936735705102657,
-  "hit_rate": 0.3076923076923077,
+  "max_drawdown": -0.12281432379622803,
+  "hit_rate": 0.2857142857142857,
   "best_day": 0.03216075,
-  "worst_day": -0.03081076,
+  "worst_day": -0.03634808,
   "first": "2026-10-12",
-  "last": "2026-10-28"
+  "last": "2026-10-30"
  },
  "bm_backtest": {
   "days": 57,
@@ -565,6 +565,13 @@
    "reconstructed": false,
    "n_trades": 3,
    "bm": 0.0012914
+  },
+  {
+   "date": "2026-10-30",
+   "ret": 0.0,
+   "reconstructed": false,
+   "n_trades": 3,
+   "bm": -0.03634808
   }
  ],
  "trades": [
@@ -5187,6 +5194,39 @@
    "exit_price": 1.49,
    "ret": 0.01325,
    "residual": -0.03513
+  },
+  {
+   "date": "2026-10-30",
+   "ticker": "HEKTS",
+   "side": "LONG",
+   "entry_time": "closing auction",
+   "entry_price": 1.6,
+   "exit_time": "next opening auction",
+   "exit_price": null,
+   "ret": null,
+   "residual": 0.06857
+  },
+  {
+   "date": "2026-10-30",
+   "ticker": "TKFEN",
+   "side": "LONG",
+   "entry_time": "closing auction",
+   "entry_price": 191.4,
+   "exit_time": "next opening auction",
+   "exit_price": null,
+   "ret": null,
+   "residual": 0.0367
+  },
+  {
+   "date": "2026-10-30",
+   "ticker": "YKBNK",
+   "side": "LONG",
+   "entry_time": "closing auction",
+   "entry_price": 33.96,
+   "exit_time": "next opening auction",
+   "exit_price": null,
+   "ret": null,
+   "residual": 0.03773
   }
  ],
  "holdings": null

@@ -8,32 +8,32 @@
  ],
  "live_start": "2026-10-02",
  "recorded_from": "2026-10-12",
- "last_session": "2026-10-28",
+ "last_session": "2026-10-30",
  "stats": {
-  "days": 70,
-  "active_days": 69,
-  "total_return": 0.12310749471072047,
+  "days": 71,
+  "active_days": 70,
+  "total_return": 0.15310277722431254,
   "cagr": null,
-  "sharpe": 2.376940257766472,
+  "sharpe": 2.7900985554665745,
   "max_drawdown": -0.06219827627501995,
-  "hit_rate": 0.6376811594202898,
-  "best_day": 0.0241494701050248,
+  "hit_rate": 0.6428571428571429,
+  "best_day": 0.026707401254871,
   "worst_day": -0.035592108016108,
   "first": "2026-07-22",
-  "last": "2026-10-28"
+  "last": "2026-10-30"
  },
  "stats_live": {
-  "days": 13,
-  "active_days": 12,
-  "total_return": 0.020425398817147666,
+  "days": 14,
+  "active_days": 13,
+  "total_return": 0.04767830939401896,
   "cagr": null,
   "sharpe": null,
   "max_drawdown": -0.023349920252116796,
-  "hit_rate": 0.6666666666666666,
-  "best_day": 0.0145358680125685,
+  "hit_rate": 0.6923076923076923,
+  "best_day": 0.026707401254871,
   "worst_day": -0.0167443566750275,
   "first": "2026-10-12",
-  "last": "2026-10-28"
+  "last": "2026-10-30"
  },
  "stats_backtest": {
   "days": 57,
@@ -49,17 +49,17 @@
   "last": "2026-10-09"
  },
  "bm_live": {
-  "days": 13,
-  "active_days": 13,
-  "total_return": -0.0897276724112458,
+  "days": 14,
+  "active_days": 14,
+  "total_return": -0.12281432379622803,
   "cagr": null,
   "sharpe": null,
-  "max_drawdown": -0.0936735705102657,
-  "hit_rate": 0.3076923076923077,
+  "max_drawdown": -0.12281432379622803,
+  "hit_rate": 0.2857142857142857,
   "best_day": 0.03216075,
-  "worst_day": -0.03081076,
+  "worst_day": -0.03634808,
   "first": "2026-10-12",
-  "last": "2026-10-28"
+  "last": "2026-10-30"
  },
  "bm_backtest": {
   "days": 57,
@@ -561,10 +561,17 @@
   },
   {
    "date": "2026-10-28",
+   "ret": 0.026707401254871,
+   "reconstructed": false,
+   "n_trades": 3,
+   "bm": 0.0012914
+  },
+  {
+   "date": "2026-10-30",
    "ret": 0.0,
    "reconstructed": false,
-   "n_trades": 0,
-   "bm": 0.0012914
+   "n_trades": 3,
+   "bm": -0.03634808
   }
  ],
  "trades": [
@@ -4923,6 +4930,72 @@
    "exit_price": 102.5,
    "ret": -0.03955,
    "note": ""
+  },
+  {
+   "date": "2026-10-28",
+   "ticker": "ARCLK",
+   "side": "SHORT",
+   "entry_time": "opening auction",
+   "entry_price": 69.45,
+   "exit_time": "closing auction",
+   "exit_price": 71.0,
+   "ret": 0.04025,
+   "note": ""
+  },
+  {
+   "date": "2026-10-28",
+   "ticker": "OYAKC",
+   "side": "SHORT",
+   "entry_time": "opening auction",
+   "entry_price": 17.91,
+   "exit_time": "closing auction",
+   "exit_price": 18.3,
+   "ret": 0.0127,
+   "note": ""
+  },
+  {
+   "date": "2026-10-28",
+   "ticker": "VESTL",
+   "side": "SHORT",
+   "entry_time": "opening auction",
+   "entry_price": 11.95,
+   "exit_time": "closing auction",
+   "exit_price": 11.81,
+   "ret": 0.05082,
+   "note": ""
+  },
+  {
+   "date": "2026-10-30",
+   "ticker": "HALKB",
+   "side": "LONG",
+   "entry_time": "closing auction",
+   "entry_price": 39.6,
+   "exit_time": "next opening auction",
+   "exit_price": null,
+   "ret": null,
+   "note": "pending"
+  },
+  {
+   "date": "2026-10-30",
+   "ticker": "SASA",
+   "side": "LONG",
+   "entry_time": "closing auction",
+   "entry_price": 1.45,
+   "exit_time": "next opening auction",
+   "exit_price": null,
+   "ret": null,
+   "note": "pending"
+  },
+  {
+   "date": "2026-10-30",
+   "ticker": "VESTL",
+   "side": "LONG",
+   "entry_time": "closing auction",
+   "entry_price": 11.02,
+   "exit_time": "next opening auction",
+   "exit_price": null,
+   "ret": null,
+   "note": "pending"
   }
  ],
  "holdings": null

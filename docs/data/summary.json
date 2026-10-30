@@ -1,38 +1,38 @@
 {
- "generated_at": "2026-10-30T11:00:07+00:00",
+ "generated_at": "2026-10-30T20:28:25+00:00",
  "live_start": "2026-10-02",
  "recorded_from": "2026-10-12",
- "last_session": "2026-10-28",
+ "last_session": "2026-10-30",
  "data_source": "Yahoo Finance (unofficial; may be delayed or corrected)",
  "strategies": [
   {
    "id": "fund_liquidity_80",
    "name": "Fund Liquidity 80 \u2014 FL26131 (long-only)",
    "stats": {
-    "days": 1708,
-    "active_days": 1708,
-    "total_return": 35.67380752886435,
-    "cagr": 0.701400762713021,
-    "sharpe": 2.6155086271243024,
+    "days": 1709,
+    "active_days": 1709,
+    "total_return": 34.89474803976578,
+    "cagr": 0.6954951090548407,
+    "sharpe": 2.5976244007202243,
     "max_drawdown": -0.3222051823002535,
-    "hit_rate": 0.6334894613583139,
+    "hit_rate": 0.6331187829139848,
     "best_day": 0.13045770691641703,
     "worst_day": -0.08067763248019943,
     "first": "2020-01-03",
-    "last": "2026-10-28"
+    "last": "2026-10-30"
    },
    "stats_live": {
-    "days": 13,
-    "active_days": 13,
-    "total_return": -0.08578310719158466,
+    "days": 14,
+    "active_days": 14,
+    "total_return": -0.10520376169755707,
     "cagr": null,
     "sharpe": null,
-    "max_drawdown": -0.08578310719158466,
-    "hit_rate": 0.15384615384615385,
+    "max_drawdown": -0.10520376169755707,
+    "hit_rate": 0.14285714285714285,
     "best_day": 0.024677496816948752,
     "worst_day": -0.024267355650022804,
     "first": "2026-10-12",
-    "last": "2026-10-28"
+    "last": "2026-10-30"
    },
    "stats_backtest": {
     "days": 1695,
@@ -48,17 +48,17 @@
     "last": "2026-10-09"
    },
    "bm_live": {
-    "days": 13,
-    "active_days": 13,
-    "total_return": -0.0897276724112458,
+    "days": 14,
+    "active_days": 14,
+    "total_return": -0.12281432379622803,
     "cagr": null,
     "sharpe": null,
-    "max_drawdown": -0.0936735705102657,
-    "hit_rate": 0.3076923076923077,
+    "max_drawdown": -0.12281432379622803,
+    "hit_rate": 0.2857142857142857,
     "best_day": 0.03216075,
-    "worst_day": -0.03081076,
+    "worst_day": -0.03634808,
     "first": "2026-10-12",
-    "last": "2026-10-28"
+    "last": "2026-10-30"
    },
    "bm_backtest": {
     "days": 1695,
@@ -74,39 +74,1084 @@
     "last": "2026-10-09"
    },
    "today": {
-    "date": "2026-10-28",
-    "ret": -0.003043666026966818,
-    "trades": []
+    "date": "2026-10-30",
+    "ret": -0.021242939896148116,
+    "trades": [
+     {
+      "date": "2026-10-30",
+      "ticker": "AGESA",
+      "side": "BUY",
+      "weight": 0.0091,
+      "change": 0.0009,
+      "entry_time": "closing auction",
+      "entry_price": 199.5,
+      "exit_time": null,
+      "exit_price": null,
+      "ret": null
+     },
+     {
+      "date": "2026-10-30",
+      "ticker": "AGHOL",
+      "side": "BUY",
+      "weight": 0.0128,
+      "change": 0.0007,
+      "entry_time": "closing auction",
+      "entry_price": 25.02,
+      "exit_time": null,
+      "exit_price": null,
+      "ret": null
+     },
+     {
+      "date": "2026-10-30",
+      "ticker": "AKBNK",
+      "side": "BUY",
+      "weight": 0.0163,
+      "change": 0.0163,
+      "entry_time": "closing auction",
+      "entry_price": 60.9,
+      "exit_time": null,
+      "exit_price": null,
+      "ret": null
+     },
+     {
+      "date": "2026-10-30",
+      "ticker": "AKCNS",
+      "side": "BUY",
+      "weight": 0.0119,
+      "change": 0.0119,
+      "entry_time": "closing auction",
+      "entry_price": 176.1,
+      "exit_time": null,
+      "exit_price": null,
+      "ret": null
+     },
+     {
+      "date": "2026-10-30",
+      "ticker": "AKSEN",
+      "side": "BUY",
+      "weight": 0.0151,
+      "change": 0.0151,
+      "entry_time": "closing auction",
+      "entry_price": 60.6,
+      "exit_time": null,
+      "exit_price": null,
+      "ret": null
+     },
+     {
+      "date": "2026-10-30",
+      "ticker": "AKSGY",
+      "side": "BUY",
+      "weight": 0.0095,
+      "change": 0.0004,
+      "entry_time": "closing auction",
+      "entry_price": 8.73,
+      "exit_time": null,
+      "exit_price": null,
+      "ret": null
+     },
+     {
+      "date": "2026-10-30",
+      "ticker": "ALARK",
+      "side": "BUY",
+      "weight": 0.0147,
+      "change": 0.0004,
+      "entry_time": "closing auction",
+      "entry_price": 91.8,
+      "exit_time": null,
+      "exit_price": null,
+      "ret": null
+     },
+     {
+      "date": "2026-10-30",
+      "ticker": "ANHYT",
+      "side": "BUY",
+      "weight": 0.0116,
+      "change": 0.0004,
+      "entry_time": "closing auction",
+      "entry_price": 87.95,
+      "exit_time": null,
+      "exit_price": null,
+      "ret": null
+     },
+     {
+      "date": "2026-10-30",
+      "ticker": "ARMGD",
+      "side": "BUY",
+      "weight": 0.0139,
+      "change": 0.0139,
+      "entry_time": "closing auction",
+      "entry_price": 106.0,
+      "exit_time": null,
+      "exit_price": null,
+      "ret": null
+     },
+     {
+      "date": "2026-10-30",
+      "ticker": "AVHOL",
+      "side": "BUY",
+      "weight": 0.009,
+      "change": 0.0003,
+      "entry_time": "closing auction",
+      "entry_price": 27.14,
+      "exit_time": null,
+      "exit_price": null,
+      "ret": null
+     },
+     {
+      "date": "2026-10-30",
+      "ticker": "AVPGY",
+      "side": "BUY",
+      "weight": 0.0073,
+      "change": 0.0005,
+      "entry_time": "closing auction",
+      "entry_price": 45.5,
+      "exit_time": null,
+      "exit_price": null,
+      "ret": null
+     },
+     {
+      "date": "2026-10-30",
+      "ticker": "CELHA",
+      "side": "BUY",
+      "weight": 0.0114,
+      "change": 0.0005,
+      "entry_time": "closing auction",
+      "entry_price": 24.04,
+      "exit_time": null,
+      "exit_price": null,
+      "ret": null
+     },
+     {
+      "date": "2026-10-30",
+      "ticker": "CEOEM",
+      "side": "BUY",
+      "weight": 0.0073,
+      "change": 0.0001,
+      "entry_time": "closing auction",
+      "entry_price": 16.75,
+      "exit_time": null,
+      "exit_price": null,
+      "ret": null
+     },
+     {
+      "date": "2026-10-30",
+      "ticker": "DMRGD",
+      "side": "BUY",
+      "weight": 0.0142,
+      "change": 0.0142,
+      "entry_time": "closing auction",
+      "entry_price": 6.92,
+      "exit_time": null,
+      "exit_price": null,
+      "ret": null
+     },
+     {
+      "date": "2026-10-30",
+      "ticker": "DURDO",
+      "side": "BUY",
+      "weight": 0.0034,
+      "change": 0.0001,
+      "entry_time": "closing auction",
+      "entry_price": 5.57,
+      "exit_time": null,
+      "exit_price": null,
+      "ret": null
+     },
+     {
+      "date": "2026-10-30",
+      "ticker": "EMNIS",
+      "side": "BUY",
+      "weight": 0.0002,
+      "change": 0.0002,
+      "entry_time": "closing auction",
+      "entry_price": 129.7,
+      "exit_time": null,
+      "exit_price": null,
+      "ret": null
+     },
+     {
+      "date": "2026-10-30",
+      "ticker": "ETILR",
+      "side": "BUY",
+      "weight": 0.0084,
+      "change": 0.0002,
+      "entry_time": "closing auction",
+      "entry_price": 5.6,
+      "exit_time": null,
+      "exit_price": null,
+      "ret": null
+     },
+     {
+      "date": "2026-10-30",
+      "ticker": "ETYAT",
+      "side": "BUY",
+      "weight": 0.0031,
+      "change": 0.0005,
+      "entry_time": "closing auction",
+      "entry_price": 10.38,
+      "exit_time": null,
+      "exit_price": null,
+      "ret": null
+     },
+     {
+      "date": "2026-10-30",
+      "ticker": "GLYHO",
+      "side": "BUY",
+      "weight": 0.0099,
+      "change": 0.0003,
+      "entry_time": "closing auction",
+      "entry_price": 15.68,
+      "exit_time": null,
+      "exit_price": null,
+      "ret": null
+     },
+     {
+      "date": "2026-10-30",
+      "ticker": "HALKB",
+      "side": "BUY",
+      "weight": 0.0156,
+      "change": 0.0156,
+      "entry_time": "closing auction",
+      "entry_price": 39.6,
+      "exit_time": null,
+      "exit_price": null,
+      "ret": null
+     },
+     {
+      "date": "2026-10-30",
+      "ticker": "HRKET",
+      "side": "BUY",
+      "weight": 0.0141,
+      "change": 0.0038,
+      "entry_time": "closing auction",
+      "entry_price": 6.3,
+      "exit_time": null,
+      "exit_price": null,
+      "ret": null
+     },
+     {
+      "date": "2026-10-30",
+      "ticker": "ISDMR",
+      "side": "BUY",
+      "weight": 0.0121,
+      "change": 0.0007,
+      "entry_time": "closing auction",
+      "entry_price": 49.66,
+      "exit_time": null,
+      "exit_price": null,
+      "ret": null
+     },
+     {
+      "date": "2026-10-30",
+      "ticker": "KGYO",
+      "side": "BUY",
+      "weight": 0.0132,
+      "change": 0.0002,
+      "entry_time": "closing auction",
+      "entry_price": 7.39,
+      "exit_time": null,
+      "exit_price": null,
+      "ret": null
+     },
+     {
+      "date": "2026-10-30",
+      "ticker": "LIDFA",
+      "side": "BUY",
+      "weight": 0.0058,
+      "change": 0.0058,
+      "entry_time": "closing auction",
+      "entry_price": 1.68,
+      "exit_time": null,
+      "exit_price": null,
+      "ret": null
+     },
+     {
+      "date": "2026-10-30",
+      "ticker": "LOGO",
+      "side": "BUY",
+      "weight": 0.0116,
+      "change": 0.0002,
+      "entry_time": "closing auction",
+      "entry_price": 114.4,
+      "exit_time": null,
+      "exit_price": null,
+      "ret": null
+     },
+     {
+      "date": "2026-10-30",
+      "ticker": "METRO",
+      "side": "BUY",
+      "weight": 0.0094,
+      "change": 0.0094,
+      "entry_time": "closing auction",
+      "entry_price": 7.15,
+      "exit_time": null,
+      "exit_price": null,
+      "ret": null
+     },
+     {
+      "date": "2026-10-30",
+      "ticker": "NTGAZ",
+      "side": "BUY",
+      "weight": 0.008,
+      "change": 0.008,
+      "entry_time": "closing auction",
+      "entry_price": 9.51,
+      "exit_time": null,
+      "exit_price": null,
+      "ret": null
+     },
+     {
+      "date": "2026-10-30",
+      "ticker": "OYAKC",
+      "side": "BUY",
+      "weight": 0.0143,
+      "change": 0.0143,
+      "entry_time": "closing auction",
+      "entry_price": 17.88,
+      "exit_time": null,
+      "exit_price": null,
+      "ret": null
+     },
+     {
+      "date": "2026-10-30",
+      "ticker": "SANKO",
+      "side": "BUY",
+      "weight": 0.0027,
+      "change": 0.0001,
+      "entry_time": "closing auction",
+      "entry_price": 20.48,
+      "exit_time": null,
+      "exit_price": null,
+      "ret": null
+     },
+     {
+      "date": "2026-10-30",
+      "ticker": "TTKOM",
+      "side": "BUY",
+      "weight": 0.0158,
+      "change": 0.0158,
+      "entry_time": "closing auction",
+      "entry_price": 46.16,
+      "exit_time": null,
+      "exit_price": null,
+      "ret": null
+     },
+     {
+      "date": "2026-10-30",
+      "ticker": "YGGYO",
+      "side": "BUY",
+      "weight": 0.0066,
+      "change": 0.0006,
+      "entry_time": "closing auction",
+      "entry_price": 187.0,
+      "exit_time": null,
+      "exit_price": null,
+      "ret": null
+     },
+     {
+      "date": "2026-10-30",
+      "ticker": "AEFES",
+      "side": "SELL",
+      "weight": 0.0154,
+      "change": -0.0001,
+      "entry_time": "closing auction",
+      "entry_price": 15.43,
+      "exit_time": null,
+      "exit_price": null,
+      "ret": null
+     },
+     {
+      "date": "2026-10-30",
+      "ticker": "AGYO",
+      "side": "SELL",
+      "weight": 0.0,
+      "change": -0.0006,
+      "entry_time": "closing auction",
+      "entry_price": 5.6,
+      "exit_time": null,
+      "exit_price": null,
+      "ret": null
+     },
+     {
+      "date": "2026-10-30",
+      "ticker": "AHGAZ",
+      "side": "SELL",
+      "weight": 0.014,
+      "change": -0.0014,
+      "entry_time": "closing auction",
+      "entry_price": 46.06,
+      "exit_time": null,
+      "exit_price": null,
+      "ret": null
+     },
+     {
+      "date": "2026-10-30",
+      "ticker": "AKFGY",
+      "side": "SELL",
+      "weight": 0.0,
+      "change": -0.0094,
+      "entry_time": "closing auction",
+      "entry_price": 2.15,
+      "exit_time": null,
+      "exit_price": null,
+      "ret": null
+     },
+     {
+      "date": "2026-10-30",
+      "ticker": "AKFIS",
+      "side": "SELL",
+      "weight": 0.014,
+      "change": -0.0022,
+      "entry_time": "closing auction",
+      "entry_price": 14.51,
+      "exit_time": null,
+      "exit_price": null,
+      "ret": null
+     },
+     {
+      "date": "2026-10-30",
+      "ticker": "AKSA",
+      "side": "SELL",
+      "weight": 0.0131,
+      "change": -0.0019,
+      "entry_time": "closing auction",
+      "entry_price": 9.99,
+      "exit_time": null,
+      "exit_price": null,
+      "ret": null
+     },
+     {
+      "date": "2026-10-30",
+      "ticker": "ASELS",
+      "side": "SELL",
+      "weight": 0.0164,
+      "change": -0.0028,
+      "entry_time": "closing auction",
+      "entry_price": 347.0,
+      "exit_time": null,
+      "exit_price": null,
+      "ret": null
+     },
+     {
+      "date": "2026-10-30",
+      "ticker": "AYDEM",
+      "side": "SELL",
+      "weight": 0.01,
+      "change": -0.0001,
+      "entry_time": "closing auction",
+      "entry_price": 20.64,
+      "exit_time": null,
+      "exit_price": null,
+      "ret": null
+     },
+     {
+      "date": "2026-10-30",
+      "ticker": "AYGAZ",
+      "side": "SELL",
+      "weight": 0.0144,
+      "change": -0.0015,
+      "entry_time": "closing auction",
+      "entry_price": 269.0,
+      "exit_time": null,
+      "exit_price": null,
+      "ret": null
+     },
+     {
+      "date": "2026-10-30",
+      "ticker": "BAHKM",
+      "side": "SELL",
+      "weight": 0.0135,
+      "change": -0.0,
+      "entry_time": "closing auction",
+      "entry_price": 136.0,
+      "exit_time": null,
+      "exit_price": null,
+      "ret": null
+     },
+     {
+      "date": "2026-10-30",
+      "ticker": "BIMAS",
+      "side": "SELL",
+      "weight": 0.0161,
+      "change": -0.0007,
+      "entry_time": "closing auction",
+      "entry_price": 347.5,
+      "exit_time": null,
+      "exit_price": null,
+      "ret": null
+     },
+     {
+      "date": "2026-10-30",
+      "ticker": "CCOLA",
+      "side": "SELL",
+      "weight": 0.0149,
+      "change": -0.0011,
+      "entry_time": "closing auction",
+      "entry_price": 73.1,
+      "exit_time": null,
+      "exit_price": null,
+      "ret": null
+     },
+     {
+      "date": "2026-10-30",
+      "ticker": "DEVA",
+      "side": "SELL",
+      "weight": 0.0079,
+      "change": -0.0001,
+      "entry_time": "closing auction",
+      "entry_price": 69.25,
+      "exit_time": null,
+      "exit_price": null,
+      "ret": null
+     },
+     {
+      "date": "2026-10-30",
+      "ticker": "DOCO",
+      "side": "SELL",
+      "weight": 0.0095,
+      "change": -0.0009,
+      "entry_time": "closing auction",
+      "entry_price": 11652.5,
+      "exit_time": null,
+      "exit_price": null,
+      "ret": null
+     },
+     {
+      "date": "2026-10-30",
+      "ticker": "DZGYO",
+      "side": "SELL",
+      "weight": 0.003,
+      "change": -0.0001,
+      "entry_time": "closing auction",
+      "entry_price": 6.65,
+      "exit_time": null,
+      "exit_price": null,
+      "ret": null
+     },
+     {
+      "date": "2026-10-30",
+      "ticker": "EBEBK",
+      "side": "SELL",
+      "weight": 0.0089,
+      "change": -0.0005,
+      "entry_time": "closing auction",
+      "entry_price": 77.05,
+      "exit_time": null,
+      "exit_price": null,
+      "ret": null
+     },
+     {
+      "date": "2026-10-30",
+      "ticker": "EGSER",
+      "side": "SELL",
+      "weight": 0.0,
+      "change": -0.0016,
+      "entry_time": "closing auction",
+      "entry_price": 1.91,
+      "exit_time": null,
+      "exit_price": null,
+      "ret": null
+     },
+     {
+      "date": "2026-10-30",
+      "ticker": "ENERY",
+      "side": "SELL",
+      "weight": 0.0153,
+      "change": -0.0014,
+      "entry_time": "closing auction",
+      "entry_price": 13.36,
+      "exit_time": null,
+      "exit_price": null,
+      "ret": null
+     },
+     {
+      "date": "2026-10-30",
+      "ticker": "ENJSA",
+      "side": "SELL",
+      "weight": 0.0148,
+      "change": -0.001,
+      "entry_time": "closing auction",
+      "entry_price": 105.5,
+      "exit_time": null,
+      "exit_price": null,
+      "ret": null
+     },
+     {
+      "date": "2026-10-30",
+      "ticker": "ENTRA",
+      "side": "SELL",
+      "weight": 0.0101,
+      "change": -0.0023,
+      "entry_time": "closing auction",
+      "entry_price": 4.39,
+      "exit_time": null,
+      "exit_price": null,
+      "ret": null
+     },
+     {
+      "date": "2026-10-30",
+      "ticker": "EREGL",
+      "side": "SELL",
+      "weight": 0.0,
+      "change": -0.0151,
+      "entry_time": "closing auction",
+      "entry_price": 29.66,
+      "exit_time": null,
+      "exit_price": null,
+      "ret": null
+     },
+     {
+      "date": "2026-10-30",
+      "ticker": "EUKYO",
+      "side": "SELL",
+      "weight": 0.0021,
+      "change": -0.0002,
+      "entry_time": "closing auction",
+      "entry_price": 7.9,
+      "exit_time": null,
+      "exit_price": null,
+      "ret": null
+     },
+     {
+      "date": "2026-10-30",
+      "ticker": "GARAN",
+      "side": "SELL",
+      "weight": 0.0161,
+      "change": -0.0015,
+      "entry_time": "closing auction",
+      "entry_price": 125.2,
+      "exit_time": null,
+      "exit_price": null,
+      "ret": null
+     },
+     {
+      "date": "2026-10-30",
+      "ticker": "GMTAS",
+      "side": "SELL",
+      "weight": 0.0126,
+      "change": -0.0028,
+      "entry_time": "closing auction",
+      "entry_price": 55.15,
+      "exit_time": null,
+      "exit_price": null,
+      "ret": null
+     },
+     {
+      "date": "2026-10-30",
+      "ticker": "GOZDE",
+      "side": "SELL",
+      "weight": 0.0,
+      "change": -0.0064,
+      "entry_time": "closing auction",
+      "entry_price": 15.5,
+      "exit_time": null,
+      "exit_price": null,
+      "ret": null
+     },
+     {
+      "date": "2026-10-30",
+      "ticker": "GRSEL",
+      "side": "SELL",
+      "weight": 0.0,
+      "change": -0.012,
+      "entry_time": "closing auction",
+      "entry_price": 241.5,
+      "exit_time": null,
+      "exit_price": null,
+      "ret": null
+     },
+     {
+      "date": "2026-10-30",
+      "ticker": "INVES",
+      "side": "SELL",
+      "weight": 0.0082,
+      "change": -0.0,
+      "entry_time": "closing auction",
+      "entry_price": 641.5,
+      "exit_time": null,
+      "exit_price": null,
+      "ret": null
+     },
+     {
+      "date": "2026-10-30",
+      "ticker": "ISGYO",
+      "side": "SELL",
+      "weight": 0.0,
+      "change": -0.0085,
+      "entry_time": "closing auction",
+      "entry_price": 17.92,
+      "exit_time": null,
+      "exit_price": null,
+      "ret": null
+     },
+     {
+      "date": "2026-10-30",
+      "ticker": "KCHOL",
+      "side": "SELL",
+      "weight": 0.0162,
+      "change": -0.0013,
+      "entry_time": "closing auction",
+      "entry_price": 192.8,
+      "exit_time": null,
+      "exit_price": null,
+      "ret": null
+     },
+     {
+      "date": "2026-10-30",
+      "ticker": "KRDMD",
+      "side": "SELL",
+      "weight": 0.0159,
+      "change": -0.0001,
+      "entry_time": "closing auction",
+      "entry_price": 36.16,
+      "exit_time": null,
+      "exit_price": null,
+      "ret": null
+     },
+     {
+      "date": "2026-10-30",
+      "ticker": "KRGYO",
+      "side": "SELL",
+      "weight": 0.01,
+      "change": -0.0018,
+      "entry_time": "closing auction",
+      "entry_price": 3.28,
+      "exit_time": null,
+      "exit_price": null,
+      "ret": null
+     },
+     {
+      "date": "2026-10-30",
+      "ticker": "MAVI",
+      "side": "SELL",
+      "weight": 0.0137,
+      "change": -0.0002,
+      "entry_time": "closing auction",
+      "entry_price": 33.46,
+      "exit_time": null,
+      "exit_price": null,
+      "ret": null
+     },
+     {
+      "date": "2026-10-30",
+      "ticker": "NTHOL",
+      "side": "SELL",
+      "weight": 0.0114,
+      "change": -0.0006,
+      "entry_time": "closing auction",
+      "entry_price": 33.82,
+      "exit_time": null,
+      "exit_price": null,
+      "ret": null
+     },
+     {
+      "date": "2026-10-30",
+      "ticker": "OZKGY",
+      "side": "SELL",
+      "weight": 0.0086,
+      "change": -0.001,
+      "entry_time": "closing auction",
+      "entry_price": 11.1,
+      "exit_time": null,
+      "exit_price": null,
+      "ret": null
+     },
+     {
+      "date": "2026-10-30",
+      "ticker": "OZSUB",
+      "side": "SELL",
+      "weight": 0.0,
+      "change": -0.011,
+      "entry_time": "closing auction",
+      "entry_price": 27.0,
+      "exit_time": null,
+      "exit_price": null,
+      "ret": null
+     },
+     {
+      "date": "2026-10-30",
+      "ticker": "OZYSR",
+      "side": "SELL",
+      "weight": 0.0069,
+      "change": -0.0007,
+      "entry_time": "closing auction",
+      "entry_price": 11.93,
+      "exit_time": null,
+      "exit_price": null,
+      "ret": null
+     },
+     {
+      "date": "2026-10-30",
+      "ticker": "PAGYO",
+      "side": "SELL",
+      "weight": 0.0026,
+      "change": -0.0006,
+      "entry_time": "closing auction",
+      "entry_price": 113.0,
+      "exit_time": null,
+      "exit_price": null,
+      "ret": null
+     },
+     {
+      "date": "2026-10-30",
+      "ticker": "PCILT",
+      "side": "SELL",
+      "weight": 0.0,
+      "change": -0.0097,
+      "entry_time": "closing auction",
+      "entry_price": 28.08,
+      "exit_time": null,
+      "exit_price": null,
+      "ret": null
+     },
+     {
+      "date": "2026-10-30",
+      "ticker": "PETKM",
+      "side": "SELL",
+      "weight": 0.0,
+      "change": -0.015,
+      "entry_time": "closing auction",
+      "entry_price": 16.24,
+      "exit_time": null,
+      "exit_price": null,
+      "ret": null
+     },
+     {
+      "date": "2026-10-30",
+      "ticker": "POLHO",
+      "side": "SELL",
+      "weight": 0.0,
+      "change": -0.0067,
+      "entry_time": "closing auction",
+      "entry_price": 13.37,
+      "exit_time": null,
+      "exit_price": null,
+      "ret": null
+     },
+     {
+      "date": "2026-10-30",
+      "ticker": "RGYAS",
+      "side": "SELL",
+      "weight": 0.0146,
+      "change": -0.0001,
+      "entry_time": "closing auction",
+      "entry_price": 168.5,
+      "exit_time": null,
+      "exit_price": null,
+      "ret": null
+     },
+     {
+      "date": "2026-10-30",
+      "ticker": "RYGYO",
+      "side": "SELL",
+      "weight": 0.0125,
+      "change": -0.003,
+      "entry_time": "closing auction",
+      "entry_price": 51.25,
+      "exit_time": null,
+      "exit_price": null,
+      "ret": null
+     },
+     {
+      "date": "2026-10-30",
+      "ticker": "RYSAS",
+      "side": "SELL",
+      "weight": 0.0143,
+      "change": -0.0012,
+      "entry_time": "closing auction",
+      "entry_price": 24.76,
+      "exit_time": null,
+      "exit_price": null,
+      "ret": null
+     },
+     {
+      "date": "2026-10-30",
+      "ticker": "SAHOL",
+      "side": "SELL",
+      "weight": 0.016,
+      "change": -0.0015,
+      "entry_time": "closing auction",
+      "entry_price": 81.1,
+      "exit_time": null,
+      "exit_price": null,
+      "ret": null
+     },
+     {
+      "date": "2026-10-30",
+      "ticker": "SNPAM",
+      "side": "SELL",
+      "weight": 0.0,
+      "change": -0.0001,
+      "entry_time": "closing auction",
+      "entry_price": 16.35,
+      "exit_time": null,
+      "exit_price": null,
+      "ret": null
+     },
+     {
+      "date": "2026-10-30",
+      "ticker": "SOKM",
+      "side": "SELL",
+      "weight": 0.0139,
+      "change": -0.0002,
+      "entry_time": "closing auction",
+      "entry_price": 51.85,
+      "exit_time": null,
+      "exit_price": null,
+      "ret": null
+     },
+     {
+      "date": "2026-10-30",
+      "ticker": "TABGD",
+      "side": "SELL",
+      "weight": 0.0129,
+      "change": -0.001,
+      "entry_time": "closing auction",
+      "entry_price": 191.0,
+      "exit_time": null,
+      "exit_price": null,
+      "ret": null
+     },
+     {
+      "date": "2026-10-30",
+      "ticker": "TAVHL",
+      "side": "SELL",
+      "weight": 0.0154,
+      "change": -0.0008,
+      "entry_time": "closing auction",
+      "entry_price": 250.0,
+      "exit_time": null,
+      "exit_price": null,
+      "ret": null
+     },
+     {
+      "date": "2026-10-30",
+      "ticker": "TCELL",
+      "side": "SELL",
+      "weight": 0.0159,
+      "change": -0.0011,
+      "entry_time": "closing auction",
+      "entry_price": 90.1,
+      "exit_time": null,
+      "exit_price": null,
+      "ret": null
+     },
+     {
+      "date": "2026-10-30",
+      "ticker": "TRCAS",
+      "side": "SELL",
+      "weight": 0.0076,
+      "change": -0.0013,
+      "entry_time": "closing auction",
+      "entry_price": 43.44,
+      "exit_time": null,
+      "exit_price": null,
+      "ret": null
+     },
+     {
+      "date": "2026-10-30",
+      "ticker": "TRGYO",
+      "side": "SELL",
+      "weight": 0.0119,
+      "change": -0.0011,
+      "entry_time": "closing auction",
+      "entry_price": 85.25,
+      "exit_time": null,
+      "exit_price": null,
+      "ret": null
+     },
+     {
+      "date": "2026-10-30",
+      "ticker": "TUPRS",
+      "side": "SELL",
+      "weight": 0.0163,
+      "change": -0.0008,
+      "entry_time": "closing auction",
+      "entry_price": 343.5,
+      "exit_time": null,
+      "exit_price": null,
+      "ret": null
+     },
+     {
+      "date": "2026-10-30",
+      "ticker": "VAKBN",
+      "side": "SELL",
+      "weight": 0.0157,
+      "change": -0.0,
+      "entry_time": "closing auction",
+      "entry_price": 28.88,
+      "exit_time": null,
+      "exit_price": null,
+      "ret": null
+     },
+     {
+      "date": "2026-10-30",
+      "ticker": "VERUS",
+      "side": "SELL",
+      "weight": 0.0089,
+      "change": -0.0005,
+      "entry_time": "closing auction",
+      "entry_price": 467.75,
+      "exit_time": null,
+      "exit_price": null,
+      "ret": null
+     },
+     {
+      "date": "2026-10-30",
+      "ticker": "YKBNK",
+      "side": "SELL",
+      "weight": 0.0162,
+      "change": -0.0015,
+      "entry_time": "closing auction",
+      "entry_price": 33.96,
+      "exit_time": null,
+      "exit_price": null,
+      "ret": null
+     },
+     {
+      "date": "2026-10-30",
+      "ticker": "ZRGYO",
+      "side": "SELL",
+      "weight": 0.0041,
+      "change": -0.0,
+      "entry_time": "closing auction",
+      "entry_price": 15.52,
+      "exit_time": null,
+      "exit_price": null,
+      "ret": null
+     }
+    ]
    }
   },
   {
    "id": "focus_long",
    "name": "Focus Long \u2014 pullback in uptrend, top 5",
    "stats": {
-    "days": 4723,
-    "active_days": 4552,
-    "total_return": 25.43858219497294,
-    "cagr": 0.19092612545693588,
-    "sharpe": 0.7441400668680566,
+    "days": 4724,
+    "active_days": 4553,
+    "total_return": 23.97643312891077,
+    "cagr": 0.18727338811631955,
+    "sharpe": 0.733266268420852,
     "max_drawdown": -0.505397996492563,
-    "hit_rate": 0.5186731107205624,
+    "hit_rate": 0.5185591917417087,
     "best_day": 0.09937886037252985,
     "worst_day": -0.16513754172159267,
     "first": "2008-05-16",
-    "last": "2026-10-28"
+    "last": "2026-10-30"
    },
    "stats_live": {
-    "days": 13,
-    "active_days": 13,
-    "total_return": -0.12504050064022,
+    "days": 14,
+    "active_days": 14,
+    "total_return": -0.17342892046533365,
     "cagr": null,
     "sharpe": null,
-    "max_drawdown": -0.12504050064022,
-    "hit_rate": 0.15384615384615385,
+    "max_drawdown": -0.17342892046533365,
+    "hit_rate": 0.14285714285714285,
     "best_day": 0.027803913376389235,
-    "worst_day": -0.03034044278424342,
+    "worst_day": -0.05530361103630535,
     "first": "2026-10-12",
-    "last": "2026-10-28"
+    "last": "2026-10-30"
    },
    "stats_backtest": {
     "days": 4710,
@@ -122,17 +1167,17 @@
     "last": "2026-10-09"
    },
    "bm_live": {
-    "days": 13,
-    "active_days": 13,
-    "total_return": -0.0897276724112458,
+    "days": 14,
+    "active_days": 14,
+    "total_return": -0.12281432379622803,
     "cagr": null,
     "sharpe": null,
-    "max_drawdown": -0.0936735705102657,
-    "hit_rate": 0.3076923076923077,
+    "max_drawdown": -0.12281432379622803,
+    "hit_rate": 0.2857142857142857,
     "best_day": 0.03216075,
-    "worst_day": -0.03081076,
+    "worst_day": -0.03634808,
     "first": "2026-10-12",
-    "last": "2026-10-28"
+    "last": "2026-10-30"
    },
    "bm_backtest": {
     "days": 4710,
@@ -148,49 +1193,38 @@
     "last": "2026-10-09"
    },
    "today": {
-    "date": "2026-10-28",
-    "ret": -0.011500151597547581,
+    "date": "2026-10-30",
+    "ret": -0.05530361103630535,
     "trades": [
      {
-      "date": "2026-10-28",
-      "ticker": "ENJSA",
-      "side": "BUY",
-      "weight": 0.3333,
-      "entry_time": "closing auction",
-      "entry_price": 113.2,
-      "exit_time": null,
-      "exit_price": null,
-      "ret": null
-     },
-     {
-      "date": "2026-10-28",
+      "date": "2026-10-30",
       "ticker": "HALKB",
       "side": "BUY",
-      "weight": 0.3333,
+      "weight": 1.0,
       "entry_time": "closing auction",
-      "entry_price": 43.14,
+      "entry_price": 39.6,
       "exit_time": null,
       "exit_price": null,
       "ret": null
      },
      {
-      "date": "2026-10-28",
-      "ticker": "YKBNK",
-      "side": "BUY",
-      "weight": 0.3333,
-      "entry_time": "closing auction",
-      "entry_price": 34.48,
-      "exit_time": null,
-      "exit_price": null,
-      "ret": null
-     },
-     {
-      "date": "2026-10-28",
-      "ticker": "SOKM",
+      "date": "2026-10-30",
+      "ticker": "ENJSA",
       "side": "SELL",
       "weight": 0.0,
       "entry_time": "closing auction",
-      "entry_price": 54.5,
+      "entry_price": 105.5,
+      "exit_time": null,
+      "exit_price": null,
+      "ret": null
+     },
+     {
+      "date": "2026-10-30",
+      "ticker": "YKBNK",
+      "side": "SELL",
+      "weight": 0.0,
+      "entry_time": "closing auction",
+      "entry_price": 33.96,
       "exit_time": null,
       "exit_price": null,
       "ret": null
@@ -202,20 +1236,20 @@
    "id": "daily_beta_pm",
    "name": "Daily BETA phase-matched momentum (long/short)",
    "stats": {
-    "days": 70,
+    "days": 71,
     "active_days": 70,
     "total_return": 0.015384414931942203,
     "cagr": null,
-    "sharpe": 0.3510763574334475,
+    "sharpe": 0.3486295795075969,
     "max_drawdown": -0.0706021711104845,
     "hit_rate": 0.4857142857142857,
     "best_day": 0.04430282798936428,
     "worst_day": -0.046071339409629854,
     "first": "2026-07-23",
-    "last": "2026-10-28"
+    "last": "2026-10-30"
    },
    "stats_live": {
-    "days": 13,
+    "days": 14,
     "active_days": 13,
     "total_return": 0.03082858406912181,
     "cagr": null,
@@ -225,7 +1259,7 @@
     "best_day": 0.02223863744304827,
     "worst_day": -0.03319357570346615,
     "first": "2026-10-12",
-    "last": "2026-10-28"
+    "last": "2026-10-30"
    },
    "stats_backtest": {
     "days": 57,
@@ -241,17 +1275,17 @@
     "last": "2026-10-09"
    },
    "bm_live": {
-    "days": 13,
-    "active_days": 13,
-    "total_return": -0.0897276724112458,
+    "days": 14,
+    "active_days": 14,
+    "total_return": -0.12281432379622803,
     "cagr": null,
     "sharpe": null,
-    "max_drawdown": -0.0936735705102657,
-    "hit_rate": 0.3076923076923077,
+    "max_drawdown": -0.12281432379622803,
+    "hit_rate": 0.2857142857142857,
     "best_day": 0.03216075,
-    "worst_day": -0.03081076,
+    "worst_day": -0.03634808,
     "first": "2026-10-12",
-    "last": "2026-10-28"
+    "last": "2026-10-30"
    },
    "bm_backtest": {
     "days": 57,
@@ -267,41 +1301,41 @@
     "last": "2026-10-09"
    },
    "today": {
-    "date": "2026-10-28",
-    "ret": 0.0177527807037647,
+    "date": "2026-10-30",
+    "ret": 0.0,
     "trades": [
      {
-      "date": "2026-10-28",
-      "ticker": "BIMAS",
-      "side": "SHORT",
-      "entry_time": "opening auction",
-      "entry_price": 362.5,
-      "exit_time": "closing auction",
-      "exit_price": 364.75,
-      "ret": -0.00621,
-      "residual": -0.03304
-     },
-     {
-      "date": "2026-10-28",
+      "date": "2026-10-30",
       "ticker": "HEKTS",
-      "side": "SHORT",
-      "entry_time": "opening auction",
-      "entry_price": 1.59,
-      "exit_time": "closing auction",
-      "exit_price": 1.58,
-      "ret": 0.00629,
-      "residual": -0.05631
+      "side": "LONG",
+      "entry_time": "closing auction",
+      "entry_price": 1.6,
+      "exit_time": "next opening auction",
+      "exit_price": null,
+      "ret": null,
+      "residual": 0.06857
      },
      {
-      "date": "2026-10-28",
-      "ticker": "SASA",
-      "side": "SHORT",
-      "entry_time": "opening auction",
-      "entry_price": 1.51,
-      "exit_time": "closing auction",
-      "exit_price": 1.49,
-      "ret": 0.01325,
-      "residual": -0.03513
+      "date": "2026-10-30",
+      "ticker": "TKFEN",
+      "side": "LONG",
+      "entry_time": "closing auction",
+      "entry_price": 191.4,
+      "exit_time": "next opening auction",
+      "exit_price": null,
+      "ret": null,
+      "residual": 0.0367
+     },
+     {
+      "date": "2026-10-30",
+      "ticker": "YKBNK",
+      "side": "LONG",
+      "entry_time": "closing auction",
+      "entry_price": 33.96,
+      "exit_time": "next opening auction",
+      "exit_price": null,
+      "ret": null,
+      "residual": 0.03773
      }
     ]
    }
@@ -310,30 +1344,30 @@
    "id": "eodr_short",
    "name": "EODR \u2014 end-of-day loser short",
    "stats": {
-    "days": 19,
-    "active_days": 10,
-    "total_return": 0.018309407447139492,
+    "days": 20,
+    "active_days": 11,
+    "total_return": 0.03300831535853055,
     "cagr": null,
-    "sharpe": null,
+    "sharpe": 2.057602108201203,
     "max_drawdown": -0.052056008339807835,
-    "hit_rate": 0.7,
+    "hit_rate": 0.7272727272727273,
     "best_day": 0.023598982516243594,
     "worst_day": -0.03643690801824173,
     "first": "2026-10-02",
-    "last": "2026-10-28"
+    "last": "2026-10-30"
    },
    "stats_live": {
-    "days": 13,
-    "active_days": 7,
-    "total_return": 0.04016249021795626,
+    "days": 14,
+    "active_days": 8,
+    "total_return": 0.055176839044337456,
     "cagr": null,
     "sharpe": null,
     "max_drawdown": -0.03643690801824173,
-    "hit_rate": 0.8571428571428571,
+    "hit_rate": 0.875,
     "best_day": 0.023598982516243594,
     "worst_day": -0.03643690801824173,
     "first": "2026-10-12",
-    "last": "2026-10-28"
+    "last": "2026-10-30"
    },
    "stats_backtest": {
     "days": 6,
@@ -349,17 +1383,17 @@
     "last": "2026-10-09"
    },
    "bm_live": {
-    "days": 13,
-    "active_days": 13,
-    "total_return": -0.0897276724112458,
+    "days": 14,
+    "active_days": 14,
+    "total_return": -0.12281432379622803,
     "cagr": null,
     "sharpe": null,
-    "max_drawdown": -0.0936735705102657,
-    "hit_rate": 0.3076923076923077,
+    "max_drawdown": -0.12281432379622803,
+    "hit_rate": 0.2857142857142857,
     "best_day": 0.03216075,
-    "worst_day": -0.03081076,
+    "worst_day": -0.03634808,
     "first": "2026-10-12",
-    "last": "2026-10-28"
+    "last": "2026-10-30"
    },
    "bm_backtest": {
     "days": 6,
@@ -375,29 +1409,42 @@
     "last": "2026-10-09"
    },
    "today": {
-    "date": "2026-10-28",
-    "ret": 0.0,
-    "trades": []
+    "date": "2026-10-30",
+    "ret": 0.014434618598133775,
+    "trades": [
+     {
+      "date": "2026-10-30",
+      "ticker": "AKSEN",
+      "side": "SHORT",
+      "entry_time": "first 1-min open after 16:00",
+      "entry_price": 61.55,
+      "exit_time": "closing auction",
+      "exit_price": 60.6,
+      "ret": 0.01443,
+      "z": -2.31,
+      "fallback_rank": 2
+     }
+    ]
    }
   },
   {
    "id": "morning_gap_short",
    "name": "Morning gap-up fade (10:01 Core)",
    "stats": {
-    "days": 19,
+    "days": 20,
     "active_days": 13,
     "total_return": 0.013582702229054444,
     "cagr": null,
-    "sharpe": null,
+    "sharpe": 0.619933420564072,
     "max_drawdown": -0.0655520662243344,
     "hit_rate": 0.6153846153846154,
     "best_day": 0.0578934565450715,
     "worst_day": -0.0655520662243344,
     "first": "2026-10-02",
-    "last": "2026-10-28"
+    "last": "2026-10-30"
    },
    "stats_live": {
-    "days": 13,
+    "days": 14,
     "active_days": 8,
     "total_return": 0.036600887082995914,
     "cagr": null,
@@ -407,7 +1454,7 @@
     "best_day": 0.0578934565450715,
     "worst_day": -0.0655520662243344,
     "first": "2026-10-12",
-    "last": "2026-10-28"
+    "last": "2026-10-30"
    },
    "stats_backtest": {
     "days": 6,
@@ -423,17 +1470,17 @@
     "last": "2026-10-09"
    },
    "bm_live": {
-    "days": 13,
-    "active_days": 13,
-    "total_return": -0.0897276724112458,
+    "days": 14,
+    "active_days": 14,
+    "total_return": -0.12281432379622803,
     "cagr": null,
     "sharpe": null,
-    "max_drawdown": -0.0936735705102657,
-    "hit_rate": 0.3076923076923077,
+    "max_drawdown": -0.12281432379622803,
+    "hit_rate": 0.2857142857142857,
     "best_day": 0.03216075,
-    "worst_day": -0.03081076,
+    "worst_day": -0.03634808,
     "first": "2026-10-12",
-    "last": "2026-10-28"
+    "last": "2026-10-30"
    },
    "bm_backtest": {
     "days": 6,
@@ -449,51 +1496,39 @@
     "last": "2026-10-09"
    },
    "today": {
-    "date": "2026-10-28",
-    "ret": 0.027618585776440163,
-    "trades": [
-     {
-      "date": "2026-10-28",
-      "ticker": "ASTOR",
-      "side": "SHORT",
-      "entry_time": "10:01 open",
-      "entry_price": 181.7,
-      "exit_time": "closing auction",
-      "exit_price": 176.5,
-      "ret": 0.02762,
-      "gap": 0.0998
-     }
-    ]
+    "date": "2026-10-30",
+    "ret": 0.0,
+    "trades": []
    }
   },
   {
    "id": "ens5_basic",
    "name": "ENS5v2 \u2014 17:45-18:00 reversal, basic (top3 + gap skip)",
    "stats": {
-    "days": 70,
-    "active_days": 69,
-    "total_return": 0.12310749471072047,
+    "days": 71,
+    "active_days": 70,
+    "total_return": 0.15310277722431254,
     "cagr": null,
-    "sharpe": 2.376940257766472,
+    "sharpe": 2.7900985554665745,
     "max_drawdown": -0.06219827627501995,
-    "hit_rate": 0.6376811594202898,
-    "best_day": 0.0241494701050248,
+    "hit_rate": 0.6428571428571429,
+    "best_day": 0.026707401254871,
     "worst_day": -0.035592108016108,
     "first": "2026-07-22",
-    "last": "2026-10-28"
+    "last": "2026-10-30"
    },
    "stats_live": {
-    "days": 13,
-    "active_days": 12,
-    "total_return": 0.020425398817147666,
+    "days": 14,
+    "active_days": 13,
+    "total_return": 0.04767830939401896,
     "cagr": null,
     "sharpe": null,
     "max_drawdown": -0.023349920252116796,
-    "hit_rate": 0.6666666666666666,
-    "best_day": 0.0145358680125685,
+    "hit_rate": 0.6923076923076923,
+    "best_day": 0.026707401254871,
     "worst_day": -0.0167443566750275,
     "first": "2026-10-12",
-    "last": "2026-10-28"
+    "last": "2026-10-30"
    },
    "stats_backtest": {
     "days": 57,
@@ -509,17 +1544,17 @@
     "last": "2026-10-09"
    },
    "bm_live": {
-    "days": 13,
-    "active_days": 13,
-    "total_return": -0.0897276724112458,
+    "days": 14,
+    "active_days": 14,
+    "total_return": -0.12281432379622803,
     "cagr": null,
     "sharpe": null,
-    "max_drawdown": -0.0936735705102657,
-    "hit_rate": 0.3076923076923077,
+    "max_drawdown": -0.12281432379622803,
+    "hit_rate": 0.2857142857142857,
     "best_day": 0.03216075,
-    "worst_day": -0.03081076,
+    "worst_day": -0.03634808,
     "first": "2026-10-12",
-    "last": "2026-10-28"
+    "last": "2026-10-30"
    },
    "bm_backtest": {
     "days": 57,
@@ -535,39 +1570,73 @@
     "last": "2026-10-09"
    },
    "today": {
-    "date": "2026-10-28",
+    "date": "2026-10-30",
     "ret": 0.0,
-    "trades": []
+    "trades": [
+     {
+      "date": "2026-10-30",
+      "ticker": "HALKB",
+      "side": "LONG",
+      "entry_time": "closing auction",
+      "entry_price": 39.6,
+      "exit_time": "next opening auction",
+      "exit_price": null,
+      "ret": null,
+      "note": "pending"
+     },
+     {
+      "date": "2026-10-30",
+      "ticker": "SASA",
+      "side": "LONG",
+      "entry_time": "closing auction",
+      "entry_price": 1.45,
+      "exit_time": "next opening auction",
+      "exit_price": null,
+      "ret": null,
+      "note": "pending"
+     },
+     {
+      "date": "2026-10-30",
+      "ticker": "VESTL",
+      "side": "LONG",
+      "entry_time": "closing auction",
+      "entry_price": 11.02,
+      "exit_time": "next opening auction",
+      "exit_price": null,
+      "ret": null,
+      "note": "pending"
+     }
+    ]
    }
   },
   {
    "id": "ens5_s10c",
    "name": "ENS5v2 \u2014 17:45-18:00 reversal, S10c rules",
    "stats": {
-    "days": 70,
-    "active_days": 69,
-    "total_return": 0.059994304241611784,
+    "days": 71,
+    "active_days": 70,
+    "total_return": 0.06648865398596526,
     "cagr": null,
-    "sharpe": 1.231802537128375,
+    "sharpe": 1.3403261282057375,
     "max_drawdown": -0.060629549728883236,
-    "hit_rate": 0.5942028985507246,
+    "hit_rate": 0.6,
     "best_day": 0.0241494701050248,
     "worst_day": -0.0358389639118445,
     "first": "2026-07-22",
-    "last": "2026-10-28"
+    "last": "2026-10-30"
    },
    "stats_live": {
-    "days": 13,
-    "active_days": 12,
-    "total_return": -0.00048154826336621603,
+    "days": 14,
+    "active_days": 13,
+    "total_return": 0.005642279360553504,
     "cagr": null,
     "sharpe": null,
     "max_drawdown": -0.027329066608237973,
-    "hit_rate": 0.5,
+    "hit_rate": 0.5384615384615384,
     "best_day": 0.0157782357680081,
     "worst_day": -0.0169922380670846,
     "first": "2026-10-12",
-    "last": "2026-10-28"
+    "last": "2026-10-30"
    },
    "stats_backtest": {
     "days": 57,
@@ -583,17 +1652,17 @@
     "last": "2026-10-09"
    },
    "bm_live": {
-    "days": 13,
-    "active_days": 13,
-    "total_return": -0.0897276724112458,
+    "days": 14,
+    "active_days": 14,
+    "total_return": -0.12281432379622803,
     "cagr": null,
     "sharpe": null,
-    "max_drawdown": -0.0936735705102657,
-    "hit_rate": 0.3076923076923077,
+    "max_drawdown": -0.12281432379622803,
+    "hit_rate": 0.2857142857142857,
     "best_day": 0.03216075,
-    "worst_day": -0.03081076,
+    "worst_day": -0.03634808,
     "first": "2026-10-12",
-    "last": "2026-10-28"
+    "last": "2026-10-30"
    },
    "bm_backtest": {
     "days": 57,
@@ -609,9 +1678,43 @@
     "last": "2026-10-09"
    },
    "today": {
-    "date": "2026-10-28",
+    "date": "2026-10-30",
     "ret": 0.0,
-    "trades": []
+    "trades": [
+     {
+      "date": "2026-10-30",
+      "ticker": "HALKB",
+      "side": "LONG",
+      "entry_time": "closing auction",
+      "entry_price": 39.6,
+      "exit_time": "next opening auction",
+      "exit_price": null,
+      "ret": null,
+      "note": "pending (S10c sizing set at execution)"
+     },
+     {
+      "date": "2026-10-30",
+      "ticker": "SASA",
+      "side": "LONG",
+      "entry_time": "closing auction",
+      "entry_price": 1.45,
+      "exit_time": "next opening auction",
+      "exit_price": null,
+      "ret": null,
+      "note": "pending (S10c sizing set at execution)"
+     },
+     {
+      "date": "2026-10-30",
+      "ticker": "VESTL",
+      "side": "LONG",
+      "entry_time": "closing auction",
+      "entry_price": 11.02,
+      "exit_time": "next opening auction",
+      "exit_price": null,
+      "ret": null,
+      "note": "pending (S10c sizing set at execution)"
+     }
+    ]
    }
   }
  ],
