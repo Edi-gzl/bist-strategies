@@ -9,9 +9,9 @@
  "stats": {
   "days": 20,
   "active_days": 11,
-  "total_return": 0.03300831535853055,
+  "total_return": 0.03300829011374007,
   "cagr": null,
-  "sharpe": 2.057602108201203,
+  "sharpe": 2.057600811700695,
   "max_drawdown": -0.052056008339807835,
   "hit_rate": 0.7272727272727273,
   "best_day": 0.023598982516243594,
@@ -22,7 +22,7 @@
  "stats_live": {
   "days": 14,
   "active_days": 8,
-  "total_return": 0.055176839044337456,
+  "total_return": 0.05517681325778967,
   "cagr": null,
   "sharpe": null,
   "max_drawdown": -0.03643690801824173,
@@ -48,13 +48,13 @@
  "bm_live": {
   "days": 14,
   "active_days": 14,
-  "total_return": -0.12281432379622803,
+  "total_return": -0.10687674792685409,
   "cagr": null,
   "sharpe": null,
-  "max_drawdown": -0.12281432379622803,
+  "max_drawdown": -0.10687674792685409,
   "hit_rate": 0.2857142857142857,
   "best_day": 0.03216075,
-  "worst_day": -0.03634808,
+  "worst_day": -0.03081076,
   "first": "2026-10-12",
   "last": "2026-10-30"
  },
@@ -208,10 +208,10 @@
   },
   {
    "date": "2026-10-30",
-   "ret": 0.014434618598133775,
+   "ret": 0.01443459380724954,
    "reconstructed": false,
    "n_trades": 1,
-   "bm": -0.03634808
+   "bm": -0.0188395
   }
  ],
  "trades": [
