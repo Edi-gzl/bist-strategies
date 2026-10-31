@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-31T01:19:24+00:00",
+ "generated_at": "2026-10-31T10:34:14+00:00",
  "live_start": "2026-10-02",
  "recorded_from": "2026-10-12",
  "last_session": "2026-10-30",
@@ -11,9 +11,9 @@
    "stats": {
     "days": 1709,
     "active_days": 1709,
-    "total_return": 34.89474810272323,
-    "cagr": 0.6954951094933424,
-    "sharpe": 2.597624402255844,
+    "total_return": 34.89474803976578,
+    "cagr": 0.6954951090548407,
+    "sharpe": 2.5976244007202243,
     "max_drawdown": -0.3222051823002535,
     "hit_rate": 0.6331187829139848,
     "best_day": 0.13045770691641703,
@@ -24,10 +24,10 @@
    "stats_live": {
     "days": 14,
     "active_days": 14,
-    "total_return": -0.10520376012813293,
+    "total_return": -0.10520376169755707,
     "cagr": null,
     "sharpe": null,
-    "max_drawdown": -0.10520376012813293,
+    "max_drawdown": -0.10520376169755707,
     "hit_rate": 0.14285714285714285,
     "best_day": 0.024677496816948752,
     "worst_day": -0.024267355650022804,
@@ -50,13 +50,13 @@
    "bm_live": {
     "days": 14,
     "active_days": 14,
-    "total_return": -0.10873226524485757,
+    "total_return": -0.122811055918572,
     "cagr": null,
     "sharpe": null,
-    "max_drawdown": -0.10873226524485757,
+    "max_drawdown": -0.122811055918572,
     "hit_rate": 0.2857142857142857,
     "best_day": 0.03216075,
-    "worst_day": -0.03081076,
+    "worst_day": -0.03634449,
     "first": "2026-10-12",
     "last": "2026-10-30"
    },
@@ -75,7 +75,7 @@
    },
    "today": {
     "date": "2026-10-30",
-    "ret": -0.021242938179461213,
+    "ret": -0.021242939896148116,
     "trades": [
      {
       "date": "2026-10-30",
@@ -1130,9 +1130,9 @@
    "stats": {
     "days": 4724,
     "active_days": 4553,
-    "total_return": 23.97643367462791,
-    "cagr": 0.18727338950013617,
-    "sharpe": 0.7332662727056436,
+    "total_return": 23.97643312891077,
+    "cagr": 0.18727338811631955,
+    "sharpe": 0.733266268420852,
     "max_drawdown": -0.505397996492563,
     "hit_rate": 0.5185591917417087,
     "best_day": 0.09937886037252985,
@@ -1143,13 +1143,13 @@
    "stats_live": {
     "days": 14,
     "active_days": 14,
-    "total_return": -0.1734289024053488,
+    "total_return": -0.17342892046533365,
     "cagr": null,
     "sharpe": null,
-    "max_drawdown": -0.1734289024053488,
+    "max_drawdown": -0.17342892046533365,
     "hit_rate": 0.14285714285714285,
     "best_day": 0.027803913376389235,
-    "worst_day": -0.055303590395367135,
+    "worst_day": -0.05530361103630535,
     "first": "2026-10-12",
     "last": "2026-10-30"
    },
@@ -1169,13 +1169,13 @@
    "bm_live": {
     "days": 14,
     "active_days": 14,
-    "total_return": -0.10873226524485757,
+    "total_return": -0.122811055918572,
     "cagr": null,
     "sharpe": null,
-    "max_drawdown": -0.10873226524485757,
+    "max_drawdown": -0.122811055918572,
     "hit_rate": 0.2857142857142857,
     "best_day": 0.03216075,
-    "worst_day": -0.03081076,
+    "worst_day": -0.03634449,
     "first": "2026-10-12",
     "last": "2026-10-30"
    },
@@ -1194,7 +1194,7 @@
    },
    "today": {
     "date": "2026-10-30",
-    "ret": -0.055303590395367135,
+    "ret": -0.05530361103630535,
     "trades": [
      {
       "date": "2026-10-30",
@@ -1277,13 +1277,13 @@
    "bm_live": {
     "days": 14,
     "active_days": 14,
-    "total_return": -0.10873226524485757,
+    "total_return": -0.122811055918572,
     "cagr": null,
     "sharpe": null,
-    "max_drawdown": -0.10873226524485757,
+    "max_drawdown": -0.122811055918572,
     "hit_rate": 0.2857142857142857,
     "best_day": 0.03216075,
-    "worst_day": -0.03081076,
+    "worst_day": -0.03634449,
     "first": "2026-10-12",
     "last": "2026-10-30"
    },
@@ -1346,9 +1346,9 @@
    "stats": {
     "days": 20,
     "active_days": 11,
-    "total_return": 0.03300829011374007,
+    "total_return": 0.03300831535853055,
     "cagr": null,
-    "sharpe": 2.057600811700695,
+    "sharpe": 2.057602108201203,
     "max_drawdown": -0.052056008339807835,
     "hit_rate": 0.7272727272727273,
     "best_day": 0.023598982516243594,
@@ -1359,7 +1359,7 @@
    "stats_live": {
     "days": 14,
     "active_days": 8,
-    "total_return": 0.05517681325778967,
+    "total_return": 0.055176839044337456,
     "cagr": null,
     "sharpe": null,
     "max_drawdown": -0.03643690801824173,
@@ -1385,13 +1385,13 @@
    "bm_live": {
     "days": 14,
     "active_days": 14,
-    "total_return": -0.10873226524485757,
+    "total_return": -0.122811055918572,
     "cagr": null,
     "sharpe": null,
-    "max_drawdown": -0.10873226524485757,
+    "max_drawdown": -0.122811055918572,
     "hit_rate": 0.2857142857142857,
     "best_day": 0.03216075,
-    "worst_day": -0.03081076,
+    "worst_day": -0.03634449,
     "first": "2026-10-12",
     "last": "2026-10-30"
    },
@@ -1410,7 +1410,7 @@
    },
    "today": {
     "date": "2026-10-30",
-    "ret": 0.01443459380724954,
+    "ret": 0.014434618598133775,
     "trades": [
      {
       "date": "2026-10-30",
@@ -1472,13 +1472,13 @@
    "bm_live": {
     "days": 14,
     "active_days": 14,
-    "total_return": -0.10873226524485757,
+    "total_return": -0.122811055918572,
     "cagr": null,
     "sharpe": null,
-    "max_drawdown": -0.10873226524485757,
+    "max_drawdown": -0.122811055918572,
     "hit_rate": 0.2857142857142857,
     "best_day": 0.03216075,
-    "worst_day": -0.03081076,
+    "worst_day": -0.03634449,
     "first": "2026-10-12",
     "last": "2026-10-30"
    },
@@ -1546,13 +1546,13 @@
    "bm_live": {
     "days": 14,
     "active_days": 14,
-    "total_return": -0.10873226524485757,
+    "total_return": -0.122811055918572,
     "cagr": null,
     "sharpe": null,
-    "max_drawdown": -0.10873226524485757,
+    "max_drawdown": -0.122811055918572,
     "hit_rate": 0.2857142857142857,
     "best_day": 0.03216075,
-    "worst_day": -0.03081076,
+    "worst_day": -0.03634449,
     "first": "2026-10-12",
     "last": "2026-10-30"
    },
@@ -1654,13 +1654,13 @@
    "bm_live": {
     "days": 14,
     "active_days": 14,
-    "total_return": -0.10873226524485757,
+    "total_return": -0.122811055918572,
     "cagr": null,
     "sharpe": null,
-    "max_drawdown": -0.10873226524485757,
+    "max_drawdown": -0.122811055918572,
     "hit_rate": 0.2857142857142857,
     "best_day": 0.03216075,
-    "worst_day": -0.03081076,
+    "worst_day": -0.03634449,
     "first": "2026-10-12",
     "last": "2026-10-30"
    },
@@ -1720,9 +1720,7 @@
  ],
  "failures": {},
  "incomplete_sessions": [],
- "repaired_sessions": [
-  "2026-10-30"
- ],
+ "repaired_sessions": [],
  "benchmark": {
   "id": "xu100",
   "name": "BIST 100 (XU100)",
