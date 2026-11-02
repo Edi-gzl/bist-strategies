@@ -8,32 +8,32 @@
  ],
  "live_start": "2026-10-02",
  "recorded_from": "2026-10-12",
- "last_session": "2026-10-30",
+ "last_session": "2026-11-02",
  "stats": {
-  "days": 71,
-  "active_days": 70,
-  "total_return": 0.06648865398596526,
+  "days": 72,
+  "active_days": 71,
+  "total_return": 0.04950815507298123,
   "cagr": null,
-  "sharpe": 1.3403261282057375,
+  "sharpe": 1.0091413830079998,
   "max_drawdown": -0.060629549728883236,
-  "hit_rate": 0.6,
+  "hit_rate": 0.5915492957746479,
   "best_day": 0.0241494701050248,
   "worst_day": -0.0358389639118445,
   "first": "2026-07-22",
-  "last": "2026-10-30"
+  "last": "2026-11-02"
  },
  "stats_live": {
-  "days": 14,
-  "active_days": 13,
-  "total_return": 0.005642279360553504,
+  "days": 15,
+  "active_days": 14,
+  "total_return": -0.010369431188555933,
   "cagr": null,
   "sharpe": null,
   "max_drawdown": -0.027329066608237973,
-  "hit_rate": 0.5384615384615384,
+  "hit_rate": 0.5,
   "best_day": 0.0157782357680081,
   "worst_day": -0.0169922380670846,
   "first": "2026-10-12",
-  "last": "2026-10-30"
+  "last": "2026-11-02"
  },
  "stats_backtest": {
   "days": 57,
@@ -49,17 +49,17 @@
   "last": "2026-10-09"
  },
  "bm_live": {
-  "days": 14,
-  "active_days": 14,
-  "total_return": -0.122811055918572,
+  "days": 15,
+  "active_days": 15,
+  "total_return": -0.106337035269919,
   "cagr": null,
   "sharpe": null,
   "max_drawdown": -0.122811055918572,
-  "hit_rate": 0.2857142857142857,
+  "hit_rate": 0.3333333333333333,
   "best_day": 0.03216075,
   "worst_day": -0.03634449,
   "first": "2026-10-12",
-  "last": "2026-10-30"
+  "last": "2026-11-02"
  },
  "bm_backtest": {
   "days": 57,
@@ -570,8 +570,15 @@
    "date": "2026-10-30",
    "ret": 0.0,
    "reconstructed": false,
-   "n_trades": 3,
+   "n_trades": 1,
    "bm": -0.03634449
+  },
+  {
+   "date": "2026-11-02",
+   "ret": -0.0159218748830754,
+   "reconstructed": false,
+   "n_trades": 6,
+   "bm": 0.01878047
   }
  ],
  "trades": [
@@ -4680,36 +4687,80 @@
   },
   {
    "date": "2026-10-30",
-   "ticker": "HALKB",
-   "side": "LONG",
-   "entry_time": "closing auction",
-   "entry_price": 39.6,
-   "exit_time": "next opening auction",
-   "exit_price": null,
-   "ret": null,
-   "note": "pending (S10c sizing set at execution)"
-  },
-  {
-   "date": "2026-10-30",
-   "ticker": "SASA",
-   "side": "LONG",
-   "entry_time": "closing auction",
-   "entry_price": 1.45,
-   "exit_time": "next opening auction",
-   "exit_price": null,
-   "ret": null,
-   "note": "pending (S10c sizing set at execution)"
-  },
-  {
-   "date": "2026-10-30",
    "ticker": "VESTL",
    "side": "LONG",
    "entry_time": "closing auction",
    "entry_price": 11.02,
+   "exit_time": "opening auction 2026-11-02",
+   "exit_price": 10.65,
+   "ret": -0.03358,
+   "note": "A3: whole long leg in top pick"
+  },
+  {
+   "date": "2026-11-02",
+   "ticker": "HALKB",
+   "side": "LONG",
+   "entry_time": "closing auction",
+   "entry_price": 40.56,
    "exit_time": "next opening auction",
    "exit_price": null,
    "ret": null,
    "note": "pending (S10c sizing set at execution)"
+  },
+  {
+   "date": "2026-11-02",
+   "ticker": "HEKTS",
+   "side": "LONG",
+   "entry_time": "closing auction",
+   "entry_price": 1.7,
+   "exit_time": "next opening auction",
+   "exit_price": null,
+   "ret": null,
+   "note": "pending (S10c sizing set at execution)"
+  },
+  {
+   "date": "2026-11-02",
+   "ticker": "SASA",
+   "side": "LONG",
+   "entry_time": "closing auction",
+   "entry_price": 1.48,
+   "exit_time": "next opening auction",
+   "exit_price": null,
+   "ret": null,
+   "note": "pending (S10c sizing set at execution)"
+  },
+  {
+   "date": "2026-11-02",
+   "ticker": "AEFES",
+   "side": "SHORT",
+   "entry_time": "opening auction",
+   "entry_price": 15.45,
+   "exit_time": "closing auction",
+   "exit_price": 16.24,
+   "ret": -0.05113,
+   "note": ""
+  },
+  {
+   "date": "2026-11-02",
+   "ticker": "ARCLK",
+   "side": "SHORT",
+   "entry_time": "opening auction",
+   "entry_price": 67.25,
+   "exit_time": "closing auction",
+   "exit_price": 66.55,
+   "ret": 0.01041,
+   "note": ""
+  },
+  {
+   "date": "2026-11-02",
+   "ticker": "VAKBN",
+   "side": "SHORT",
+   "entry_time": "opening auction",
+   "entry_price": 29.0,
+   "exit_time": "closing auction",
+   "exit_price": 29.6,
+   "ret": -0.02069,
+   "note": ""
   }
  ],
  "holdings": null

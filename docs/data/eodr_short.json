@@ -5,32 +5,32 @@
  "deviations": [],
  "live_start": "2026-10-02",
  "recorded_from": "2026-10-12",
- "last_session": "2026-10-30",
+ "last_session": "2026-11-02",
  "stats": {
-  "days": 20,
-  "active_days": 11,
-  "total_return": 0.03300831535853055,
+  "days": 21,
+  "active_days": 12,
+  "total_return": 0.049368611026676446,
   "cagr": null,
-  "sharpe": 2.057602108201203,
+  "sharpe": 2.861375292635543,
   "max_drawdown": -0.052056008339807835,
-  "hit_rate": 0.7272727272727273,
+  "hit_rate": 0.75,
   "best_day": 0.023598982516243594,
   "worst_day": -0.03643690801824173,
   "first": "2026-10-02",
-  "last": "2026-10-30"
+  "last": "2026-11-02"
  },
  "stats_live": {
-  "days": 14,
-  "active_days": 8,
-  "total_return": 0.055176839044337456,
+  "days": 15,
+  "active_days": 9,
+  "total_return": 0.07188822927448602,
   "cagr": null,
   "sharpe": null,
   "max_drawdown": -0.03643690801824173,
-  "hit_rate": 0.875,
+  "hit_rate": 0.8888888888888888,
   "best_day": 0.023598982516243594,
   "worst_day": -0.03643690801824173,
   "first": "2026-10-12",
-  "last": "2026-10-30"
+  "last": "2026-11-02"
  },
  "stats_backtest": {
   "days": 6,
@@ -46,17 +46,17 @@
   "last": "2026-10-09"
  },
  "bm_live": {
-  "days": 14,
-  "active_days": 14,
-  "total_return": -0.122811055918572,
+  "days": 15,
+  "active_days": 15,
+  "total_return": -0.106337035269919,
   "cagr": null,
   "sharpe": null,
   "max_drawdown": -0.122811055918572,
-  "hit_rate": 0.2857142857142857,
+  "hit_rate": 0.3333333333333333,
   "best_day": 0.03216075,
   "worst_day": -0.03634449,
   "first": "2026-10-12",
-  "last": "2026-10-30"
+  "last": "2026-11-02"
  },
  "bm_backtest": {
   "days": 6,
@@ -212,6 +212,13 @@
    "reconstructed": false,
    "n_trades": 1,
    "bm": -0.03634449
+  },
+  {
+   "date": "2026-11-02",
+   "ret": 0.015837525627727,
+   "reconstructed": false,
+   "n_trades": 1,
+   "bm": 0.01878047
   }
  ],
  "trades": [
@@ -346,6 +353,18 @@
    "ret": 0.01443,
    "z": -2.31,
    "fallback_rank": 2
+  },
+  {
+   "date": "2026-11-02",
+   "ticker": "DOAS",
+   "side": "SHORT",
+   "entry_time": "first 1-min open after 16:00",
+   "entry_price": 136.6,
+   "exit_time": "closing auction",
+   "exit_price": 134.3,
+   "ret": 0.01584,
+   "z": -4.29,
+   "fallback_rank": 1
   }
  ],
  "holdings": null
