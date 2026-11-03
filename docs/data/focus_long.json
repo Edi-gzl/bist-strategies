@@ -7,32 +7,32 @@
  ],
  "live_start": "2026-10-02",
  "recorded_from": "2026-10-12",
- "last_session": "2026-11-02",
+ "last_session": "2026-11-03",
  "stats": {
-  "days": 4725,
-  "active_days": 4554,
-  "total_return": 24.565273313354737,
-  "cagr": 0.18870664409466387,
-  "sharpe": 0.7373610588967817,
+  "days": 4726,
+  "active_days": 4555,
+  "total_return": 24.55249067669806,
+  "cagr": 0.1886314663422941,
+  "sharpe": 0.7371916672965549,
   "max_drawdown": -0.505397996492563,
-  "hit_rate": 0.5186649099692578,
+  "hit_rate": 0.5185510428100988,
   "best_day": 0.09937886037252985,
   "worst_day": -0.16513754172159267,
   "first": "2008-05-16",
-  "last": "2026-11-02"
+  "last": "2026-11-03"
  },
  "stats_live": {
-  "days": 15,
-  "active_days": 15,
-  "total_return": -0.1539418197885819,
+  "days": 16,
+  "active_days": 16,
+  "total_return": -0.1543648488786875,
   "cagr": null,
   "sharpe": null,
   "max_drawdown": -0.17342892046533365,
-  "hit_rate": 0.2,
+  "hit_rate": 0.1875,
   "best_day": 0.027803913376389235,
   "worst_day": -0.05530361103630535,
   "first": "2026-10-12",
-  "last": "2026-11-02"
+  "last": "2026-11-03"
  },
  "stats_backtest": {
   "days": 4710,
@@ -48,17 +48,17 @@
   "last": "2026-10-09"
  },
  "bm_live": {
-  "days": 15,
-  "active_days": 15,
-  "total_return": -0.10633457036898608,
+  "days": 16,
+  "active_days": 16,
+  "total_return": -0.10129220616876178,
   "cagr": null,
   "sharpe": null,
   "max_drawdown": -0.122811055918572,
-  "hit_rate": 0.3333333333333333,
+  "hit_rate": 0.375,
   "best_day": 0.03216075,
   "worst_day": -0.03634449,
   "first": "2026-10-12",
-  "last": "2026-11-02"
+  "last": "2026-11-03"
  },
  "bm_backtest": {
   "days": 4710,
@@ -33149,6 +33149,13 @@
    "reconstructed": false,
    "n_trades": 1,
    "bm": 0.01878328
+  },
+  {
+   "date": "2026-11-03",
+   "ret": -0.0005,
+   "reconstructed": false,
+   "n_trades": 1,
+   "bm": 0.00564234
   }
  ],
  "trades": [
@@ -37328,6 +37335,17 @@
    "weight": 0.0,
    "entry_time": "closing auction",
    "entry_price": 40.56,
+   "exit_time": null,
+   "exit_price": null,
+   "ret": null
+  },
+  {
+   "date": "2026-11-03",
+   "ticker": "ENJSA",
+   "side": "BUY",
+   "weight": 1.0,
+   "entry_time": "closing auction",
+   "entry_price": 113.9,
    "exit_time": null,
    "exit_price": null,
    "ret": null

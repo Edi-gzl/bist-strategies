@@ -8,32 +8,32 @@
  ],
  "live_start": "2026-10-02",
  "recorded_from": "2026-10-12",
- "last_session": "2026-11-02",
+ "last_session": "2026-11-03",
  "stats": {
-  "days": 72,
-  "active_days": 71,
-  "total_return": -0.011138073384859282,
+  "days": 73,
+  "active_days": 72,
+  "total_return": -0.006382378734223981,
   "cagr": null,
-  "sharpe": -0.05056809140578227,
+  "sharpe": 0.020903386484246077,
   "max_drawdown": -0.0706021711104845,
-  "hit_rate": 0.4788732394366197,
+  "hit_rate": 0.4861111111111111,
   "best_day": 0.04430282798936428,
   "worst_day": -0.046071339409629854,
   "first": "2026-07-23",
-  "last": "2026-11-02"
+  "last": "2026-11-03"
  },
  "stats_live": {
-  "days": 15,
-  "active_days": 14,
-  "total_return": 0.0039026842074119106,
+  "days": 16,
+  "active_days": 15,
+  "total_return": 0.008730713780140897,
   "cagr": null,
   "sharpe": null,
   "max_drawdown": -0.036733647186330876,
-  "hit_rate": 0.5714285714285714,
+  "hit_rate": 0.6,
   "best_day": 0.02223863744304827,
   "worst_day": -0.03319357570346615,
   "first": "2026-10-12",
-  "last": "2026-11-02"
+  "last": "2026-11-03"
  },
  "stats_backtest": {
   "days": 57,
@@ -49,17 +49,17 @@
   "last": "2026-10-09"
  },
  "bm_live": {
-  "days": 15,
-  "active_days": 15,
-  "total_return": -0.10633457036898608,
+  "days": 16,
+  "active_days": 16,
+  "total_return": -0.10129220616876178,
   "cagr": null,
   "sharpe": null,
   "max_drawdown": -0.122811055918572,
-  "hit_rate": 0.3333333333333333,
+  "hit_rate": 0.375,
   "best_day": 0.03216075,
   "worst_day": -0.03634449,
   "first": "2026-10-12",
-  "last": "2026-11-02"
+  "last": "2026-11-03"
  },
  "bm_backtest": {
   "days": 57,
@@ -579,6 +579,13 @@
    "reconstructed": false,
    "n_trades": 6,
    "bm": 0.01878328
+  },
+  {
+   "date": "2026-11-03",
+   "ret": 0.004809260547540607,
+   "reconstructed": false,
+   "n_trades": 6,
+   "bm": 0.00564234
   }
  ],
  "trades": [
@@ -5300,6 +5307,72 @@
    "exit_price": 98.9,
    "ret": -0.0405,
    "residual": -0.05235
+  },
+  {
+   "date": "2026-11-03",
+   "ticker": "EREGL",
+   "side": "LONG",
+   "entry_time": "closing auction",
+   "entry_price": 30.9,
+   "exit_time": "next opening auction",
+   "exit_price": null,
+   "ret": null,
+   "residual": 0.02324
+  },
+  {
+   "date": "2026-11-03",
+   "ticker": "PGSUS",
+   "side": "LONG",
+   "entry_time": "closing auction",
+   "entry_price": 127.2,
+   "exit_time": "next opening auction",
+   "exit_price": null,
+   "ret": null,
+   "residual": 0.03146
+  },
+  {
+   "date": "2026-11-03",
+   "ticker": "SISE",
+   "side": "LONG",
+   "entry_time": "closing auction",
+   "entry_price": 34.46,
+   "exit_time": "next opening auction",
+   "exit_price": null,
+   "ret": null,
+   "residual": 0.02596
+  },
+  {
+   "date": "2026-11-03",
+   "ticker": "ARCLK",
+   "side": "SHORT",
+   "entry_time": "opening auction",
+   "entry_price": 66.55,
+   "exit_time": "closing auction",
+   "exit_price": 67.0,
+   "ret": -0.00676,
+   "residual": -0.04441
+  },
+  {
+   "date": "2026-11-03",
+   "ticker": "ASTOR",
+   "side": "SHORT",
+   "entry_time": "opening auction",
+   "entry_price": 152.9,
+   "exit_time": "closing auction",
+   "exit_price": 155.5,
+   "ret": -0.017,
+   "residual": -0.08477
+  },
+  {
+   "date": "2026-11-03",
+   "ticker": "DOAS",
+   "side": "SHORT",
+   "entry_time": "opening auction",
+   "entry_price": 137.0,
+   "exit_time": "closing auction",
+   "exit_price": 129.1,
+   "ret": 0.05766,
+   "residual": -0.11675
   }
  ],
  "holdings": null
