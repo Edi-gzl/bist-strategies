@@ -5,32 +5,32 @@
  "deviations": [],
  "live_start": "2026-10-02",
  "recorded_from": "2026-10-12",
- "last_session": "2026-11-03",
+ "last_session": "2026-11-04",
  "stats": {
-  "days": 22,
-  "active_days": 13,
-  "total_return": 0.05156046283800553,
+  "days": 23,
+  "active_days": 14,
+  "total_return": 0.029968401048936943,
   "cagr": null,
-  "sharpe": 2.9156529189150016,
+  "sharpe": 1.6168817606035306,
   "max_drawdown": -0.052056008339807835,
-  "hit_rate": 0.7692307692307693,
+  "hit_rate": 0.7142857142857143,
   "best_day": 0.023598982516243594,
   "worst_day": -0.03643690801824173,
   "first": "2026-10-02",
-  "last": "2026-11-03"
+  "last": "2026-11-04"
  },
  "stats_live": {
-  "days": 16,
-  "active_days": 10,
-  "total_return": 0.07412711857629106,
+  "days": 17,
+  "active_days": 11,
+  "total_return": 0.052071687687400336,
   "cagr": null,
   "sharpe": null,
   "max_drawdown": -0.03643690801824173,
-  "hit_rate": 0.9,
+  "hit_rate": 0.8181818181818182,
   "best_day": 0.023598982516243594,
   "worst_day": -0.03643690801824173,
   "first": "2026-10-12",
-  "last": "2026-11-03"
+  "last": "2026-11-04"
  },
  "stats_backtest": {
   "days": 6,
@@ -46,17 +46,17 @@
   "last": "2026-10-09"
  },
  "bm_live": {
-  "days": 16,
-  "active_days": 16,
-  "total_return": -0.10128814892771132,
+  "days": 17,
+  "active_days": 17,
+  "total_return": -0.06423203948972878,
   "cagr": null,
   "sharpe": null,
   "max_drawdown": -0.122811055918572,
-  "hit_rate": 0.375,
-  "best_day": 0.03216075,
+  "hit_rate": 0.4117647058823529,
+  "best_day": 0.04123247,
   "worst_day": -0.03634449,
   "first": "2026-10-12",
-  "last": "2026-11-03"
+  "last": "2026-11-04"
  },
  "bm_backtest": {
   "days": 6,
@@ -226,6 +226,13 @@
    "reconstructed": false,
    "n_trades": 1,
    "bm": 0.00564688
+  },
+  {
+   "date": "2026-11-04",
+   "ret": -0.020533352624151457,
+   "reconstructed": false,
+   "n_trades": 1,
+   "bm": 0.04123247
   }
  ],
  "trades": [
@@ -383,6 +390,18 @@
    "exit_price": 129.1,
    "ret": 0.00209,
    "z": -3.12,
+   "fallback_rank": 1
+  },
+  {
+   "date": "2026-11-04",
+   "ticker": "TCELL",
+   "side": "SHORT",
+   "entry_time": "first 1-min open after 16:00",
+   "entry_price": 92.15,
+   "exit_time": "closing auction",
+   "exit_price": 93.95,
+   "ret": -0.02053,
+   "z": -2.87,
    "fallback_rank": 1
   }
  ],
