@@ -8,32 +8,32 @@
  ],
  "live_start": "2026-10-02",
  "recorded_from": "2026-10-12",
- "last_session": "2026-11-04",
+ "last_session": "2026-11-05",
  "stats": {
-  "days": 74,
-  "active_days": 73,
-  "total_return": -0.003669303686507641,
+  "days": 75,
+  "active_days": 74,
+  "total_return": -1.4665839108807255e-05,
   "cagr": null,
-  "sharpe": 0.06084229737690071,
+  "sharpe": 0.1138858421051212,
   "max_drawdown": -0.0706021711104845,
-  "hit_rate": 0.4931506849315068,
+  "hit_rate": 0.5,
   "best_day": 0.04430282798936428,
   "worst_day": -0.046071339409629854,
   "first": "2026-07-23",
-  "last": "2026-11-04"
+  "last": "2026-11-05"
  },
  "stats_live": {
-  "days": 17,
-  "active_days": 16,
-  "total_return": 0.011485055159408564,
+  "days": 18,
+  "active_days": 17,
+  "total_return": 0.015195280668209632,
   "cagr": null,
   "sharpe": null,
   "max_drawdown": -0.036733647186330876,
-  "hit_rate": 0.625,
+  "hit_rate": 0.6470588235294118,
   "best_day": 0.02223863744304827,
   "worst_day": -0.03319357570346615,
   "first": "2026-10-12",
-  "last": "2026-11-04"
+  "last": "2026-11-05"
  },
  "stats_backtest": {
   "days": 57,
@@ -49,17 +49,17 @@
   "last": "2026-10-09"
  },
  "bm_live": {
-  "days": 17,
-  "active_days": 17,
-  "total_return": -0.06423450196020064,
+  "days": 18,
+  "active_days": 18,
+  "total_return": -0.07604194422619193,
   "cagr": null,
   "sharpe": null,
   "max_drawdown": -0.122811055918572,
-  "hit_rate": 0.4117647058823529,
+  "hit_rate": 0.3888888888888889,
   "best_day": 0.04122973,
   "worst_day": -0.03634449,
   "first": "2026-10-12",
-  "last": "2026-11-04"
+  "last": "2026-11-05"
  },
  "bm_backtest": {
   "days": 57,
@@ -593,6 +593,13 @@
    "reconstructed": false,
    "n_trades": 6,
    "bm": 0.04122973
+  },
+  {
+   "date": "2026-11-05",
+   "ret": 0.003668097210014136,
+   "reconstructed": false,
+   "n_trades": 6,
+   "bm": -0.01261795
   }
  ],
  "trades": [
@@ -5446,6 +5453,72 @@
    "exit_price": 35.88,
    "ret": -0.0199,
    "residual": -0.03295
+  },
+  {
+   "date": "2026-11-05",
+   "ticker": "PGSUS",
+   "side": "LONG",
+   "entry_time": "closing auction",
+   "entry_price": 139.9,
+   "exit_time": "next opening auction",
+   "exit_price": null,
+   "ret": null,
+   "residual": 0.04298
+  },
+  {
+   "date": "2026-11-05",
+   "ticker": "TAVHL",
+   "side": "LONG",
+   "entry_time": "closing auction",
+   "entry_price": 291.0,
+   "exit_time": "next opening auction",
+   "exit_price": null,
+   "ret": null,
+   "residual": 0.04732
+  },
+  {
+   "date": "2026-11-05",
+   "ticker": "TSKB",
+   "side": "LONG",
+   "entry_time": "closing auction",
+   "entry_price": 10.24,
+   "exit_time": "next opening auction",
+   "exit_price": null,
+   "ret": null,
+   "residual": 0.03673
+  },
+  {
+   "date": "2026-11-05",
+   "ticker": "AEFES",
+   "side": "SHORT",
+   "entry_time": "opening auction",
+   "entry_price": 16.75,
+   "exit_time": "closing auction",
+   "exit_price": 16.77,
+   "ret": -0.00119,
+   "residual": -0.04522
+  },
+  {
+   "date": "2026-11-05",
+   "ticker": "TCELL",
+   "side": "SHORT",
+   "entry_time": "opening auction",
+   "entry_price": 94.5,
+   "exit_time": "closing auction",
+   "exit_price": 91.8,
+   "ret": 0.02857,
+   "residual": -0.04189
+  },
+  {
+   "date": "2026-11-05",
+   "ticker": "TKFEN",
+   "side": "SHORT",
+   "entry_time": "opening auction",
+   "entry_price": 193.1,
+   "exit_time": "closing auction",
+   "exit_price": 197.0,
+   "ret": -0.0202,
+   "residual": -0.03994
   }
  ],
  "holdings": null
