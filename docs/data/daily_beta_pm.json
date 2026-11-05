@@ -12,9 +12,9 @@
  "stats": {
   "days": 74,
   "active_days": 73,
-  "total_return": -0.003669303815093339,
+  "total_return": -0.003669303686507641,
   "cagr": null,
-  "sharpe": 0.060842295478500084,
+  "sharpe": 0.06084229737690071,
   "max_drawdown": -0.0706021711104845,
   "hit_rate": 0.4931506849315068,
   "best_day": 0.04430282798936428,
@@ -25,7 +25,7 @@
  "stats_live": {
   "days": 17,
   "active_days": 16,
-  "total_return": 0.011485055028867208,
+  "total_return": 0.011485055159408564,
   "cagr": null,
   "sharpe": null,
   "max_drawdown": -0.036733647186330876,
@@ -51,12 +51,12 @@
  "bm_live": {
   "days": 17,
   "active_days": 17,
-  "total_return": -0.06423203948972878,
+  "total_return": -0.06423450196020064,
   "cagr": null,
   "sharpe": null,
   "max_drawdown": -0.122811055918572,
   "hit_rate": 0.4117647058823529,
-  "best_day": 0.04123247,
+  "best_day": 0.04122973,
   "worst_day": -0.03634449,
   "first": "2026-10-12",
   "last": "2026-11-04"
@@ -589,10 +589,10 @@
   },
   {
    "date": "2026-11-04",
-   "ret": 0.002730509426978927,
+   "ret": 0.0027305095563906305,
    "reconstructed": false,
    "n_trades": 6,
-   "bm": 0.04123247
+   "bm": 0.04122973
   }
  ],
  "trades": [
@@ -5387,9 +5387,9 @@
    "side": "LONG",
    "entry_time": "closing auction",
    "entry_price": 67.5,
-   "exit_time": "next opening auction",
-   "exit_price": null,
-   "ret": null,
+   "exit_time": "opening auction 2026-11-05",
+   "exit_price": 68.1,
+   "ret": 0.00889,
    "residual": 0.02776
   },
   {
@@ -5398,9 +5398,9 @@
    "side": "LONG",
    "entry_time": "closing auction",
    "entry_price": 1.83,
-   "exit_time": "next opening auction",
-   "exit_price": null,
-   "ret": null,
+   "exit_time": "opening auction 2026-11-05",
+   "exit_price": 1.85,
+   "ret": 0.01093,
    "residual": 0.02395
   },
   {
@@ -5409,9 +5409,9 @@
    "side": "LONG",
    "entry_time": "closing auction",
    "entry_price": 9.9,
-   "exit_time": "next opening auction",
-   "exit_price": null,
-   "ret": null,
+   "exit_time": "opening auction 2026-11-05",
+   "exit_price": 9.91,
+   "ret": 0.00101,
    "residual": 0.02079
   },
   {
