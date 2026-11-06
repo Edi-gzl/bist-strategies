@@ -1,38 +1,38 @@
 {
- "generated_at": "2026-11-06T12:34:56+00:00",
+ "generated_at": "2026-11-06T21:05:27+00:00",
  "live_start": "2026-10-02",
  "recorded_from": "2026-10-12",
- "last_session": "2026-11-05",
+ "last_session": "2026-11-06",
  "data_source": "Yahoo Finance (unofficial; may be delayed or corrected)",
  "strategies": [
   {
    "id": "fund_liquidity_80",
    "name": "Fund Liquidity 80 \u2014 FL26131 (long-only)",
    "stats": {
-    "days": 1713,
-    "active_days": 1713,
-    "total_return": 36.416261974688034,
-    "cagr": 0.7037796963943086,
-    "sharpe": 2.619828267797065,
+    "days": 1714,
+    "active_days": 1714,
+    "total_return": 36.660193927191536,
+    "cagr": 0.7048781731536988,
+    "sharpe": 2.623502386197289,
     "max_drawdown": -0.3222051823002535,
-    "hit_rate": 0.6333917104495038,
+    "hit_rate": 0.6336056009334889,
     "best_day": 0.13045770691641703,
     "worst_day": -0.08067763248019943,
     "first": "2020-01-03",
-    "last": "2026-11-05"
+    "last": "2026-11-06"
    },
    "stats_live": {
-    "days": 18,
-    "active_days": 18,
-    "total_return": -0.06727495540018691,
+    "days": 19,
+    "active_days": 19,
+    "total_return": -0.0611941384165966,
     "cagr": null,
     "sharpe": null,
     "max_drawdown": -0.10520376169755707,
-    "hit_rate": 0.2777777777777778,
+    "hit_rate": 0.3157894736842105,
     "best_day": 0.030097196646314828,
     "worst_day": -0.024267355650022804,
     "first": "2026-10-12",
-    "last": "2026-11-05"
+    "last": "2026-11-06"
    },
    "stats_backtest": {
     "days": 1695,
@@ -48,17 +48,17 @@
     "last": "2026-10-09"
    },
    "bm_live": {
-    "days": 18,
-    "active_days": 18,
-    "total_return": -0.07603947380527709,
+    "days": 19,
+    "active_days": 19,
+    "total_return": -0.08374775308913551,
     "cagr": null,
     "sharpe": null,
     "max_drawdown": -0.122811055918572,
-    "hit_rate": 0.3888888888888889,
+    "hit_rate": 0.3684210526315789,
     "best_day": 0.04122973,
     "worst_day": -0.03634449,
     "first": "2026-10-12",
-    "last": "2026-11-05"
+    "last": "2026-11-06"
    },
    "bm_backtest": {
     "days": 1695,
@@ -74,8 +74,8 @@
     "last": "2026-10-09"
    },
    "today": {
-    "date": "2026-11-05",
-    "ret": -0.005245931420908123,
+    "date": "2026-11-06",
+    "ret": 0.006519410000617398,
     "trades": []
    }
   },
@@ -83,30 +83,30 @@
    "id": "focus_long",
    "name": "Focus Long \u2014 pullback in uptrend, top 5",
    "stats": {
-    "days": 4728,
-    "active_days": 4557,
-    "total_return": 25.580821468597758,
-    "cagr": 0.19104665159092193,
-    "sharpe": 0.7439918500507708,
+    "days": 4729,
+    "active_days": 4558,
+    "total_return": 26.19062366859564,
+    "cagr": 0.19244304963930015,
+    "sharpe": 0.7479707962416624,
     "max_drawdown": -0.505397996492563,
-    "hit_rate": 0.5185429010313803,
+    "hit_rate": 0.5186485300570426,
     "best_day": 0.09937886037252985,
     "worst_day": -0.16513754172159267,
     "first": "2008-05-16",
-    "last": "2026-11-05"
+    "last": "2026-11-06"
    },
    "stats_live": {
-    "days": 18,
-    "active_days": 18,
-    "total_return": -0.12033322841501959,
+    "days": 19,
+    "active_days": 19,
+    "total_return": -0.10015240995494001,
     "cagr": null,
     "sharpe": null,
     "max_drawdown": -0.17342892046533365,
-    "hit_rate": 0.2222222222222222,
+    "hit_rate": 0.2631578947368421,
     "best_day": 0.04076423955467917,
     "worst_day": -0.05530361103630535,
     "first": "2026-10-12",
-    "last": "2026-11-05"
+    "last": "2026-11-06"
    },
    "stats_backtest": {
     "days": 4710,
@@ -122,17 +122,17 @@
     "last": "2026-10-09"
    },
    "bm_live": {
-    "days": 18,
-    "active_days": 18,
-    "total_return": -0.07603947380527709,
+    "days": 19,
+    "active_days": 19,
+    "total_return": -0.08374775308913551,
     "cagr": null,
     "sharpe": null,
     "max_drawdown": -0.122811055918572,
-    "hit_rate": 0.3888888888888889,
+    "hit_rate": 0.3684210526315789,
     "best_day": 0.04122973,
     "worst_day": -0.03634449,
     "first": "2026-10-12",
-    "last": "2026-11-05"
+    "last": "2026-11-06"
    },
    "bm_backtest": {
     "days": 4710,
@@ -148,51 +148,39 @@
     "last": "2026-10-09"
    },
    "today": {
-    "date": "2026-11-05",
-    "ret": -0.0005,
-    "trades": [
-     {
-      "date": "2026-11-05",
-      "ticker": "HALKB",
-      "side": "BUY",
-      "weight": 1.0,
-      "entry_time": "closing auction",
-      "entry_price": 40.1,
-      "exit_time": null,
-      "exit_price": null,
-      "ret": null
-     }
-    ]
+    "date": "2026-11-06",
+    "ret": 0.022941435452560943,
+    "trades": []
    }
   },
   {
    "id": "daily_beta_pm",
    "name": "Daily BETA phase-matched momentum (long/short)",
    "stats": {
-    "days": 75,
-    "active_days": 74,
-    "total_return": -1.4675739797631593e-05,
+    "days": 76,
+    "active_days": 75,
+    "total_return": -0.027523374763462893,
     "cagr": null,
-    "sharpe": 0.11388569750953932,
-    "max_drawdown": -0.0706021711104845,
-    "hit_rate": 0.5,
+    "sharpe": -0.2786059705421991,
+    "max_drawdown": -0.07945967217276362,
+    "hit_rate": 0.49333333333333335,
     "best_day": 0.04430282798936428,
     "worst_day": -0.046071339409629854,
     "first": "2026-07-23",
-    "last": "2026-11-05"
+    "last": "2026-11-06"
    },
    "stats_live": {
-    "days": 18,
-    "active_days": 17,
-    "total_return": 0.015195270616929601,
+    "days": 19,
+    "active_days": 18,
+    "total_return": -0.012731840383734205,
     "cagr": null,
     "sharpe": null,
-    "max_drawdown": -0.036733647186330876,
-    "hit_rate": 0.6470588235294118,
+    "max_drawdown": -0.05269483355008009,
+    "hit_rate": 0.6111111111111112,
     "best_day": 0.02223863744304827,
     "worst_day": -0.03319357570346615,
     "first": "2026-10-12",
-    "last": "2026-11-05"
+    "last": "2026-11-06"
    },
    "stats_backtest": {
     "days": 57,
@@ -208,17 +196,17 @@
     "last": "2026-10-09"
    },
    "bm_live": {
-    "days": 18,
-    "active_days": 18,
-    "total_return": -0.07603947380527709,
+    "days": 19,
+    "active_days": 19,
+    "total_return": -0.08374775308913551,
     "cagr": null,
     "sharpe": null,
     "max_drawdown": -0.122811055918572,
-    "hit_rate": 0.3888888888888889,
+    "hit_rate": 0.3684210526315789,
     "best_day": 0.04122973,
     "worst_day": -0.03634449,
     "first": "2026-10-12",
-    "last": "2026-11-05"
+    "last": "2026-11-06"
    },
    "bm_backtest": {
     "days": 57,
@@ -234,74 +222,74 @@
     "last": "2026-10-09"
    },
    "today": {
-    "date": "2026-11-05",
-    "ret": 0.0036680872728628118,
+    "date": "2026-11-06",
+    "ret": -0.027509102740099066,
     "trades": [
      {
-      "date": "2026-11-05",
-      "ticker": "PGSUS",
+      "date": "2026-11-06",
+      "ticker": "ASTOR",
       "side": "LONG",
       "entry_time": "closing auction",
-      "entry_price": 139.9,
-      "exit_time": "opening auction 2026-11-06",
-      "exit_price": 136.0,
-      "ret": -0.02788,
-      "residual": 0.04298
+      "entry_price": 161.5,
+      "exit_time": "next opening auction",
+      "exit_price": null,
+      "ret": null,
+      "residual": 0.06296
      },
      {
-      "date": "2026-11-05",
-      "ticker": "TAVHL",
+      "date": "2026-11-06",
+      "ticker": "FROTO",
       "side": "LONG",
       "entry_time": "closing auction",
-      "entry_price": 291.0,
-      "exit_time": "opening auction 2026-11-06",
-      "exit_price": 288.5,
-      "ret": -0.00859,
-      "residual": 0.04732
+      "entry_price": 73.15,
+      "exit_time": "next opening auction",
+      "exit_price": null,
+      "ret": null,
+      "residual": 0.07322
      },
      {
-      "date": "2026-11-05",
-      "ticker": "TSKB",
+      "date": "2026-11-06",
+      "ticker": "TOASO",
       "side": "LONG",
       "entry_time": "closing auction",
-      "entry_price": 10.24,
-      "exit_time": "opening auction 2026-11-06",
-      "exit_price": 10.03,
-      "ret": -0.02051,
-      "residual": 0.03673
+      "entry_price": 243.0,
+      "exit_time": "next opening auction",
+      "exit_price": null,
+      "ret": null,
+      "residual": 0.08457
      },
      {
-      "date": "2026-11-05",
-      "ticker": "AEFES",
+      "date": "2026-11-06",
+      "ticker": "ASELS",
       "side": "SHORT",
       "entry_time": "opening auction",
-      "entry_price": 16.75,
+      "entry_price": 329.5,
       "exit_time": "closing auction",
-      "exit_price": 16.77,
-      "ret": -0.00119,
-      "residual": -0.04522
+      "exit_price": 331.75,
+      "ret": -0.00683,
+      "residual": -0.06979
      },
      {
-      "date": "2026-11-05",
-      "ticker": "TCELL",
+      "date": "2026-11-06",
+      "ticker": "ASTOR",
       "side": "SHORT",
       "entry_time": "opening auction",
-      "entry_price": 94.5,
+      "entry_price": 146.5,
       "exit_time": "closing auction",
-      "exit_price": 91.8,
-      "ret": 0.02857,
-      "residual": -0.04189
+      "exit_price": 161.5,
+      "ret": -0.10239,
+      "residual": -0.09586
      },
      {
-      "date": "2026-11-05",
-      "ticker": "TKFEN",
+      "date": "2026-11-06",
+      "ticker": "KRDMD",
       "side": "SHORT",
       "entry_time": "opening auction",
-      "entry_price": 193.1,
+      "entry_price": 36.42,
       "exit_time": "closing auction",
-      "exit_price": 197.0,
-      "ret": -0.0202,
-      "residual": -0.03994
+      "exit_price": 36.16,
+      "ret": 0.00714,
+      "residual": -0.09819
      }
     ]
    }
@@ -310,20 +298,20 @@
    "id": "eodr_short",
    "name": "EODR \u2014 end-of-day loser short",
    "stats": {
-    "days": 24,
+    "days": 25,
     "active_days": 14,
     "total_return": 0.029968435873763744,
     "cagr": null,
-    "sharpe": 1.5839806065942548,
+    "sharpe": 1.553004002803264,
     "max_drawdown": -0.052056008339807835,
     "hit_rate": 0.7142857142857143,
     "best_day": 0.023598982516243594,
     "worst_day": -0.03643690801824173,
     "first": "2026-10-02",
-    "last": "2026-11-05"
+    "last": "2026-11-06"
    },
    "stats_live": {
-    "days": 18,
+    "days": 19,
     "active_days": 11,
     "total_return": 0.052071723259573766,
     "cagr": null,
@@ -333,7 +321,7 @@
     "best_day": 0.023598982516243594,
     "worst_day": -0.03643690801824173,
     "first": "2026-10-12",
-    "last": "2026-11-05"
+    "last": "2026-11-06"
    },
    "stats_backtest": {
     "days": 6,
@@ -349,17 +337,17 @@
     "last": "2026-10-09"
    },
    "bm_live": {
-    "days": 18,
-    "active_days": 18,
-    "total_return": -0.07603947380527709,
+    "days": 19,
+    "active_days": 19,
+    "total_return": -0.08374775308913551,
     "cagr": null,
     "sharpe": null,
     "max_drawdown": -0.122811055918572,
-    "hit_rate": 0.3888888888888889,
+    "hit_rate": 0.3684210526315789,
     "best_day": 0.04122973,
     "worst_day": -0.03634449,
     "first": "2026-10-12",
-    "last": "2026-11-05"
+    "last": "2026-11-06"
    },
    "bm_backtest": {
     "days": 6,
@@ -375,7 +363,7 @@
     "last": "2026-10-09"
    },
    "today": {
-    "date": "2026-11-05",
+    "date": "2026-11-06",
     "ret": 0.0,
     "trades": []
    }
@@ -384,30 +372,30 @@
    "id": "morning_gap_short",
    "name": "Morning gap-up fade (10:01 Core)",
    "stats": {
-    "days": 24,
-    "active_days": 15,
-    "total_return": -0.04920760141250935,
+    "days": 25,
+    "active_days": 16,
+    "total_return": -0.09267015169012716,
     "cagr": null,
-    "sharpe": -1.1411955455174776,
-    "max_drawdown": -0.0992307144548924,
-    "hit_rate": 0.5333333333333333,
-    "best_day": 0.0578934565450715,
-    "worst_day": -0.0655520662243344,
-    "first": "2026-10-02",
-    "last": "2026-11-05"
-   },
-   "stats_live": {
-    "days": 18,
-    "active_days": 10,
-    "total_return": -0.02761536711304957,
-    "cagr": null,
-    "sharpe": null,
-    "max_drawdown": -0.09923071445489218,
+    "sharpe": -2.169383798437864,
+    "max_drawdown": -0.14040661196911253,
     "hit_rate": 0.5,
     "best_day": 0.0578934565450715,
     "worst_day": -0.0655520662243344,
+    "first": "2026-10-02",
+    "last": "2026-11-06"
+   },
+   "stats_live": {
+    "days": 19,
+    "active_days": 11,
+    "total_return": -0.0720649399733474,
+    "cagr": null,
+    "sharpe": null,
+    "max_drawdown": -0.14040661196911242,
+    "hit_rate": 0.45454545454545453,
+    "best_day": 0.0578934565450715,
+    "worst_day": -0.0655520662243344,
     "first": "2026-10-12",
-    "last": "2026-11-05"
+    "last": "2026-11-06"
    },
    "stats_backtest": {
     "days": 6,
@@ -423,17 +411,17 @@
     "last": "2026-10-09"
    },
    "bm_live": {
-    "days": 18,
-    "active_days": 18,
-    "total_return": -0.07603947380527709,
+    "days": 19,
+    "active_days": 19,
+    "total_return": -0.08374775308913551,
     "cagr": null,
     "sharpe": null,
     "max_drawdown": -0.122811055918572,
-    "hit_rate": 0.3888888888888889,
+    "hit_rate": 0.3684210526315789,
     "best_day": 0.04122973,
     "worst_day": -0.03634449,
     "first": "2026-10-12",
-    "last": "2026-11-05"
+    "last": "2026-11-06"
    },
    "bm_backtest": {
     "days": 6,
@@ -449,39 +437,51 @@
     "last": "2026-10-09"
    },
    "today": {
-    "date": "2026-11-05",
-    "ret": 0.0,
-    "trades": []
+    "date": "2026-11-06",
+    "ret": -0.045711924435014706,
+    "trades": [
+     {
+      "date": "2026-11-06",
+      "ticker": "TOASO",
+      "side": "SHORT",
+      "entry_time": "10:01 open",
+      "entry_price": 232.6,
+      "exit_time": "closing auction",
+      "exit_price": 243.0,
+      "ret": -0.04571,
+      "gap": 0.0292
+     }
+    ]
    }
   },
   {
    "id": "ens5_basic",
    "name": "ENS5v2 \u2014 17:45-18:00 reversal, basic (top3 + gap skip)",
    "stats": {
-    "days": 75,
-    "active_days": 74,
-    "total_return": 0.13376803673284177,
+    "days": 76,
+    "active_days": 75,
+    "total_return": 0.12658169131676544,
     "cagr": null,
-    "sharpe": 2.340161941152266,
+    "sharpe": 2.2054561287562033,
     "max_drawdown": -0.06219827627501995,
-    "hit_rate": 0.6351351351351351,
+    "hit_rate": 0.6266666666666667,
     "best_day": 0.026707401254871,
     "worst_day": -0.035592108016108,
     "first": "2026-07-22",
-    "last": "2026-11-05"
+    "last": "2026-11-06"
    },
    "stats_live": {
-    "days": 18,
-    "active_days": 17,
-    "total_return": 0.03011128186553047,
+    "days": 19,
+    "active_days": 18,
+    "total_return": 0.023581960832794957,
     "cagr": null,
     "sharpe": null,
     "max_drawdown": -0.02877072374566736,
-    "hit_rate": 0.6470588235294118,
+    "hit_rate": 0.6111111111111112,
     "best_day": 0.026707401254871,
     "worst_day": -0.0168062324173021,
     "first": "2026-10-12",
-    "last": "2026-11-05"
+    "last": "2026-11-06"
    },
    "stats_backtest": {
     "days": 57,
@@ -497,17 +497,17 @@
     "last": "2026-10-09"
    },
    "bm_live": {
-    "days": 18,
-    "active_days": 18,
-    "total_return": -0.07603947380527709,
+    "days": 19,
+    "active_days": 19,
+    "total_return": -0.08374775308913551,
     "cagr": null,
     "sharpe": null,
     "max_drawdown": -0.122811055918572,
-    "hit_rate": 0.3888888888888889,
+    "hit_rate": 0.3684210526315789,
     "best_day": 0.04122973,
     "worst_day": -0.03634449,
     "first": "2026-10-12",
-    "last": "2026-11-05"
+    "last": "2026-11-06"
    },
    "bm_backtest": {
     "days": 57,
@@ -523,41 +523,74 @@
     "last": "2026-10-09"
    },
    "today": {
-    "date": "2026-11-05",
-    "ret": 0.0059229099090443,
+    "date": "2026-11-06",
+    "ret": -0.0063384618222129,
     "trades": [
      {
-      "date": "2026-11-05",
-      "ticker": "AKSEN",
+      "date": "2026-11-06",
+      "ticker": "HEKTS",
       "side": "LONG",
       "entry_time": "closing auction",
-      "entry_price": 66.55,
+      "entry_price": 1.76,
       "exit_time": "next opening auction",
       "exit_price": null,
       "ret": null,
       "note": "pending"
      },
      {
-      "date": "2026-11-05",
-      "ticker": "ASELS",
+      "date": "2026-11-06",
+      "ticker": "TRMET",
       "side": "LONG",
       "entry_time": "closing auction",
-      "entry_price": 329.0,
+      "entry_price": 111.9,
       "exit_time": "next opening auction",
       "exit_price": null,
       "ret": null,
       "note": "pending"
      },
      {
-      "date": "2026-11-05",
-      "ticker": "ASTOR",
+      "date": "2026-11-06",
+      "ticker": "TUPRS",
       "side": "LONG",
       "entry_time": "closing auction",
-      "entry_price": 149.3,
+      "entry_price": 337.5,
       "exit_time": "next opening auction",
       "exit_price": null,
       "ret": null,
       "note": "pending"
+     },
+     {
+      "date": "2026-11-06",
+      "ticker": "ARCLK",
+      "side": "SHORT",
+      "entry_time": "opening auction",
+      "entry_price": 69.0,
+      "exit_time": "closing auction",
+      "exit_price": 70.15,
+      "ret": -0.01667,
+      "note": ""
+     },
+     {
+      "date": "2026-11-06",
+      "ticker": "GUBRF",
+      "side": "SHORT",
+      "entry_time": "opening auction",
+      "entry_price": 281.5,
+      "exit_time": "closing auction",
+      "exit_price": 289.25,
+      "ret": -0.02753,
+      "note": ""
+     },
+     {
+      "date": "2026-11-06",
+      "ticker": "VESTL",
+      "side": "SHORT",
+      "entry_time": "opening auction",
+      "entry_price": 13.24,
+      "exit_time": "closing auction",
+      "exit_price": 12.8,
+      "ret": 0.03323,
+      "note": ""
      }
     ]
    }
@@ -566,30 +599,30 @@
    "id": "ens5_s10c",
    "name": "ENS5v2 \u2014 17:45-18:00 reversal, S10c rules",
    "stats": {
-    "days": 75,
-    "active_days": 74,
-    "total_return": 0.049905700734199865,
+    "days": 76,
+    "active_days": 75,
+    "total_return": 0.04325091353317245,
     "cagr": null,
-    "sharpe": 0.9793199896554883,
+    "sharpe": 0.8560800602122489,
     "max_drawdown": -0.060629549728883236,
-    "hit_rate": 0.5945945945945946,
+    "hit_rate": 0.5866666666666667,
     "best_day": 0.0241494701050248,
     "worst_day": -0.0358389639118445,
     "first": "2026-07-22",
-    "last": "2026-11-05"
+    "last": "2026-11-06"
    },
    "stats_live": {
-    "days": 18,
-    "active_days": 17,
-    "total_return": -0.00999456669899601,
+    "days": 19,
+    "active_days": 18,
+    "total_return": -0.016269678341757743,
     "cagr": null,
     "sharpe": null,
     "max_drawdown": -0.037764870241436266,
-    "hit_rate": 0.5294117647058824,
+    "hit_rate": 0.5,
     "best_day": 0.0157782357680081,
     "worst_day": -0.0169922380670846,
     "first": "2026-10-12",
-    "last": "2026-11-05"
+    "last": "2026-11-06"
    },
    "stats_backtest": {
     "days": 57,
@@ -605,17 +638,17 @@
     "last": "2026-10-09"
    },
    "bm_live": {
-    "days": 18,
-    "active_days": 18,
-    "total_return": -0.07603947380527709,
+    "days": 19,
+    "active_days": 19,
+    "total_return": -0.08374775308913551,
     "cagr": null,
     "sharpe": null,
     "max_drawdown": -0.122811055918572,
-    "hit_rate": 0.3888888888888889,
+    "hit_rate": 0.3684210526315789,
     "best_day": 0.04122973,
     "worst_day": -0.03634449,
     "first": "2026-10-12",
-    "last": "2026-11-05"
+    "last": "2026-11-06"
    },
    "bm_backtest": {
     "days": 57,
@@ -631,41 +664,74 @@
     "last": "2026-10-09"
    },
    "today": {
-    "date": "2026-11-05",
-    "ret": 0.0102726597325409,
+    "date": "2026-11-06",
+    "ret": -0.0063384618222129,
     "trades": [
      {
-      "date": "2026-11-05",
-      "ticker": "AKSEN",
+      "date": "2026-11-06",
+      "ticker": "HEKTS",
       "side": "LONG",
       "entry_time": "closing auction",
-      "entry_price": 66.55,
+      "entry_price": 1.76,
       "exit_time": "next opening auction",
       "exit_price": null,
       "ret": null,
       "note": "pending (S10c sizing set at execution)"
      },
      {
-      "date": "2026-11-05",
-      "ticker": "ASELS",
+      "date": "2026-11-06",
+      "ticker": "TRMET",
       "side": "LONG",
       "entry_time": "closing auction",
-      "entry_price": 329.0,
+      "entry_price": 111.9,
       "exit_time": "next opening auction",
       "exit_price": null,
       "ret": null,
       "note": "pending (S10c sizing set at execution)"
      },
      {
-      "date": "2026-11-05",
-      "ticker": "ASTOR",
+      "date": "2026-11-06",
+      "ticker": "TUPRS",
       "side": "LONG",
       "entry_time": "closing auction",
-      "entry_price": 149.3,
+      "entry_price": 337.5,
       "exit_time": "next opening auction",
       "exit_price": null,
       "ret": null,
       "note": "pending (S10c sizing set at execution)"
+     },
+     {
+      "date": "2026-11-06",
+      "ticker": "ARCLK",
+      "side": "SHORT",
+      "entry_time": "opening auction",
+      "entry_price": 69.0,
+      "exit_time": "closing auction",
+      "exit_price": 70.15,
+      "ret": -0.01667,
+      "note": ""
+     },
+     {
+      "date": "2026-11-06",
+      "ticker": "GUBRF",
+      "side": "SHORT",
+      "entry_time": "opening auction",
+      "entry_price": 281.5,
+      "exit_time": "closing auction",
+      "exit_price": 289.25,
+      "ret": -0.02753,
+      "note": ""
+     },
+     {
+      "date": "2026-11-06",
+      "ticker": "VESTL",
+      "side": "SHORT",
+      "entry_time": "opening auction",
+      "entry_price": 13.24,
+      "exit_time": "closing auction",
+      "exit_price": 12.8,
+      "ret": 0.03323,
+      "note": ""
      }
     ]
    }
@@ -673,7 +739,9 @@
  ],
  "failures": {},
  "incomplete_sessions": [],
- "repaired_sessions": [],
+ "repaired_sessions": [
+  "2026-11-06"
+ ],
  "benchmark": {
   "id": "xu100",
   "name": "BIST 100 (XU100)",
