@@ -8,32 +8,32 @@
  ],
  "live_start": "2026-10-02",
  "recorded_from": "2026-10-12",
- "last_session": "2026-11-06",
+ "last_session": "2026-11-09",
  "stats": {
-  "days": 76,
-  "active_days": 75,
-  "total_return": 0.04325091353317245,
+  "days": 77,
+  "active_days": 76,
+  "total_return": 0.04463239050062029,
   "cagr": null,
-  "sharpe": 0.8560800602122489,
+  "sharpe": 0.874317812673223,
   "max_drawdown": -0.060629549728883236,
-  "hit_rate": 0.5866666666666667,
+  "hit_rate": 0.5921052631578947,
   "best_day": 0.0241494701050248,
   "worst_day": -0.0358389639118445,
   "first": "2026-07-22",
-  "last": "2026-11-06"
+  "last": "2026-11-09"
  },
  "stats_live": {
-  "days": 19,
-  "active_days": 18,
-  "total_return": -0.016269678341757743,
+  "days": 20,
+  "active_days": 19,
+  "total_return": -0.014967018776429919,
   "cagr": null,
-  "sharpe": null,
+  "sharpe": -1.1603797075807132,
   "max_drawdown": -0.037764870241436266,
-  "hit_rate": 0.5,
+  "hit_rate": 0.5263157894736842,
   "best_day": 0.0157782357680081,
   "worst_day": -0.0169922380670846,
   "first": "2026-10-12",
-  "last": "2026-11-06"
+  "last": "2026-11-09"
  },
  "stats_backtest": {
   "days": 57,
@@ -49,17 +49,17 @@
   "last": "2026-10-09"
  },
  "bm_live": {
-  "days": 19,
-  "active_days": 19,
-  "total_return": -0.06386763361542447,
+  "days": 20,
+  "active_days": 20,
+  "total_return": -0.043913223320044104,
   "cagr": null,
-  "sharpe": null,
+  "sharpe": -1.5482289452750582,
   "max_drawdown": -0.122811055918572,
-  "hit_rate": 0.42105263157894735,
+  "hit_rate": 0.45,
   "best_day": 0.04122973,
   "worst_day": -0.03634449,
   "first": "2026-10-12",
-  "last": "2026-11-06"
+  "last": "2026-11-09"
  },
  "bm_backtest": {
   "days": 57,
@@ -607,6 +607,13 @@
    "reconstructed": false,
    "n_trades": 6,
    "bm": 0.01317355
+  },
+  {
+   "date": "2026-11-09",
+   "ret": 0.0013242039374491,
+   "reconstructed": false,
+   "n_trades": 3,
+   "bm": 0.0213158
   }
  ],
  "trades": [
@@ -4884,10 +4891,10 @@
    "side": "LONG",
    "entry_time": "closing auction",
    "entry_price": 1.76,
-   "exit_time": "next opening auction",
-   "exit_price": null,
-   "ret": null,
-   "note": "pending (S10c sizing set at execution)"
+   "exit_time": "opening auction 2026-11-09",
+   "exit_price": 1.7,
+   "ret": -0.03409,
+   "note": ""
   },
   {
    "date": "2026-11-06",
@@ -4895,10 +4902,10 @@
    "side": "LONG",
    "entry_time": "closing auction",
    "entry_price": 111.9,
-   "exit_time": "next opening auction",
-   "exit_price": null,
-   "ret": null,
-   "note": "pending (S10c sizing set at execution)"
+   "exit_time": "opening auction 2026-11-09",
+   "exit_price": 113.1,
+   "ret": 0.01072,
+   "note": ""
   },
   {
    "date": "2026-11-06",
@@ -4906,10 +4913,10 @@
    "side": "LONG",
    "entry_time": "closing auction",
    "entry_price": 337.5,
-   "exit_time": "next opening auction",
-   "exit_price": null,
-   "ret": null,
-   "note": "pending (S10c sizing set at execution)"
+   "exit_time": "opening auction 2026-11-09",
+   "exit_price": 348.0,
+   "ret": 0.03111,
+   "note": ""
   },
   {
    "date": "2026-11-06",
@@ -4943,6 +4950,39 @@
    "exit_price": 12.8,
    "ret": 0.03323,
    "note": ""
+  },
+  {
+   "date": "2026-11-09",
+   "ticker": "ENJSA",
+   "side": "LONG",
+   "entry_time": "closing auction",
+   "entry_price": 120.6,
+   "exit_time": "next opening auction",
+   "exit_price": null,
+   "ret": null,
+   "note": "pending (S10c sizing set at execution)"
+  },
+  {
+   "date": "2026-11-09",
+   "ticker": "TUPRS",
+   "side": "LONG",
+   "entry_time": "closing auction",
+   "entry_price": 332.25,
+   "exit_time": "next opening auction",
+   "exit_price": null,
+   "ret": null,
+   "note": "pending (S10c sizing set at execution)"
+  },
+  {
+   "date": "2026-11-09",
+   "ticker": "VAKBN",
+   "side": "LONG",
+   "entry_time": "closing auction",
+   "entry_price": 33.62,
+   "exit_time": "next opening auction",
+   "exit_price": null,
+   "ret": null,
+   "note": "pending (S10c sizing set at execution)"
   }
  ],
  "holdings": null
