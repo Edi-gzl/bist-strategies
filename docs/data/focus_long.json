@@ -7,32 +7,32 @@
  ],
  "live_start": "2026-10-02",
  "recorded_from": "2026-10-12",
- "last_session": "2026-11-09",
+ "last_session": "2026-11-10",
  "stats": {
-  "days": 4730,
-  "active_days": 4559,
-  "total_return": 27.396446078083727,
-  "cagr": 0.19515843540236877,
-  "sharpe": 0.7555091238633815,
+  "days": 4731,
+  "active_days": 4560,
+  "total_return": 27.979480489213973,
+  "cagr": 0.19640789650735346,
+  "sharpe": 0.7590675745376116,
   "max_drawdown": -0.505397996492563,
-  "hit_rate": 0.5187541127440228,
+  "hit_rate": 0.518859649122807,
   "best_day": 0.09937886037252985,
   "worst_day": -0.16513754172159267,
   "first": "2008-05-16",
-  "last": "2026-11-09"
+  "last": "2026-11-10"
  },
  "stats_live": {
-  "days": 20,
-  "active_days": 20,
-  "total_return": -0.0602468747813063,
+  "days": 21,
+  "active_days": 21,
+  "total_return": -0.040951910599412944,
   "cagr": null,
-  "sharpe": -1.809221644896068,
+  "sharpe": -1.0982497665316306,
   "max_drawdown": -0.17342892046533365,
-  "hit_rate": 0.3,
+  "hit_rate": 0.3333333333333333,
   "best_day": 0.044346970132147945,
   "worst_day": -0.05530361103630535,
   "first": "2026-10-12",
-  "last": "2026-11-09"
+  "last": "2026-11-10"
  },
  "stats_backtest": {
   "days": 4710,
@@ -48,17 +48,17 @@
   "last": "2026-10-09"
  },
  "bm_live": {
-  "days": 20,
-  "active_days": 20,
-  "total_return": -0.0451084115961784,
+  "days": 21,
+  "active_days": 21,
+  "total_return": -0.04925318537805634,
   "cagr": null,
-  "sharpe": -1.6024002251725746,
+  "sharpe": -1.7270621038479568,
   "max_drawdown": -0.122811055918572,
-  "hit_rate": 0.45,
+  "hit_rate": 0.42857142857142855,
   "best_day": 0.04122973,
   "worst_day": -0.03634449,
   "first": "2026-10-12",
-  "last": "2026-11-09"
+  "last": "2026-11-10"
  },
  "bm_backtest": {
   "days": 4710,
@@ -33184,6 +33184,13 @@
    "reconstructed": false,
    "n_trades": 0,
    "bm": 0.02003907
+  },
+  {
+   "date": "2026-11-10",
+   "ret": 0.020531950002723454,
+   "reconstructed": false,
+   "n_trades": 0,
+   "bm": -0.00434057
   }
  ],
  "trades": [

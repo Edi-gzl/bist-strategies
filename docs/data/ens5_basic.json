@@ -8,32 +8,32 @@
  ],
  "live_start": "2026-10-02",
  "recorded_from": "2026-10-12",
- "last_session": "2026-11-09",
+ "last_session": "2026-11-10",
  "stats": {
-  "days": 77,
-  "active_days": 76,
-  "total_return": 0.12807351522826504,
+  "days": 78,
+  "active_days": 77,
+  "total_return": 0.14890040122652204,
   "cagr": null,
-  "sharpe": 2.214571359319952,
+  "sharpe": 2.490207563303651,
   "max_drawdown": -0.06219827627501995,
-  "hit_rate": 0.631578947368421,
+  "hit_rate": 0.6363636363636364,
   "best_day": 0.026707401254871,
   "worst_day": -0.035592108016108,
   "first": "2026-07-22",
-  "last": "2026-11-09"
+  "last": "2026-11-10"
  },
  "stats_live": {
-  "days": 20,
-  "active_days": 19,
-  "total_return": 0.024937392095631505,
+  "days": 21,
+  "active_days": 20,
+  "total_return": 0.043860143079823555,
   "cagr": null,
-  "sharpe": 1.7333098297159157,
+  "sharpe": 2.75665012290423,
   "max_drawdown": -0.02877072374566736,
-  "hit_rate": 0.631578947368421,
+  "hit_rate": 0.65,
   "best_day": 0.026707401254871,
   "worst_day": -0.0168062324173021,
   "first": "2026-10-12",
-  "last": "2026-11-09"
+  "last": "2026-11-10"
  },
  "stats_backtest": {
   "days": 57,
@@ -49,17 +49,17 @@
   "last": "2026-10-09"
  },
  "bm_live": {
-  "days": 20,
-  "active_days": 20,
-  "total_return": -0.0451084115961784,
+  "days": 21,
+  "active_days": 21,
+  "total_return": -0.04925318537805634,
   "cagr": null,
-  "sharpe": -1.6024002251725746,
+  "sharpe": -1.7270621038479568,
   "max_drawdown": -0.122811055918572,
-  "hit_rate": 0.45,
+  "hit_rate": 0.42857142857142855,
   "best_day": 0.04122973,
   "worst_day": -0.03634449,
   "first": "2026-10-12",
-  "last": "2026-11-09"
+  "last": "2026-11-10"
  },
  "bm_backtest": {
   "days": 57,
@@ -614,6 +614,13 @@
    "reconstructed": false,
    "n_trades": 3,
    "bm": 0.02003907
+  },
+  {
+   "date": "2026-11-10",
+   "ret": 0.0184623481688981,
+   "reconstructed": false,
+   "n_trades": 6,
+   "bm": -0.00434057
   }
  ],
  "trades": [
@@ -5309,10 +5316,10 @@
    "side": "LONG",
    "entry_time": "closing auction",
    "entry_price": 120.6,
-   "exit_time": "next opening auction",
-   "exit_price": null,
-   "ret": null,
-   "note": "pending"
+   "exit_time": "opening auction 2026-11-10",
+   "exit_price": 120.6,
+   "ret": -0.0,
+   "note": ""
   },
   {
    "date": "2026-11-09",
@@ -5320,10 +5327,10 @@
    "side": "LONG",
    "entry_time": "closing auction",
    "entry_price": 332.25,
-   "exit_time": "next opening auction",
-   "exit_price": null,
-   "ret": null,
-   "note": "pending"
+   "exit_time": "opening auction 2026-11-10",
+   "exit_price": 329.5,
+   "ret": -0.00828,
+   "note": ""
   },
   {
    "date": "2026-11-09",
@@ -5331,10 +5338,76 @@
    "side": "LONG",
    "entry_time": "closing auction",
    "entry_price": 33.62,
+   "exit_time": "opening auction 2026-11-10",
+   "exit_price": 33.9,
+   "ret": 0.00833,
+   "note": ""
+  },
+  {
+   "date": "2026-11-10",
+   "ticker": "ARCLK",
+   "side": "LONG",
+   "entry_time": "closing auction",
+   "entry_price": 70.55,
    "exit_time": "next opening auction",
    "exit_price": null,
    "ret": null,
    "note": "pending"
+  },
+  {
+   "date": "2026-11-10",
+   "ticker": "BRSAN",
+   "side": "LONG",
+   "entry_time": "closing auction",
+   "entry_price": 655.0,
+   "exit_time": "next opening auction",
+   "exit_price": null,
+   "ret": null,
+   "note": "pending"
+  },
+  {
+   "date": "2026-11-10",
+   "ticker": "HEKTS",
+   "side": "LONG",
+   "entry_time": "closing auction",
+   "entry_price": 1.71,
+   "exit_time": "next opening auction",
+   "exit_price": null,
+   "ret": null,
+   "note": "pending"
+  },
+  {
+   "date": "2026-11-10",
+   "ticker": "GUBRF",
+   "side": "SHORT",
+   "entry_time": "opening auction",
+   "entry_price": 308.0,
+   "exit_time": "closing auction",
+   "exit_price": 288.0,
+   "ret": 0.06494,
+   "note": ""
+  },
+  {
+   "date": "2026-11-10",
+   "ticker": "KCHOL",
+   "side": "SHORT",
+   "entry_time": "opening auction",
+   "entry_price": 214.0,
+   "exit_time": "closing auction",
+   "exit_price": 206.0,
+   "ret": 0.03738,
+   "note": ""
+  },
+  {
+   "date": "2026-11-10",
+   "ticker": "SAHOL",
+   "side": "SHORT",
+   "entry_time": "opening auction",
+   "entry_price": 88.7,
+   "exit_time": "closing auction",
+   "exit_price": 87.3,
+   "ret": 0.01578,
+   "note": ""
   }
  ],
  "holdings": null
