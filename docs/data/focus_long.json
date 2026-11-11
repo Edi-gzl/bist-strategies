@@ -7,32 +7,32 @@
  ],
  "live_start": "2026-10-02",
  "recorded_from": "2026-10-12",
- "last_session": "2026-11-10",
+ "last_session": "2026-11-11",
  "stats": {
-  "days": 4731,
-  "active_days": 4560,
-  "total_return": 27.979481601264634,
-  "cagr": 0.19640789895281507,
-  "sharpe": 0.7590675812876788,
+  "days": 4732,
+  "active_days": 4561,
+  "total_return": 27.55545516884139,
+  "cagr": 0.19542381647175455,
+  "sharpe": 0.756274142482431,
   "max_drawdown": -0.505397996492563,
-  "hit_rate": 0.518859649122807,
+  "hit_rate": 0.5187458890594168,
   "best_day": 0.09937886037252985,
   "worst_day": -0.16513754172159267,
   "first": "2008-05-16",
-  "last": "2026-11-10"
+  "last": "2026-11-11"
  },
  "stats_live": {
-  "days": 21,
-  "active_days": 21,
-  "total_return": -0.04095187379716392,
+  "days": 22,
+  "active_days": 22,
+  "total_return": -0.054984621555434376,
   "cagr": null,
-  "sharpe": -1.0982484834860151,
+  "sharpe": -1.5043146854115528,
   "max_drawdown": -0.17342892046533365,
-  "hit_rate": 0.3333333333333333,
+  "hit_rate": 0.3181818181818182,
   "best_day": 0.044346970132147945,
   "worst_day": -0.05530361103630535,
   "first": "2026-10-12",
-  "last": "2026-11-10"
+  "last": "2026-11-11"
  },
  "stats_backtest": {
   "days": 4710,
@@ -48,17 +48,17 @@
   "last": "2026-10-09"
  },
  "bm_live": {
-  "days": 21,
-  "active_days": 21,
-  "total_return": -0.04924992919773985,
+  "days": 22,
+  "active_days": 22,
+  "total_return": -0.04888146600780052,
   "cagr": null,
-  "sharpe": -1.7269365369018437,
+  "sharpe": -1.6743660965607836,
   "max_drawdown": -0.122811055918572,
-  "hit_rate": 0.42857142857142855,
+  "hit_rate": 0.45454545454545453,
   "best_day": 0.04122973,
   "worst_day": -0.03634449,
   "first": "2026-10-12",
-  "last": "2026-11-10"
+  "last": "2026-11-11"
  },
  "bm_backtest": {
   "days": 4710,
@@ -33191,6 +33191,13 @@
    "reconstructed": false,
    "n_trades": 0,
    "bm": -0.00433716
+  },
+  {
+   "date": "2026-11-11",
+   "ret": -0.014631953678727605,
+   "reconstructed": false,
+   "n_trades": 0,
+   "bm": 0.00038755
   }
  ],
  "trades": [

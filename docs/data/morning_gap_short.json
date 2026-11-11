@@ -7,32 +7,32 @@
  ],
  "live_start": "2026-10-02",
  "recorded_from": "2026-10-12",
- "last_session": "2026-11-10",
+ "last_session": "2026-11-11",
  "stats": {
-  "days": 27,
-  "active_days": 17,
-  "total_return": -0.10047716531240658,
+  "days": 28,
+  "active_days": 18,
+  "total_return": -0.0988637030862426,
   "cagr": null,
-  "sharpe": -2.290475936459268,
+  "sharpe": -2.2074158461231184,
   "max_drawdown": -0.14780288279882137,
-  "hit_rate": 0.47058823529411764,
+  "hit_rate": 0.5,
   "best_day": 0.0578934565450715,
   "worst_day": -0.0655520662243344,
   "first": "2026-10-02",
-  "last": "2026-11-10"
+  "last": "2026-11-11"
  },
  "stats_live": {
-  "days": 21,
-  "active_days": 12,
-  "total_return": -0.08004924873130703,
+  "days": 22,
+  "active_days": 13,
+  "total_return": -0.07839914522101787,
   "cagr": null,
-  "sharpe": -2.0821872278958833,
+  "sharpe": -1.9865056973526762,
   "max_drawdown": -0.14780288279882114,
-  "hit_rate": 0.4166666666666667,
+  "hit_rate": 0.46153846153846156,
   "best_day": 0.0578934565450715,
   "worst_day": -0.0655520662243344,
   "first": "2026-10-12",
-  "last": "2026-11-10"
+  "last": "2026-11-11"
  },
  "stats_backtest": {
   "days": 6,
@@ -48,17 +48,17 @@
   "last": "2026-10-09"
  },
  "bm_live": {
-  "days": 21,
-  "active_days": 21,
-  "total_return": -0.04924992919773985,
+  "days": 22,
+  "active_days": 22,
+  "total_return": -0.04888146600780052,
   "cagr": null,
-  "sharpe": -1.7269365369018437,
+  "sharpe": -1.6743660965607836,
   "max_drawdown": -0.122811055918572,
-  "hit_rate": 0.42857142857142855,
+  "hit_rate": 0.45454545454545453,
   "best_day": 0.04122973,
   "worst_day": -0.03634449,
   "first": "2026-10-12",
-  "last": "2026-11-10"
+  "last": "2026-11-11"
  },
  "bm_backtest": {
   "days": 6,
@@ -263,6 +263,13 @@
    "reconstructed": false,
    "n_trades": 2,
    "bm": -0.00433716
+  },
+  {
+   "date": "2026-11-11",
+   "ret": 0.0017936867903130538,
+   "reconstructed": false,
+   "n_trades": 2,
+   "bm": 0.00038755
   }
  ],
  "trades": [
@@ -551,6 +558,28 @@
    "exit_price": 154.4,
    "ret": 0.00926,
    "gap": 0.0375
+  },
+  {
+   "date": "2026-11-11",
+   "ticker": "EREGL",
+   "side": "SHORT",
+   "entry_time": "10:01 open",
+   "entry_price": 32.74,
+   "exit_time": "closing auction",
+   "exit_price": 31.54,
+   "ret": 0.03565,
+   "gap": 0.0148
+  },
+  {
+   "date": "2026-11-11",
+   "ticker": "TUPRS",
+   "side": "SHORT",
+   "entry_time": "10:01 open",
+   "entry_price": 338.0,
+   "exit_time": "closing auction",
+   "exit_price": 348.5,
+   "ret": -0.03207,
+   "gap": 0.0113
   }
  ],
  "holdings": null
