@@ -51,9 +51,9 @@
  "bm_live": {
   "days": 22,
   "active_days": 22,
-  "total_return": -0.04888146600780052,
+  "total_return": -0.04282648107688636,
   "cagr": null,
-  "sharpe": -1.6743660965607836,
+  "sharpe": -1.4361724211477953,
   "max_drawdown": -0.122811055918572,
   "hit_rate": 0.45454545454545453,
   "best_day": 0.04122973,
@@ -627,7 +627,7 @@
    "ret": 0.003110068542651557,
    "reconstructed": false,
    "n_trades": 6,
-   "bm": 0.00038755
+   "bm": 0.00675619
   }
  ],
  "trades": [
@@ -5755,7 +5755,7 @@
    "exit_time": "next opening auction",
    "exit_price": null,
    "ret": null,
-   "residual": 0.07411
+   "residual": 0.07377
   },
   {
    "date": "2026-11-11",
@@ -5766,7 +5766,7 @@
    "exit_time": "next opening auction",
    "exit_price": null,
    "ret": null,
-   "residual": 0.07303
+   "residual": 0.07268
   },
   {
    "date": "2026-11-11",
@@ -5777,7 +5777,7 @@
    "exit_time": "next opening auction",
    "exit_price": null,
    "ret": null,
-   "residual": 0.07097
+   "residual": 0.07033
   },
   {
    "date": "2026-11-11",
@@ -5788,7 +5788,7 @@
    "exit_time": "closing auction",
    "exit_price": 124.6,
    "ret": 0.04594,
-   "residual": -0.05953
+   "residual": -0.05923
   },
   {
    "date": "2026-11-11",
@@ -5799,7 +5799,7 @@
    "exit_time": "closing auction",
    "exit_price": 280.5,
    "ret": 0.03276,
-   "residual": -0.04008
+   "residual": -0.03958
   },
   {
    "date": "2026-11-11",
@@ -5810,7 +5810,7 @@
    "exit_time": "closing auction",
    "exit_price": 4.76,
    "ret": -0.0625,
-   "residual": -0.06679
+   "residual": -0.06645
   }
  ],
  "holdings": null
