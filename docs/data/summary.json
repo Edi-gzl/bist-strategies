@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-12T22:08:09+00:00",
+ "generated_at": "2026-11-12T22:30:52+00:00",
  "live_start": "2026-10-02",
  "recorded_from": "2026-10-12",
  "last_session": "2026-11-12",
@@ -50,9 +50,9 @@
    "bm_live": {
     "days": 23,
     "active_days": 23,
-    "total_return": -0.0372826989708811,
+    "total_return": -0.037078884122508815,
     "cagr": null,
-    "sharpe": -1.1901570153185244,
+    "sharpe": -1.182187172180093,
     "max_drawdown": -0.122811055918572,
     "hit_rate": 0.4782608695652174,
     "best_day": 0.04122973,
@@ -124,9 +124,9 @@
    "bm_live": {
     "days": 23,
     "active_days": 23,
-    "total_return": -0.0372826989708811,
+    "total_return": -0.037078884122508815,
     "cagr": null,
-    "sharpe": -1.1901570153185244,
+    "sharpe": -1.182187172180093,
     "max_drawdown": -0.122811055918572,
     "hit_rate": 0.4782608695652174,
     "best_day": 0.04122973,
@@ -198,9 +198,9 @@
    "bm_live": {
     "days": 23,
     "active_days": 23,
-    "total_return": -0.0372826989708811,
+    "total_return": -0.037078884122508815,
     "cagr": null,
-    "sharpe": -1.1901570153185244,
+    "sharpe": -1.182187172180093,
     "max_drawdown": -0.122811055918572,
     "hit_rate": 0.4782608695652174,
     "best_day": 0.04122973,
@@ -339,9 +339,9 @@
    "bm_live": {
     "days": 23,
     "active_days": 23,
-    "total_return": -0.0372826989708811,
+    "total_return": -0.037078884122508815,
     "cagr": null,
-    "sharpe": -1.1901570153185244,
+    "sharpe": -1.182187172180093,
     "max_drawdown": -0.122811055918572,
     "hit_rate": 0.4782608695652174,
     "best_day": 0.04122973,
@@ -374,9 +374,9 @@
    "stats": {
     "days": 29,
     "active_days": 19,
-    "total_return": -0.07705100171843848,
+    "total_return": -0.07659936032761905,
     "cagr": null,
-    "sharpe": -1.5858217229727936,
+    "sharpe": -1.5734547752637251,
     "max_drawdown": -0.14780288279882137,
     "hit_rate": 0.5263157894736842,
     "best_day": 0.0578934565450715,
@@ -387,9 +387,9 @@
    "stats_live": {
     "days": 23,
     "active_days": 14,
-    "total_return": -0.056091083394571695,
+    "total_return": -0.0556291853517803,
     "cagr": null,
-    "sharpe": -1.2770871419102627,
+    "sharpe": -1.2631325071967139,
     "max_drawdown": -0.14780288279882114,
     "hit_rate": 0.5,
     "best_day": 0.0578934565450715,
@@ -413,9 +413,9 @@
    "bm_live": {
     "days": 23,
     "active_days": 23,
-    "total_return": -0.0372826989708811,
+    "total_return": -0.037078884122508815,
     "cagr": null,
-    "sharpe": -1.1901570153185244,
+    "sharpe": -1.182187172180093,
     "max_drawdown": -0.122811055918572,
     "hit_rate": 0.4782608695652174,
     "best_day": 0.04122973,
@@ -438,17 +438,17 @@
    },
    "today": {
     "date": "2026-11-12",
-    "ret": 0.02420578809651619,
+    "ret": 0.02470697909134112,
     "trades": [
      {
       "date": "2026-11-12",
       "ticker": "YKBNK",
       "side": "SHORT",
       "entry_time": "10:01 open",
-      "entry_price": 38.88,
+      "entry_price": 38.9,
       "exit_time": "closing auction",
       "exit_price": 37.9,
-      "ret": 0.02421,
+      "ret": 0.02471,
       "gap": 0.0104
      }
     ]
@@ -499,9 +499,9 @@
    "bm_live": {
     "days": 23,
     "active_days": 23,
-    "total_return": -0.0372826989708811,
+    "total_return": -0.037078884122508815,
     "cagr": null,
-    "sharpe": -1.1901570153185244,
+    "sharpe": -1.182187172180093,
     "max_drawdown": -0.122811055918572,
     "hit_rate": 0.4782608695652174,
     "best_day": 0.04122973,
@@ -640,9 +640,9 @@
    "bm_live": {
     "days": 23,
     "active_days": 23,
-    "total_return": -0.0372826989708811,
+    "total_return": -0.037078884122508815,
     "cagr": null,
-    "sharpe": -1.1901570153185244,
+    "sharpe": -1.182187172180093,
     "max_drawdown": -0.122811055918572,
     "hit_rate": 0.4782608695652174,
     "best_day": 0.04122973,
