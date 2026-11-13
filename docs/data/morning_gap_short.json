@@ -11,9 +11,9 @@
  "stats": {
   "days": 29,
   "active_days": 19,
-  "total_return": -0.07705100171843848,
+  "total_return": -0.07659936032761905,
   "cagr": null,
-  "sharpe": -1.5858217229727936,
+  "sharpe": -1.5734547752637251,
   "max_drawdown": -0.14780288279882137,
   "hit_rate": 0.5263157894736842,
   "best_day": 0.0578934565450715,
@@ -24,9 +24,9 @@
  "stats_live": {
   "days": 23,
   "active_days": 14,
-  "total_return": -0.056091083394571695,
+  "total_return": -0.0556291853517803,
   "cagr": null,
-  "sharpe": -1.2770871419102627,
+  "sharpe": -1.2631325071967139,
   "max_drawdown": -0.14780288279882114,
   "hit_rate": 0.5,
   "best_day": 0.0578934565450715,
@@ -273,7 +273,7 @@
   },
   {
    "date": "2026-11-12",
-   "ret": 0.02420578809651619,
+   "ret": 0.02470697909134112,
    "reconstructed": false,
    "n_trades": 1,
    "bm": 0.01241086
@@ -593,10 +593,10 @@
    "ticker": "YKBNK",
    "side": "SHORT",
    "entry_time": "10:01 open",
-   "entry_price": 38.88,
+   "entry_price": 38.9,
    "exit_time": "closing auction",
    "exit_price": 37.9,
-   "ret": 0.02421,
+   "ret": 0.02471,
    "gap": 0.0104
   }
  ],
