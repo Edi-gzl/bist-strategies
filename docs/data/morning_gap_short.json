@@ -7,32 +7,32 @@
  ],
  "live_start": "2026-10-02",
  "recorded_from": "2026-10-12",
- "last_session": "2026-11-12",
+ "last_session": "2026-11-13",
  "stats": {
-  "days": 29,
-  "active_days": 19,
-  "total_return": -0.07659939567530005,
+  "days": 30,
+  "active_days": 20,
+  "total_return": -0.07541023892800836,
   "cagr": null,
-  "sharpe": -1.5734557432332654,
+  "sharpe": -1.5205098419323002,
   "max_drawdown": -0.14780288279882137,
-  "hit_rate": 0.5263157894736842,
+  "hit_rate": 0.55,
   "best_day": 0.0578934565450715,
   "worst_day": -0.0655520662243344,
   "first": "2026-10-02",
-  "last": "2026-11-12"
+  "last": "2026-11-13"
  },
  "stats_live": {
-  "days": 23,
-  "active_days": 14,
-  "total_return": -0.0556292215021974,
+  "days": 24,
+  "active_days": 15,
+  "total_return": -0.054413059331698266,
   "cagr": null,
-  "sharpe": -1.2631335991505965,
+  "sharpe": -1.2060092058030756,
   "max_drawdown": -0.14780288279882114,
-  "hit_rate": 0.5,
+  "hit_rate": 0.5333333333333333,
   "best_day": 0.0578934565450715,
   "worst_day": -0.0655520662243344,
   "first": "2026-10-12",
-  "last": "2026-11-12"
+  "last": "2026-11-13"
  },
  "stats_backtest": {
   "days": 6,
@@ -48,17 +48,17 @@
   "last": "2026-10-09"
  },
  "bm_live": {
-  "days": 23,
-  "active_days": 23,
-  "total_return": -0.03707808518428202,
+  "days": 24,
+  "active_days": 24,
+  "total_return": -0.034500218038471475,
   "cagr": null,
-  "sharpe": -1.1821559301628515,
+  "sharpe": -1.0648603808300832,
   "max_drawdown": -0.122811055918572,
-  "hit_rate": 0.4782608695652174,
+  "hit_rate": 0.5,
   "best_day": 0.04122973,
   "worst_day": -0.03634449,
   "first": "2026-10-12",
-  "last": "2026-11-12"
+  "last": "2026-11-13"
  },
  "bm_backtest": {
   "days": 6,
@@ -273,10 +273,17 @@
   },
   {
    "date": "2026-11-12",
-   "ret": 0.024706939865663857,
+   "ret": 0.024205748850660624,
    "reconstructed": false,
    "n_trades": 1,
    "bm": 0.0124117
+  },
+  {
+   "date": "2026-11-13",
+   "ret": 0.0017777777777777679,
+   "reconstructed": false,
+   "n_trades": 1,
+   "bm": 0.00267713
   }
  ],
  "trades": [
@@ -593,11 +600,22 @@
    "ticker": "YKBNK",
    "side": "SHORT",
    "entry_time": "10:01 open",
-   "entry_price": 38.9,
+   "entry_price": 38.88,
    "exit_time": "closing auction",
    "exit_price": 37.9,
-   "ret": 0.02471,
+   "ret": 0.02421,
    "gap": 0.0104
+  },
+  {
+   "date": "2026-11-13",
+   "ticker": "TUPRS",
+   "side": "SHORT",
+   "entry_time": "10:01 open",
+   "entry_price": 360.0,
+   "exit_time": "closing auction",
+   "exit_price": 359.0,
+   "ret": 0.00178,
+   "gap": 0.0126
   }
  ],
  "holdings": null

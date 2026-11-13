@@ -8,32 +8,32 @@
  ],
  "live_start": "2026-10-02",
  "recorded_from": "2026-10-12",
- "last_session": "2026-11-12",
+ "last_session": "2026-11-13",
  "stats": {
-  "days": 80,
-  "active_days": 79,
-  "total_return": -0.07033163807076515,
+  "days": 81,
+  "active_days": 80,
+  "total_return": -0.07611670704860429,
   "cagr": null,
-  "sharpe": -0.8539503998800838,
-  "max_drawdown": -0.11998170809217057,
-  "hit_rate": 0.4810126582278481,
+  "sharpe": -0.9303587458636459,
+  "max_drawdown": -0.12545781842239878,
+  "hit_rate": 0.475,
   "best_day": 0.04430282798936428,
   "worst_day": -0.046071339409629854,
   "first": "2026-07-23",
-  "last": "2026-11-12"
+  "last": "2026-11-13"
  },
  "stats_live": {
-  "days": 23,
-  "active_days": 22,
-  "total_return": -0.05619122463524673,
+  "days": 24,
+  "active_days": 23,
+  "total_return": -0.06206428549325471,
   "cagr": null,
-  "sharpe": -2.375251991372543,
-  "max_drawdown": -0.09439505332440357,
-  "hit_rate": 0.5454545454545454,
+  "sharpe": -2.587833472501793,
+  "max_drawdown": -0.10003038232744588,
+  "hit_rate": 0.5217391304347826,
   "best_day": 0.02223863744304827,
   "worst_day": -0.03319357570346615,
   "first": "2026-10-12",
-  "last": "2026-11-12"
+  "last": "2026-11-13"
  },
  "stats_backtest": {
   "days": 57,
@@ -49,17 +49,17 @@
   "last": "2026-10-09"
  },
  "bm_live": {
-  "days": 23,
-  "active_days": 23,
-  "total_return": -0.03707808518428202,
+  "days": 24,
+  "active_days": 24,
+  "total_return": -0.034500218038471475,
   "cagr": null,
-  "sharpe": -1.1821559301628515,
+  "sharpe": -1.0648603808300832,
   "max_drawdown": -0.122811055918572,
-  "hit_rate": 0.4782608695652174,
+  "hit_rate": 0.5,
   "best_day": 0.04122973,
   "worst_day": -0.03634449,
   "first": "2026-10-12",
-  "last": "2026-11-12"
+  "last": "2026-11-13"
  },
  "bm_backtest": {
   "days": 57,
@@ -635,6 +635,13 @@
    "reconstructed": false,
    "n_trades": 6,
    "bm": 0.0124117
+  },
+  {
+   "date": "2026-11-13",
+   "ret": -0.006222723300848979,
+   "reconstructed": false,
+   "n_trades": 6,
+   "bm": 0.00267713
   }
  ],
  "trades": [
@@ -5884,6 +5891,72 @@
    "exit_price": 238.0,
    "ret": -0.02146,
    "residual": -0.02552
+  },
+  {
+   "date": "2026-11-13",
+   "ticker": "ENJSA",
+   "side": "LONG",
+   "entry_time": "closing auction",
+   "entry_price": 122.3,
+   "exit_time": "next opening auction",
+   "exit_price": null,
+   "ret": null,
+   "residual": 0.02694
+  },
+  {
+   "date": "2026-11-13",
+   "ticker": "TRALT",
+   "side": "LONG",
+   "entry_time": "closing auction",
+   "entry_price": 38.18,
+   "exit_time": "next opening auction",
+   "exit_price": null,
+   "ret": null,
+   "residual": 0.02612
+  },
+  {
+   "date": "2026-11-13",
+   "ticker": "TRMET",
+   "side": "LONG",
+   "entry_time": "closing auction",
+   "entry_price": 110.8,
+   "exit_time": "next opening auction",
+   "exit_price": null,
+   "ret": null,
+   "residual": 0.03046
+  },
+  {
+   "date": "2026-11-13",
+   "ticker": "TRALT",
+   "side": "SHORT",
+   "entry_time": "opening auction",
+   "entry_price": 37.82,
+   "exit_time": "closing auction",
+   "exit_price": 38.18,
+   "ret": -0.00952,
+   "residual": -0.04221
+  },
+  {
+   "date": "2026-11-13",
+   "ticker": "TRMET",
+   "side": "SHORT",
+   "entry_time": "opening auction",
+   "entry_price": 108.4,
+   "exit_time": "closing auction",
+   "exit_price": 110.8,
+   "ret": -0.02214,
+   "residual": -0.04838
+  },
+  {
+   "date": "2026-11-13",
+   "ticker": "YKBNK",
+   "side": "SHORT",
+   "entry_time": "opening auction",
+   "entry_price": 37.8,
+   "exit_time": "closing auction",
+   "exit_price": 37.78,
+   "ret": 0.00053,
+   "residual": -0.0304
   }
  ],
  "holdings": null

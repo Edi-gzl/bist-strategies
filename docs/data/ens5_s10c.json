@@ -8,32 +8,32 @@
  ],
  "live_start": "2026-10-02",
  "recorded_from": "2026-10-12",
- "last_session": "2026-11-12",
+ "last_session": "2026-11-13",
  "stats": {
-  "days": 80,
-  "active_days": 79,
-  "total_return": 0.06262561437244751,
+  "days": 81,
+  "active_days": 80,
+  "total_return": 0.06885934882357603,
   "cagr": null,
-  "sharpe": 1.1435616077152075,
+  "sharpe": 1.2361372320088084,
   "max_drawdown": -0.060629549728883236,
-  "hit_rate": 0.5949367088607594,
+  "hit_rate": 0.6,
   "best_day": 0.0241494701050248,
   "worst_day": -0.0358389639118445,
   "first": "2026-07-22",
-  "last": "2026-11-12"
+  "last": "2026-11-13"
  },
  "stats_live": {
-  "days": 23,
-  "active_days": 22,
-  "total_return": 0.001999637736867843,
+  "days": 24,
+  "active_days": 23,
+  "total_return": 0.007877718951263768,
   "cagr": null,
-  "sharpe": 0.21470584414290322,
+  "sharpe": 0.6080893706317566,
   "max_drawdown": -0.037764870241436266,
-  "hit_rate": 0.5454545454545454,
+  "hit_rate": 0.5652173913043478,
   "best_day": 0.0184623481688868,
   "worst_day": -0.0169922380670846,
   "first": "2026-10-12",
-  "last": "2026-11-12"
+  "last": "2026-11-13"
  },
  "stats_backtest": {
   "days": 57,
@@ -49,17 +49,17 @@
   "last": "2026-10-09"
  },
  "bm_live": {
-  "days": 23,
-  "active_days": 23,
-  "total_return": -0.03707808518428202,
+  "days": 24,
+  "active_days": 24,
+  "total_return": -0.034500218038471475,
   "cagr": null,
-  "sharpe": -1.1821559301628515,
+  "sharpe": -1.0648603808300832,
   "max_drawdown": -0.122811055918572,
-  "hit_rate": 0.4782608695652174,
+  "hit_rate": 0.5,
   "best_day": 0.04122973,
   "worst_day": -0.03634449,
   "first": "2026-10-12",
-  "last": "2026-11-12"
+  "last": "2026-11-13"
  },
  "bm_backtest": {
   "days": 57,
@@ -635,6 +635,13 @@
    "reconstructed": false,
    "n_trades": 6,
    "bm": 0.0124117
+  },
+  {
+   "date": "2026-11-13",
+   "ret": 0.0058663506382818,
+   "reconstructed": false,
+   "n_trades": 6,
+   "bm": 0.00267713
   }
  ],
  "trades": [
@@ -5121,10 +5128,10 @@
    "side": "LONG",
    "entry_time": "closing auction",
    "entry_price": 280.5,
-   "exit_time": "next opening auction",
-   "exit_price": null,
-   "ret": null,
-   "note": "pending (S10c sizing set at execution)"
+   "exit_time": "opening auction 2026-11-13",
+   "exit_price": 280.5,
+   "ret": 0.0,
+   "note": ""
   },
   {
    "date": "2026-11-12",
@@ -5132,10 +5139,10 @@
    "side": "LONG",
    "entry_time": "closing auction",
    "entry_price": 208.2,
-   "exit_time": "next opening auction",
-   "exit_price": null,
-   "ret": null,
-   "note": "pending (S10c sizing set at execution)"
+   "exit_time": "opening auction 2026-11-13",
+   "exit_price": 206.9,
+   "ret": -0.00624,
+   "note": ""
   },
   {
    "date": "2026-11-12",
@@ -5143,10 +5150,10 @@
    "side": "LONG",
    "entry_time": "closing auction",
    "entry_price": 108.3,
-   "exit_time": "next opening auction",
-   "exit_price": null,
-   "ret": null,
-   "note": "pending (S10c sizing set at execution)"
+   "exit_time": "opening auction 2026-11-13",
+   "exit_price": 108.4,
+   "ret": 0.00092,
+   "note": ""
   },
   {
    "date": "2026-11-12",
@@ -5179,6 +5186,72 @@
    "exit_time": "closing auction",
    "exit_price": 14.08,
    "ret": -0.0,
+   "note": "short leg halved (momentum streak)"
+  },
+  {
+   "date": "2026-11-13",
+   "ticker": "HEKTS",
+   "side": "LONG",
+   "entry_time": "closing auction",
+   "entry_price": 1.68,
+   "exit_time": "next opening auction",
+   "exit_price": null,
+   "ret": null,
+   "note": "pending (S10c sizing set at execution)"
+  },
+  {
+   "date": "2026-11-13",
+   "ticker": "TKFEN",
+   "side": "LONG",
+   "entry_time": "closing auction",
+   "entry_price": 190.0,
+   "exit_time": "next opening auction",
+   "exit_price": null,
+   "ret": null,
+   "note": "pending (S10c sizing set at execution)"
+  },
+  {
+   "date": "2026-11-13",
+   "ticker": "TUPRS",
+   "side": "LONG",
+   "entry_time": "closing auction",
+   "entry_price": 359.0,
+   "exit_time": "next opening auction",
+   "exit_price": null,
+   "ret": null,
+   "note": "pending (S10c sizing set at execution)"
+  },
+  {
+   "date": "2026-11-13",
+   "ticker": "AKSEN",
+   "side": "SHORT",
+   "entry_time": "opening auction",
+   "entry_price": 71.9,
+   "exit_time": "closing auction",
+   "exit_price": 71.95,
+   "ret": -0.0007,
+   "note": "short leg halved (momentum streak)"
+  },
+  {
+   "date": "2026-11-13",
+   "ticker": "ARCLK",
+   "side": "SHORT",
+   "entry_time": "opening auction",
+   "entry_price": 69.55,
+   "exit_time": "closing auction",
+   "exit_price": 68.1,
+   "ret": 0.02085,
+   "note": "short leg halved (momentum streak)"
+  },
+  {
+   "date": "2026-11-13",
+   "ticker": "TKFEN",
+   "side": "SHORT",
+   "entry_time": "opening auction",
+   "entry_price": 206.0,
+   "exit_time": "closing auction",
+   "exit_price": 190.0,
+   "ret": 0.07767,
    "note": "short leg halved (momentum streak)"
   }
  ],
