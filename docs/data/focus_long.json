@@ -7,32 +7,32 @@
  ],
  "live_start": "2026-10-02",
  "recorded_from": "2026-10-12",
- "last_session": "2026-11-13",
+ "last_session": "2026-11-16",
  "stats": {
-  "days": 4734,
-  "active_days": 4563,
-  "total_return": 26.89291459480408,
-  "cagr": 0.1938408719891649,
-  "sharpe": 0.7517644747887454,
+  "days": 4735,
+  "active_days": 4564,
+  "total_return": 26.87896813750668,
+  "cagr": 0.1937644264536862,
+  "sharpe": 0.7515939257462383,
   "max_drawdown": -0.505397996492563,
-  "hit_rate": 0.5187376725838264,
+  "hit_rate": 0.518624014022787,
   "best_day": 0.09937886037252985,
   "worst_day": -0.16513754172159267,
   "first": "2008-05-16",
-  "last": "2026-11-13"
+  "last": "2026-11-16"
  },
  "stats_live": {
-  "days": 24,
-  "active_days": 24,
-  "total_return": -0.07691076588080792,
+  "days": 25,
+  "active_days": 25,
+  "total_return": -0.07737231049786741,
   "cagr": null,
-  "sharpe": -2.0701101891685276,
+  "sharpe": -2.0433419035761853,
   "max_drawdown": -0.17342892046533365,
-  "hit_rate": 0.3333333333333333,
+  "hit_rate": 0.32,
   "best_day": 0.044346970132147945,
   "worst_day": -0.05530361103630535,
   "first": "2026-10-12",
-  "last": "2026-11-13"
+  "last": "2026-11-16"
  },
  "stats_backtest": {
   "days": 4710,
@@ -48,17 +48,17 @@
   "last": "2026-10-09"
  },
  "bm_live": {
-  "days": 24,
-  "active_days": 24,
-  "total_return": -0.03450189352260313,
+  "days": 25,
+  "active_days": 25,
+  "total_return": -0.04131745086101879,
   "cagr": null,
-  "sharpe": -1.0649212899524707,
+  "sharpe": -1.2807579942834528,
   "max_drawdown": -0.122811055918572,
-  "hit_rate": 0.5,
+  "hit_rate": 0.48,
   "best_day": 0.04122973,
   "worst_day": -0.03634449,
   "first": "2026-10-12",
-  "last": "2026-11-13"
+  "last": "2026-11-16"
  },
  "bm_backtest": {
   "days": 4710,
@@ -33212,6 +33212,13 @@
    "reconstructed": false,
    "n_trades": 1,
    "bm": 0.00267539
+  },
+  {
+   "date": "2026-11-16",
+   "ret": -0.0005,
+   "reconstructed": false,
+   "n_trades": 0,
+   "bm": -0.00705911
   }
  ],
  "trades": [
