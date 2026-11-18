@@ -8,32 +8,32 @@
  ],
  "live_start": "2026-10-02",
  "recorded_from": "2026-10-12",
- "last_session": "2026-11-17",
+ "last_session": "2026-11-18",
  "stats": {
-  "days": 83,
-  "active_days": 82,
-  "total_return": -0.0786357186471135,
+  "days": 84,
+  "active_days": 83,
+  "total_return": -0.07163018934140675,
   "cagr": null,
-  "sharpe": -0.9468186767508814,
+  "sharpe": -0.841418848591858,
   "max_drawdown": -0.1361998812712314,
-  "hit_rate": 0.47560975609756095,
+  "hit_rate": 0.4819277108433735,
   "best_day": 0.04430282798936428,
   "worst_day": -0.046071339409629854,
   "first": "2026-07-23",
-  "last": "2026-11-17"
+  "last": "2026-11-18"
  },
  "stats_live": {
-  "days": 26,
-  "active_days": 25,
-  "total_return": -0.0646216116853442,
+  "days": 27,
+  "active_days": 26,
+  "total_return": -0.0575095270909195,
   "cagr": null,
-  "sharpe": -2.542069790023064,
+  "sharpe": -2.180691390076153,
   "max_drawdown": -0.11108477215417667,
-  "hit_rate": 0.52,
+  "hit_rate": 0.5384615384615384,
   "best_day": 0.02223863744304827,
   "worst_day": -0.03319357570346615,
   "first": "2026-10-12",
-  "last": "2026-11-17"
+  "last": "2026-11-18"
  },
  "stats_backtest": {
   "days": 57,
@@ -49,17 +49,17 @@
   "last": "2026-10-09"
  },
  "bm_live": {
-  "days": 26,
-  "active_days": 26,
-  "total_return": -0.04932333294420388,
+  "days": 27,
+  "active_days": 27,
+  "total_return": -0.06429071033619704,
   "cagr": null,
-  "sharpe": -1.5176460215628687,
+  "sharpe": -1.976742184146455,
   "max_drawdown": -0.122811055918572,
-  "hit_rate": 0.46153846153846156,
+  "hit_rate": 0.4444444444444444,
   "best_day": 0.04122973,
   "worst_day": -0.03634449,
   "first": "2026-10-12",
-  "last": "2026-11-17"
+  "last": "2026-11-18"
  },
  "bm_backtest": {
   "days": 57,
@@ -656,6 +656,13 @@
    "reconstructed": false,
    "n_trades": 6,
    "bm": -0.01526793
+  },
+  {
+   "date": "2026-11-18",
+   "ret": 0.007603430529584028,
+   "reconstructed": false,
+   "n_trades": 6,
+   "bm": -0.01574392
   }
  ],
  "trades": [
@@ -6103,6 +6110,72 @@
    "exit_price": 70.2,
    "ret": 0.03239,
    "residual": -0.0235
+  },
+  {
+   "date": "2026-11-18",
+   "ticker": "FROTO",
+   "side": "LONG",
+   "entry_time": "closing auction",
+   "entry_price": 72.6,
+   "exit_time": "next opening auction",
+   "exit_price": null,
+   "ret": null,
+   "residual": 0.03738
+  },
+  {
+   "date": "2026-11-18",
+   "ticker": "KONTR",
+   "side": "LONG",
+   "entry_time": "closing auction",
+   "entry_price": 2.75,
+   "exit_time": "next opening auction",
+   "exit_price": null,
+   "ret": null,
+   "residual": 0.10767
+  },
+  {
+   "date": "2026-11-18",
+   "ticker": "THYAO",
+   "side": "LONG",
+   "entry_time": "closing auction",
+   "entry_price": 323.75,
+   "exit_time": "next opening auction",
+   "exit_price": null,
+   "ret": null,
+   "residual": 0.02643
+  },
+  {
+   "date": "2026-11-18",
+   "ticker": "AKSEN",
+   "side": "SHORT",
+   "entry_time": "opening auction",
+   "entry_price": 68.5,
+   "exit_time": "closing auction",
+   "exit_price": 66.5,
+   "ret": 0.0292,
+   "residual": -0.01911
+  },
+  {
+   "date": "2026-11-18",
+   "ticker": "HEKTS",
+   "side": "SHORT",
+   "entry_time": "opening auction",
+   "entry_price": 1.64,
+   "exit_time": "closing auction",
+   "exit_price": 1.57,
+   "ret": 0.04268,
+   "residual": -0.01842
+  },
+  {
+   "date": "2026-11-18",
+   "ticker": "ULKER",
+   "side": "SHORT",
+   "entry_time": "opening auction",
+   "entry_price": 70.55,
+   "exit_time": "closing auction",
+   "exit_price": 69.0,
+   "ret": 0.02197,
+   "residual": -0.01917
   }
  ],
  "holdings": null
