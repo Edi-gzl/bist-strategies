@@ -5,32 +5,32 @@
  "deviations": [],
  "live_start": "2026-10-02",
  "recorded_from": "2026-10-12",
- "last_session": "2026-11-18",
+ "last_session": "2026-11-19",
  "stats": {
-  "days": 33,
-  "active_days": 16,
-  "total_return": 0.051611595553776146,
+  "days": 34,
+  "active_days": 17,
+  "total_return": 0.05912867103310493,
   "cagr": null,
-  "sharpe": 2.210502494706638,
+  "sharpe": 2.4667900894398698,
   "max_drawdown": -0.052056008339807835,
-  "hit_rate": 0.75,
+  "hit_rate": 0.7647058823529411,
   "best_day": 0.023598982516243594,
   "worst_day": -0.03643690801824173,
   "first": "2026-10-02",
-  "last": "2026-11-18"
+  "last": "2026-11-19"
  },
  "stats_live": {
-  "days": 27,
-  "active_days": 13,
-  "total_return": 0.07417934860832154,
+  "days": 28,
+  "active_days": 14,
+  "total_return": 0.08185774172985516,
   "cagr": null,
-  "sharpe": 3.5890078610991667,
+  "sharpe": 3.859875468344572,
   "max_drawdown": -0.03643690801824173,
-  "hit_rate": 0.8461538461538461,
+  "hit_rate": 0.8571428571428571,
   "best_day": 0.023598982516243594,
   "worst_day": -0.03643690801824173,
   "first": "2026-10-12",
-  "last": "2026-11-18"
+  "last": "2026-11-19"
  },
  "stats_backtest": {
   "days": 6,
@@ -46,17 +46,17 @@
   "last": "2026-10-09"
  },
  "bm_live": {
-  "days": 27,
-  "active_days": 27,
-  "total_return": -0.06429150890459734,
+  "days": 28,
+  "active_days": 28,
+  "total_return": -0.0633368429594724,
   "cagr": null,
-  "sharpe": -1.9767664545902726,
+  "sharpe": -1.9093472680815402,
   "max_drawdown": -0.122811055918572,
-  "hit_rate": 0.4444444444444444,
+  "hit_rate": 0.4642857142857143,
   "best_day": 0.04122973,
   "worst_day": -0.03634449,
   "first": "2026-10-12",
-  "last": "2026-11-18"
+  "last": "2026-11-19"
  },
  "bm_backtest": {
   "days": 6,
@@ -303,6 +303,13 @@
    "reconstructed": false,
    "n_trades": 0,
    "bm": -0.01574476
+  },
+  {
+   "date": "2026-11-19",
+   "ret": 0.007148148148148127,
+   "reconstructed": false,
+   "n_trades": 1,
+   "bm": 0.00102026
   }
  ],
  "trades": [
@@ -496,6 +503,18 @@
    "exit_price": 163.8,
    "ret": 0.01106,
    "z": -3.86,
+   "fallback_rank": 1
+  },
+  {
+   "date": "2026-11-19",
+   "ticker": "TUPRS",
+   "side": "SHORT",
+   "entry_time": "first 1-min open after 16:00",
+   "entry_price": 337.5,
+   "exit_time": "closing auction",
+   "exit_price": 334.75,
+   "ret": 0.00715,
+   "z": -2.28,
    "fallback_rank": 1
   }
  ],

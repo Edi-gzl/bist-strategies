@@ -8,32 +8,32 @@
  ],
  "live_start": "2026-10-02",
  "recorded_from": "2026-10-12",
- "last_session": "2026-11-18",
+ "last_session": "2026-11-19",
  "stats": {
-  "days": 84,
-  "active_days": 83,
-  "total_return": -0.07163019425273598,
+  "days": 85,
+  "active_days": 84,
+  "total_return": -0.06951626835471292,
   "cagr": null,
-  "sharpe": -0.8414189193588946,
+  "sharpe": -0.8071459667562781,
   "max_drawdown": -0.1361998812712314,
-  "hit_rate": 0.4819277108433735,
+  "hit_rate": 0.4880952380952381,
   "best_day": 0.04430282798936428,
   "worst_day": -0.046071339409629854,
   "first": "2026-07-23",
-  "last": "2026-11-18"
+  "last": "2026-11-19"
  },
  "stats_live": {
-  "days": 27,
-  "active_days": 26,
-  "total_return": -0.057509532076950864,
+  "days": 28,
+  "active_days": 27,
+  "total_return": -0.055363453007545194,
   "cagr": null,
-  "sharpe": -2.180691615935857,
+  "sharpe": -2.0528363227731417,
   "max_drawdown": -0.11108477215417667,
-  "hit_rate": 0.5384615384615384,
+  "hit_rate": 0.5555555555555556,
   "best_day": 0.02223863744304827,
   "worst_day": -0.03319357570346615,
   "first": "2026-10-12",
-  "last": "2026-11-18"
+  "last": "2026-11-19"
  },
  "stats_backtest": {
   "days": 57,
@@ -49,17 +49,17 @@
   "last": "2026-10-09"
  },
  "bm_live": {
-  "days": 27,
-  "active_days": 27,
-  "total_return": -0.06429150890459734,
+  "days": 28,
+  "active_days": 28,
+  "total_return": -0.0633368429594724,
   "cagr": null,
-  "sharpe": -1.9767664545902726,
+  "sharpe": -1.9093472680815402,
   "max_drawdown": -0.122811055918572,
-  "hit_rate": 0.4444444444444444,
+  "hit_rate": 0.4642857142857143,
   "best_day": 0.04122973,
   "worst_day": -0.03634449,
   "first": "2026-10-12",
-  "last": "2026-11-18"
+  "last": "2026-11-19"
  },
  "bm_backtest": {
   "days": 57,
@@ -663,6 +663,13 @@
    "reconstructed": false,
    "n_trades": 6,
    "bm": -0.01574476
+  },
+  {
+   "date": "2026-11-19",
+   "ret": 0.0022770299991839073,
+   "reconstructed": false,
+   "n_trades": 6,
+   "bm": 0.00102026
   }
  ],
  "trades": [
@@ -6176,6 +6183,72 @@
    "exit_price": 69.0,
    "ret": 0.02197,
    "residual": -0.01917
+  },
+  {
+   "date": "2026-11-19",
+   "ticker": "DOHOL",
+   "side": "LONG",
+   "entry_time": "closing auction",
+   "entry_price": 16.41,
+   "exit_time": "next opening auction",
+   "exit_price": null,
+   "ret": null,
+   "residual": 0.01719
+  },
+  {
+   "date": "2026-11-19",
+   "ticker": "HALKB",
+   "side": "LONG",
+   "entry_time": "closing auction",
+   "entry_price": 40.14,
+   "exit_time": "next opening auction",
+   "exit_price": null,
+   "ret": null,
+   "residual": 0.02648
+  },
+  {
+   "date": "2026-11-19",
+   "ticker": "TOASO",
+   "side": "LONG",
+   "entry_time": "closing auction",
+   "entry_price": 249.3,
+   "exit_time": "next opening auction",
+   "exit_price": null,
+   "ret": null,
+   "residual": 0.03397
+  },
+  {
+   "date": "2026-11-19",
+   "ticker": "ODAS",
+   "side": "SHORT",
+   "entry_time": "opening auction",
+   "entry_price": 4.5,
+   "exit_time": "closing auction",
+   "exit_price": 4.5,
+   "ret": -0.0,
+   "residual": -0.02741
+  },
+  {
+   "date": "2026-11-19",
+   "ticker": "PETKM",
+   "side": "SHORT",
+   "entry_time": "opening auction",
+   "entry_price": 15.46,
+   "exit_time": "closing auction",
+   "exit_price": 15.39,
+   "ret": 0.00453,
+   "residual": -0.02871
+  },
+  {
+   "date": "2026-11-19",
+   "ticker": "VESTL",
+   "side": "SHORT",
+   "entry_time": "opening auction",
+   "entry_price": 13.88,
+   "exit_time": "closing auction",
+   "exit_price": 13.8,
+   "ret": 0.00576,
+   "residual": -0.07391
   }
  ],
  "holdings": null

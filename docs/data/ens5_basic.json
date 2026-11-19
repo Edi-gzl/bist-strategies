@@ -8,32 +8,32 @@
  ],
  "live_start": "2026-10-02",
  "recorded_from": "2026-10-12",
- "last_session": "2026-11-18",
+ "last_session": "2026-11-19",
  "stats": {
-  "days": 84,
-  "active_days": 83,
-  "total_return": 0.18250727394511745,
+  "days": 85,
+  "active_days": 84,
+  "total_return": 0.18547879912212362,
   "cagr": null,
-  "sharpe": 2.8312956743242688,
+  "sharpe": 2.8555618409050205,
   "max_drawdown": -0.06219827627501995,
-  "hit_rate": 0.6385542168674698,
+  "hit_rate": 0.6428571428571429,
   "best_day": 0.026707401254871,
   "worst_day": -0.035592108016108,
   "first": "2026-07-22",
-  "last": "2026-11-18"
+  "last": "2026-11-19"
  },
  "stats_live": {
-  "days": 27,
-  "active_days": 26,
-  "total_return": 0.07439444781768167,
+  "days": 28,
+  "active_days": 27,
+  "total_return": 0.07709429603178575,
   "cagr": null,
-  "sharpe": 3.8013256236928368,
+  "sharpe": 3.8630221002103777,
   "max_drawdown": -0.02877072374566736,
-  "hit_rate": 0.6538461538461539,
+  "hit_rate": 0.6666666666666666,
   "best_day": 0.026707401254871,
   "worst_day": -0.0168062324173021,
   "first": "2026-10-12",
-  "last": "2026-11-18"
+  "last": "2026-11-19"
  },
  "stats_backtest": {
   "days": 57,
@@ -49,17 +49,17 @@
   "last": "2026-10-09"
  },
  "bm_live": {
-  "days": 27,
-  "active_days": 27,
-  "total_return": -0.06429150890459734,
+  "days": 28,
+  "active_days": 28,
+  "total_return": -0.0633368429594724,
   "cagr": null,
-  "sharpe": -1.9767664545902726,
+  "sharpe": -1.9093472680815402,
   "max_drawdown": -0.122811055918572,
-  "hit_rate": 0.4444444444444444,
+  "hit_rate": 0.4642857142857143,
   "best_day": 0.04122973,
   "worst_day": -0.03634449,
   "first": "2026-10-12",
-  "last": "2026-11-18"
+  "last": "2026-11-19"
  },
  "bm_backtest": {
   "days": 57,
@@ -663,6 +663,13 @@
    "reconstructed": false,
    "n_trades": 6,
    "bm": -0.01574476
+  },
+  {
+   "date": "2026-11-19",
+   "ret": 0.0025129022395713,
+   "reconstructed": false,
+   "n_trades": 6,
+   "bm": 0.00102026
   }
  ],
  "trades": [
@@ -5787,10 +5794,10 @@
    "side": "LONG",
    "entry_time": "closing auction",
    "entry_price": 276.25,
-   "exit_time": "next opening auction",
-   "exit_price": null,
-   "ret": null,
-   "note": "pending"
+   "exit_time": "opening auction 2026-11-19",
+   "exit_price": 277.25,
+   "ret": 0.00362,
+   "note": ""
   },
   {
    "date": "2026-11-18",
@@ -5798,10 +5805,10 @@
    "side": "LONG",
    "entry_time": "closing auction",
    "entry_price": 2.75,
-   "exit_time": "next opening auction",
-   "exit_price": null,
-   "ret": null,
-   "note": "pending"
+   "exit_time": "opening auction 2026-11-19",
+   "exit_price": 2.75,
+   "ret": 0.0,
+   "note": ""
   },
   {
    "date": "2026-11-18",
@@ -5809,10 +5816,10 @@
    "side": "LONG",
    "entry_time": "closing auction",
    "entry_price": 109.9,
-   "exit_time": "next opening auction",
-   "exit_price": null,
-   "ret": null,
-   "note": "pending"
+   "exit_time": "opening auction 2026-11-19",
+   "exit_price": 110.0,
+   "ret": 0.00091,
+   "note": ""
   },
   {
    "date": "2026-11-18",
@@ -5845,6 +5852,72 @@
    "exit_time": "closing auction",
    "exit_price": 13.73,
    "ret": 0.07167,
+   "note": ""
+  },
+  {
+   "date": "2026-11-19",
+   "ticker": "HEKTS",
+   "side": "LONG",
+   "entry_time": "closing auction",
+   "entry_price": 1.58,
+   "exit_time": "next opening auction",
+   "exit_price": null,
+   "ret": null,
+   "note": "pending"
+  },
+  {
+   "date": "2026-11-19",
+   "ticker": "TKFEN",
+   "side": "LONG",
+   "entry_time": "closing auction",
+   "entry_price": 187.0,
+   "exit_time": "next opening auction",
+   "exit_price": null,
+   "ret": null,
+   "note": "pending"
+  },
+  {
+   "date": "2026-11-19",
+   "ticker": "VESTL",
+   "side": "LONG",
+   "entry_time": "closing auction",
+   "entry_price": 13.8,
+   "exit_time": "next opening auction",
+   "exit_price": null,
+   "ret": null,
+   "note": "pending"
+  },
+  {
+   "date": "2026-11-19",
+   "ticker": "AEFES",
+   "side": "SHORT",
+   "entry_time": "opening auction",
+   "entry_price": 16.16,
+   "exit_time": "closing auction",
+   "exit_price": 16.24,
+   "ret": -0.00495,
+   "note": ""
+  },
+  {
+   "date": "2026-11-19",
+   "ticker": "ASTOR",
+   "side": "SHORT",
+   "entry_time": "opening auction",
+   "entry_price": 154.5,
+   "exit_time": "closing auction",
+   "exit_price": 152.9,
+   "ret": 0.01036,
+   "note": ""
+  },
+  {
+   "date": "2026-11-19",
+   "ticker": "EKGYO",
+   "side": "SHORT",
+   "entry_time": "opening auction",
+   "entry_price": 17.95,
+   "exit_time": "closing auction",
+   "exit_price": 17.75,
+   "ret": 0.01114,
    "note": ""
   }
  ],
