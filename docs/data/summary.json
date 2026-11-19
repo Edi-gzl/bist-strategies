@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-19T23:40:58+00:00",
+ "generated_at": "2026-11-19T23:56:58+00:00",
  "live_start": "2026-10-02",
  "recorded_from": "2026-10-12",
  "last_session": "2026-11-19",
@@ -387,7 +387,7 @@
       "exit_time": "closing auction",
       "exit_price": 334.75,
       "ret": 0.00715,
-      "z": -2.27,
+      "z": -2.28,
       "fallback_rank": 1
      }
     ]
