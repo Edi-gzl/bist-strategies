@@ -7,32 +7,32 @@
  ],
  "live_start": "2026-10-02",
  "recorded_from": "2026-10-12",
- "last_session": "2026-11-19",
+ "last_session": "2026-11-20",
  "stats": {
-  "days": 4738,
-  "active_days": 4564,
-  "total_return": 26.87896813750668,
-  "cagr": 0.19363056124295186,
-  "sharpe": 0.7513554584036942,
+  "days": 4739,
+  "active_days": 4565,
+  "total_return": 26.470980374792234,
+  "cagr": 0.19265064999549475,
+  "sharpe": 0.7485658483225467,
   "max_drawdown": -0.505397996492563,
-  "hit_rate": 0.518624014022787,
+  "hit_rate": 0.5185104052573932,
   "best_day": 0.09937886037252985,
   "worst_day": -0.16513754172159267,
   "first": "2008-05-16",
-  "last": "2026-11-19"
+  "last": "2026-11-20"
  },
  "stats_live": {
-  "days": 28,
-  "active_days": 25,
-  "total_return": -0.07737231049786741,
+  "days": 29,
+  "active_days": 26,
+  "total_return": -0.0908742738776368,
   "cagr": null,
-  "sharpe": -1.933294928021573,
+  "sharpe": -2.264258919214131,
   "max_drawdown": -0.17342892046533365,
-  "hit_rate": 0.32,
+  "hit_rate": 0.3076923076923077,
   "best_day": 0.044346970132147945,
   "worst_day": -0.05530361103630535,
   "first": "2026-10-12",
-  "last": "2026-11-19"
+  "last": "2026-11-20"
  },
  "stats_backtest": {
   "days": 4710,
@@ -48,17 +48,17 @@
   "last": "2026-10-09"
  },
  "bm_live": {
-  "days": 28,
-  "active_days": 28,
-  "total_return": -0.0705935430204645,
+  "days": 29,
+  "active_days": 29,
+  "total_return": -0.09250609399821907,
   "cagr": null,
-  "sharpe": -2.1513143952193663,
+  "sharpe": -2.7744954165095086,
   "max_drawdown": -0.122811055918572,
-  "hit_rate": 0.42857142857142855,
+  "hit_rate": 0.41379310344827586,
   "best_day": 0.04122973,
   "worst_day": -0.03634449,
   "first": "2026-10-12",
-  "last": "2026-11-19"
+  "last": "2026-11-20"
  },
  "bm_backtest": {
   "days": 4710,
@@ -33240,6 +33240,13 @@
    "reconstructed": false,
    "n_trades": 1,
    "bm": -0.00673504
+  },
+  {
+   "date": "2026-11-20",
+   "ret": -0.014634249040428482,
+   "reconstructed": false,
+   "n_trades": 0,
+   "bm": -0.02357693
   }
  ],
  "trades": [

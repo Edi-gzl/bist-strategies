@@ -8,32 +8,32 @@
  ],
  "live_start": "2026-10-02",
  "recorded_from": "2026-10-12",
- "last_session": "2026-11-19",
+ "last_session": "2026-11-20",
  "stats": {
-  "days": 85,
-  "active_days": 84,
-  "total_return": 0.18547879912212362,
+  "days": 86,
+  "active_days": 85,
+  "total_return": 0.18205529839771728,
   "cagr": null,
-  "sharpe": 2.8555618409050205,
+  "sharpe": 2.789448955660728,
   "max_drawdown": -0.06219827627501995,
-  "hit_rate": 0.6428571428571429,
+  "hit_rate": 0.6352941176470588,
   "best_day": 0.026707401254871,
   "worst_day": -0.035592108016108,
   "first": "2026-07-22",
-  "last": "2026-11-19"
+  "last": "2026-11-20"
  },
  "stats_live": {
-  "days": 28,
-  "active_days": 27,
-  "total_return": 0.07709429603178575,
+  "days": 29,
+  "active_days": 28,
+  "total_return": 0.07398379493682783,
   "cagr": null,
-  "sharpe": 3.8630221002103777,
+  "sharpe": 3.637652509879771,
   "max_drawdown": -0.02877072374566736,
-  "hit_rate": 0.6666666666666666,
+  "hit_rate": 0.6428571428571429,
   "best_day": 0.026707401254871,
   "worst_day": -0.0168062324173021,
   "first": "2026-10-12",
-  "last": "2026-11-19"
+  "last": "2026-11-20"
  },
  "stats_backtest": {
   "days": 57,
@@ -49,17 +49,17 @@
   "last": "2026-10-09"
  },
  "bm_live": {
-  "days": 28,
-  "active_days": 28,
-  "total_return": -0.0705935430204645,
+  "days": 29,
+  "active_days": 29,
+  "total_return": -0.09250609399821907,
   "cagr": null,
-  "sharpe": -2.1513143952193663,
+  "sharpe": -2.7744954165095086,
   "max_drawdown": -0.122811055918572,
-  "hit_rate": 0.42857142857142855,
+  "hit_rate": 0.41379310344827586,
   "best_day": 0.04122973,
   "worst_day": -0.03634449,
   "first": "2026-10-12",
-  "last": "2026-11-19"
+  "last": "2026-11-20"
  },
  "bm_backtest": {
   "days": 57,
@@ -670,6 +670,13 @@
    "reconstructed": false,
    "n_trades": 6,
    "bm": -0.00673504
+  },
+  {
+   "date": "2026-11-20",
+   "ret": -0.0028878633063211,
+   "reconstructed": false,
+   "n_trades": 6,
+   "bm": -0.02357693
   }
  ],
  "trades": [
@@ -5860,10 +5867,10 @@
    "side": "LONG",
    "entry_time": "closing auction",
    "entry_price": 1.58,
-   "exit_time": "next opening auction",
-   "exit_price": null,
-   "ret": null,
-   "note": "pending"
+   "exit_time": "opening auction 2026-11-20",
+   "exit_price": 1.56,
+   "ret": -0.01266,
+   "note": ""
   },
   {
    "date": "2026-11-19",
@@ -5871,10 +5878,10 @@
    "side": "LONG",
    "entry_time": "closing auction",
    "entry_price": 187.0,
-   "exit_time": "next opening auction",
-   "exit_price": null,
-   "ret": null,
-   "note": "pending"
+   "exit_time": "opening auction 2026-11-20",
+   "exit_price": 185.7,
+   "ret": -0.00695,
+   "note": ""
   },
   {
    "date": "2026-11-19",
@@ -5882,10 +5889,10 @@
    "side": "LONG",
    "entry_time": "closing auction",
    "entry_price": 13.8,
-   "exit_time": "next opening auction",
-   "exit_price": null,
-   "ret": null,
-   "note": "pending"
+   "exit_time": "opening auction 2026-11-20",
+   "exit_price": 13.28,
+   "ret": -0.03768,
+   "note": ""
   },
   {
    "date": "2026-11-19",
@@ -5918,6 +5925,72 @@
    "exit_time": "closing auction",
    "exit_price": 17.75,
    "ret": 0.01114,
+   "note": ""
+  },
+  {
+   "date": "2026-11-20",
+   "ticker": "BRSAN",
+   "side": "LONG",
+   "entry_time": "closing auction",
+   "entry_price": 616.0,
+   "exit_time": "next opening auction",
+   "exit_price": null,
+   "ret": null,
+   "note": "pending"
+  },
+  {
+   "date": "2026-11-20",
+   "ticker": "HEKTS",
+   "side": "LONG",
+   "entry_time": "closing auction",
+   "entry_price": 1.51,
+   "exit_time": "next opening auction",
+   "exit_price": null,
+   "ret": null,
+   "note": "pending"
+  },
+  {
+   "date": "2026-11-20",
+   "ticker": "MGROS",
+   "side": "LONG",
+   "entry_time": "closing auction",
+   "entry_price": 435.25,
+   "exit_time": "next opening auction",
+   "exit_price": null,
+   "ret": null,
+   "note": "pending"
+  },
+  {
+   "date": "2026-11-20",
+   "ticker": "ASTOR",
+   "side": "SHORT",
+   "entry_time": "opening auction",
+   "entry_price": 150.4,
+   "exit_time": "closing auction",
+   "exit_price": 145.6,
+   "ret": 0.03191,
+   "note": ""
+  },
+  {
+   "date": "2026-11-20",
+   "ticker": "PGSUS",
+   "side": "SHORT",
+   "entry_time": "opening auction",
+   "entry_price": 154.2,
+   "exit_time": "closing auction",
+   "exit_price": 156.6,
+   "ret": -0.01556,
+   "note": ""
+  },
+  {
+   "date": "2026-11-20",
+   "ticker": "SASA",
+   "side": "SHORT",
+   "entry_time": "opening auction",
+   "entry_price": 1.48,
+   "exit_time": "closing auction",
+   "exit_price": 1.44,
+   "ret": 0.02703,
    "note": ""
   }
  ],
