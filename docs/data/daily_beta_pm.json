@@ -6372,7 +6372,7 @@
    "exit_time": "closing auction",
    "exit_price": 145.9,
    "ret": 0.01085,
-   "residual": -0.02641
+   "residual": -0.02639
   },
   {
    "date": "2026-11-23",
@@ -6383,7 +6383,7 @@
    "exit_time": "closing auction",
    "exit_price": 2.37,
    "ret": 0.05952,
-   "residual": -0.0401
+   "residual": -0.04011
   },
   {
    "date": "2026-11-23",
