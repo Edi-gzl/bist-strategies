@@ -7,32 +7,32 @@
  ],
  "live_start": "2026-10-02",
  "recorded_from": "2026-10-12",
- "last_session": "2026-11-20",
+ "last_session": "2026-11-23",
  "stats": {
-  "days": 35,
-  "active_days": 22,
-  "total_return": -0.019485853450998958,
+  "days": 36,
+  "active_days": 23,
+  "total_return": -0.009233934448399927,
   "cagr": null,
-  "sharpe": -0.19357507998371107,
+  "sharpe": 0.006958674386335881,
   "max_drawdown": -0.14780288279882137,
-  "hit_rate": 0.5909090909090909,
+  "hit_rate": 0.6086956521739131,
   "best_day": 0.0578934565450715,
   "worst_day": -0.0655520662243344,
   "first": "2026-10-02",
-  "last": "2026-11-20"
+  "last": "2026-11-23"
  },
  "stats_live": {
-  "days": 29,
-  "active_days": 17,
-  "total_return": 0.0027813535835476966,
+  "days": 30,
+  "active_days": 18,
+  "total_return": 0.013266090851681955,
   "cagr": null,
-  "sharpe": 0.2551559332863263,
+  "sharpe": 0.473515261423103,
   "max_drawdown": -0.14780288279882114,
-  "hit_rate": 0.5882352941176471,
+  "hit_rate": 0.6111111111111112,
   "best_day": 0.0578934565450715,
   "worst_day": -0.0655520662243344,
   "first": "2026-10-12",
-  "last": "2026-11-20"
+  "last": "2026-11-23"
  },
  "stats_backtest": {
   "days": 6,
@@ -48,17 +48,17 @@
   "last": "2026-10-09"
  },
  "bm_live": {
-  "days": 29,
-  "active_days": 29,
-  "total_return": -0.09250775763577701,
+  "days": 30,
+  "active_days": 30,
+  "total_return": -0.09470076708898467,
   "cagr": null,
-  "sharpe": -2.77453832398809,
+  "sharpe": -2.8009263517929646,
   "max_drawdown": -0.122811055918572,
-  "hit_rate": 0.41379310344827586,
+  "hit_rate": 0.4,
   "best_day": 0.04122973,
   "worst_day": -0.03634449,
   "first": "2026-10-12",
-  "last": "2026-11-20"
+  "last": "2026-11-23"
  },
  "bm_backtest": {
   "days": 6,
@@ -319,6 +319,13 @@
    "reconstructed": false,
    "n_trades": 0,
    "bm": -0.02357872
+  },
+  {
+   "date": "2026-11-23",
+   "ret": 0.01045565639076329,
+   "reconstructed": false,
+   "n_trades": 2,
+   "bm": -0.00241656
   }
  ],
  "trades": [
@@ -673,6 +680,28 @@
    "exit_price": 152.9,
    "ret": 0.03067,
    "gap": 0.0158
+  },
+  {
+   "date": "2026-11-23",
+   "ticker": "TRALT",
+   "side": "SHORT",
+   "entry_time": "10:01 open",
+   "entry_price": 36.2,
+   "exit_time": "closing auction",
+   "exit_price": 35.74,
+   "ret": 0.01171,
+   "gap": 0.0312
+  },
+  {
+   "date": "2026-11-23",
+   "ticker": "TRMET",
+   "side": "SHORT",
+   "entry_time": "10:01 open",
+   "entry_price": 107.8,
+   "exit_time": "closing auction",
+   "exit_price": 106.7,
+   "ret": 0.0092,
+   "gap": 0.0247
   }
  ],
  "holdings": null

@@ -8,32 +8,32 @@
  ],
  "live_start": "2026-10-02",
  "recorded_from": "2026-10-12",
- "last_session": "2026-11-20",
+ "last_session": "2026-11-23",
  "stats": {
-  "days": 86,
-  "active_days": 85,
-  "total_return": 0.0921280209057509,
+  "days": 87,
+  "active_days": 86,
+  "total_return": 0.09464109841299728,
   "cagr": null,
-  "sharpe": 1.5444482544079718,
+  "sharpe": 1.5733305688599357,
   "max_drawdown": -0.060629549728883236,
-  "hit_rate": 0.6,
+  "hit_rate": 0.6046511627906976,
   "best_day": 0.0241494701050248,
   "worst_day": -0.0358389639118445,
   "first": "2026-07-22",
-  "last": "2026-11-20"
+  "last": "2026-11-23"
  },
  "stats_live": {
-  "days": 29,
-  "active_days": 28,
-  "total_return": 0.02981884354078046,
+  "days": 30,
+  "active_days": 29,
+  "total_return": 0.03218854244301572,
   "cagr": null,
-  "sharpe": 1.8018458158456376,
+  "sharpe": 1.9052836960902368,
   "max_drawdown": -0.037764870241436266,
-  "hit_rate": 0.5714285714285714,
+  "hit_rate": 0.5862068965517241,
   "best_day": 0.0184623481688868,
   "worst_day": -0.0169922380670846,
   "first": "2026-10-12",
-  "last": "2026-11-20"
+  "last": "2026-11-23"
  },
  "stats_backtest": {
   "days": 57,
@@ -49,17 +49,17 @@
   "last": "2026-10-09"
  },
  "bm_live": {
-  "days": 29,
-  "active_days": 29,
-  "total_return": -0.09250775763577701,
+  "days": 30,
+  "active_days": 30,
+  "total_return": -0.09470076708898467,
   "cagr": null,
-  "sharpe": -2.77453832398809,
+  "sharpe": -2.8009263517929646,
   "max_drawdown": -0.122811055918572,
-  "hit_rate": 0.41379310344827586,
+  "hit_rate": 0.4,
   "best_day": 0.04122973,
   "worst_day": -0.03634449,
   "first": "2026-10-12",
-  "last": "2026-11-20"
+  "last": "2026-11-23"
  },
  "bm_backtest": {
   "days": 57,
@@ -677,6 +677,13 @@
    "reconstructed": false,
    "n_trades": 6,
    "bm": -0.02357872
+  },
+  {
+   "date": "2026-11-23",
+   "ret": 0.0023010832605158,
+   "reconstructed": false,
+   "n_trades": 3,
+   "bm": -0.00241656
   }
  ],
  "trades": [
@@ -5537,10 +5544,10 @@
    "side": "LONG",
    "entry_time": "closing auction",
    "entry_price": 616.0,
-   "exit_time": "next opening auction",
-   "exit_price": null,
-   "ret": null,
-   "note": "pending (S10c sizing set at execution)"
+   "exit_time": "opening auction 2026-11-23",
+   "exit_price": 625.0,
+   "ret": 0.01461,
+   "note": ""
   },
   {
    "date": "2026-11-20",
@@ -5548,10 +5555,10 @@
    "side": "LONG",
    "entry_time": "closing auction",
    "entry_price": 1.51,
-   "exit_time": "next opening auction",
-   "exit_price": null,
-   "ret": null,
-   "note": "pending (S10c sizing set at execution)"
+   "exit_time": "opening auction 2026-11-23",
+   "exit_price": 1.52,
+   "ret": 0.00662,
+   "note": ""
   },
   {
    "date": "2026-11-20",
@@ -5559,10 +5566,10 @@
    "side": "LONG",
    "entry_time": "closing auction",
    "entry_price": 435.25,
-   "exit_time": "next opening auction",
-   "exit_price": null,
-   "ret": null,
-   "note": "pending (S10c sizing set at execution)"
+   "exit_time": "opening auction 2026-11-23",
+   "exit_price": 435.0,
+   "ret": -0.00057,
+   "note": ""
   },
   {
    "date": "2026-11-20",
@@ -5596,6 +5603,39 @@
    "exit_price": 1.44,
    "ret": 0.02703,
    "note": ""
+  },
+  {
+   "date": "2026-11-23",
+   "ticker": "AKSEN",
+   "side": "LONG",
+   "entry_time": "closing auction",
+   "entry_price": 63.6,
+   "exit_time": "next opening auction",
+   "exit_price": null,
+   "ret": null,
+   "note": "pending (S10c sizing set at execution)"
+  },
+  {
+   "date": "2026-11-23",
+   "ticker": "KONTR",
+   "side": "LONG",
+   "entry_time": "closing auction",
+   "entry_price": 2.37,
+   "exit_time": "next opening auction",
+   "exit_price": null,
+   "ret": null,
+   "note": "pending (S10c sizing set at execution)"
+  },
+  {
+   "date": "2026-11-23",
+   "ticker": "TRMET",
+   "side": "LONG",
+   "entry_time": "closing auction",
+   "entry_price": 106.7,
+   "exit_time": "next opening auction",
+   "exit_price": null,
+   "ret": null,
+   "note": "pending (S10c sizing set at execution)"
   }
  ],
  "holdings": null
