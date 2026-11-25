@@ -8,32 +8,32 @@
  ],
  "live_start": "2026-10-02",
  "recorded_from": "2026-10-12",
- "last_session": "2026-11-23",
+ "last_session": "2026-11-24",
  "stats": {
-  "days": 87,
-  "active_days": 86,
-  "total_return": -0.050759402372837936,
+  "days": 88,
+  "active_days": 87,
+  "total_return": -0.03647327808483025,
   "cagr": null,
-  "sharpe": -0.5370158411816137,
+  "sharpe": -0.3444240048799832,
   "max_drawdown": -0.1361998812712314,
-  "hit_rate": 0.5,
+  "hit_rate": 0.5057471264367817,
   "best_day": 0.04430282798936428,
   "worst_day": -0.046071339409629854,
   "first": "2026-07-23",
-  "last": "2026-11-23"
+  "last": "2026-11-24"
  },
  "stats_live": {
-  "days": 30,
-  "active_days": 29,
-  "total_return": -0.03632129191334865,
+  "days": 31,
+  "active_days": 30,
+  "total_return": -0.02181787325231921,
   "cagr": null,
-  "sharpe": -1.2000356296966728,
+  "sharpe": -0.6418001897686706,
   "max_drawdown": -0.11108477215417667,
-  "hit_rate": 0.5862068965517241,
+  "hit_rate": 0.6,
   "best_day": 0.02223863744304827,
   "worst_day": -0.03319357570346615,
   "first": "2026-10-12",
-  "last": "2026-11-23"
+  "last": "2026-11-24"
  },
  "stats_backtest": {
   "days": 57,
@@ -49,17 +49,17 @@
   "last": "2026-10-09"
  },
  "bm_live": {
-  "days": 30,
-  "active_days": 30,
-  "total_return": -0.09470076708898467,
+  "days": 31,
+  "active_days": 31,
+  "total_return": -0.1038097250166734,
   "cagr": null,
-  "sharpe": -2.8009263517929646,
+  "sharpe": -3.0423101094347347,
   "max_drawdown": -0.122811055918572,
-  "hit_rate": 0.4,
+  "hit_rate": 0.3870967741935484,
   "best_day": 0.04122973,
   "worst_day": -0.03634449,
   "first": "2026-10-12",
-  "last": "2026-11-23"
+  "last": "2026-11-24"
  },
  "bm_backtest": {
   "days": 57,
@@ -684,6 +684,13 @@
    "reconstructed": false,
    "n_trades": 6,
    "bm": -0.00241656
+  },
+  {
+   "date": "2026-11-24",
+   "ret": 0.015050056143530905,
+   "reconstructed": false,
+   "n_trades": 6,
+   "bm": -0.01006182
   }
  ],
  "trades": [
@@ -6372,7 +6379,7 @@
    "exit_time": "closing auction",
    "exit_price": 145.9,
    "ret": 0.01085,
-   "residual": -0.02639
+   "residual": -0.02641
   },
   {
    "date": "2026-11-23",
@@ -6383,7 +6390,7 @@
    "exit_time": "closing auction",
    "exit_price": 2.37,
    "ret": 0.05952,
-   "residual": -0.04011
+   "residual": -0.0401
   },
   {
    "date": "2026-11-23",
@@ -6395,6 +6402,72 @@
    "exit_price": 12.57,
    "ret": 0.03899,
    "residual": -0.02753
+  },
+  {
+   "date": "2026-11-24",
+   "ticker": "ASTOR",
+   "side": "LONG",
+   "entry_time": "closing auction",
+   "entry_price": 149.7,
+   "exit_time": "next opening auction",
+   "exit_price": null,
+   "ret": null,
+   "residual": 0.04281
+  },
+  {
+   "date": "2026-11-24",
+   "ticker": "BRSAN",
+   "side": "LONG",
+   "entry_time": "closing auction",
+   "entry_price": 645.0,
+   "exit_time": "next opening auction",
+   "exit_price": null,
+   "ret": null,
+   "residual": 0.02557
+  },
+  {
+   "date": "2026-11-24",
+   "ticker": "PGSUS",
+   "side": "LONG",
+   "entry_time": "closing auction",
+   "entry_price": 154.2,
+   "exit_time": "next opening auction",
+   "exit_price": null,
+   "ret": null,
+   "residual": 0.02526
+  },
+  {
+   "date": "2026-11-24",
+   "ticker": "KONTR",
+   "side": "SHORT",
+   "entry_time": "opening auction",
+   "entry_price": 2.28,
+   "exit_time": "closing auction",
+   "exit_price": 2.18,
+   "ret": 0.04386,
+   "residual": -0.03104
+  },
+  {
+   "date": "2026-11-24",
+   "ticker": "PGSUS",
+   "side": "SHORT",
+   "entry_time": "opening auction",
+   "entry_price": 153.0,
+   "exit_time": "closing auction",
+   "exit_price": 154.2,
+   "ret": -0.00784,
+   "residual": -0.02467
+  },
+  {
+   "date": "2026-11-24",
+   "ticker": "VESTL",
+   "side": "SHORT",
+   "entry_time": "opening auction",
+   "entry_price": 12.76,
+   "exit_time": "closing auction",
+   "exit_price": 12.02,
+   "ret": 0.05799,
+   "residual": -0.03369
   }
  ],
  "holdings": null

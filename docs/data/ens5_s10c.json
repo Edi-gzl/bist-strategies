@@ -8,32 +8,32 @@
  ],
  "live_start": "2026-10-02",
  "recorded_from": "2026-10-12",
- "last_session": "2026-11-23",
+ "last_session": "2026-11-24",
  "stats": {
-  "days": 87,
-  "active_days": 86,
-  "total_return": 0.09464109841626756,
+  "days": 88,
+  "active_days": 87,
+  "total_return": 0.10460237255884075,
   "cagr": null,
-  "sharpe": 1.573330568908574,
+  "sharpe": 1.7079776726088836,
   "max_drawdown": -0.060629549728883236,
-  "hit_rate": 0.6046511627906976,
+  "hit_rate": 0.6091954022988506,
   "best_day": 0.0241494701050248,
   "worst_day": -0.0358389639118445,
   "first": "2026-07-22",
-  "last": "2026-11-23"
+  "last": "2026-11-24"
  },
  "stats_live": {
-  "days": 30,
-  "active_days": 29,
-  "total_return": 0.03218854244609948,
+  "days": 31,
+  "active_days": 30,
+  "total_return": 0.04158149603883832,
   "cagr": null,
-  "sharpe": 1.905283696260757,
+  "sharpe": 2.3638499945191014,
   "max_drawdown": -0.037764870241436266,
-  "hit_rate": 0.5862068965517241,
+  "hit_rate": 0.6,
   "best_day": 0.0184623481688868,
   "worst_day": -0.0169922380670846,
   "first": "2026-10-12",
-  "last": "2026-11-23"
+  "last": "2026-11-24"
  },
  "stats_backtest": {
   "days": 57,
@@ -49,17 +49,17 @@
   "last": "2026-10-09"
  },
  "bm_live": {
-  "days": 30,
-  "active_days": 30,
-  "total_return": -0.09470076708898467,
+  "days": 31,
+  "active_days": 31,
+  "total_return": -0.1038097250166734,
   "cagr": null,
-  "sharpe": -2.8009263517929646,
+  "sharpe": -3.0423101094347347,
   "max_drawdown": -0.122811055918572,
-  "hit_rate": 0.4,
+  "hit_rate": 0.3870967741935484,
   "best_day": 0.04122973,
   "worst_day": -0.03634449,
   "first": "2026-10-12",
-  "last": "2026-11-23"
+  "last": "2026-11-24"
  },
  "bm_backtest": {
   "days": 57,
@@ -684,6 +684,13 @@
    "reconstructed": false,
    "n_trades": 3,
    "bm": -0.00241656
+  },
+  {
+   "date": "2026-11-24",
+   "ret": 0.0091000366759345,
+   "reconstructed": false,
+   "n_trades": 6,
+   "bm": -0.01006182
   }
  ],
  "trades": [
@@ -5610,10 +5617,10 @@
    "side": "LONG",
    "entry_time": "closing auction",
    "entry_price": 63.6,
-   "exit_time": "next opening auction",
-   "exit_price": null,
-   "ret": null,
-   "note": "pending (S10c sizing set at execution)"
+   "exit_time": "opening auction 2026-11-24",
+   "exit_price": 64.25,
+   "ret": 0.01022,
+   "note": ""
   },
   {
    "date": "2026-11-23",
@@ -5621,10 +5628,10 @@
    "side": "LONG",
    "entry_time": "closing auction",
    "entry_price": 2.37,
-   "exit_time": "next opening auction",
-   "exit_price": null,
-   "ret": null,
-   "note": "pending (S10c sizing set at execution)"
+   "exit_time": "opening auction 2026-11-24",
+   "exit_price": 2.28,
+   "ret": -0.03797,
+   "note": ""
   },
   {
    "date": "2026-11-23",
@@ -5632,10 +5639,76 @@
    "side": "LONG",
    "entry_time": "closing auction",
    "entry_price": 106.7,
+   "exit_time": "opening auction 2026-11-24",
+   "exit_price": 106.0,
+   "ret": -0.00656,
+   "note": ""
+  },
+  {
+   "date": "2026-11-24",
+   "ticker": "ASTOR",
+   "side": "LONG",
+   "entry_time": "closing auction",
+   "entry_price": 149.7,
    "exit_time": "next opening auction",
    "exit_price": null,
    "ret": null,
    "note": "pending (S10c sizing set at execution)"
+  },
+  {
+   "date": "2026-11-24",
+   "ticker": "KONTR",
+   "side": "LONG",
+   "entry_time": "closing auction",
+   "entry_price": 2.18,
+   "exit_time": "next opening auction",
+   "exit_price": null,
+   "ret": null,
+   "note": "pending (S10c sizing set at execution)"
+  },
+  {
+   "date": "2026-11-24",
+   "ticker": "SAHOL",
+   "side": "LONG",
+   "entry_time": "closing auction",
+   "entry_price": 75.95,
+   "exit_time": "next opening auction",
+   "exit_price": null,
+   "ret": null,
+   "note": "pending (S10c sizing set at execution)"
+  },
+  {
+   "date": "2026-11-24",
+   "ticker": "ISCTR",
+   "side": "SHORT",
+   "entry_time": "opening auction",
+   "entry_price": 12.54,
+   "exit_time": "closing auction",
+   "exit_price": 12.3,
+   "ret": 0.01914,
+   "note": ""
+  },
+  {
+   "date": "2026-11-24",
+   "ticker": "SASA",
+   "side": "SHORT",
+   "entry_time": "opening auction",
+   "entry_price": 1.45,
+   "exit_time": "closing auction",
+   "exit_price": 1.43,
+   "ret": 0.01379,
+   "note": ""
+  },
+  {
+   "date": "2026-11-24",
+   "ticker": "VESTL",
+   "side": "SHORT",
+   "entry_time": "opening auction",
+   "entry_price": 12.76,
+   "exit_time": "closing auction",
+   "exit_price": 12.02,
+   "ret": 0.05799,
+   "note": ""
   }
  ],
  "holdings": null
