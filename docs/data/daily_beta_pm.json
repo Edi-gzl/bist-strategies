@@ -12,9 +12,9 @@
  "stats": {
   "days": 88,
   "active_days": 87,
-  "total_return": -0.03647327808483025,
+  "total_return": -0.03647328523707993,
   "cagr": null,
-  "sharpe": -0.3444240048799832,
+  "sharpe": -0.3444241002094056,
   "max_drawdown": -0.1361998812712314,
   "hit_rate": 0.5057471264367817,
   "best_day": 0.04430282798936428,
@@ -25,9 +25,9 @@
  "stats_live": {
   "days": 31,
   "active_days": 30,
-  "total_return": -0.02181787325231921,
+  "total_return": -0.02181788051335576,
   "cagr": null,
-  "sharpe": -0.6418001897686706,
+  "sharpe": -0.641800459820987,
   "max_drawdown": -0.11108477215417667,
   "hit_rate": 0.6,
   "best_day": 0.02223863744304827,
@@ -687,7 +687,7 @@
   },
   {
    "date": "2026-11-24",
-   "ret": 0.015050056143530905,
+   "ret": 0.015050048608824123,
    "reconstructed": false,
    "n_trades": 6,
    "bm": -0.01247253
@@ -6409,10 +6409,10 @@
    "side": "LONG",
    "entry_time": "closing auction",
    "entry_price": 149.7,
-   "exit_time": "next opening auction",
-   "exit_price": null,
-   "ret": null,
-   "residual": 0.04281
+   "exit_time": "opening auction 2026-11-25",
+   "exit_price": 149.4,
+   "ret": -0.002,
+   "residual": 0.04283
   },
   {
    "date": "2026-11-24",
@@ -6420,9 +6420,9 @@
    "side": "LONG",
    "entry_time": "closing auction",
    "entry_price": 645.0,
-   "exit_time": "next opening auction",
-   "exit_price": null,
-   "ret": null,
+   "exit_time": "opening auction 2026-11-25",
+   "exit_price": 642.5,
+   "ret": -0.00388,
    "residual": 0.02557
   },
   {
@@ -6431,10 +6431,10 @@
    "side": "LONG",
    "entry_time": "closing auction",
    "entry_price": 154.2,
-   "exit_time": "next opening auction",
-   "exit_price": null,
-   "ret": null,
-   "residual": 0.02526
+   "exit_time": "opening auction 2026-11-25",
+   "exit_price": 153.3,
+   "ret": -0.00584,
+   "residual": 0.02523
   },
   {
    "date": "2026-11-24",
