@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-27T03:53:39+00:00",
+ "generated_at": "2026-11-27T13:54:36+00:00",
  "live_start": "2026-10-02",
  "recorded_from": "2026-10-12",
  "last_session": "2026-11-26",
@@ -11,9 +11,9 @@
    "stats": {
     "days": 1728,
     "active_days": 1728,
-    "total_return": 34.80262762247086,
-    "cagr": 0.6850492151215435,
-    "sharpe": 2.5712477818563038,
+    "total_return": 34.802627600821815,
+    "cagr": 0.6850492149729523,
+    "sharpe": 2.5712477814646983,
     "max_drawdown": -0.325578897429746,
     "hit_rate": 0.6313657407407407,
     "best_day": 0.13045770691641703,
@@ -24,9 +24,9 @@
    "stats_live": {
     "days": 33,
     "active_days": 33,
-    "total_return": -0.10750017015193636,
+    "total_return": -0.10750017069161089,
     "cagr": null,
-    "sharpe": -4.1589228310165645,
+    "sharpe": -4.158922859141017,
     "max_drawdown": -0.11423524390606843,
     "hit_rate": 0.3333333333333333,
     "best_day": 0.030097196646314828,
@@ -75,7 +75,7 @@
    },
    "today": {
     "date": "2026-11-26",
-    "ret": 0.007603682250615362,
+    "ret": 0.007603681641340065,
     "trades": []
    }
   },
@@ -85,9 +85,9 @@
    "stats": {
     "days": 4743,
     "active_days": 4569,
-    "total_return": 24.691624537438557,
-    "cagr": 0.18823827274428284,
-    "sharpe": 0.7359068673595818,
+    "total_return": 24.69162471144769,
+    "cagr": 0.1882382731718768,
+    "sharpe": 0.735906868602951,
     "max_drawdown": -0.505397996492563,
     "hit_rate": 0.5180564674983585,
     "best_day": 0.09937886037252985,
@@ -98,9 +98,9 @@
    "stats_live": {
     "days": 33,
     "active_days": 30,
-    "total_return": -0.14976034731200938,
+    "total_return": -0.14976034155334417,
     "cagr": null,
-    "sharpe": -3.602837334145566,
+    "sharpe": -3.6028371823524847,
     "max_drawdown": -0.17342892046533365,
     "hit_rate": 0.26666666666666666,
     "best_day": 0.044346970132147945,
@@ -149,7 +149,7 @@
    },
    "today": {
     "date": "2026-11-26",
-    "ret": -0.0072468205007014674,
+    "ret": -0.0072468137767934815,
     "trades": [
      {
       "date": "2026-11-26",
@@ -182,9 +182,9 @@
    "stats": {
     "days": 90,
     "active_days": 89,
-    "total_return": -0.04268143776331179,
+    "total_return": -0.0426814444199618,
     "cagr": null,
-    "sharpe": -0.4192939749573743,
+    "sharpe": -0.41929405890696736,
     "max_drawdown": -0.1361998812712314,
     "hit_rate": 0.4943820224719101,
     "best_day": 0.04430282798936428,
@@ -195,9 +195,9 @@
    "stats_live": {
     "days": 33,
     "active_days": 32,
-    "total_return": -0.02812046009227276,
+    "total_return": -0.028120466850171555,
     "cagr": null,
-    "sharpe": -0.8365685756219702,
+    "sharpe": -0.8365688026312298,
     "max_drawdown": -0.11108477215417667,
     "hit_rate": 0.5625,
     "best_day": 0.02223863744304827,
@@ -246,7 +246,7 @@
    },
    "today": {
     "date": "2026-11-26",
-    "ret": -0.004558601003241717,
+    "ret": -0.0045586079249762355,
     "trades": [
      {
       "date": "2026-11-26",
@@ -254,10 +254,10 @@
       "side": "LONG",
       "entry_time": "closing auction",
       "entry_price": 62.45,
-      "exit_time": "next opening auction",
-      "exit_price": null,
-      "ret": null,
-      "residual": 0.02649
+      "exit_time": "opening auction 2026-11-27",
+      "exit_price": 62.45,
+      "ret": 0.0,
+      "residual": 0.02534
      },
      {
       "date": "2026-11-26",
@@ -265,10 +265,10 @@
       "side": "LONG",
       "entry_time": "closing auction",
       "entry_price": 15.42,
-      "exit_time": "next opening auction",
-      "exit_price": null,
-      "ret": null,
-      "residual": 0.03133
+      "exit_time": "opening auction 2026-11-27",
+      "exit_price": 15.4,
+      "ret": -0.0013,
+      "residual": 0.03007
      },
      {
       "date": "2026-11-26",
@@ -276,10 +276,10 @@
       "side": "LONG",
       "entry_time": "closing auction",
       "entry_price": 244.8,
-      "exit_time": "next opening auction",
-      "exit_price": null,
-      "ret": null,
-      "residual": 0.03421
+      "exit_time": "opening auction 2026-11-27",
+      "exit_price": 243.2,
+      "ret": -0.00654,
+      "residual": 0.03323
      },
      {
       "date": "2026-11-26",
@@ -323,9 +323,9 @@
    "stats": {
     "days": 39,
     "active_days": 21,
-    "total_return": -0.03008251059130007,
+    "total_return": -0.03008255521333214,
     "cagr": null,
-    "sharpe": -0.6931624288649831,
+    "sharpe": -0.6931636748613165,
     "max_drawdown": -0.08745980408295784,
     "hit_rate": 0.6666666666666666,
     "best_day": 0.023598982516243594,
@@ -336,9 +336,9 @@
    "stats_live": {
     "days": 33,
     "active_days": 18,
-    "total_return": -0.009267926122275005,
+    "total_return": -0.009267971701902855,
     "cagr": null,
-    "sharpe": -0.14406574107239387,
+    "sharpe": -0.14406709893884462,
     "max_drawdown": -0.08745980408295784,
     "hit_rate": 0.7222222222222222,
     "best_day": 0.023598982516243594,
@@ -387,7 +387,7 @@
    },
    "today": {
     "date": "2026-11-26",
-    "ret": 0.0035385549326230068,
+    "ret": 0.003538508763819893,
     "trades": [
      {
       "date": "2026-11-26",
@@ -697,12 +697,10 @@
  ],
  "failures": {},
  "incomplete_sessions": [],
- "repaired_sessions": [
-  "2026-11-26"
- ],
+ "repaired_sessions": [],
  "benchmark": {
   "id": "xu100",
   "name": "BIST 100 (XU100)",
-  "last": "2026-11-26"
+  "last": "2026-11-27"
  }
 }
