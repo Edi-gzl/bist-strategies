@@ -8,32 +8,32 @@
  ],
  "live_start": "2026-10-02",
  "recorded_from": "2026-10-12",
- "last_session": "2026-11-25",
+ "last_session": "2026-11-26",
  "stats": {
-  "days": 89,
-  "active_days": 88,
-  "total_return": 0.1974071580502339,
+  "days": 90,
+  "active_days": 89,
+  "total_return": 0.2031516765824115,
   "cagr": null,
-  "sharpe": 2.941253405998436,
+  "sharpe": 2.999543935787707,
   "max_drawdown": -0.06219827627501995,
-  "hit_rate": 0.6477272727272727,
+  "hit_rate": 0.651685393258427,
   "best_day": 0.026707401254871,
   "worst_day": -0.035592108016108,
   "first": "2026-07-22",
-  "last": "2026-11-25"
+  "last": "2026-11-26"
  },
  "stats_live": {
-  "days": 32,
-  "active_days": 31,
-  "total_return": 0.08793208357552018,
+  "days": 33,
+  "active_days": 32,
+  "total_return": 0.09315139930604133,
   "cagr": null,
-  "sharpe": 4.056874464885873,
+  "sharpe": 4.216939167214428,
   "max_drawdown": -0.02877072374566736,
-  "hit_rate": 0.6774193548387096,
+  "hit_rate": 0.6875,
   "best_day": 0.026707401254871,
   "worst_day": -0.0168062324173021,
   "first": "2026-10-12",
-  "last": "2026-11-25"
+  "last": "2026-11-26"
  },
  "stats_backtest": {
   "days": 57,
@@ -49,17 +49,17 @@
   "last": "2026-10-09"
  },
  "bm_live": {
-  "days": 32,
-  "active_days": 32,
-  "total_return": -0.13128157404210017,
+  "days": 33,
+  "active_days": 33,
+  "total_return": -0.11779958530228907,
   "cagr": null,
-  "sharpe": -3.748414866884502,
+  "sharpe": -3.209477689079824,
   "max_drawdown": -0.13128157404210017,
-  "hit_rate": 0.375,
+  "hit_rate": 0.3939393939393939,
   "best_day": 0.04122973,
   "worst_day": -0.03634449,
   "first": "2026-10-12",
-  "last": "2026-11-25"
+  "last": "2026-11-26"
  },
  "bm_backtest": {
   "days": 57,
@@ -698,6 +698,13 @@
    "reconstructed": false,
    "n_trades": 6,
    "bm": -0.02828771
+  },
+  {
+   "date": "2026-11-26",
+   "ret": 0.0047974646665145,
+   "reconstructed": false,
+   "n_trades": 3,
+   "bm": 0.0155194
   }
  ],
  "trades": [
@@ -6119,10 +6126,10 @@
    "side": "LONG",
    "entry_time": "closing auction",
    "entry_price": 58.2,
-   "exit_time": "next opening auction",
-   "exit_price": null,
-   "ret": null,
-   "note": "pending"
+   "exit_time": "opening auction 2026-11-26",
+   "exit_price": 58.8,
+   "ret": 0.01031,
+   "note": ""
   },
   {
    "date": "2026-11-25",
@@ -6130,10 +6137,10 @@
    "side": "LONG",
    "entry_time": "closing auction",
    "entry_price": 3.98,
-   "exit_time": "next opening auction",
-   "exit_price": null,
-   "ret": null,
-   "note": "pending"
+   "exit_time": "opening auction 2026-11-26",
+   "exit_price": 4.03,
+   "ret": 0.01256,
+   "note": ""
   },
   {
    "date": "2026-11-25",
@@ -6141,10 +6148,10 @@
    "side": "LONG",
    "entry_time": "closing auction",
    "entry_price": 280.5,
-   "exit_time": "next opening auction",
-   "exit_price": null,
-   "ret": null,
-   "note": "pending"
+   "exit_time": "opening auction 2026-11-26",
+   "exit_price": 283.0,
+   "ret": 0.00891,
+   "note": ""
   },
   {
    "date": "2026-11-25",
@@ -6178,6 +6185,39 @@
    "exit_price": 12.01,
    "ret": -0.00334,
    "note": ""
+  },
+  {
+   "date": "2026-11-26",
+   "ticker": "KRDMD",
+   "side": "LONG",
+   "entry_time": "closing auction",
+   "entry_price": 35.3,
+   "exit_time": "next opening auction",
+   "exit_price": null,
+   "ret": null,
+   "note": "pending"
+  },
+  {
+   "date": "2026-11-26",
+   "ticker": "ODAS",
+   "side": "LONG",
+   "entry_time": "closing auction",
+   "entry_price": 4.03,
+   "exit_time": "next opening auction",
+   "exit_price": null,
+   "ret": null,
+   "note": "pending"
+  },
+  {
+   "date": "2026-11-26",
+   "ticker": "SASA",
+   "side": "LONG",
+   "entry_time": "closing auction",
+   "entry_price": 1.44,
+   "exit_time": "next opening auction",
+   "exit_price": null,
+   "ret": null,
+   "note": "pending"
   }
  ],
  "holdings": null

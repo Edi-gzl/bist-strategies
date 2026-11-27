@@ -5,32 +5,32 @@
  "deviations": [],
  "live_start": "2026-10-02",
  "recorded_from": "2026-10-12",
- "last_session": "2026-11-25",
+ "last_session": "2026-11-26",
  "stats": {
-  "days": 38,
-  "active_days": 20,
-  "total_return": -0.03350251503409396,
+  "days": 39,
+  "active_days": 21,
+  "total_return": -0.03008251059130007,
   "cagr": null,
-  "sharpe": -0.7983324813067432,
+  "sharpe": -0.6931624288649831,
   "max_drawdown": -0.08745980408295784,
-  "hit_rate": 0.65,
+  "hit_rate": 0.6666666666666666,
   "best_day": 0.023598982516243594,
   "worst_day": -0.06518663312330142,
   "first": "2026-10-02",
-  "last": "2026-11-25"
+  "last": "2026-11-26"
  },
  "stats_live": {
-  "days": 32,
-  "active_days": 17,
-  "total_return": -0.012761324407469132,
+  "days": 33,
+  "active_days": 18,
+  "total_return": -0.009267926122275005,
   "cagr": null,
-  "sharpe": -0.2518456375522942,
+  "sharpe": -0.14406574107239387,
   "max_drawdown": -0.08745980408295784,
-  "hit_rate": 0.7058823529411765,
+  "hit_rate": 0.7222222222222222,
   "best_day": 0.023598982516243594,
   "worst_day": -0.06518663312330142,
   "first": "2026-10-12",
-  "last": "2026-11-25"
+  "last": "2026-11-26"
  },
  "stats_backtest": {
   "days": 6,
@@ -46,17 +46,17 @@
   "last": "2026-10-09"
  },
  "bm_live": {
-  "days": 32,
-  "active_days": 32,
-  "total_return": -0.13128157404210017,
+  "days": 33,
+  "active_days": 33,
+  "total_return": -0.11779958530228907,
   "cagr": null,
-  "sharpe": -3.748414866884502,
+  "sharpe": -3.209477689079824,
   "max_drawdown": -0.13128157404210017,
-  "hit_rate": 0.375,
+  "hit_rate": 0.3939393939393939,
   "best_day": 0.04122973,
   "worst_day": -0.03634449,
   "first": "2026-10-12",
-  "last": "2026-11-25"
+  "last": "2026-11-26"
  },
  "bm_backtest": {
   "days": 6,
@@ -338,6 +338,13 @@
    "reconstructed": false,
    "n_trades": 0,
    "bm": -0.02828771
+  },
+  {
+   "date": "2026-11-26",
+   "ret": 0.0035385549326230068,
+   "reconstructed": false,
+   "n_trades": 1,
+   "bm": 0.0155194
   }
  ],
  "trades": [
@@ -579,6 +586,18 @@
    "exit_price": 12.02,
    "ret": -0.01535,
    "z": -4.91,
+   "fallback_rank": 1
+  },
+  {
+   "date": "2026-11-26",
+   "ticker": "FROTO",
+   "side": "SHORT",
+   "entry_time": "first 1-min open after 16:00",
+   "entry_price": 66.1,
+   "exit_time": "closing auction",
+   "exit_price": 65.8,
+   "ret": 0.00354,
+   "z": -2.0,
    "fallback_rank": 1
   }
  ],
