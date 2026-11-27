@@ -5,32 +5,32 @@
  "deviations": [],
  "live_start": "2026-10-02",
  "recorded_from": "2026-10-12",
- "last_session": "2026-11-26",
+ "last_session": "2026-11-27",
  "stats": {
-  "days": 39,
-  "active_days": 21,
-  "total_return": -0.03008255521333214,
+  "days": 40,
+  "active_days": 22,
+  "total_return": -0.030412695181348925,
   "cagr": null,
-  "sharpe": -0.6931636748613165,
+  "sharpe": -0.6936282425327676,
   "max_drawdown": -0.08745980408295784,
-  "hit_rate": 0.6666666666666666,
+  "hit_rate": 0.6363636363636364,
   "best_day": 0.023598982516243594,
   "worst_day": -0.06518663312330142,
   "first": "2026-10-02",
-  "last": "2026-11-26"
+  "last": "2026-11-27"
  },
  "stats_live": {
-  "days": 33,
-  "active_days": 18,
-  "total_return": -0.009267971701902855,
+  "days": 34,
+  "active_days": 19,
+  "total_return": -0.009605196526441873,
   "cagr": null,
-  "sharpe": -0.14406709893884462,
+  "sharpe": -0.1518439024380211,
   "max_drawdown": -0.08745980408295784,
-  "hit_rate": 0.7222222222222222,
+  "hit_rate": 0.6842105263157895,
   "best_day": 0.023598982516243594,
   "worst_day": -0.06518663312330142,
   "first": "2026-10-12",
-  "last": "2026-11-26"
+  "last": "2026-11-27"
  },
  "stats_backtest": {
   "days": 6,
@@ -46,17 +46,17 @@
   "last": "2026-10-09"
  },
  "bm_live": {
-  "days": 33,
-  "active_days": 33,
-  "total_return": -0.12415623257899822,
+  "days": 34,
+  "active_days": 34,
+  "total_return": -0.10508643368031478,
   "cagr": null,
-  "sharpe": -3.4435395154819224,
+  "sharpe": -2.7286200155490645,
   "max_drawdown": -0.13128157404210017,
-  "hit_rate": 0.3939393939393939,
+  "hit_rate": 0.4117647058823529,
   "best_day": 0.04122973,
   "worst_day": -0.03634449,
   "first": "2026-10-12",
-  "last": "2026-11-26"
+  "last": "2026-11-27"
  },
  "bm_backtest": {
   "days": 6,
@@ -345,6 +345,13 @@
    "reconstructed": false,
    "n_trades": 1,
    "bm": 0.00820213
+  },
+  {
+   "date": "2026-11-27",
+   "ret": -0.0003403794516649841,
+   "reconstructed": false,
+   "n_trades": 1,
+   "bm": 0.02177306
   }
  ],
  "trades": [
@@ -598,6 +605,18 @@
    "exit_price": 65.8,
    "ret": 0.00354,
    "z": -2.0,
+   "fallback_rank": 1
+  },
+  {
+   "date": "2026-11-27",
+   "ticker": "VAKBN",
+   "side": "SHORT",
+   "entry_time": "first 1-min open after 16:00",
+   "entry_price": 30.32,
+   "exit_time": "closing auction",
+   "exit_price": 30.3,
+   "ret": -0.00034,
+   "z": -2.03,
    "fallback_rank": 1
   }
  ],

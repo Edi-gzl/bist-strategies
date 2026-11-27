@@ -7,32 +7,32 @@
  ],
  "live_start": "2026-10-02",
  "recorded_from": "2026-10-12",
- "last_session": "2026-11-26",
+ "last_session": "2026-11-27",
  "stats": {
-  "days": 39,
-  "active_days": 24,
-  "total_return": 0.01949041748344782,
+  "days": 40,
+  "active_days": 25,
+  "total_return": -0.023233901735619455,
   "cagr": null,
-  "sharpe": 0.521943102438345,
+  "sharpe": -0.21110873241322325,
   "max_drawdown": -0.14780288279882137,
-  "hit_rate": 0.625,
+  "hit_rate": 0.6,
   "best_day": 0.0578934565450715,
   "worst_day": -0.0655520662243344,
   "first": "2026-10-02",
-  "last": "2026-11-26"
+  "last": "2026-11-27"
  },
  "stats_live": {
-  "days": 33,
-  "active_days": 19,
-  "total_return": 0.042642764928652266,
+  "days": 34,
+  "active_days": 20,
+  "total_return": -0.0010518118484619254,
   "cagr": null,
-  "sharpe": 1.0211367924892158,
+  "sharpe": 0.17389424031263556,
   "max_drawdown": -0.14780288279882114,
-  "hit_rate": 0.631578947368421,
+  "hit_rate": 0.6,
   "best_day": 0.0578934565450715,
   "worst_day": -0.0655520662243344,
   "first": "2026-10-12",
-  "last": "2026-11-26"
+  "last": "2026-11-27"
  },
  "stats_backtest": {
   "days": 6,
@@ -48,17 +48,17 @@
   "last": "2026-10-09"
  },
  "bm_live": {
-  "days": 33,
-  "active_days": 33,
-  "total_return": -0.12415623257899822,
+  "days": 34,
+  "active_days": 34,
+  "total_return": -0.10508643368031478,
   "cagr": null,
-  "sharpe": -3.4435395154819224,
+  "sharpe": -2.7286200155490645,
   "max_drawdown": -0.13128157404210017,
-  "hit_rate": 0.3939393939393939,
+  "hit_rate": 0.4117647058823529,
   "best_day": 0.04122973,
   "worst_day": -0.03634449,
   "first": "2026-10-12",
-  "last": "2026-11-26"
+  "last": "2026-11-27"
  },
  "bm_backtest": {
   "days": 6,
@@ -347,6 +347,13 @@
    "reconstructed": false,
    "n_trades": 0,
    "bm": 0.00820213
+  },
+  {
+   "date": "2026-11-27",
+   "ret": -0.041907524079068614,
+   "reconstructed": false,
+   "n_trades": 2,
+   "bm": 0.02177306
   }
  ],
  "trades": [
@@ -734,6 +741,28 @@
    "exit_price": 61.45,
    "ret": 0.02899,
    "gap": 0.0102
+  },
+  {
+   "date": "2026-11-27",
+   "ticker": "GUBRF",
+   "side": "SHORT",
+   "entry_time": "10:01 open",
+   "entry_price": 279.25,
+   "exit_time": "closing auction",
+   "exit_price": 286.5,
+   "ret": -0.02696,
+   "gap": 0.0144
+  },
+  {
+   "date": "2026-11-27",
+   "ticker": "TRALT",
+   "side": "SHORT",
+   "entry_time": "10:01 open",
+   "entry_price": 33.66,
+   "exit_time": "closing auction",
+   "exit_price": 35.54,
+   "ret": -0.05685,
+   "gap": 0.02
   }
  ],
  "holdings": null
