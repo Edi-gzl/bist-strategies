@@ -52,9 +52,9 @@
  "bm_live": {
   "days": 34,
   "active_days": 34,
-  "total_return": -0.10508643368031478,
+  "total_return": -0.10508723069814296,
   "cagr": null,
-  "sharpe": -2.7286200155490645,
+  "sharpe": -2.7286493034739365,
   "max_drawdown": -0.13128157404210017,
   "hit_rate": 0.4117647058823529,
   "best_day": 0.04122973,
@@ -12178,7 +12178,7 @@
    "ret": 0.00815906098754815,
    "reconstructed": false,
    "n_trades": 87,
-   "bm": 0.02177306
+   "bm": 0.02177215
   }
  ],
  "trades": [
